@@ -10,7 +10,7 @@
 	name = <fumiya>
 	email = <kohnofumiya@gmail.com>
 [color]
-	ui = auto
+	ui = true
 [alias]
 	co = checkout
 [filter "media"]
