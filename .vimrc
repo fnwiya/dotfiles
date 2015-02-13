@@ -15,6 +15,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 syntax on                         "hilight
 filetype on
 filetype plugin indent on
+colorscheme lucius
 
 "-------------------------------------------------------------------------------
 " 基本設定
@@ -63,6 +64,10 @@ inoremap <c-k> <up>
 inoremap <c-h> <left>
 inoremap <c-l> <right>
 inoremap jj <Esc>
+" 自動的に閉じ括弧を入力
+imap { {}<LEFT>
+imap [ []<LEFT>
+imap ( ()<LEFT>
 
 "-------------------------------------------------------------------------------
 " seach
@@ -83,6 +88,7 @@ set smarttab                       "行頭の余白内で Tabを打ち込むと�
 set autoindent                     "新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
 set smartindent
 set shiftwidth=4                   "自動インデントの各段階に使われる空白の数
+set wrapscan                       "最後まで検索したら先頭に戻る
 
 "-------------------------------------------------------------------------------
 " その他設定
@@ -92,6 +98,37 @@ set laststatus=2                   "ステータスラインを表示するウ�
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P "ステータス行の表示内容を設定する
 set showcmd                        "入力中のステータスに表示する
  
-"全角表示
+"全角スペース表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
 match ZenkakuSpace /　/
+
+" 挿入モード時、ステータスラインの色を変更
+let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
+
+if has('syntax')
+  augroup InsertHook
+    autocmd!
+    autocmd InsertEnter * call s:StatusLine('Enter')
+    autocmd InsertLeave * call s:StatusLine('Leave')
+  augroup END
+endif
+
+let s:slhlcmd = ''
+function! s:StatusLine(mode)
+  if a:mode == 'Enter'
+    silent! let s:slhlcmd = 'highlight ' . s:GetHighlight('StatusLine')
+    silent exec g:hi_insert
+  else
+    highlight clear StatusLine
+    silent exec s:slhlcmd
+  endif
+endfunction
+
+function! s:GetHighlight(hi)
+  redir => hl
+  exec 'highlight '.a:hi
+  redir END
+  let hl = substitute(hl, '[\r\n]', '', 'g')
+  let hl = substitute(hl, 'xxx', '', '')
+  return hl
+endfunction
