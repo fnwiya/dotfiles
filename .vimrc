@@ -133,3 +133,26 @@ function! s:GetHighlight(hi)
   return hl
 endfunction
 
+""""""""""""""""""""""""""""""
+" プラグインのセットアップ
+""""""""""""""""""""""""""""""
+if has('vim_starting')
+  set nocompatible
+  filetype off
+
+  set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
+endif
+  call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/unite.vim' " ファイルオープンを便利に
+NeoBundle 'Shougo/neomru.vim' " Unite.vimで最近使ったファイルを表示できるようにする
+
+
+call neobundle#end()
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+""""""""""""""""""""""""""""""
