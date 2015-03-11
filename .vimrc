@@ -12,9 +12,7 @@ au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
 au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 
-syntax on                         "hilight
-filetype on
-filetype plugin indent on
+syntax on
 colorscheme lucius
 
 "-------------------------------------------------------------------------------
@@ -137,9 +135,6 @@ endfunction
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
 if has('vim_starting')
-  set nocompatible
-  filetype off
-
   set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
 endif
   call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
@@ -147,7 +142,7 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim' " ファイルオープンを便利に
 NeoBundle 'Shougo/neomru.vim' " Unite.vimで最近使ったファイルを表示できるようにする
-
+NeoBundle 'marijnh/tern_for_vim'
 
 call neobundle#end()
 filetype plugin indent on
