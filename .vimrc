@@ -14,6 +14,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 syntax on
 colorscheme lucius
+set background=dark
 
 "-------------------------------------------------------------------------------
 " 基本設定
@@ -142,7 +143,6 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim' " ファイルオープンを便利に
 NeoBundle 'Shougo/neomru.vim' " Unite.vimで最近使ったファイルを表示できるようにする
-NeoBundle 'marijnh/tern_for_vim'
 
 call neobundle#end()
 filetype plugin indent on
