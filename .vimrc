@@ -68,6 +68,8 @@ imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
 
+" ,scで構文チェック
+nnoremap ,sc :<C-u>SyntasticCheck<CR>
 "-------------------------------------------------------------------------------
 " seach
 "-------------------------------------------------------------------------------
@@ -143,6 +145,15 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim' " ファイルオープンを便利に
 NeoBundle 'Shougo/neomru.vim' " Unite.vimで最近使ったファイルを表示できるようにする
+NeoBundle 'scrooloose/syntastic' "Error checker
+" syntastic {{{
+let g:syntastic_mode_map = {
+      \  'mode': 'active',
+      \ 'active_filetypes': ['javascript', 'c'],
+      \ 'passive_filetypes': []
+      \ }
+" }}}
+let g:syntastic_javascript_jslint_conf = "--white --undef --nomen --regexp --plusplus --bitwise --newcap --sloppy --vars"
 
 call neobundle#end()
 filetype plugin indent on
