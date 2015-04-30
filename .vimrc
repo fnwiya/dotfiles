@@ -146,6 +146,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim' " ファイルオープンを便利に
 NeoBundle 'Shougo/neomru.vim' " Unite.vimで最近使ったファイルを表示できるようにする
 NeoBundle 'scrooloose/syntastic' "Error checker
+NeoBundle 'marijnh/tern_for_vim', {
+  \ 'build': {
+  \   'others': 'npm install'
+  \}}
 " syntastic {{{
 let g:syntastic_mode_map = {
       \  'mode': 'active',

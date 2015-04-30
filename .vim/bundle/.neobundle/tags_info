@@ -1,4 +1,5 @@
 neobundle.vim
 neomru.vim
 syntastic
+tern_for_vim
 unite.vim
