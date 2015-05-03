@@ -1,4 +1,5 @@
 neobundle.vim
+neocomplcache
 neomru.vim
 syntastic
 tern_for_vim
