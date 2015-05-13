@@ -62,7 +62,6 @@ inoremap <c-j> <down>
 inoremap <c-k> <up>
 inoremap <c-h> <left>
 inoremap <c-l> <right>
-inoremap jj <Esc>
 " 自動的に閉じ括弧を入力
 imap { {}<LEFT>
 imap [ []<LEFT>
@@ -70,6 +69,22 @@ imap ( ()<LEFT>
 
 " ,scで構文チェック
 nnoremap ,sc :<C-u>SyntasticCheck<CR>
+
+nnoremap <Esc><Esc> :noh<CR>
+
+" For 'Shougo/neocomplcache'
+inoremap <expr><C-u>     neocomplcache#undo_completion()
+inoremap <expr><C-c>     neocomplcache#complete_common_string()
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return neocomplcache#smart_close_popup() . "\<CR>"
+endfunction
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y>  neocomplcache#close_popup()
+inoremap <expr><C-e>  neocomplcache#cancel_popup()
+
+
 "-------------------------------------------------------------------------------
 " seach
 "-------------------------------------------------------------------------------
@@ -156,21 +171,6 @@ NeoBundle 'Shougo/neocomplcache' " 自動補完
         \ 'default' : ''
         \ }
     
-    " Plugin key-mappings.
-    inoremap <expr><C-g>     neocomplcache#undo_completion()
-    inoremap <expr><C-l>     neocomplcache#complete_common_string()
-
-    " Recommended key-mappings.
-    inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-    function! s:my_cr_function()
-      return neocomplcache#smart_close_popup() . "\<CR>"
-    endfunction
-    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-    inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-    inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-    inoremap <expr><C-y>  neocomplcache#close_popup()
-    inoremap <expr><C-e>  neocomplcache#cancel_popup()
-
 NeoBundle 'scrooloose/syntastic' "Error checker
 NeoBundle 'marijnh/tern_for_vim', {
   \ 'build': {

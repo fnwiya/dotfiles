@@ -7,12 +7,13 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = <fumiya>
-	email = <kohnofumiya@gmail.com>
+	name = fnwiya
+	email = fnwiya@gmail.com
 [color]
 	ui = true
 [alias]
 	co = checkout
+	cm = commit
 [filter "media"]
 	required = true
 	clean = git media clean %f
