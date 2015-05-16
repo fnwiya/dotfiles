@@ -152,43 +152,5 @@ endfunction
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
-if has('vim_starting')
-  set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
-endif
-  call neobundle#begin(expand('~/dotfiles/.vim/bundle/'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/unite.vim' " ファイルオープンを便利に
-NeoBundle 'Shougo/neomru.vim' " Unite.vimで最近使ったファイルを表示できるようにする
-NeoBundle 'Shougo/neocomplcache' " 自動補完
-    "let g:acp_enableAtStartup = 0
-    let g:neocomplcache_enable_at_startup = 1
-    "let g:neocomplcache_enable_smart_case = 1
-    let g:neocomplcache_enable_underbar_completion = 1
-    let g:neocomplcache_min_syntax_length = 3
-    let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
-    let g:neocomplcache_dictionary_filetype_lists = {
-        \ 'default' : ''
-        \ }
-    
-NeoBundle 'scrooloose/syntastic' "Error checker
-NeoBundle 'marijnh/tern_for_vim', {
-  \ 'build': {
-  \   'others': 'npm install'
-  \}}
-" syntastic {{{
-let g:syntastic_mode_map = {
-      \  'mode': 'active',
-      \ 'active_filetypes': ['javascript', 'c'],
-      \ 'passive_filetypes': []
-      \ }
-" }}}
-let g:syntastic_javascript_jslint_conf = "--white --undef --nomen --regexp --plusplus --bitwise --newcap --sloppy --vars"
-
-call neobundle#end()
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
 """"""""""""""""""""""""""""""
