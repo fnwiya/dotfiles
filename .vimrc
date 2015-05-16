@@ -13,6 +13,7 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 
 syntax on
+set t_Co=256
 colorscheme lucius
 set background=dark
 
