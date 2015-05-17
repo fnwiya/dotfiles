@@ -1,0 +1,1 @@
+/home/fumiyakohno/dotfiles/.vim
