@@ -1,6 +1,3 @@
 neobundle.vim
-neocomplcache
-neomru.vim
-syntastic
-tern_for_vim
-unite.vim
+neocomplete.vim
+vimproc
