@@ -1,1 +1,1 @@
-/home/fumiyakohno/dotfiles/.vim
+/home/fnwiya/dotfiles/.vim
