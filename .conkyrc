@@ -121,11 +121,3 @@ ${goto 40}${color2}${top_mem name 3}${color}${alignr 39}${top cpu 3} %
 ${goto 40}${color2}${top_mem name 4}${color}${alignr 39}${top cpu 4} %
 ${hr 1}
 \
-# System shortcuts
-${font Droid Sans :size=12}
-${goto 40}W-t${alignr 40}Terminal
-${goto 40}W-e${alignr 40}Editor
-${goto 40}W-f${alignr 40}File browser
-${goto 40}W-w${alignr 40}Web browser
-${goto 40}C-W-F4${alignr 40}Log off
-\
