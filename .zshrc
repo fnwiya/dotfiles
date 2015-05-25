@@ -1,4 +1,3 @@
-# 少し凝った zshrc
 # License : MIT
 # http://mollifier.mit-license.org/
  
@@ -164,3 +163,8 @@ case ${OSTYPE} in
 esac
  
 # vim:set ft=zsh:
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init - zsh)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
