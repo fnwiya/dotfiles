@@ -1,2 +1,7 @@
 neobundle.vim
+neomru.vim
+nerdtree
 unite.vim
+vim-autoclose
+vim-indent-guides
+vimproc

@@ -82,11 +82,11 @@ set hlsearch                       "highlight matches with last search pattern
 " indent/tab
 "-------------------------------------------------------------------------------
 set expandtab                      "Insertモードで<tab>を挿入するのに、適切な数の空白を使う
-set tabstop=4                      "ファイル内の <tab> が対応する空白の数
+set tabstop=22                      "ファイル内の <tab> が対応する空白の数
 set smarttab                       "行頭の余白内で Tabを打ち込むと、'shiftwidth' の数だけインデントする
 set autoindent                     "新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
 set smartindent
-set shiftwidth=4                   "自動インデントの各段階に使われる空白の数
+set shiftwidth=2                   "自動インデントの各段階に使われる空白の数
 set wrapscan                       "最後まで検索したら先頭に戻る
 
 "-------------------------------------------------------------------------------
@@ -139,6 +139,10 @@ if has('vim_starting')
   if &compatible
     set nocompatible
   endif
+  if !isdirectory(expand("~/.vim/bundle/neobundle.vim/"))
+    echo "install neobundle..."
+    :call system("git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim")
+  endif
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
@@ -146,8 +150,37 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+  let g:indent_guides_enable_on_vim_startup = 1
+NeoBundle 'Townk/vim-autoclose'
+NeoBundle 'Shougo/vimproc', {
+        \ 'build' : {
+                \ 'windows' : 'make -f make_mingw32.mak',
+                \ 'cygwin' : 'make -f make_cygwin.mak',
+                \ 'mac' : 'make -f make_mac.mak',
+                \ 'unix' : 'make -f make_unix.mak',
+        \ },
+        \ }
 
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
 """"""""""""""""""""""""""""""
+" Unit.vim
+"""""""""""""""""""""""""""""""
+" 入力モードで開始する
+let g:unite_enable_start_insert=1
+" バッファ一覧
+noremap <C-P> :Unite buffer<CR>
+" ファイル一覧
+noremap <C-N> :Unite -buffer-name=file file<CR>
+" 最近使ったファイルの一覧
+noremap <C-Z> :Unite file_mru<CR>
+" sourcesを「今開いているファイルのディレクトリ」とする
+noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
+" ESCキーを2回押すと終了する
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
+"""""""""""""""""""""""""""""""
