@@ -57,7 +57,7 @@ set whichwrap=h,l
 " imap / inoremap |    -     |  @   |       -        |     -      |  -   |    -     |
 " cmap / cnoremap |    -     |  -   |       @        |     -      |  -   |    -     |
 "-----------------------------------------------------------------------------------"
-"インサートモードでも移動
+"インサートモードでもhjkl移動
 inoremap <c-d> <delete>
 inoremap <c-j> <down>
 inoremap <c-k> <up>
@@ -135,5 +135,19 @@ endfunction
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
+if has('vim_starting')
+  if &compatible
+    set nocompatible
+  endif
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
 
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/unite.vim'
+
+call neobundle#end()
+filetype plugin indent on
+NeoBundleCheck
 """"""""""""""""""""""""""""""
