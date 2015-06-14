@@ -77,6 +77,7 @@ set incsearch                      "インクリメンタルサーチを行う
 set nowrapscan                     "(no)検索をファイルの末尾まで検索したら、ファイルの先頭へループする
 set history=1000                   "コマンド、検索パターンを100個まで履歴に残す
 set hlsearch                       "highlight matches with last search pattern
+set wrapscan                       "最後まで検索したら先頭に戻る
 
 "-------------------------------------------------------------------------------
 " indent/tab
@@ -87,7 +88,6 @@ set smarttab                       "行頭の余白内で Tabを打ち込むと�
 set autoindent                     "新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
 set smartindent
 set shiftwidth=2                   "自動インデントの各段階に使われる空白の数
-set wrapscan                       "最後まで検索したら先頭に戻る
 
 "-------------------------------------------------------------------------------
 " その他設定
@@ -158,7 +158,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'nathanaelkane/vim-indent-guides'
   let g:indent_guides_enable_on_vim_startup = 1
-NeoBundle 'Townk/vim-autoclose'
+" NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'Shougo/vimproc', {
         \ 'build' : {
                 \ 'windows' : 'make -f make_mingw32.mak',
@@ -211,23 +211,7 @@ let g:neocomplcache_dictionary_filetype_lists = {
     \ 'default' : ''
     \ }
 
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplcache#undo_completion()
-inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return neocomplcache#smart_close_popup() . "\<CR>"
-endfunction
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()"
 set completeopt=menuone
 for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
   exec "imap " . k . " " . k . "<C-N><C-P>"
