@@ -87,7 +87,7 @@ set tabstop=22                      "ファイル内の <tab> が対応する空
 set smarttab                       "行頭の余白内で Tabを打ち込むと、'shiftwidth' の数だけインデントする
 set autoindent                     "新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする
 set smartindent
-set shiftwidth=2                   "自動インデントの各段階に使われる空白の数
+set shiftwidth=4                   "自動インデントの各段階に使われる空白の数
 
 "-------------------------------------------------------------------------------
 " その他設定
@@ -131,6 +131,44 @@ function! s:GetHighlight(hi)
   let hl = substitute(hl, 'xxx', '', '')
   return hl
 endfunction
+
+
+" カーソル下の単語をハイライト
+highlight CurrentWord term=NONE ctermbg=DarkMagenta ctermfg=NONE
+
+function! s:EscapeText( text )
+  return substitute( escape(a:text, '\' . '^$.*[~'), "\n", '\\n', 'ge' )
+endfunction
+
+function! s:GetCurrentWord()
+  let l:cword = expand('<cword>')
+  if !empty(l:cword)
+    let l:regexp = s:EscapeText(l:cword)
+    if l:cword =~# '^\k\+$'
+      let l:regexp = '\<' . l:regexp . '\>'
+    endif
+    return l:regexp
+  else
+    return ''
+  endif
+endfunction
+
+function! s:HighlightCurrentWord()
+  let l:word = s:GetCurrentWord()
+  if !empty(l:word)
+    if exists("w:current_match")
+      call matchdelete(w:current_match)
+    endif
+    let w:current_match = matchadd('CurrentWord', l:word, 0)
+  endif
+endfunction
+
+augroup cwh
+  autocmd!
+  autocmd CursorMoved,CursorMovedI * call s:HighlightCurrentWord()
+augroup END
+
+
 
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
