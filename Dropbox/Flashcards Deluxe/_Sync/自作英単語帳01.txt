@@ -1,0 +1,12 @@
+*	name	自作英単語帳01
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+*	deck-stats-1	1873,2044,55,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Text 1	Text 2	Text 3
+levy	But the levy hike to 8% from 5%—Japan’s first sales tax rise in 17 years—slammed the brakes on consumer spending, plunging the economy into recession and throwing the success of Abenomics into question.	課税
+confine	We should confine ourselves to intellectually manageable programs.	限る，とどめる.
+inadequate	It is a usual technique to make a program and then to test it. But: program testing can be a very effective way to show the presence of bugs, but it is hopelessly inadequate for showing their absence.	十分でない
+clumsy	As long as machines were the largest item in the budget, the programming profession could get away with its clumsy techniques.	不器用な、ぎこちない

@@ -1,0 +1,551 @@
+*	name	GSL10
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+total	"全体の
+ 合計
+ (を合計する､となる)"
+whom	だれを
+obey	に服従する
+diamond	"ダイヤモンド
+ 菱形"
+tomorrow	あした
+lunch	"昼食(の)
+ 
+ (a lunch box 
+ 弁当箱)"
+nephew	おい
+goat	"ヤギ
+ (欧米では悪とみられイメージは悪い)"
+money	お金
+raw	なまの
+exercise	"練習､練習問題
+ 運動、体操
+ 練習する(させる)
+ 運動する(させる)"
+somebody	誰か
+beard	"*あごひげ*
+ 
+ （mustashe くちひげ）
+ (side whiskers ほおひげ)
+ （sideburns もみあげ）"
+bare	"*裸の*
+ 
+ （同音異義語）
+ (bear 熊、bear 耐える)"
+bitter	"*苦い*(味の場合)
+ (つらい､痛烈な､敵意のある､身を切るように寒い)"
+amongst	"（amongの堅い語）
+ *の中に(の)*、*の間で*
+ *の中のひとつ*"
+mill	製粉場
+roll	"転がる(基本義)
+ を転がす
+ *一*巻
+ ロールパン"
+store	"(米)商店（英ではshop）
+ 多量の蓄え(a store)
+ を貯蔵する"
+excess	超過
+noble	"気高い
+ 高貴な"
+operation	"運転
+ 手術"
+march	"行進する
+ 行進
+ 行進曲"
+love	"愛
+ 愛する
+ （・・が大好きだ）"
+loss	"損失
+ 敗北"
+notice	"通知
+ 注目
+ に気が付く"
+with	"と共に
+ をもって
+ ・・で"
+kitchen	台所
+story	"物語
+ 階
+ 
+ (a five-story building)"
+model	"模型
+ 模範
+ の模型を作る"
+spoil	"を台無しにする
+ （だめにする）
+ 台無しになる"
+rubber	ゴム
+advance	"前進
+ 前進する"
+cover	"を覆う
+ 覆い"
+awake	"目が覚める 
+ 目が覚めている
+ 
+ (awake, awoke, awoke)"
+but	"*しかし*
+ （*ほんの* : only）
+ 
+ (ほんの：Life is but a dream.)
+ (Row row row your boat歌詞の終り)"
+band	"紐
+ 楽団"
+view	"眺め
+ 見方"
+sacred	"神聖な
+ 厳粛な"
+congratulation	"*おめでとう*
+  (*複*数*系*で言うのに注意)
+ (Congratulation*s* on your sucess!)"
+forest	"森林 
+ (人手の入らない大森林)
+ 
+ （woods は人手の入った
+ 森や林）"
+scenery	"ある地域全体の自然の｢風景｣
+ 
+ （landscape ：陸地の一望）
+ (view：一望､特に遠くの景色)
+ (sight:眺め・光景､目に映る物全て)"
+it	それ
+worm	"*這う虫*
+ （毛虫､ミミズなど）
+ 
+ （日本語の虫にあたる
+ 一語の英語はない)
+ （昆虫は insect ）"
+copper	"銅
+ 銅の(銅製の)"
+whistle	"笛、汽笛
+ 口笛を吹く
+ 汽笛を鳴らす"
+comfort	"快適さ
+ を慰める"
+complaint	不平
+proof	"証明
+ 証拠"
+pretense	"(の)ふり
+ みせかけ
+ 口実
+ 気取り"
+belong	"のものである
+ に属する
+ (belong to)"
+shorten	"短くする
+ 短くなる"
+die	死ぬ
+scene	"場面
+ 光景
+ （現場）"
+preference	"を好むこと
+ 好物"
+medicine	"医薬
+ 医学、内科"
+kneel	"ひざまずく
+ 
+ (kneel, knelt, knelt)"
+repair	"を修理する
+ 修理"
+big	"大きい
+ (重要な､偉い)
+ (年上の:older)"
+compete	"競争する
+ ( comoete with 人)"
+explore	(を)探検する
+accept	"を受け入れる
+ (を受け取る)"
+sand	砂
+people	"人々
+ 国民､民族"
+sorrow	悲しみ
+capital	"（原義：頭の）
+ 首都
+ 大文字(の)
+ 資本(の)
+ 重要な"
+rivalry	対抗
+precious	貴重な
+send	"を送る
+ を行かせる
+ 
+ (send, sent, sent)"
+discussion	"話し合い
+ 議論"
+defeat	"(敵を)負かす
+ 敗北"
+anger	怒り
+qualification	資格
+difficulty	困難
+garden	庭
+grind	"を粉にする
+ を研ぐ
+ 
+ (grind, ground, ground)"
+department	"部門
+ (省､局､部など)"
+finish	"を終える､終わる
+ （終り）
+ 
+ （the finish line 
+ ｢競走｣のゴール）
+ (球技のゴールはgoal)"
+fill	"*を満たす*(fill A with B)
+ *に書きいれる*(fill in C)
+ 
+ （注意 規則変化）
+ (fill, filled, filled)
+ 
+ (The room is filled with students.)
+ (Fill in this form, please.)"
+pride	自尊心
+poem	詩
+companion	仲間
+pour	"を注ぐ
+ 流れ出る
+ 雨が激しく降る"
+best	"最も良い(く)
+ 最上"
+victory	勝利
+salesman	"男性の店員
+ 男性の販売外交員
+ 
+ (英語では売り場の店員もさす｡最近の言い方は
+ salespersonの方がよい)"
+shelf	棚
+tax	"税
+ (に課税する)"
+unite	を一つにする
+particle	微粒子
+religion	宗教
+climb	(を)登る
+reproduction	"再生､再現
+ 複製
+ 生殖作用"
+quart	"クォート(液量の単位)
+ 
+ (米 約0.95L､英 約1.14L)"
+wide	"幅の広い
+ 広く"
+"descendant
+ (発音 di-'send-әnt)"	"*子孫*
+ 
+ （先祖はancestor）
+ （発音注意）
+ （ [ 'æn-ses-tә(r) ] ）"
+street	街路
+fan	"*ファン*(愛好者)
+ 
+ （異義語）
+ *扇風機*
+ うちわ､扇"
+build	"（基本義：部品を組み
+ 立てて作りあげる）
+ *を建てる*
+ 
+ (build, built, built)
+ （を築きあげる build the mind）
+ （火を起こす build a fire）"
+case	"場合
+ 箱"
+offense	"違反
+ 無礼
+ 攻撃"
+save	"を救う
+ を蓄える
+ を節約する
+ 貯金する"
+float	"浮かぶ
+ を浮かべる
+ 浮き"
+opposite	"反対側の
+ 反対のこと"
+supper	夕食
+most	"もっとも
+ 大部分
+ 最大量(the most)"
+vowel	母音
+heart	"心臓
+ 心
+ 中心(the heart)"
+cheap	"*安い*
+ 
+ (cheap は 安っぽい の意あり)
+ (単に 安い は inexpensive、
+ economical、
+ 費用・給料などは lowやsmall)"
+ambitious	"大望を抱いている
+ 野心的な"
+pray	(を)祈る
+practical	"実*際*的な
+ *現*実的な
+ 実*用*的な"
+thief	泥棒
+content	"内容
+ 
+ (形容詞は 発音kәn-'tent)
+ （満足している）
+ （を満足させる）"
+perfect	完全な
+holy	神聖な
+pot	"つぼ、深鍋
+ （深くて丸い容器）
+ 
+ （coffee pot, flowerpot）"
+bone	骨
+silent	"沈黙した
+ 静かな"
+stay	"とどまる
+ 滞在する
+ 滞在
+ 
+ (stay, stayed, stayed)"
+citizen	"市民
+ 国民"
+thus	このように
+artificial	人工の
+extraordinary	並外れた
+standard	標準(の)
+set	"を置く
+ を定める
+ の用意をする
+ 沈む(太陽・月)
+ 一組
+ 
+ (set, set, set)"
+tender	"柔らかい
+ 優しい"
+fail	"失敗する
+ 落第させる
+ 
+ (We tried but failed.)
+ (Mr.Smith failed me in history.)"
+barrel	樽
+commercial	"商業の
+ コマーシャル"
+outward	"外へ向かう
+ 外へ"
+depend	"・・次第である
+ を頼りにする"
+confident	自信のある
+reasonable	"納得のいく
+ 手頃な"
+rescue	"を救う
+ 救助"
+voice	"声
+ （文法:態)"
+roast	をｵｰﾌﾞﾝで焼く
+niece	めい
+loan	"貸し付け
+ (米) (を貸す)"
+clear	"晴れた
+ はっきりした
+ をきれいにする
+ 
+ (取り除く感じを含む語)"
+cent	"セント 
+ （通貨単位1/100ドル）
+ （12¢ と表す）"
+whip	"をむちで打つ
+ むち"
+damp	"湿った
+ 湿気
+ を湿らす"
+lot	"たくさんの
+ （a lot of）
+ (一区画、運命、くじ)"
+reduction	"縮小
+ 割引
+ (弱化､約分､還元)"
+distant	遠い
+remind	"思い出させる
+ 
+ (Oh, that reminds me.)
+ (ああ､それで思い出した)"
+captain	"主将
+ 船長､機長"
+straw	"麦わら
+ ストロー
+ 
+ (a straw hat 麦わら帽子)"
+glad	"うれしい
+ 喜んで
+ 
+ (Will you come with me?
+ Sure, Im glad to.)"
+dry	乾いた
+tree	木(樹木)
+round	"丸い
+ (英) の周りに
+ （米では around）"
+political	政治の
+village	村
+shave	"ひげをそる
+ ひげそり"
+find	"を見つける
+ とわかる
+ 
+ (find, found, found)"
+string	"ひも
+ 楽器の弦
+ （に糸を通す）
+ （に弦を張る）
+ 
+ (string, strung, strung)"
+coarse	"ざらざらの
+ 粗野な"
+lock	"錠
+ 鍵をかける"
+gap	"すき間
+ 相違"
+as	"(副)*と同じ程度に*
+ (前) *として､のように*
+ (接) *するときに*
+ (関係代名詞の用法もあり)
+ 
+ (参*考*：*接*続*詞* as の基本義は*等*価*性*)
+ （多義で*翻*訳*者泣かせ*）
+ （ 1 [時] する時に、2 [付帯] しながら
+ 3 [比例]するにつれて､4 [理由]なので
+ 5 [様態]する様に6 [譲歩]だけれども)"
+turn	"回る､回す
+ 曲がる
+ 向ける
+ 順番"
+spirit	"精神
+ （気分 spirits）
+ （霊魂）
+ （強い酒 spirits）"
+avoidance	"*回避*
+ 
+ （tax avoidance）
+ （脱税）"
+extreme	極端(な)
+musician	音楽家
+surround	を取り囲む
+member	メンバー(一員)
+row	"*列*(よこ並び）
+ 
+ (船)*をこぐ*(異義語）
+ (異義語 発音注意 [rau])
+ (英口語:騒々しい口論)"
+borrow	(を)借りる
+finger	"*手の指* （参考 足の指はtoe）
+ 
+ (親指 thumb)
+ (人さし指：index finger,
+  first finger, forefinger)
+ (中指：middle finger, second finger)
+ (薬指：ring finger, third finger)
+ (小指：little finger, fourth finger)"
+disagree	"同意しない
+ 一致しない"
+glass	"ガラス
+ グラス
+ 眼鏡(glasses)"
+tune	"曲
+ (に合わせる)"
+tooth	"歯
+ 
+ (複数は teeth)"
+multiply	"*を*増*やす*
+ *を掛ける*
+ 
+ (2 multiplied by 3 equals 6.)
+ (2 times 3 is 6.が言いやすい)"
+peace	平和､(平穏)
+reference	"言及
+ 参照"
+book	"本
+ を予約する"
+hide	"を隠す
+ 隠れる
+ 
+ (hide, hid, hidden)"
+wing	"翼
+ 
+ (一本の羽はfeather)"
+family	家族
+excessive	過度の
+kick	"(を)蹴る
+ 蹴ること"
+joint	"関節
+ 継ぎ目
+ 共同の"
+separation	分離
+shade	"日陰
+ を陰にする
+ 絵に影をつける"
+carriage	"(英)列車の客車
+ (米ではcar)
+ 運送"
+weed	"雑草
+ (の)草取りをする
+ 
+ （注意 規則変化）
+ (weed, weeded, weeded)"
+anyway	とにかく
+custom	"習慣
+ 関税
+ 税関"
+purple	紫色(の)
+return	"帰る､戻る
+ を返す
+ 返す事、帰国
+ 帰りの"
+fire	"火､火事
+ 射撃
+ 発砲する
+ 
+ (firefighter 消防士)"
+film	"フィルム
+ 薄膜
+ 映画"
+heavenly	"（形容詞）
+ *天*国*のような*
+ この世の物と思われない"
+refer	"を参照する(させる)
+ に言及する
+ 
+ （ふつう refer to）"
+university	"*大*学
+ 
+ (大学名は固有､要確認)
+ (Harvard University)
+ (MIT：Massachusetts Institute of Technology)
+ (The university of Tokyo)
+ (Kyoto University)"
+new	新しい
+carry	"を持ち運ぶ(基本義)
+ を運ぶ
+ をもたらす
+ 
+ (多義、辞書を必読)"
+propose	"を提案する
+ プロポ-ズする"
+plural	"複数の
+ 複数"
+homemade	自家製の
+seed	たね(種)
+cliff	"(海岸などの)
+ 絶壁"
+broadcast	"(を)放送する
+ 
+ (broadcast, broadcast, broadcast)
+ (正規変化もある)"
+lesson	"授業
+ 敎くん(訓)"
+"*desert*
+ (発音注意 'de-zə:〔r〕t )"	"*砂漠*
+ 
+ （異義語）
+  ( 発音が違う di-'zə:〔r〕t ）
+ (家族・職務を)*捨てる*
+ 
+ (注意：食後のデザートは
+ 綴りは違うが発音は異義語と同じ
+ dessert [di-'zə:〔r〕t ] ）"

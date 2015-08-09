@@ -1,0 +1,537 @@
+*	name	GSL11
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+"*desert*
+ (発音注意 'de-zə:〔r〕t )"	"*砂漠*
+ 
+ （異義語）
+  ( 発音が違う di-'zə:〔r〕t ）
+ (家族・職務を)*捨てる*
+ 
+ (注意：食後のデザートは
+ 綴りは違うが発音は異義語と同じ
+ dessert [di-'zə:〔r〕t ] ）"
+warm	暖かい
+even	"でさえ
+ 平らな
+ (さらに､それ所か)
+ （同等の）
+ （偶数の）
+ 
+ (Even a child can understand it.)"
+parent	"おや（父または母）
+ 
+ （He has only one parent.）
+ （She lives with her parents.)"
+off	離れて(基本義)
+therefore	それゆえに
+fierce	"どう猛な
+ 激しい"
+leave	"(基本義:離れる､放置する)
+ (を)去る
+ 置き忘れる
+ へ出発する(for)
+ （残して死ぬ）
+ 
+ (leave, left, left)"
+ought	"すべきである
+ 
+ (助動詞､過去形なし)
+ (文法・辞書を必読)"
+grammatical	文法の
+allowance	"こづかい
+ 手当て
+ 控除"
+collect	"を集める
+ 集まる"
+former	"以前の
+ 前者(the formar)
+ 
+ （後者はthe latter）"
+favorite	"お気に入りの
+ お気に入りの人や物"
+roar	"吠える
+ とどろく"
+wherever	どこにでも
+neglect	"を怠る
+ を無視する
+ 怠慢"
+free	"自由な
+ 無料の
+ 自由にする"
+moment	"瞬間
+ 時期
+ (モ-メント:運動率)"
+stiffen	"を堅くする
+ 堅くなる"
+old-fashioned	"旧式の
+ (時代遅れの)"
+orange	オレンジ
+president	"大統領 (the President)
+ 会長、学長
+ (米) 社長"
+everywhere	どこでも
+shore	岸
+drink	"(を)飲む
+ 酒を飲む
+ 飲みもの
+ 
+ (drink, drank, drunk)
+ ([driŋk], [dræŋk], [drʌŋk])"
+meantime	"その間に
+ 話変わって一方
+ （in the mean time)"
+out	外へ(基本義)
+attract	を引きつける
+party	"パーティ
+ 政党"
+quiet	"静かな
+ 静けさ
+ を鎮める"
+attention	注意
+prefer	のほうを好む
+election	選挙
+headache	"頭痛
+ 
+ (I have a slight headache. 軽い頭痛)"
+preserve	"を保護する
+ を保存する"
+plan	"計画
+ を計画する"
+waste	"を無駄に使う
+ 浪費
+ （くず、廃棄物）"
+less	"より少ない(く)
+ (littleの比較級)"
+lengthen	"を長くする
+ 長くなる"
+tonight	今夜
+scold	"を叱る
+ 叱る"
+event	"出来事
+ 行事"
+restaurant	レストラン
+ask	"(を)尋ねる 
+ に頼む
+ を招待する
+ 
+ (May I ask a question?)
+ (I asked him to wait.)"
+plant	"（原義：若枝）
+ 植物
+ 工場
+ を植えつける"
+male	"男性の
+ 雄の
+ 
+ （a male chorus）
+ （男性合唱団）"
+silence	"沈黙
+ 静寂"
+comparison	比較
+such	"こんな
+ そのような"
+mother	母
+nor	"(neither A nor B)
+ A でもBでもない
+ 
+ （否定文のあと）
+ もまた・・いない"
+dine	"ディナーを食べる
+ (have dinnerがふつう)"
+note	"覚え書き(メモ)
+ 注
+ （音・声の調子）
+ を書き留める
+ に注意する"
+everyday	"（形容詞）
+ 毎日の
+ 日常の
+ 
+ (副詞 毎日はevery day)"
+then	"その時
+ それから"
+other	ほかの(物・人)
+afternoon	午後
+fly	"飛ぶ
+ を飛ばす
+ 飛行機で行く
+ (fly, flew, flown)
+ 
+ ハエ(異義語)"
+loud	"*大*声*の*
+ *大*声*で*
+ 
+ (Woud you speak a litle louder?)
+ (大声で は 下記などもある)
+ (in a loud voice, loudly, loud(口語))"
+realize	"を実感する
+ 実現させる"
+sense	"分別
+ 感覚
+ 正気
+ 意味"
+boil	"を沸かす 
+ 沸騰する"
+power	"力
+ 権力
+ （電力）"
+wife	"妻、夫人
+ 
+ （my wife and I）
+ （私たち夫婦）"
+succeed	"成功する（suceed in)
+ を引き継ぐ(suceed to)"
+about	"*について*、*およそ*
+ 
+ （講演などの定例句） 
+ （I'd like to talk a little bit about・・）
+ （成句：How about・・や be about to )
+ 
+ (英:「のまわり､のあたり」の意味もある｡米ではこの場合aroundを多用)"
+confidential	機密の
+distance	距離
+necessity	"必要性
+ 必需品(necessities)"
+pencil	鉛筆
+flow	"流れる
+ 流れ(aやtheが付く)
+ 
+ (注意 規則変化)
+ (flow, flowed, flowed)"
+usual	いつもの
+dead	"死んでいる
+ （まったく(の)）"
+gallon	"ガロン
+ (日米:3.785L､英:4.546L)
+ (略語：gal., 複数gals)"
+lid	ふた
+verb	動詞(文法)
+network	"ネットワーク
+ (網状のもの)"
+narrow	"狭い
+ を狭くする
+ 狭くなる"
+simplicity	"簡単
+ 簡素"
+nest	巣
+agency	"代理店
+ （作用）"
+look	"意識的に見る(基本義)
+ に見える
+ 一寸見る(take a look)
+ 容貌(looks)"
+pass	"(を)通りすぎる
+ (に)合格する
+ を手渡す
+ 経つ"
+date	"日付(を書く)
+ 年代をさかのぼる
+ (The temple dates back to the twelfth century.)"
+thumb	親指
+quarrel	口論
+concern	"関係がある
+ 関心事"
+flame	"炎
+ 炎を出す"
+essence	本質
+thick	"厚い
+ 太い
+ 濃い"
+land	"陸
+ 着陸する"
+demand	"要求
+ 需要
+ を要求する"
+hollow	"くぼんだ
+ うつろな
+ くぼみ"
+polite	丁寧な
+ancient	古代の
+picture	"絵
+ 写真
+ を描く"
+hurry	"急ぐ
+ 急がせる
+ 急ぎ"
+solemn	厳粛な
+cottage	"田舎の小さい住宅
+ 
+ (OALD､Webster辞書共 同じ定義)
+ (a small house, especially in the country)"
+hang	"を掛ける
+ （を取りつける）
+ （を絞首刑にする)
+ 
+ (hang, hung, hung)"
+onto	の上へ
+imitation	模倣
+trade	"商業、貿易
+ (を商う、貿易をする)
+ (を交換する)"
+devil	悪魔
+besides	"・・に加えて
+ そのうえ"
+conqueror	征服者
+autumn	"*秋*
+ (米ではふつう秋はfall､
+ autumnは文語的)
+ (英国では両方通じるが
+ autumnが一般的)"
+drive	"を運転する
+ 車を運転する
+ ドライブ
+ (を追い立てる､を動かす)
+ ( ↑ 原義 )
+ 
+ (drive, drove, driven)"
+liar	"うそつき
+ （日本語よりはるかに
+ 意味が強いので注意）"
+lip	唇
+nothing	何も・・ない
+screen	"ついたて
+ 画面
+ (ついたてで仕切る)"
+refuse	"(を)拒絶する(refuse to)
+ 
+ (decline:丁重に辞退する
+ reject：はねつける)"
+introduction	"紹介
+ 導入"
+priest	"聖職者
+ (司祭、僧侶)"
+waist	"ウエスト
+ (胴のくびれた部分)"
+razor	"かみそり
+ 
+ （an electric rezor ）
+ （電気かみそり）"
+official	"公式の
+ 公務員"
+strict	厳しい
+self	自己
+forgive	"(を)許す
+ 
+ (forgive,forgave,forgiven)"
+fright	恐怖
+farm	"農場
+ (を耕作する)"
+accuse	"を非難する
+ を告訴する"
+between	"*の間に*(の)
+ 
+ （between は二つの間）
+ （among は三つ以上の間）
+ (*ただし* 三つ以上でも相互が複数なら
+ The treaty was signed between the three nations.)"
+pump	"*ポンプ*
+ *ポンプで汲む*
+ 
+ (pump water from a well)
+ （pump air into a tire)"
+stomach	胃
+western	"西の
+ 西洋の(Western)"
+wipe	"を拭く
+ 
+ （正規変化 発音注意）
+ (wipe, wiped, wiped)
+ （ [waipt] ）"
+respect	"(原義：注目）
+ 尊敬する
+ 大切にする
+ 尊敬
+ 観点"
+breathe	呼吸する
+almost	ほとんど
+paw	"(犬猫などの
+ 爪のある）
+ *足*"
+flesh	"（人･動物の)*肉*
+ 
+ （食用はmeat）"
+gold	"きん(金)
+ 金製の
+ 
+ (金色の：golden)"
+dip	を一寸浸す
+seem	"に見える
+ 思える"
+sincere	"正直な
+ 誠実な"
+a / an	"*一つの*（複数からの一抽出）
+ *ある*（かるい a certain）
+ *につき*（ a day など ）
+ 
+ （後ろの｢*音*｣が母音の場合 an）
+ （通常 [ә][әn]､強調 ['ei]['æn]）
+ 
+ （不定冠詞：文法書･辞*書を必*読）"
+cake	ケーキ(お菓子)
+letter	"手紙
+ 文字"
+pain	"苦痛､痛み
+ 苦労(pains)
+ に苦痛を与える"
+take	"を手に取る(基本義) 
+ を持っていく
+ がかかる
+ に乗る
+ 
+ (take, took, taken)
+ (多義､辞書を必読)
+ (基本義をもっと正確にいうと 対象「物・人・事」に能動的に働きかけて自分のものにする)"
+side	側 (側面､面)
+corner	"角､隅
+ （窮地）
+ (窮地に追い込む)"
+sting	"を刺す
+ 蜂などの針
+ 植物のとげ
+ 
+ (sting, stung, stung)"
+how	"どれほど
+ どのようにして
+ どんな、なんと"
+scatter	"をまき散らす
+ （を追い散らす）"
+journey	旅行
+yard	"*庭*（家の周りの土地）
+ *ヤ*ー*ド*（長さの単位）
+ (1 yard=3 feet=91.4cm)
+ 
+ (花や野菜があればgarden)
+ (前庭 frontyard､ 裏庭backyard)
+ (校庭 the schoolyard)"
+weaken	"を弱くする
+ 弱くなる"
+saddle	"馬の鞍
+ 自転車のｻﾄﾞﾙ"
+beam	"梁
+ 光線"
+toward	・・のほうへ
+umbrella	"雨傘
+ 
+ （日傘はparasol）"
+population	"*人口*
+ 
+ (What is the population of Japan?)"
+plate	"板
+ (浅く平たい)皿"
+coat	"コート
+ 覆う"
+fur	毛皮
+learn	を習い覚える
+enter	"(に)入る
+ に入学する"
+bring	"を持ってくる
+ を連れてくる
+ 
+ (bring, brought, brought)"
+tell	"(を)話す
+ に告げる
+ 
+ (tell, told, told)"
+wire	"針金
+ (電報を打つ)"
+mild	"柔和な
+ 穏やかな"
+complain	(と)不平を言う
+nut	"木の実
+ ナット"
+memory	"記憶
+ 思い出"
+extend	"を伸ばす
+ を延長する
+ 延びる
+ 広がる"
+swell	"膨張する
+ を膨らませる"
+show	"を見せる､(見える)
+ を展示する､(を上映する)
+ を案内する
+ 展示会
+ 
+ (show, showed, shown)"
+paint	"ペンキ(を塗る)
+ 絵の具(で描く)
+ 
+ (oil paints, water paints)"
+gate	門
+chance	"機会
+ 偶然
+ 見込み"
+seize	をつかむ
+radio	ラジオ
+staff	職員
+own	"自分自身の
+ を所有する
+ 
+ (He owns a lot of land.)"
+boy	少年
+absence	"不在
+ 欠席"
+fasten	"しっかり留める
+ 締める"
+everybody	"*みんな*（単数扱い）
+ 
+ (Good morning, evrybody.)"
+apply	"申し込む
+ を応用する"
+window	窓
+council	協議会
+sensitive	敏感な
+room	"部屋
+ 場所
+ 余地"
+manufacture	"を製造する
+ （大量製造）"
+just	"ちょうど
+ 公平な"
+dictionary	辞書
+everything	すべてのもの
+clerk	"事務員
+ 店員"
+bottle	びん
+calculator	"小型計算機
+ 電卓"
+ear	耳
+wave	"波
+ 揺れる
+ を振る
+ 
+ （注意 規則変化）
+ (wave, waved, waved)"
+chain	鎖
+bill	"（原義：書きつけ）
+ 
+ (米) 請求書（ﾚｽﾄﾗﾝを除く)
+ （米：ﾚｽﾄﾗﾝの請求書はcheck）
+  *議案* (法案）
+  *びら* (広告）
+  為*替手形*
+ (米) *紙幣*
+ 
+ （英: 請求書はすべて、紙幣はnote）
+ 
+ *鳥のくちばし*(異義語）
+ （猛禽類のくちばしは beak）"
+enclosure	"囲い地
+ 同封物"
+talk	"(を)話す
+ 話"
+green	"緑(の)
+ 緑色
+ (熟していない)"
+prejudice	"偏見(against)
+ に偏見を持たせる"
+idle	"何もしていない、暇な
+ 機械が空回りする
+ むだに過ごす(idle away)
+ 
+ （同音語 idol 偶像）"

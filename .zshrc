@@ -170,7 +170,6 @@ eval "$(anyenv init - zsh)"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # emacsの設定
-# alias E="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-# alias emacs="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -nw"
-alias emacsclient="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -nw"
-# alias ekill="emacsclient -e '(kill-emacs)'"
+alias E="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias emacs="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -nw"
+alias ekill="emacsclient -e '(kill-emacs)'"

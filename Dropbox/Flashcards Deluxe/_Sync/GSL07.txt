@@ -1,0 +1,550 @@
+*	name	GSL07
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+kind	"親切な
+ 種類"
+strap	"車内のつり紐
+ 肩紐"
+sun	"太陽 (the sun)
+ 日光(in the sun)"
+connection	"接続
+ 連絡"
+slide	"滑る
+ を滑らせる
+ 滑ること
+ 
+ (slide, slid, slid)"
+stone	石
+anxious	心配して
+polish	を磨く
+blame	をとがめる
+feel	"を感じる
+ と感じる
+ (feel, felt, felt)
+ 
+ (""How are you feeling today?"" ""I'm feeling much better, thanks."" お加減 )"
+swallow	"をのみ込む
+ ツバメ(異義語)"
+shame	恥､不名誉
+tide	潮
+appearance	"出現
+ 外観"
+operator	"操作する人
+ 交換手"
+shoulder	"肩
+ (日本語の肩より
+ 広く上背部）"
+stem	"草の茎
+ 木の茎
+ ・・から生ずる"
+guilt	"有罪
+ 
+ （反意語 ）
+ （innocence 無罪）"
+want	"が欲しい
+ ・・したい
+ を望む
+ (名詞は 不足､欠乏､
+ 必要､貧困 など多義)"
+intention	意図
+paste	"のり
+ をのりで貼る"
+good	"良い(基本義)
+ 上手な(good, be good at)
+ 親切な
+ 良いこと
+ 
+ (多義、辞書を必読)"
+"elder
+ (米 older)"	"年上の
+ （同じ家族の時につかう）"
+latter	"後の
+ 後者(the latter)"
+permit	"を許可する
+ （許す）
+ 
+ (名詞 発音['pә:r-mit]) 
+ （許可証）"
+neither	"どちらの・・ない
+ 
+ （Neither you nor I am wrong.)"
+button	ボタン
+rise	"昇る
+ 上昇
+ (rise, rose, rizen)
+ 
+ (The sun rises in the east.)"
+frame	枠、骨組み
+fall	"落ちる(基本義)、
+ 降る、下がる、倒れる
+ (米) 秋
+ （滝 falls）
+ 低下、(転倒)、(落下)
+ 
+ (fall, fell, fallen)"
+bottom	"底
+ 最下部"
+solve	(を)解く
+thin	"薄い
+ 細い
+ やせた"
+reflect	(を)反射する
+sailor	船員
+copy	"写す
+ 部
+ さつ(刷)"
+why	なぜ
+numerous	数多くの
+declare	(を)宣言する
+admit	"を入れる
+ 認める"
+smoke	"煙
+ いぶす
+ タバコを吸う"
+shower	"にわか雨
+ にわか雨が降る
+ シャワー"
+hatred	憎しみ
+dull	"頭の鈍い
+ （鈍い）
+ （つまらない）"
+interruption	妨害
+bind	"を縛る
+ 
+ (bind,bound,bound)"
+experience	"経験
+ を経験する"
+reputation	"評判
+ 名声"
+strip	"を裸にする
+ 
+ （異義語 細長い一片）"
+forbid	"を禁じる
+ 
+ (forbid,forbade,forbidden)"
+here	"ここに(で､へ)
+ はい(点呼の返事)"
+parcel	"小包
+ ひとかたまり"
+fact	事実
+morning	朝(の)､午前
+production	"生産
+ 産物"
+gaiety	陽気
+happen	(偶然に)起こる
+receive	"を受け取る
+ を迎える"
+arrive	"*到着する*
+ （arrive at 建物・駅）
+ （arrive in 国・都市）
+ 
+ （He arrived in Tokyo.
+ ＝He rached Tokyo.
+ ＝He got to Tokyo.)
+ 
+ (達する､時が来る、成功する
+ 生まれる 等の意味もある)"
+race	"競争
+ 競争する
+ 人種
+ 種族"
+dozen	"ダース(12個)
+ 
+ (three dozen 等では
+ hundreds のように
+ 複数形をとらない）
+ （dozens of は成句）"
+force	"力
+ 暴力
+ （軍隊）
+ に無理やりさせる"
+ribbon	リボン
+tight	"ぴったりした
+ 窮屈な
+ しっかりと"
+many	多くの
+salt	塩
+island	島
+you	"あなた
+ あなた方"
+bound	"跳ね上がる
+ 行きの(bound for Tokyo)
+ 境界線(bounds)"
+steady	安定した
+patriotic	愛国的な
+conquer	を征服する
+rude	失礼な
+ocean	"*大洋*
+ 
+ （the Pacific Ocean 太平洋）
+ （the Atlantic Ocean 大西洋）
+ （the Arctic Ocean 北極海）
+ （the Antarctic Ocean 南極海）"
+claim	"を要求する
+ を主張する
+ 要求"
+enclose	"を囲む
+ を同封する"
+last	"最後の(に)
+ この前の(すぐ前)
+ 最後
+ 続く(異義語）
+ 
+ (How long will the rain last?)
+ (last は 始めと終りに意識あり)"
+height	"高さ
+ 身長"
+excellent	優秀な
+"ax
+ (英 axe)"	おの
+scarce	"乏しい
+ 
+ （派生語の scarecelyは
+ ほとんど・・ない）"
+failure	失敗
+clean	"清潔な
+ みごとな
+ (を)きれいにする"
+belief	信念
+touch	"(に)接触する
+ 接触"
+pleasant	愉快な
+should	"・・すべきである
+ ・・したほうがよい
+ ・・するはずだ
+ 万一・・
+ 
+ （助動詞shallの過去）
+ （ 文法･辞書を必読 ）
+ (話し手の主観的要素が入り
+ 義務・助言・推量・判断・仮定
+ などに派生)"
+machine	機械
+wrong	"悪い､悪く
+ まちがった
+ 調子の悪い"
+into	の中へ(に)
+committee	委員会
+scorn	"軽蔑
+ を軽蔑する"
+drawer	引き出し
+poor	"貧しい
+ かわいそうな
+ 貧弱な"
+space	"宇宙、空間
+ 場所
+ （宇宙は厳密には
+ outer space）"
+weather	"天気
+ （不可算名詞）
+ 
+ （weather forcast 予報）"
+officer	"士官
+ 警察官
+ （上級役人）
+ 
+ （Excuse me, Officier.）
+ (すみません｡お巡りさん)"
+arrange	"を整える
+ の準備をする
+ (手はずを整える)"
+severe	厳しい
+kill	を殺す
+circular	円形の
+cushion	"クッション
+ 衝撃を和らげる"
+silver	"銀
+ 銀色(の)"
+rob	"*を暴力で奪う*
+ 
+ (Someone robbed him of his wallet.)
+ (steal こっそり盗む では
+ Someone stole his wallet.)"
+upon	"の上に
+ (onの堅い語)"
+middle	中央(の)
+reflection	"反射
+ （映像）
+ （熟考）"
+waiter	"男性の給仕
+ （女性は waitress）
+ 
+ （呼びかけは 
+ Excuse me または
+ Sir, Ma'am)"
+strange	"奇妙な
+ 見知らぬ
+ 不案内な"
+businessman	"実業家
+ 
+ （最近はbusinesspersonが好まれる)
+ (日本語のﾋﾞｼﾞﾈｽﾏﾝは意味の違う和製英語で 英語では office workerのこと)"
+lodge	山小屋
+woman	大人の女性
+friendship	友情
+once	"一度
+ かつて
+ 一旦・・すると"
+sink	"沈む
+ を沈める
+ (台所の流し台)
+ 
+ (sink, sank, sunk)"
+white	"白色(の)
+ 白人
+ (白服、卵の白身、眼の白目)"
+brush	"ブラシ
+ ﾌﾞﾗｼをかける"
+fast	速い､速く
+fellowship	"友情
+ (特別報奨金)"
+welcome	"ようこそ(間投詞)
+ 歓迎される(形容詞)
+ を歓迎する
+ 
+ （注意 規則変化）
+ (welcome,welcomed,welcomed)"
+cow	雌牛(特に乳牛)
+especially	特に
+prepare	"準備する
+ の準備をする"
+soup	スープ
+condition	"状態
+ 条件"
+vain	"虚栄*心の*強い
+ *むだな*
+ *むだに*(in vain)
+ （He tried to persuade him, but in vain.)"
+abroad	"*外*国に(へ､で)
+ 
+ （Have you ever been to abroad?）"
+ground	"地面(土地)
+ 運動場
+ 根拠"
+see	"*が見える*、(を)*見る*
+ *わかる*
+ *に*会*う*
+ (see, saw, seen)
+ 
+ (see:意識せずふつうに見る)
+ (look：意識し注意して視る)
+ (watch:動いている物を観る)
+ （watch a TV､但しsee a movie）"
+sight	"視力､視野
+ 光景"
+widen	"を広くする
+ 広くなる"
+justice	"正義
+ 公正
+ 司法"
+know	"(を)知っている
+ と知り合いである
+ (know, knew, known)
+ 
+ (注意)
+ (既に知っている状態で通常
+ can know や 進行形はない)"
+hospital	病院
+defense	守り
+grammar	文法
+still	"まだ
+ なおいっそう
+ それでも
+ 静かな、静止した
+ （a still evening）"
+situation	"状況
+ 立場
+ （位置）"
+pretend	のふりをする
+sister	"姉､妹､姉妹
+ (カトリｯク修道女)"
+needle	針
+act	"*行*為
+ 行動する
+ (を)演じる"
+ceremony	儀式
+hunger	空腹
+summer	夏
+spell	"*をつづる*､*字をつづる*
+ 
+ （名詞は spelling 綴り）
+ (How do you spell the word?)
+ (What's the spelling of this word?)"
+night	夜
+literature	文学
+pupil	"生徒
+ 弟子
+ 瞳 (異義語)"
+right	"右の(に)
+ 正しい(く)
+ 丁度､すぐに
+ 正しいこと
+ 権利"
+check	"*照合する*
+ *照合*
+ (米) *勘定書き* （英 bill）
+ (米) *小切手* （英 cheque）
+ 
+ (Can I have the check, please?)
+ （お勘定をお願いします）"
+threat	脅迫
+serve	"(に)仕える
+ 給仕する
+ の役に立つ"
+need	"・・を必要とする
+ ・・する必要がある
+ 必要"
+lady	婦人
+annoyance	いらだだしさ
+regard	"とみなす
+ 関心
+ 尊敬(regards)"
+woolen	羊毛製の
+shop	"(英)商店
+ 
+ （米では store）"
+existence	"存在
+ 生存"
+great	"偉大な
+ 大きな
+ すばらしい"
+not	"・・でない
+ 
+ （否定・部分否定）
+ (文法･辞書を必読)"
+active	活動的な
+scratch	(を)引っ掻く
+wash	を洗う
+regular	規則正しい
+apart	離れて
+god	"(God)一神教の神
+ （a ､複数 なし）
+ (god)多神教の神
+ （a ､複数 あり）"
+golden	金色の
+real	本当の
+shoot	"を撃つ
+ 射撃(する)
+ （若芽)
+ 
+ (shoot, shot, shot)"
+invention	発明(品)
+shell	"貝殻
+ (卵・*木の*実のから)
+ （虫や亀の甲）"
+blue	"青(い)、青色
+ ゆううつな(口語)
+ 
+ （注意）
+ (青信号や青葉は英語ではgreen)
+ （顔色が悪いときはpale）
+ （You look pale.)"
+walk	"あるく
+ を歩かせる
+ 散歩"
+curse	"のろい
+ をのろう
+ 
+ (正規変化 発音注意)
+ (curse, cursed, cursed)
+ （kә:〔r〕st）"
+whenever	"する時はいつでも
+ いつ・・しようと."
+rust	"錆
+ さびる"
+flatten	平らにする
+smile	"微笑
+ 微笑する"
+employee	"雇われている人
+ （従業員、使用人）
+ 
+ （雇い主は employer）"
+noun	名詞
+explosive	爆発性の
+food	"食べ物
+ 
+ (food and drink)
+ (飲食物 語順が逆)"
+stripe	筋、しま
+however	"どんなに・・しても
+ しかしながら"
+knee	膝(ひざ)
+pleasure	"楽しみ､喜び
+ 
+ （the pleasure of life)
+ （人生の喜び）"
+brighten	"を明るくする
+ 明るくなる"
+give	"を与える(基本義)
+ (give, gave, given)
+ 
+ (The sun gives us heat and light.)
+ （ give は必ず下記構文パターン。
+ ｢Aさん｣＋give＋｢Bさん｣＋｢C｣
+ AさんがBさんにCを与える）"
+same	"同じ
+ 同じ事(the same)"
+aloud	"声*を出して*
+ 
+ (Read it aloud. 朗読しなさい)
+ 
+ ( reading aloud : 朗読 )
+ ( aloud は 「普通の声で」。
+ 「大声で」 の意味もあるが
+ cry, laugh, yell などに限定)
+ (「大声で」 は loudly 又はloud)"
+membership	会員資格
+reproduce	"を再生する
+ を複製する
+ 繁殖する"
+jealousy	"しっと
+ ねたみ"
+swear	"(を)誓う
+ ののしる
+ 
+ (swear, swore, sworn)"
+travel	"*旅行する*
+ *旅行*
+ 
+ (*米*国での用法 ：ﾆｭｰｾﾝﾁｭﾘ和英より)
+ （trip：あらゆる旅行）
+ （taravel:移動重点､動詞多し）
+ （tour：観光・視察の周遊 ）
+ （group tour：団体旅行 ）
+ （journey：今や文語的）"
+line	"線
+ 行列
+ 文章の行
+ せりふ(lines)
+ 一列に並ばせる(並ぶ)"
+classification	分類
+hut	"小屋
+ (cabinより粗末なもの)"
+bicycle	"自転車
+ （口語では bike）"
+school	"学校
+ （流派）
+ 
+ (本来目的の授業の意味
+ では a､the､複数 はない)"
+sort	"種類
+ を分類する
+ 並べ替える"
+jump	"跳ぶ
+ を飛び越える
+ 跳躍"
+spring	"春
+ 泉
+ バネ、跳ぶ
+ 
+ (spring, sprang, sprung)"
+every	"どの・・もみな
+ 毎
+ （単数扱い）"
+excellence	卓越
+organ	"器官
+ オルガン"

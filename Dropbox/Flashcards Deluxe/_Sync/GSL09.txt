@@ -1,0 +1,515 @@
+*	name	GSL09
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+unit	単位
+thread	"糸
+ に糸を通す"
+competitor	競争者
+actress	"*女優*
+ 
+ （俳優・男優はactor）
+ (最近はactor と呼ぶのを
+ 好む女優も多い OALD）"
+conversation	会話
+breakfast	朝食
+social	社会の
+language	言語
+path	"小道
+ 進路"
+any	"いくらかの
+ (対象が無限定）
+ 
+ (Do you have any questions to ask?)
+ (There aren't any houses around here.)
+ 
+ (文法･辞書を必読)"
+suit	"スーツ(男女上下)
+ 適する
+ （訴訟）"
+describe	を描写する
+under	"の下に
+ (基本義は
+ に覆われて下に)"
+violence	暴力
+stupid	ばかな
+harden	"を堅くする
+ 堅くなる"
+unless	もし・・なければ
+bright	"明るい
+ 頭のいい"
+encourage	を勇気づける
+madden	"を発狂させる
+ を激怒させる"
+basis	基礎､根拠
+sheet	"敷布
+ １枚
+ 用紙"
+adoption	"採用
+ 養子縁組"
+charge	"（原義：負荷）
+ 料金
+ 責任
+ を請求する
+ （非難する､告発する）"
+leg	"脚
+ (足首からももの付け根まで)"
+sore	"ひりひりする
+ ひりひりする痛み"
+idea	考え、意見
+branch	"枝
+ 支店"
+collar	(服の) 襟
+fellow	"男の人
+ 仲間"
+explode	"爆発する
+ (を爆発させる)"
+govern	"(を)治める
+ （を管理する)"
+royal	"王室の
+ 王立の"
+park	"公園
+ (を)駐車する
+ 
+ （駐車場は米 parking lot
+  英 park)"
+calm	"穏やかな
+ を静める
+ 落ち着く
+ (Calm down! 落ち着け)"
+deceit	"だますこと
+ 詐欺"
+insurance	保険
+hardly	ほとんど・・しない
+basket	"かご
+ 
+ (スポ-ツのバスケットは
+ basket ballしか通じない)"
+visit	"(に)会いに行く
+ 訪問"
+sky	空
+inside	の内側に
+doubt	"を疑う
+ 疑い"
+try	"を試みる
+ やってみる
+ 試み"
+bush	低木 (やぶ)
+merry	陽気な
+mat	"マット
+ 下敷き"
+completion	完成
+worry	"を悩ませる
+ 悩む"
+damage	"損害
+ 損害を与える"
+aside	わきに
+arrow	矢､矢印
+wonder	"・・かなと思う
+ に驚く(wonder at)
+ 驚き"
+floor	床、階
+wood	"木材
+ 森(woods)"
+darken	"を暗くする
+ 暗くなる"
+may	"・・してもよい
+ ・・かもしれない
+ （しますように）
+ 
+ （助動詞：文法･辞書を必読）
+ (許可・推量・祈願・容認・譲歩 など)
+ （may は質問は丁寧だが mayで答える時は注意。文例確認のこと）"
+fond	"(be fond of で)が好きだ
+ （likeより意味が強い）"
+frequency	"頻繁
+ （周波数）"
+or	または
+trouble	"困難
+ 迷惑
+ 心配
+ を心配させる
+ に迷惑をかける"
+bury	"を埋める
+ を埋葬する"
+meet	"(に)会う
+ 
+ (初対面用｡既知なら see)
+ (meet, met, met)"
+various	さまざまな
+include	を含む
+curious	好奇心の強い
+cure	"治す
+ 治療"
+fate	"運命
+ （死）"
+cultivate	"を耕す
+ を養う"
+little	"小さい
+ 少量の（a little)
+ ほとんどない（little）"
+drown	"*を溺死させる*
+ *溺死する*
+ （*音をかき消す*）
+ 
+ (溺れかけた は nearly を入れ
+ I was nearly drowned in the sea.)"
+tame	"飼いならされた
+ を飼いならす"
+trunk	"木の幹
+ 人の胴体
+ 大型トランク
+ 象の鼻
+ (米)自動車のトランク
+ （英ではboot）"
+course	"進路
+ 課程
+ 
+ (The plane was on[off] cource.)"
+swing	"揺れる
+ を揺り動かす
+ 振ること
+ 
+ (swing, swung, swung)"
+moon	月(the moon)
+strength	強さ
+mistake	"を誤解する
+ 誤り
+ 
+ (mistake,mistook,mistaken)"
+young	"若い
+ 年下の
+ 
+ （名詞は複数扱い）
+ （若者達 the young）
+ （動物の子 young）"
+someone	だれか
+holiday	"祝日(の)
+ 
+ (日本と違い日曜含まず)
+ (Sundays and holidays)"
+wish	"(を)願う
+ 願い
+ 
+ （wishは実現が困難や
+ 望みが弱いとき。
+ 実現性が高いと want）"
+battle	戦い
+powder	"粉
+ を粉にする"
+record	"を記録する
+ 
+ （名詞は発音注意）
+  ( 're-kә〔r〕d )"
+tie	"を結ぶ
+ (英) ネクタイ
+ (米はnecktie)
+ 同点"
+hope	"希望
+ (を)望む
+ 
+ ( hope は望ましい時)
+ (望ましくない時は
+  I'm afraid･･)"
+lift	"を持ち上げる
+ 持ちあがる
+ (英:エレベーター)"
+important	重要な
+feather	羽､羽毛
+praise	"称賛
+ を称賛する"
+punctual	"時間に几帳面な
+ 
+ （You must be punctual.)"
+fashion	流行
+camp	キｬンプ(する)
+momentary	瞬時の
+hello	"*やあ､こんにちは*
+ *もしもし*
+ 
+ （軽い挨拶、名をつける）
+ （Hello,Hnako.）
+ （電話は ふつう受けた方が
+ Hellowという）"
+motherhood	母性
+consider	"(を)よく考える
+ 
+ （think 思う, 考える） 
+ （consider 熟考する）
+ （ponder 同上 堅い語）"
+variety	"多様性
+ （種類）"
+director	"指導者
+ 重役
+ 監督"
+nurse	"看護師
+ (を)看護する"
+who	だれ
+duty	"義務
+ 職務
+ 関税"
+further	"さらに
+ (もっと遠くに)"
+fork	"フォーク
+ （熊手）
+ （分岐点）"
+mean	"を意味する
+ を意図する
+ 卑劣な、意地悪な 
+ 平均(の)
+ 
+ (mean, meant, meant)
+ (発音 [ment] )"
+program	プログラム
+bake	"(ﾊﾟﾝ・菓子等)
+ を焼*く*"
+trust	"信頼
+ (を)信頼する"
+afford	"・・する余裕がある
+ 
+ ( I can't afford to be idle.)
+ (遊んでなどいられない)"
+something	"何か
+ あるもの
+ 重要なもの"
+rapid	速い
+wreck	"難破
+ を破壊する"
+presence	出席
+opportunity	機会
+universe	"宇宙
+ 全世界"
+defendant	"被告
+ 
+ （反意語）
+ （plaintiff 原告）"
+compare	"を比較する
+ に例える
+ に比べると(as compared with A)
+ 
+ (I compred the copy with the original.)
+ (Life is often compared to traveling.)"
+substance	物質
+sure	"確信している
+ 確かな"
+dismiss	を解雇する
+temper	"気質、気分
+ 
+ （keep one's temper 我慢する）
+ （lose one's temper 腹を立てる）"
+actual	現実の
+attentive	注意深い
+inquiry	"問い合わせ
+ 調査"
+size	大きさ
+wage	賃金
+beyond	"の向こうに
+ を越えて
+ (対象をはるか遠くに
+ 超えての意味がある）"
+at	"*の所で*(に) (基本義:場所)
+ *に向って*(方向) 
+  *・・で* (時間)"
+replace	"にとって代わる
+ （を取り替える）
+ （を元の場所に戻す）"
+liquid	液体(の)
+motor	モーター
+explosion	爆発
+steer	(を)操縦する
+down	"下へ(に)(基本義)
+ を下って
+ 
+ (We will go down the river in a boat.)"
+service	"サービス
+ 業務
+ 奉仕"
+native	"生まれ故郷の
+ 生来の
+ 本国人
+  
+ (a native of England)"
+heal	"を治す
+ を癒す"
+property	"財産
+ （所有地）
+ （特性）"
+confuse	"を混同する
+ を困惑させる"
+honesty	"正直
+ 誠実"
+gentle	優しい
+difference	違い､差
+whisper	"(を)ささやく
+ ささやき声"
+feed	"に餌を与える
+ 
+ (feed, fed, fed)"
+exist	存在する
+curl	"巻き毛
+ を巻く"
+behind	"の後ろに
+ に遅れて"
+rubbish	"（おもに英）
+ ごみ"
+gradual	徐々の
+knock	"(を)打つ
+ ノック"
+mine	"私のもの
+ 
+ (異義語)
+ 鉱山
+ 地雷
+ を採掘する"
+advice （発音 [əd-'vai*s*] ）	"*助言* （不可算名詞)
+ (a piece of advice, some advice, much advice)
+ (動詞は advise [əd-'vai*z*] で 綴りも発音も違う）"
+fame	名声
+soil	土
+black	"黒(い)
+ （真っ暗な）
+ （黒人）"
+stick	"棒切れ
+ (を)突き刺す
+ 
+ (stick, stuck, stuck)"
+whether	かどうか
+sweat	"汗
+ 汗をかく
+ 
+ (sweat, sweat, sweat)"
+ease	"気楽さ
+ 容易さ"
+preach	(を)説教する
+understand	"(を)理解する
+ 
+ (undetstand, understood,understood)"
+indeed	本当に
+group	"群れ
+ （集団）"
+opinion	意見
+hat	ふち付き帽子
+game	"*ゲーム*､*試合*
+ （原義が｢楽しみ｣で計略や獲物
+ の意味もある）
+ 
+ （米では-ballのつく競技はgame、
+ 以外はmatchと言うことが多い)"
+upright	"直立した
+ 公正な"
+female	"女性(の)
+ 雌(の)"
+refresh	"気分をさわや
+ かにする"
+begin	"*始まる*
+ *を始める*
+ (begin, began, begun)
+ 
+ (begin とstartはほぼ同義で*口語では*startがよく使われる｡微妙な差あり｡
+ (begin：開始の瞬間に焦点)
+ (start：その後の運動にも焦点)"
+wisdom	知恵
+convenience	便利
+head	"頭
+ の先頭に立つ
+ (に向かう for)
+ 
+ (頭とその働き､物の上部、組織の長
+ と意味が広がる)"
+until	"*・・までずっと*
+ (tillと同じ意味だが､
+ 米英とも untilが多用される)
+ 
+ (untill/till：までずっと)
+ （since： から以来 ）
+ (during:ある特定の期間の間に)"
+coin	"硬貨
+ 貨幣を鋳造する
+ (新語等を作り出す)"
+union	"連合
+ 組合"
+application	"応用
+ 申し込み"
+war	戦争
+fun	"面白さ
+ 楽しさ
+ （原則 不可算）
+ 
+ (Are you having fun?)"
+what	なに
+read	"(を)読む
+ 
+ (read, read, read)
+ ([ri:d], [red], [red])"
+ship	"大型船
+ 宇宙船"
+offer	"を提供する
+ を申し出る
+ 申し出"
+hire	を雇う
+form	"形､(用紙）
+ を形づくる"
+improve	"を改良する
+ よくなる"
+drop	"を落とす
+ 落ちる
+ しずく"
+delight	"を歓喜させる
+ 歓喜"
+divide	を分ける
+price	"*値段*
+ *物*価(prices)
+ 
+ （値段を訪ねるとき）
+ (What is the price of this?)
+ (priceもcost も使えるが
+ 厳密な意味は
+ price : 店の売値､
+ cost:客が支払う費用)"
+easy	"*容易な*
+ (ふつうeasyは人を主語にとらない)
+ (This book is easy for me to read.)
+ （ただし下記の語法はある）
+ （He is easy to decieve.だましやすい)
+ 
+ （参*考* Take it easy. は意味が多い）
+ （じゃあね｡がんばって｡のんびりね｡
+ まあまあ 興奮しないで｡）"
+threaten	(を)脅迫する
+post	"(英)郵便
+ (英)ポストに入れる
+ 
+ （米では mail）"
+on	"・・*の上に*（基本義:接触)
+ ・・*に*（時間基本義:固定)
+ 
+ (文法・辞書を必読）"
+persuade	を説得する
+evening	晚､夕刻
+spit	"つばを吐く
+ つば
+ 
+ (spit, spat, spat)"
+curtain	カーテン
+double	"２倍の(量)
+ ２倍にする
+ ２倍になる"
+entertain	を楽しませる
+flower	"花（主に草花）
+ 
+ (果樹の花はblossom)"
+suck	"を吸う 
+ 吸う"
+silk	絹
+cough	"せき
+ せきをする
+ 
+ （He has a bad cough. 
+ ひどいせき）"
+extensive	広範囲に渡る
+pin	"ピン(留め針)
+ ピンで留める"
+thing	もの､こと

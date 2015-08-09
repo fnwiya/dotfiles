@@ -1,0 +1,602 @@
+*	name	GSL03
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+rice	こめ(米)
+horizon	"地平線
+ 水平線"
+rent	"使用料
+ を賃貸しする
+ を賃借りする
+ (注意：逆の意味がある)"
+small	小さい､少ない
+choice	選択
+jewel	"宝石
+ アクセサリー"
+camera	カメラ
+base	"基礎
+ (の基礎を置く)"
+brave	勇敢な
+hasten	"を堅くする
+ 堅くなる"
+boundary	"境界(線)
+ 限界"
+east	"東(の､へ)
+ 東洋(the east)"
+lung	肺
+bucket	バケツ
+steel	鋼鉄
+truth	"真実
+ 真*理*
+ 
+ (To tell the truth, )
+ （実をいうと）"
+serious	"重大な
+ 真剣な"
+weak	弱い
+month	月、ひと月
+cloud	雲
+suspicion	疑い
+never	"決して・・ない
+ これまで・・ない"
+towel	タオル
+though	・・だけれども
+beside	のそばに
+bank	"*銀行*
+ (銀行に預金する)
+ 
+  *岸､土手､傾く*(異義語）
+ （参*考*）
+ （bank：広い意味の 岸､土手､堤防）
+ (embankment：築堤､鉄道･道も含む)
+ （*levee*：*米では川の築堤に多用*）
+ （dike：主に自然の土手）"
+occasion	"場合
+ 行事
+ 機会"
+permanent	永久の
+son	息子
+brick	れんが
+excite	"*を興奮させる*
+ 
+ (The story excited the boy.)
+ (I was excited during the game.)
+ (Don't excite youself !)"
+somehow	何とかして
+plain	"明白な
+ （平易な､簡素な）
+ 平原"
+partner	"パートナー
+ （配偶者）
+ （仲間）"
+flag	"旗
+ に旗をたてる"
+conquest	征服
+character	"性格
+ 登場人物
+ 文字
+ 
+ (Chinese characters 漢字)"
+newspaper	新聞
+saucer	"受け皿
+ （a cup and saucer）
+ （受け皿付きの茶碗）"
+and	"・・と・・
+ そして
+ そうすれば"
+earnest	まじめな
+rare	まれな
+pink	"ピンク色 
+ ﾅﾃﾞｼｺ(植物名)"
+year	"*年度*
+ *年令*
+ 学*年*
+ 
+ (The boy is 10 years old.)
+ (He is 10-year-old boy.)"
+end	"終る
+ を終える
+ 終わり
+ （endはゼロになるイメージがある。
+ 活動の成就は finish ）
+ 
+ (World war Ⅱ[two] ended in 1945.)"
+Christmas	"クリスマス
+ 
+ (Xmas は ふつう
+ 使わない方がよい）"
+furniture	"家具類
+ (集合名詞、不可算名詞)
+ (four pieces of furniture)
+ 
+ (We have very little furniture.)"
+tailor	"洋服仕立て屋
+ 
+ （婦人服の仕立て屋はdressmaker）"
+wake	"目が覚める
+ 目を覚まさせる
+ 
+ (wake, woke, woken)"
+command	"を命じる
+ 命令､指揮"
+modest	謙虚な
+place	"場所
+ を置く"
+youth	"若さ
+ 青年層"
+shoe	"靴
+ (に靴を履かせる)
+ (馬に蹄鉄を打つ)
+ 
+ (shoe, shod, shod)"
+prompt	"素早い
+ 即座の
+ を促す
+ 
+ (a prompt answer)"
+absolute	"絶対の
+ 
+ (発音注意)
+ ('æb-sə-‵lu:t)
+ (機械発音は第二ｱｸｾﾝﾄが強く出ている)"
+noon	"正午
+ 
+ (at noon 正午に)"
+sauce	ソース
+class	"クラス
+ 授業"
+loaf	(パンの)ひとかたまり
+customer	"*顧客*
+ 
+ (customer：店に来る客)
+ (guest：宿泊客・招待客)
+ （passenger：乗客）
+ （ client：依頼人 ）
+ （ visitor：訪問客 ）
+ (audience：聴衆・観客)"
+spot	"斑点
+ 地点"
+bribery	"贈賄
+ 収賄"
+beat	"を打つ
+ 打ち負かす
+ 
+ (beat, beat, beaten)"
+load	"積み荷
+ （負荷）
+ 荷を積む"
+intend	を意図する
+prove	"を証明する
+ とわかる"
+loyal	忠誠な
+rid	"を取り除く
+ 
+ (rid, rid, rid)"
+international	国際的な
+she	彼女
+cost	"*がかかる*
+ *を犠牲にさせる*
+ *費用*
+ (cost, cost, cost)
+ 
+ （値段を訪ねるとき）
+ (What is the cost of this?)
+ (costもpriceもよいが厳密な意味はcost :客が支払う費用､price:店の売値)"
+peculiar	"独特の
+ 特別の"
+pound	"*ポンド*（英国 通貨単位:100 pence）
+ (*￡*5.10 : five pounds and ten pence)
+ 
+ *ポンド*（lb. 約453.6g）
+ (two pounds of butter)"
+cry	"*泣く*
+ *大*声*を上げる*
+ *と叫ぶ*
+ *叫び*、*動物の鳴き*声
+ 
+ （cry：声を上げて泣く）
+ （weep：涙を流して泣く）
+ （sob：すすり泣く）"
+beak	"(猛禽類の) *くちばし*
+ 
+ (スズメやアヒルは bill)"
+sugar	"*砂糖*
+ 
+ （不可算名詞で
+ two spoonfuls of sugar だが
+ 会話ではa sugar, sugarsもあり）"
+crown	王冠
+around	"ぐるりと
+ の周りに
+ 
+ (The earth moves around the sun.)"
+dark	"暗い
+ 濃い
+ 暗がり､(夕暮れ)
+ 
+ (It's getting dark outside.)"
+rot	"腐る
+ を腐らせる
+ 腐敗
+ 
+ （注意 規則変化）
+ (rot, rotted, rotted)"
+critic	批評家
+childhood	子供の頃
+alike	同様の(に)
+resign	(を)辞職する
+furnish	家具を備え付ける
+basic	"基礎の
+ 
+ （basic human rights)
+ （基本的人権）"
+through	"を通して
+ を貫いて
+ の始めから終りまで
+ （直通の）
+ 
+ （No through road）
+ （通り抜け禁止）"
+tire	"を疲れさせる
+ 車のタイヤ
+ 
+ (tired は形容詞もある
+ I'm tired. He looks tired)"
+dear	"親愛な
+ 
+ （手紙の書き出し）
+ (文法・辞書を必読)"
+dissatisfy	を不満にする
+near	近く､近い
+customary	習慣的な
+decision	"決定
+ (make a decision
+ 決定する)
+ しようとしている決心
+ (decision to )"
+exception	例外
+dream	夢(を見る)
+educate	を教育する
+road	道路
+marriage	結婚
+rug	"敷物
+ （ふつう床の一部用）
+ （全体用は a carpet)"
+competition	競争
+sharpen	を鋭くする
+sacrifice	"犠牲
+ いけにえ
+ を犠牲にする"
+immediate	すぐさまの
+commerce	商業
+say	"*を言う*、*と書いてある*
+ （say：言葉で表現）
+ （speak：口で言う）
+ （tell：用事等を伝える）
+ （talk：対談､講演など）
+ 
+ （says [sez]）(say, said, said)"
+test	"テスト
+ をテストする"
+rival	"ライバル
+ と競争する"
+get	"(基本義：対象を得る､状態に成る)
+ *を得る*､*を買う*
+ *を取ってくる*
+ *を受け取る*
+ *着く*(自動詞）
+ (get, got, got)
+ 
+ (Get every thing by Monday morning.準備)
+ (使役動詞：辞書必読)"
+among	"*の中に*(の)
+ （*の間で*）
+ （*の中のひとつ*）
+ (複数の物の中の意)
+ 
+ (Tokyo is among the largest cities in the world.)"
+air	"*空*気
+ （外見）
+ （干す､風を通す）
+ (米)(を放送する)"
+art	"芸術､芸術作品
+ (美術､美術作品)"
+flood	"洪水
+ を氾濫させる
+ 
+ (氾濫 overflow)
+ (決壊 collapse, burst )"
+minute	"*ふん*(分)
+ 議事録(the minutes)
+ 
+ (別語､ 発音mai-'nu:t)
+ 微小の"
+protect	を保護する
+confusion	混乱
+net	"網
+ 正味の"
+inform	"知らせる(tell より堅い語)
+ 
+ (Will you inform him of her arrival?)
+ (Will you inform him that she has arrived?)"
+"canal
+ （発音注意 [kә-'næl]）"	"*運河*
+ 
+ （the Suez Canal）"
+tool	"道具
+ 工具"
+harm	"害
+ を害する"
+clock	"置き時計､掛け時計
+ 
+ (携帯用はwatch)"
+straight	まっすぐな(に)
+plenty	"*多量*
+ 
+ (There is plenty of time.)
+ (There are plenty of guests.)"
+sail	"帆
+ 帆走する
+ （航海する）"
+dependence	"*依存*
+ 
+ （反意語） （independence 独立）"
+shock	"衝撃
+ に衝撃を与える"
+soap	石鹸
+breadth	"*幅*、*広がり*
+ 
+ （OALD辞書では
+ widthと第一義は同じ）
+ (物の寸法ではwidthがふつう)
+ (breadth は広がりの意味を含む)"
+report	"(名詞･動詞 同じ発音)
+ -
+ 報告
+ (を)報告する"
+toy	おもちゃ
+fault	"欠点
+ 責任
+ 
+ ( I'm sorry it's my fault. 落ち度)"
+veil	ベール(で覆う)
+backward	後方の(へ)
+receipt	領収書
+kingdom	王国
+wall	壁、塀
+asleep	眠っている
+dissatisfaction	不満
+objection	反対
+go	"(基本義：話し手の目から離れる)
+ *行く*
+ *去る*
+ *になる*
+ (go, went, gone)
+ 
+ (Let's go for a walk along the seashore.) 
+ (文法･辞書を必読)"
+present	"（名詞・動詞 同じ発音）
+ *贈り物*
+ *を贈呈する*
+ (異義語) 
+ *出席している*
+ *現在*(の)
+ 
+ (名詞はよいが 動詞は
+ 堅い言葉､ふつうはgive)"
+cotton	綿
+merchant	商人
+do	"をする
+ (do, did, done)
+ 
+ (助動詞､代動詞､本動詞)
+ (文法･辞書を必読)"
+tear	"（発音 [tiә(r)] ）
+ -
+ *涙* (tears 複数で使う)
+ 
+ （異義語：発音注意 [teә(r)] ）
+ *を引き裂く*
+ *裂ける*
+ (tear, tore ,torn)"
+one	"*１つ*(の)
+ *もの*（前に出たもの）
+ (一般的な人・・堅い語)
+ 
+ （*注意*：oneとit ）
+ (one：前出と同じ種類､前出が a付き)
+ （ it：前出と同一物､前出がtheやmy)
+ 
+ （ I lost may pen．I'll buy one. ）
+ (She lost her hat but found it soon.)"
+log	"丸太
+ 航海日誌"
+sweet	"甘い
+ 優しい
+ (甘い)菓子"
+virtue	美徳
+thank	"に感謝する
+ 感謝(thanks)
+ 
+ (多用､参考書・辞書必読)"
+performance	"遂行
+ 演奏"
+grain	"穀類
+ 穀粒
+ 塩・砂などの粒"
+confess	を白状する
+underneath	の下に
+"airplane
+ (英 aeroplne)"	"*飛行機*
+ 
+ （単にplaneともいう、by plane)."
+continue	"を続ける 
+ 続く"
+root	"根
+ 根源(the root)
+ を根付かせる"
+somewhere	どこか
+chalk	"チョーク
+ 
+ (不可算名詞、
+ 種類を言うときは可算)
+ (two pieces of chalk)"
+protection	保護
+warn	に警告する
+dollar	"*ドル* （略語は$）
+ *ドル相場*(the dollar)
+ 
+ ($7.50 正しい読み方)
+ (seven dollars and fifty cents)
+ (銀行等で早く言う場合)
+ (seven point fifty dollars)
+ (買い物ではふつう下記)
+ (seven fifty)
+ 
+ (buckはdollarの俗語。知っておく
+ 必要はあるが使わない方がよい)"
+ice	"氷
+ 
+ （下記の意味にもなる）
+ （米 sherbet ）
+ （英 ice cream)"
+local	"地域の
+ （その土地の）
+ （普通列車）"
+desire	"願い
+ を願う"
+coast	"*沿岸*
+ 
+ (coast：地図・気候・防備から見た海岸)
+ (beach：shoreの一部 ｢浜｣ 水浴・保養)
+ (shore：海・川・湖などの｢岸｣)
+ (seaside：観光地としての海岸)"
+general	"（原義：個々をひとまとめにして全体の）
+ *全体的な* 
+ （世間一般の）
+ （概略の）
+ （大将・将官）"
+hook	"フック(留め金)
+ をかぎで留める"
+outline	"輪郭、概略
+ の概要を述べる"
+rotten	"（形容詞）
+ 腐った
+ 堕落した"
+funeral	葬式
+ashamed	"*恥じて*
+ 
+ （You should be ashamed of your behabior.)
+ (Tom is ashamed that he was lazy.)"
+extra	余分の
+be	"*である*
+ (be動詞の原形)
+ 
+ (文法･辞書を必読)"
+rate	"割合
+ (速度､料金､等級)
+ を評価する"
+trap	"わな
+ をわなで捕える"
+drag	"を引きずる
+ 
+ （正規変化）
+ (drag, dragged, dragged)"
+both	"両方(の)
+ 
+ (形容詞､代名詞､接続詞
+ 例文を覚えておかないと使いこなせない)"
+chicken	"にわとり
+ （ひよこ）
+ （鶏肉）"
+"produce
+ （発音 [prә-'dju:s]）"	"を生産する
+ 
+ (名詞 発音['prɑ-dju:s])
+ 農産物"
+monkey	猿
+widower	"男やもめ
+ 
+ （やもめ:未亡人 は widow）"
+history	"歴史(の)
+ 経歴
+ (歴史学､歴史書)"
+delay	"遅れ
+ を遅らせる"
+close	"(を)閉じる
+ 
+ (異義語 発音[klous]）
+ ごく近い､すぐ近くに
+ 親しい"
+whatever	"するものは何でも
+ どんな・・でも"
+red	赤(い)
+sign	"（原義：しるし）
+ 記号､合図、掲示(標識)
+ きざし
+ (に)署名する
+ (に)合図する
+ 
+ (サインは動詞はあるが名詞はない
+ 名詞はsignature又はautograph)"
+manner	"（原義：手で扱う法）
+ 方法
+ 態度
+ 行儀(manners)
+ 風習(manners)"
+stream	"小川
+ 流れる"
+field	"畑
+ (競技場)
+ (分野)"
+kiss	"キス
+ にキスする"
+conscious	"意識している
+ 意識的な"
+card	"カード
+ ﾄﾗﾝﾌﾟ(cards)"
+make	"(基本義:ある物を別の形・状態にする)
+ *を作る*
+ *に*・・*させる*
+ (make, made, made)
+ 
+ （使役動詞）
+ (文法･辞書を必読)"
+often	しばしば
+ray	"光線
+ （放射線）
+ 
+ （the sun's rays, X rays）"
+life	"生命
+ 人生
+ 生活"
+song	歌
+hear	"が聞こえる
+ 
+ (hear, heard, heard)"
+deserve	に値する
+will	"（基本義：話し手の意志・推量）
+ (単純な未来ではない)
+ ・・*だろうと思う*
+ ・・*するつもりです*
+ (名詞) *意志*､遺言
+ 
+ (助動詞：文法･辞書を必読)
+ (主張・習慣・指図などにも派生)"
+familiar	"親しい
+ をよく知っている"
+material	"原料
+ 物質の"
+past	"過去(の)
+ を通り過ぎて
+ 過ぎて(時間)
+ 
+ (It is half past two.2時半)
+ (30分を超えると to 前)"
+eat	"(を)食べる
+ 
+ (eat, ate, eaten)"
+empire	帝国

@@ -1,0 +1,526 @@
+*	name	GSL04
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+search	"(を)捜す
+ 捜索"
+throw	"(を)投げる
+ 投げること
+ 
+ (throw, threw, thrown)"
+advise	"（発音 [əd-'vai*z*] ） 
+ -
+ (を)*助言する*
+ 
+ (名詞は advice [əd-'vai*s*] 
+ で 綴りも発音も違う）"
+track	"足跡
+ 軌道
+ 競走路"
+police	"警察、警官たち
+ (ふつう the policeで
+  複数扱とする)
+ 
+ （ 1人の警官は
+  policeman, policewoman, 
+ 公式には police officer）
+ ( 呼びかけはOfficer! )"
+ambition	"大望
+ （野心）"
+fry	"を揚げる
+ 炒める
+ 揚げ物(フライ)"
+pan	平鍋
+church	教会
+decisive	決定的な
+perhaps	"*かもしれない*
+ （maybeと同じ）
+ （maybeの方が口語的）
+ 
+ ( probably > likely >
+ perhapps=maybe > possibly )"
+bleed	"出血する
+ 
+ (bleed, bled, bled)"
+help	"(を)助ける
+ 助け
+ 
+ (Heaven helps those who help themselves. 諺)"
+possession	所有
+harvest	"収穫
+ （収穫期）
+ （を収穫する）"
+spare	"(時間､お金､労力)を割く
+ 予備の､予備品"
+destroy	を破壊する
+action	行動
+leadership	"指導的地位
+ 指導力"
+girl	少女
+much	"たくさんの
+ おおいに
+ ずっとはるかに
+ 多量
+ 
+ (文法･辞書を必読)"
+pardon	"を許す
+ 大目に見る
+ 許し"
+splendid	華麗な
+headdress	"頭飾り
+ (帽子､ヘアバンドの類)"
+knife	"ナイフ
+ 包丁"
+stuff	"物
+ 材料
+ に物を詰込む"
+grand	壮大な
+retire	"退職する
+ ( 社会人では定年や
+ 病気の場合)
+ 
+ （普通の退職や退学は
+ quit か leave）"
+college	"*大学*
+ (総合大学のuniversityと
+ 一応区別されるが厳密ではない)
+ 
+ (米国では大学・短大ひっくるめて話すときにcollegeという)
+ (2012年9月のビジ英 杉田先生による)"
+pattern	"模様
+ 型"
+already	すでに､もう
+beneath	の下に
+rest	"休息
+ 休む、を休ませる
+ 残り(the rest)"
+arrest	"を逮捕する
+ （逮捕）"
+dare	あえて・・する
+sheep	"羊
+ (複数もsheep)"
+sometime	"（未来・過去の）
+ いつかある時"
+reward	"報酬
+ に報いる"
+message	伝言
+apology	謝罪
+remain	"居残る
+ のままでいる"
+than	よりも
+main	おもな
+wise	賢い
+settle	"を安定させる
+ を解決する
+ 定住する"
+corn	"(米)とうもろこし
+ （英では 小麦）"
+lighten	"を明るくする
+ 照らす
+ 明るくなる"
+overcome	"に打ち勝つ
+ を打ち負かす
+ 
+ (overcome, overcame, overcome)"
+wind	"風
+ 
+ (異義語 wind 発音[waind] )
+ を巻く､を回す
+ 曲がりくねる
+ (wind, wound, wound)"
+spend	"(金)を費やす
+ (時)を過ごす
+ 
+ (spend, spent, spent)"
+part	"部分
+ 役目
+ を分ける
+ 分かれる"
+favor	"好意
+ 恩恵
+ に好意を示す"
+daylight	"日光
+ （日中）
+ （夜明け:dawn）"
+affair	出来事
+scissors	はさみ
+boast	(を)自慢する
+paper	"紙(a piece of paper)
+ 新聞
+ 答案
+ （論文）
+ （書類 papers）"
+spoon	スプーン
+pack	"包み
+ (を)荷造りする"
+open	"を開ける
+ 開く
+ 開いた(広い)"
+notebook	ノート
+firm	"堅い
+ 商会"
+answer	"(に)答える
+ 答え
+ 手紙の返事"
+sock	"靴下
+ （a pair of socks）
+ 
+ (長い靴下は stockings)"
+hole	穴
+sir	"*あなた*、*先生*
+ 
+ (目上の男性や店の男性客との丁寧な会話。
+ 女性ではma'am）
+ (Good morning, sir.)"
+tend	する傾向がある
+scientific	"科学の
+ 科学的な"
+probable	"ありそうな
+ （8~9割）"
+grease	"グリース(油脂)
+ にグリースを塗る"
+gentleman	"紳士（manの丁寧語）
+ 
+ （男性だけの集団に対し
+ Gentlemen! 皆さん！）"
+home	"*家庭*(の) 
+ *家へ*(に)
+ （故鄉）"
+reach	"*に着く* (to なし)
+ (に)届*く*
+ リーチ
+ （範囲）
+ 
+ （reach Tokyo）
+ （get to Tokto）
+ (arrive in Tokyo）"
+tip	"先端
+ チップ"
+growth	"成長
+ 発展
+ 増加"
+jealous	しっと深い
+wax	"ろう
+ ワックス"
+pick	"を選ぶ
+ を摘む
+ をつつく
+ 
+ （pick out : 選び出す）
+ （pick up:拾い上げる）"
+come	"（基本義：話し手の視点が
+ 置かれている所に移動）
+ (話し手の方へ) *くる*
+ (話相手の方へ) *行く*
+ (come, came, come)
+ 
+ (文法･辞書を必読)
+ ( I'm coming. 今､いきます)"
+block	"木・石などの塊
+ ふさぐ"
+mad	"気が狂った
+ ひどく怒って"
+colony	"植民地
+ （居住地）"
+rush	"突進する
+ 急いでする
+ を急がせる
+ 突進"
+valuable	貴重な
+interference	"干渉
+ 妨害"
+wheel	車輪
+left	左(の､に）
+bay	"湾
+ (gulfより小)"
+title	"題名
+ 肩書"
+spade	"鋤(すき)
+ スペード札"
+only	"ただ・・だけ
+ ただ一つの"
+maybe	"*かも知れない* （五分五分）
+ -
+ （ﾆｭｰｾﾝﾁｭﾘｰ辞書:三省堂より
+ probably・・80% たぶん
+ likely ・・70%
+ maybe ・・50%
+ perhaps・・50%
+ possibly・・20%)"
+elephant	象
+proffesion	"職業
+ (知的､専門的な
+ 職業を意味する)"
+correct	"正しい
+ を訂正する"
+level	"水平(にする)
+ 平らな"
+square	"正方形(の)
+ ２乗(する)"
+destruction	破壊
+ideal	"理想的な
+ 理想"
+lump	"かたまり
+ （こぶ）"
+haste	急ぐこと
+decide	(を)決める
+else	その他の(に)
+ever	"いままでに
+ 一体（強調の疑問）
+ 
+ (What ever are you doing?)"
+translate	(を)翻訳する
+busy	"忙しい
+ にぎやかな
+ (米)(電話が話し中)
+ (The line is busy.)"
+train	"列車
+ を訓練する"
+"bathe
+ （英 bath）"	(米)入浴(水浴)する、させる
+promise	"約束
+ (の)約束をする"
+flash	"ひらめき
+ 閃光
+ ぱっと光る"
+another	"もう一つ(1人)の
+ 別の物(人)
+ 
+ (対象が 複数 others あり )
+ (oneとanotherとanotherと・・・)
+ (対象が二つならone と the oher)"
+daily	"毎日の
+ 毎日(=evry day)"
+shallow	浅い
+possible	"可能な
+ ありうる"
+jaw	あご
+invent	を発明する
+electric	電気の
+state	"*州*
+ 国*家*
+ 状*態*
+ を述べる
+ 
+ （state：法・政治に重点
+ を置いた「国家」）"
+urgent	緊急の
+judge	"裁判官
+ 審判員
+ (を)裁く
+ を判断する"
+unity	"統一
+ 協調"
+landlord	"地主、家主
+ 旅館の主人"
+awkward	"ぎこちない
+ 不器用な"
+taste	"味
+ 好み
+ を味わう
+ の味がする"
+wine	ワイン
+could	"・・*することができた*
+ ・・*して下さいますか*
+ 
+ （助動詞canの過去）
+ (文法･辞書を必読)
+ (能力・丁寧・仮定など)"
+office	事務所
+army	"*陸軍*、*軍隊*
+ 
+ (an occupation army 占領軍)
+ (海軍navy､空軍air force)
+ (総称 the armed forces)"
+expensive	高価な
+yet	"まだ、もう
+ しかし"
+popular	"人気のある
+ 大衆向けの"
+weight	重さ
+pipe	管
+salary	"給料
+ 月給"
+skirt	スカート
+nose	鼻
+discover	を発見する
+after	"*のあとに*(で)
+ 
+ (｢のあとに｣は after:過去､ in:未来)
+ (afterは追求や模倣もある)
+ (The dog ran after the fox.)
+ (He was named after his uncle.)
+ (成句：after all 結局、
+ After you. お先にどうぞ)"
+top	"頂上・上部(the top)
+ こま(異義語)
+ 
+ (We went up to the top of the hill.)"
+shine	"輝く
+ を照らす
+ （輝き）
+ 
+ (shine, shone, shone)"
+friend	友人
+appear	"現れる
+ 見える"
+gather	"を集める
+ 集まる"
+sow	"たねを撒く
+ (sow, sowed, sown)
+ 
+ (同音語sew :縫う)"
+remark	"(簡単な)批評･意見
+ 言う
+ 意見を述べる"
+nursery	託児所
+politics	"政治
+ （政策､政見）
+ （政治学）"
+fortune	"運
+ 富
+ 幸運"
+berry	ベリー(果実)
+calculation	計算
+lonely	孤独な
+insect	"*昆虫*
+ 
+ (虫にあたる英語はない)
+ (はう虫やﾐﾐｽﾞは warm)"
+package	包み
+product	産物、製品
+play	"をする
+ 演奏する
+ 遊ぶ"
+cause	"原因 
+ の原因となる"
+season	"季節
+ ある特定時期"
+review	"復習
+ （批評、回顧）
+ (米)を復習する"
+fish	"魚
+ （単複同形 fish）
+ （種類は fishes）"
+lay	"*を横にする*､*を置く*(*他動詞*)
+ ( lay, laid, laid )
+ （layは そっと水平に置く 意あり）
+ （She laid the baby on the bed.）
+ 
+ （重要注意）
+ （自動詞 lie 横たわる 
+ とまちがいやすい）"
+taxi	タクシー
+particular	特定の
+struggle	"*苦闘する*､*もがく*
+ *苦闘*
+ 
+ (He struggled against cancer for two years.)
+ (I struggled and screamed for help.)"
+soon	"すぐ
+ 早く
+ 間もなく"
+description	"記述
+ 描写"
+"railroad
+ (英 railway）"	(米)鉄道
+excuse	"*を許す*
+ *言い訳*
+ 
+ (Excuse me, but could you tell me the way to the station?)"
+destructive	破壊的な
+rank	"階級
+ 位置する"
+star	星
+businesslike	"能率的な
+ 
+ (日本語と異なり 
+ ほめる時の用語)"
+market	"市場
+ （需要）"
+representative	"代表者
+ （代理人）"
+pull	"を引く
+ 引っ張る(こと)"
+"flour
+ (発音 'flauә(r))"	"小麦粉
+ 
+ （同音異義語）
+ （flower 花）"
+pile	"(を)積む
+ 積み重ねた物"
+arch	アーチ
+suspect	"を怪しいと思う
+ 
+ （名詞は発音注意）
+ （ ['sʌs-pekt] ）
+ 容疑者"
+slip	"滑る
+ を滑らせる
+ あやまち
+ しょうへん(小片)"
+support	"を支える
+ を養う
+ を支持する
+ 支え"
+whole	全体の
+stock	"（原義：幹､切り株）
+ （基本義：蓄え）
+ *在庫品*
+ *貯*蔵
+ *株式*
+ (木の幹､接木の台木)"
+annoy	"をいらいらさせる
+ 
+ (OALD辞書：to make somebody slightly angry )"
+disturb	の邪魔する
+cup	カップ
+clay	粘土
+charm	"魅力
+ を魅了する"
+sometimes	ときどき
+generous	気前のよい
+well	"*よく*(上手に､十分に)
+ *健康で*
+ （*ええと*：間投詞）
+ 
+ *井*戸(異義語)"
+bridge	橋
+poison	"毒
+ に毒を入れる"
+amount	"*積算した金*
+ （a larage amount of money）
+ *積算した量*
+ （a small amount of water）
+ *総額* （the amount）
+ *総計*・・*になる*(amount to)"
+name	"名前
+ を名づける"
+omit	"を省略する
+ （を抜かす）"
+up	上に
+laughter	"笑い
+ 笑い声"
+tobacco	タバコ
+father	父親
+ownership	所有権
+actor	俳優*､*男優
+lack	"不足
+ を欠く"
+hate	"を憎む
+ 嫌悪"
+practice	"練習(けいこ) 
+ 習慣
+ 実行
+ (を)練習する"
+industry	"産業
+ （工業）
+ （勤勉）"
+introduce	"を紹介する
+ を導入する"
+science	科学､理科
+fancy	"空想(力)
+ を空想する"

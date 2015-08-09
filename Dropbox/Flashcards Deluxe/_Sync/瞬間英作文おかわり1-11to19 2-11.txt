@@ -1,0 +1,110 @@
+*	name	瞬間英作文おかわり1-11to19+2-11
+*	media-dir	0
+*	description	0
+*	notes	0
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+きょうは曇りです。	It is cloudy today.
+そちらでは晴れていますか?	Is it sunny over there?
+きょうは日曜です。	It is Sunday today.
+きょうは暑いですか?	Is it hot today?
+きょうは東京はあまり寒くありません。	It's not very cold in Tokyo today.
+今ブラジルは冬です。	It is winter in Brazil now.
+部屋の中は暖かいですか? いえ、暖かくありません。	Is it warm in the room? No, it isn't.
+今ニューヨークは夜の8時です。	It's eight o'clock in the evening in New York now.
+ここは暗すぎる。	It's too dark here.
+横浜では曇っているのですか? はい、そうです。	Is it cloudy in Yokohama? Yes, it is.
+あなたのご両親はいかがですか?	How are your parents?
+あなたのご主人はどうやって仕事に行きますか?	How does your husband go to work?
+どうやってこの箱を開けるの?	How do I open this box?
+東京の天気はどうですか? 晴れています。	How is the weather in Tokyo? It's sunny.
+君はどうやって学校に行くの? 自転車で行くよ。	How do you go to school? I go by bicycle.
+この機械はどう使いますか?	How do you use this machine?
+彼らはどのように日本語を勉強しますか?	How do they study Japanese?
+この薬はどんなふうに効きますか?	How does this medicine work?
+"ドイツ語では""Thank You""をどういいますか?"	"How do you say ""Thank you"" in German?"
+鳥はどうやって巣を作るのですか?	How do birds make their nests?
+パリは今何時ですか?	What time is it in Paris now?
+あなたは毎朝何時に起きますか?	What time do you get up every morning?
+英語の授業は何時に終わりますか?	What time does the English class end?
+彼は普通何時に朝食を食べますか?	What time does he usually have breakfast?
+あなたのご主人は毎日何時に仕事から帰宅しますか?	What time does your husband come home from work every day?
+あなたの息子さんは何時に寝ますか? 9時に寝ます。	What time does your son go to bed? He goes to bed at nine.
+今ロンドンは何時ですか? 夕方の6時です。	What time is it in London now? It's six in the evening.
+ロバートは普通何時に宿題をしますか?	What time does Robert usually do his homework?
+あなたは何時にお風呂に入りますか?	What time do you take a bath?
+彼女は普通何時に夕食の料理をしますか?	What time does she usually cook dinner?
+あなたは本を何冊持っていますか?	How many books do you have?
+この車はいくらですか?	How much is this car?
+君のお兄さんはCDを何枚持っているの?	How many CDs does your brother have?
+エミリーには(男の)兄弟が何人いますか?	How many brothers does Emily have?
+君は今お金をいくら持っている?	How much money do you have now?
+彼はお金がいくら必要なのですか?	How much money does he need?
+あなたのおじさんは犬を何匹飼っているのですか?	How many dogs does your uncle have?
+あなたは何科目勉強するのですか?	How many subjects do you study?
+トムは毎月何冊の本を読みますか?	How many books does Tom read every month?
+象の重さはどれくらいですか?	How much does an elephant weight?
+彼の娘さんは何歳ですか? 20歳です。	How old is his daughter? She is twenty years old.
+あの少年たちは何歳ですか? 10歳です。	How old are those boys? They are ten years old.
+このお寺はどれくらいの古さですか? 1000年くらいです。	How old is this temple? It is about 1000 years old.
+あなたのご主人の背はどれくらいですか? 170センチです。	How tall is your husband? He is one hundred and seventy centimeters tall.
+あのバスケットボール選手の背はどれくらいですか? 2メートルです。	How tall is that basketball player? He is two meters tall.
+この湖の深さはどれくらいですか?	How deep is this lake?
+この塔の高さはどれくらいですか? 300メートル以上です。	How high is this tower? It is over three hundred meters.
+その鳥はどれくらい早く飛ぶのですか?	How fast do the birds fly?
+1レッスンはどれくらいの長さですか?	How long is one lesson?
+この食べ物はどれくらいもちますか?	How long does this food last?
+誰がこの机を使うのですか?	Who uses this desk?
+誰が隣の部屋にいるのですか?	Who is in the next room?
+誰があのギターを弾くのですか?	Who plays that guitar?
+誰がこの部屋で勉強するのですか?	Who studies in this room?
+誰がこれらの煙草を吸うのですか?	Who smokes these cigarettes?
+誰があなたの英語の先生ですか? ブラウンさんです。	Who is your English teacher? Mr. Brown is.
+誰がこの本を欲しがっていますか? ケンです。	Who wants this book? Ken does.
+誰が毎日この部屋を掃除するのですか?	Who cleans this room every day?
+何が箱の中に入っているのですか?	What is in this box?
+何があなたを悩ませるのですか?	What annoys you?
+彼は英語が話せます。	He can speak English.
+ピーターは日本語を話せますか? 話せます。	Can Peter speak Japanese? Yes, he can.
+君は泳げるの? いや、泳げない。	Can you swim? No, I can't.
+僕の妹は自転車に乗れません。	My sister can't ride a bicycle.
+僕は他の人の前で歌えません。	I can't sing in front of other people.
+君は彼女のために何が出来るんだい?	What can you do for her?
+僕の弟はあまり上手に箸を使えません。	My brother can't use chopsticks very well.
+日本でこの花を育てることが出来ますか?	Can you grow this flower in Japan?
+君はこの問題を解けるかい?	Can you solve this problem?
+どうやったら(どのように)我々は彼を助けることができますか?	How can we help him?
+僕は今英語を勉強しています。	I'm studying English now.
+トムは今自分の部屋を掃除しています。	Tom is cleaning up his room now.
+君はテレビを見ているの? そうだよ。	Are you watching TV? Yes, I am.
+子供たちは何をしているんだい? 庭で遊んでいるわよ。	What are the children doing? They are playing in the yard.
+君は何の本を読んでいるんだい?	What book are you reading?
+エレンは何を探しているのですか?	What is Ellen looking for?
+誰がお風呂に入っているの?	Who is taking a bath?
+僕の姉はボーイフレンドと電話で話をしている。	My sister is talking to her boyfriend on the phone.
+彼女はなぜ泣いているのですか?	Why is she crying?
+ボブとデッドはキャッチボールをしている。	Bob and Ted are playing catch.
+私の部屋にはピアノがあります。	There is a piano in my room.
+テーブルの上には本が何冊ありますか?	How many books are there on the table?
+この町には図書館が2つあります。	There are two libraries in this town.
+駅前には本屋が(1軒)ありますか? はい、あります。	Is there a bookstore in front of the station? Yes, there is.
+問題があるのですか?	Are there any problems?
+1年は何日ですか(1年には何日ありますか)? 365日です(あります)。	How many days are there in a year? There are three hundred and sixty-five days.
+この辺りにはたくさんの良いレストランがある。	There are many good restaurants around here.
+この町には映画館が一つもありません。	There aren't any movie theaters in this town.
+世の中には良い人がたくさんいます。	There are many good people in the world.
+このクラスには男の子が5人しかいません。	There are only five boys in this class.
+私は手紙を1通書かなくてはならない。	I have to write a letter.
+ロバートは毎日バイオリンの練習をしなくてはならない。	Robert has to practice the violin every day.
+あなたは今日そこに行かなくてはならないのですか? はい、そうです。	Do you have to go there today? Yes, I do.
+あなたは彼女に電話しなくてもいいですよ。	You don't have to call her.
+このレストランではジャケットを着なくてはなりません。	You have to wear a jacket in this restaurant.
+僕たちはここで靴を脱がなくてはなりませんか? はい、そうです。	Do we have to take off our shoes here? Yes, you do.
+そのお金持ちの男性は働く必要がありません。	The rich man doesn't have to work.
+あなたは毎月いくら支払わなくてはならないのですか?	How much do you have to pay every month?
+ボブは歯医者に行かなくてはなりません。	Bob has to go to the dentist.
+なぜ僕たちはここにとどまらなくてはならないのですか?	Why do we have to stay here?

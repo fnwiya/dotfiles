@@ -1,0 +1,532 @@
+*	name	GSL08
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+hunt	"を狩る
+ 狩り"
+bean	豆
+arise	"発*生する*
+ 
+ (arise, arose, arisen)"
+creature	生き物
+dive	"飛び込む
+ 飛び込み
+ 
+ （正規変化）
+ (dive, dived, dived)"
+clothe	衣服を着せる
+thorn	(植物の)とげ
+grave	"重大な
+ 墓 (異義語)"
+beg	をくれと頼む
+master	"主人
+ に熟達する"
+horse	"馬
+ 
+ (colt 雄子馬 filly 雌子馬)
+ (horseback-riding 乗馬)"
+wrist	手首
+believe	"(を)信じる
+ 確かだと思う(I think より強い)
+ の存在・価値を信じる(believe in)
+ 
+ (I believe in God.)
+ (I believe in early rising.)"
+daughter	娘
+comb	"櫛(くし)
+ を櫛でとかす"
+habit	"習慣
+ 癖
+ 
+ (habit は個人の癖や習慣)
+ (custom は社会や個人の
+ 規則的な慣習)"
+"interest
+ (名詞・動詞 同じ発音)"	"*興味*
+ *利益*､*利子*
+ *に興味を起こさせる*
+ 
+ （be interested in ）
+ （ 興味を持っている）
+ (このinterestedは形容詞)"
+although	だけれども
+expression	"表現
+ 表情"
+relate	"を関係づける
+ 親戚である"
+edge	"端
+ 刃先"
+sport	"スポーツ
+ (運動競技だけでなく
+ 狩りや魚釣競技も含む)"
+mention	"に言及する
+ （言及)"
+tail	"尾
+ (を尾行する)"
+least	"最も少ない(く)
+ （littleの最上級）"
+study	"(を)勉強する
+ 
+ (lean は 習得する)"
+inn	"*宿* 
+ 
+ （OALD辞書では下記）
+ (英 old-fashioned,a pub, 
+ usually in the country and often one
+  where people can stay the night)
+ (米 a small hotel, usually in the country)"
+time	"*時刻*､ *時間*
+ *余分な時間*(ひま)
+ *回*、*倍*
+ (once, twice, three times)
+ （*時間をはかる*）
+ 
+ （What time is it?）
+ （一番無難な言い方）"
+complication	"複雑な事柄
+ 余病"
+join	"に加わる
+ をつなぐ
+ 参加する
+ (点・線・面の接合箇所)"
+second	"第２(の)
+ 秒"
+grace	優雅
+imaginary	想像上の
+disrespect	失礼､無礼
+blood	"血
+ （血統）"
+breath	"息
+ 呼吸"
+pure	純粋な
+enemy	"(1人の)敵
+ 敵軍(the enemy)
+ 
+ （反意語 味方）
+ (a friend⇔an enemy 対立側)
+ (one's side 擁護側)
+ (a partner ペア試合)"
+hair	髪の毛
+shout	"(を)叫ぶ
+ 叫び声"
+interrupt	"(を)邪魔する
+ 中断する"
+different	違った
+robbery	強盗
+deal	"を分配する
+ を扱う(deal with)
+ 配ること
+ （取引）
+ 
+ (deal, dealt, dealt)"
+problem	"*問題*
+ （重要度の高い問題）
+ 
+ （質問や試験問題はquestion）"
+fine	"（原義：完成させた）
+ すばらしい
+ 優れた、元気な､
+ 申し分のない、細かい
+ 
+ *罰金*（異義語）"
+murder	"殺人
+ を殺す"
+half	半分(の)
+man	"大人の男性
+ 人間"
+deepen	"(を)深くする
+ (を)濃くする"
+pay	"(を)支払う
+ に報いる
+ 給料
+ 
+ (pay, paid, paid)"
+might	"してもよい
+ かもしれない
+ 
+ （助動詞mayの過去）
+ (文法･辞書を必読)
+ (許可・推量・丁寧 など)"
+spill	"をこぼす
+ こぼれる"
+ripen	"熟する
+ を熟させる"
+forget	"(を)忘れる
+ 
+ (forget, forgot, forgotten)"
+tremble	震える
+proud	誇りをもっている
+more	もっと多くの
+crop	作物
+nuisance	迷惑
+bird	鳥
+disappoint	"を失望させる
+ 
+ (I was disappinted to hear the news.)"
+employ	を雇う
+leather	"なめし革
+ 皮革製品"
+society	"社会
+ 協会"
+admission	"（入場・入会・入学・入国などの）許可
+ 入場料"
+loyalty	忠誠
+complicate	を複雑にする
+snake	ヘビ
+word	"単*語*､*ことば*､*話*
+ 
+ (word は英単語の多義性の典型。文脈によって下記のように多義となる。
+ 一声､ 会話､口論､セリフ､歌詞、
+ スピーチ､演説､知らせ､便り､合図
+ 命令､約束､信用、動詞:言で表わす)"
+tempt	を誘惑する
+crush	"を押しつぶす
+ 押し合い"
+discontent	"不満
+ 不満である"
+this	これ､この
+ripe	じゅく(熟)した
+moreover	その上
+lake	湖
+exact	正確な
+belt	"ベルト
+ 地帯
+ (特色ある地帯)"
+become	"・・になる
+ (become, became, become)
+ 
+ (似合う の意味は余り使われない。
+ 形容詞 becomingが使われるが古風。
+ Her new hairstyle is very becoming.)"
+inclusive	包括的な
+experiment	"実験
+ 実験する"
+rabbit	"*ウサギ*(ペット又は野生)
+ 
+ （大きい野ウサギはhare）
+ （Aesop's Fables イソップ童話は
+ The Hare and the Tortoise
+ 厳密には 野うさぎと陸がめ)"
+sad	悲しい
+station	"駅
+ 部署
+ （署・局・部・所）
+ 
+ (Tokyo Station)
+ (駅名にはtheを付けない)"
+"baggage
+ （英:luggage）"	"*手荷物*(不可算名詞）
+ 
+ (How many pieces of baggage do you have?)"
+chairman	"*議長*、*司会者*
+ （委員長、会長）
+ 
+ (呼びかけはMr.かMadamを付ける)
+ (Mr. Chairman, I have a comment.)
+ ( Yes, Mr. Smith. Go ahead. )
+ (議長、一言わせて下さい｡)
+ (はい｡スミスさん､どうぞ｡)"
+pig	"豚
+ 
+ ( piglet 子豚､ pork 豚肉 
+ oink ﾌﾞｰﾌﾞｰ )"
+relief	"安心
+ 救助
+ 浮き彫り"
+whichever	どちらでも
+invite	を招待する
+ago	・・前に
+article	"品物
+ 記事
+ （条項）
+ （文法：冠詞）"
+courage	勇気
+twist	"をねじる
+ ねじ曲がる"
+call	"(を)呼ぶ(基本義)
+ (に)電話をかける
+ 立ち寄る(at)
+ 呼び声、電話の呼び出し
+ 
+ (Call her at this number.)
+ (寄る、声をかける の両義がある）"
+danger	危険
+thunder	雷
+rake	熊手
+descent	"降下
+ 下り坂
+ 家系"
+proposal	"申し込み
+ 提案
+ (結婚のプロポ-ズ)"
+caution	"用心
+ 警告
+ 注意！
+ （警告板等）"
+afraid	恐れて
+stage	"舞台
+ （段階､時期）
+ を上演する"
+metal	金属
+rule	"規則
+ 支配
+ を支配する"
+rail	レール
+earn	を稼ぐ
+husband	夫
+permission	許可
+delicate	繊細な
+eastern	東の
+"heaven
+ （ 発音 ['hevn] ）"	"*天*国
+ 
+ (注意 良く似た単語に
+ haven ['heivn]がある)
+ (これは避難所の意味
+ tax haven 租税回避地)"
+add	"を加える
+ （加算する）"
+tap	"(を)軽くたたく
+ (を指名する)
+ 
+ (英)（蛇口）
+ (注意 米の蛇口は
+ faucet ['fɔ:-sit] )"
+TRUE	"本当の
+ 誠実な"
+bold	"大胆な
+ 太字の"
+entire	全体の
+have	"（基本義：何かを持つ）
+ *を持っている*
+ *がいる､がある*
+ *を食べる*
+ (have, had, had)
+ 
+ （助動詞・使役動詞）
+ （文法･辞書を必読)"
+handle	"取っ手
+ に手を触れる
+ を扱う
+ 問題を処理する"
+wool	羊毛
+fat	"太った
+ 脂肪"
+nation	"国*民*
+ 国*家*
+ 
+ (the United Nations 国連)
+ 
+ （country：一般語､地理に重点）
+ （nation：国民に重点）
+ （state：法・政治に重点)"
+astonish	を驚かす
+homework	"学校の宿題
+ 内職"
+bless	祝福する
+hay	干し草
+number	"数
+ (に付番する)"
+amuse	面白がらせる
+composition	"作文
+ 作品
+ 作曲
+ 成分､構成"
+compose	"組み立てる
+ 作曲する"
+hard	"硬い
+ 難しい
+ 熱心に"
+discovery	発見
+collection	"収集
+ 収集物"
+hotel	ホテル
+cheese	チーズ
+sweep	"を掃く､掃除する
+ 掃除
+ 
+ (sweep, swept, swept)"
+conscience	良心
+cork	"コルク
+ コルク栓"
+deer	"鹿 
+ (複数も deer)"
+count	数える
+ditch	"溝
+ 灌漑用水路"
+freedom	"自由
+ 解放"
+librarian	司書(図書館員)
+weekday	"平日
+ (土日を除く)"
+accord	"一致
+ (合意､協定)"
+wooden	木製の
+long	"長い､長く
+ 切望する"
+to	"に向かって、まで
+ 
+ (｢to が支配する所まで｣
+ を含むと考えるとよい）"
+pearl	真珠
+dirt	"汚れ
+ （土：soil）"
+increase	"を増やす､増える
+ 
+ (名詞 「増加」 の
+ 発音は 'in-kri:s )"
+whoever	だれでも
+convenient	便利な
+express	"(を)表現する
+ 急行
+ (米)運送会社便 
+ (英)(速達便)"
+influential	有力な
+quantity	"量
+ 
+ (反意語 quality 質)"
+fruit	果物
+yellow	黄色(の)
+early	"*早期の* (形容詞）
+ *早期に* (副詞）
+ （通念的基準時より前）
+ 
+ (The early bird catches the worm.諺)
+ (The rainy season will come early this year.)
+ （反意語はlate）"
+clever	賢い
+collector	収集家
+shape	"形
+ 状態
+ 形作る"
+discuss	"を話し合う
+ 
+ （discuss 話し合う）
+ （dispute 論争する）
+ （debate 討論する）"
+zero	ゼロ(零)
+bedroom	寝室
+treasury	(知識の)宝庫
+difficult	"難しい
+ （気難しい）"
+let	"に・・させる
+ ・・しましょう(let's・・）
+ （使役動詞）
+ (文法・辞書を必読)"
+minister	"大臣
+ (ﾌﾟﾛﾃｽﾀﾝﾄの牧師)"
+outside	外側(の､に､で)
+defend	"を守る
+ (を弁護する)"
+certain	"確かな
+ ある"
+except	を除いて
+framework	"枠*組み*(基本義)
+ 
+ （基本的な構造、骨格
+ 原則、構成、体制
+ などに派生）"
+stop	"を止める、止まる
+ をやめる
+ を中止させる
+ 停止、停留所"
+English	"英語(の)
+ イギリス(人)の
+ イングランド(人)の"
+crime	犯罪
+pronunciation	発音
+sentence	"文
+ 判決
+ 判決を下す"
+tall	背が高い
+desk	机
+south	南(の､へ)
+run	"*走る*(基本義)
+ *を走らせる*
+ (逃げる､流れる)
+ (を運転する､を経営する)
+ (走ること)
+ 
+ (run, ran, run)
+ (相当な多義、辞書必読､例えば
+ 遺伝する:inherit の意味もある)"
+dress	"女性用の上下続きの服
+ (一般的に)服装
+ ・・に服を着せる
+ 
+ (上下分かれた服はsuit)"
+gun	"銃
+ （銃で撃つ）
+ （を撃つ）"
+happy	"(原義:偶然の幸運による)
+ 幸福な
+ （楽しい）
+ （満足した）
+ （幸運な）"
+eye	"*眼*
+ （視力)(見方）
+ (をじろじろ見る､注目する)
+ 
+ （動詞は 新聞に時々でる
+ Longmanではto look at someone or something carefully, especially because you do not trust them or because you want something）"
+glory	栄光
+penny	"*ペニ*ー（複数 pence、略語 p)
+ 
+ (英国の現在の貨幣制度)
+ （1 pound＝100 pence）
+ 
+ (英の1pennny貨、米の1cent貨)"
+draw	"線を引く
+ 線で絵を描く
+ 
+ (draw, drew, drawn)
+ ([drɔ:], [dru:], [drɔ:n])"
+beauty	美
+recognize	"*それとわかる*
+ *を認める*(事実として)
+ 
+ （参考 Mark Twainの言葉)
+ (""Seventy! I'm old. I recognize it, 
+ but I don't realize it."")
+  （*認める*が実感がわかない）"
+speed	"スピード
+ スピ-ドを出す
+ 
+ (speed, sped, sped)"
+FALSE	"誤った
+ うその"
+average	平均(の)
+very	とても
+result	"結果
+ (結果で起こる)
+ (生ずる)"
+lord	君主
+fair	"公平な､公正に
+ 博覧会(フェア)"
+storm	"嵐
+ 嵐が吹く"
+envelope	封筒
+efficient	能率的な
+trial	"試み
+ 裁判"
+rich	"金持ちの
+ 豊かな"
+quick	"すばやい
+ すばやく"
+blow	"風が吹く
+ を吹く
+ を爆破する
+ 強打
+ 
+ (blow, blew, blown)
+ 
+ （ It is blowing hard. ）
+ （風が強く吹いている）"
+pretty	"かわいらしい､きれいな
+ かなり
+ 
+ (pretty：子供や小物に)
+ (beautiful:華やかな美に)"

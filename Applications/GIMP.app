@@ -1,0 +1,1 @@
+/opt/homebrew-cask/Caskroom/gimp/2.8.14/GIMP.app

@@ -1,0 +1,662 @@
+*	name	AWL01
+*	card-order	3
+*	repeat-missed	1
+*	timer-force-wrong	1
+*	card-theme	Chalkboard - Clear 2
+*	tsv	true
+Text 1	Text 2
+plus	"プラス(前置詞)
+ (プラスの:形容詞)"
+consent	"（名動 同発音）
+ -
+ 同意、同意する"
+prime	第一の
+hypothesis	"仮説
+ 前提"
+establish	"設立する
+ 確立する
+ 立証する
+ -
+ （↓高頻度語）
+ （established）"
+maintain	"維持する
+ -
+ （↓高頻度語）
+ （maintenance）
+ （維持､支持､扶養）"
+intermediate	中間の
+imply	"を暗に意味する
+ -
+ （↓高頻度語）
+ （動詞 implies）"
+region	"*地方*・*地域*・*領域*・*分野*
+ (地理的・社会的に特徴を持つ地域）
+ -
+ （参考）
+ (area：ある用途の区域、通常狭い)
+ （district：行政上の区画）"
+area	"地域
+ 区域 (場所)
+ 分野 (領域)
+ 面積"
+unique	独特の
+error	誤り
+successor	"後継者
+ -
+ （↓高頻度語）
+ （successive）
+ (連続する､引き続いての)"
+analogy	"類似性
+ 類推
+ -
+ （↓高頻度語）
+ （analogous 類似の）"
+route	道筋
+obtain	"を得る
+ -
+ （↓高頻度語）
+ （obtained）"
+prior	"前の
+ 優先する"
+technology	"科学技術
+ (工業技術)"
+"analyze
+ (英綴り: analyse)"	"*分析する*
+ -
+ （↓AWL高頻度語)
+ （analysis [ənǽləsis] 分析）"
+insert	挿*入*する
+submit	"に服従する
+ を提出する
+ -
+ （↓高頻度語）
+ （submitted）"
+diverse	"多様な
+ -
+ （↓高頻度語）
+ （diversity 多様性)"
+job	"仕事
+ -
+ （↓高頻度語）
+ （jobs）"
+factor	"要因(要素)
+ （数学:因数）
+ （医学:遺伝因子）
+ -
+ （↓高頻度語）
+ （factors）"
+occur	"(事故などが) *起こる*
+ (↑happen の硬い語､重大事など)
+ -
+ (考えが)*浮かぶ*(to)
+ (An idea just occurred to me.)"
+revise	"を改訂する
+ -
+ （↓高頻度語）
+ （revision 改訂）"
+estimate	"(動詞発音は éstәmèit） 
+ 見積もる
+ -
+ （名詞発音はéstәmәt）
+ （見積もり）"
+undertake	"引き受ける
+ を企てる
+ -
+ （↓高頻度語）
+ （undertaken）"
+evident	"(状況から見て) *明白な*
+ -
+ （高頻度語→ evidence 証拠）
+ -
+ （obvious：一見して明らかな）
+ （clear：あいまいさのない）
+ （plain：はっきりわかる ）
+ （unmistakable：まぎれもない ）"
+integrity	*誠*実・清*廉*
+controversy	*論*争
+assemble	"集める・組立てる
+ 集まる
+ -
+ （↓高頻度語）
+ （assembly 集会・組立て）"
+empirical	経験*上*の
+discrete	"別々の
+ -
+ （↓高頻度語）
+ （discretion）
+ （慎重さ）"
+exploit	"開発する
+ 不当に利用する
+ -
+ （↓高頻度語）
+ (exploitation 開発・搾取)"
+enormous	巨大な
+insight	"*洞察*
+ -
+ （↓高頻度語）
+ （insights）"
+violate	"*を破る*(犯す)
+ -
+ （↓高頻度語）
+ （violation 違反）"
+psychology	心理学
+collapse	"（名動 同発音）
+ 崩壊･挫折
+ 崩壊する"
+aspect	"側面
+ 外観
+ -
+ （↓高頻度語）
+ （aspects）"
+"*vary*
+ (米 'veri 英 'veәri)"	"*異なる*
+ 変*わる*・変*える*
+ -
+ （↓高頻度語）
+ （variable）
+ （変*りやすい*､変数）"
+"*regulate*
+ (発音注意 ˈregjuleit )"	"-
+ *規制する*
+ -
+ （↓高頻度語）
+ （regulation 規制）"
+mature	"円熟した
+ 熟す"
+access	"（名詞・動詞が 同発音）
+ 接近方法
+ に近づく"
+schedule	"（名動 同発音）
+ 予定
+ を予定する"
+framework	骨組み
+draft	"下書き
+ 下書きを作る"
+rational	"合理的な
+ 理性のある"
+decline	"（名動 同発音）
+ 衰退・下落
+ 衰退する・を断る"
+specific	"特定の
+ 明確な
+ (具体的な)
+ -
+ (species ['spi:-ʃi:z] 種 
+ は発音注意 単複同形)"
+achieve	"(努力して)達成する
+ (努力して獲得する）
+ -
+ (注：achieveはaccomplishに困難を克服の意が加わる)"
+restore	元へ戻す
+via	経由で
+reverse	逆､反対､裏
+compile	"一冊にまとめる
+ 編纂する
+ -
+ （↓高頻度語）
+ （compiled）"
+compound	"*合成の*
+ -
+ （↓高頻度語）
+ （compounds 合成物､化合物）
+ -
+ （動詞発音 kɑmpáund）
+ （混合・調合する）"
+incline	"傾かせる
+ 傾く
+ -
+ （↓高頻度語）
+ （inclination）
+ （好み・傾向・傾き）"
+create	を創造する
+complex	"複雑な
+ 複合の"
+protocol	"外交儀礼
+ 通信規約"
+release	"（名動 同発音）
+ 解放
+ 解放する
+ 発表する
+ 発売する"
+version	"版 (改作)
+ -
+ (Longman辞書：a copy of something 
+ that has been changed so that it is 
+ slightly different)"
+accommodate	"を宿泊させる
+ を収容させる
+ -
+ （↓AWL高頻度語）
+ （accommodation）
+ （宿泊施設）"
+code	"法典
+ 基準
+ 信号法"
+interact	"相互に影響する
+ -
+ （↓高頻度語）
+ （interaction 相互作用）"
+economy	"経済 
+ *節約*
+ -
+ （↓高頻度語）
+ (economic 
+ i:-kə-'nɑ-mik)
+ （経済の､実利的な）"
+visual	視覚の
+export	"輸出
+ -
+ (動詞はiks-'pɔ:〔r〕t)
+ （輸出する）"
+participate	"参*加*する
+ -
+ （↓高頻度語）
+ （participation 参加）"
+specify	"を詳細に述べる
+ -
+ （↓高頻度語）
+ （specified ）"
+pose	"姿勢をとる
+ 気取る
+ ポーズ
+ -
+ （↓高頻度語）
+ （posed）"
+military	"*軍の*
+ 軍隊 (the military)"
+benefit	"利益・恩恵・手当 
+ 利益を与える
+ 利益を得る(from)"
+file	ファイル
+transport	輸送する
+dimension	"寸法
+ 大きさ 
+ 次元
+ -
+ （↓高頻度語）
+ （dimensions）"
+item	"項目
+ -
+ （↓高頻度語）
+ （items）"
+regime	政治体制
+parallel	平行の
+allocate	"を分配する
+ -
+ （↓高頻度語）
+ （allocation 割り当て）"
+temporary	一時的な
+approximate	"おおよその
+ -
+ （↓高頻度語）
+ （approximated）"
+identify	"その人(物)を見分ける
+ 同一であると見なす
+ -
+ （↓高頻度語）
+ （identified）"
+range	"並び・範囲
+ 連なる"
+substitute	"（名動 同発音）
+ 代用、代用する
+ -
+ （↓高頻度語）
+ （substitution 代用）"
+"albeit
+ ( 発音注意 ɔ:lbí:it)"	"*ではあるが* (堅い語)
+ -
+ (although に似ているが、
+ albeitは名詞､形容詞､副詞の類だけを導く ）
+ (albeit 意味・使い方:下記サイト参照)
+ ( eigowithluke.com/2010/11/albeit/ )"
+dispose	"処*分*する
+ -
+ （↓高頻度語）
+ （disposal 処分）"
+subsidy	"補助金
+ -
+ （↓高頻度語）
+ （subsidiary 補助的な）
+ (参考subsidiaries子会社)"
+acknowledge	"を認める
+ -
+ (↓AWL高頻度語）
+ （acknowledged）"
+adult	"大人 (の)
+ -
+ （↓高頻度語）
+ （adults）"
+preliminary	"予備の
+ 予備行為(複数)"
+entity	"実在
+ -
+ （↓高頻度語）
+ （entities）"
+target	"的
+ 目標"
+deny	否定する
+apparent	"明白な
+ 外見上は・・らしい"
+statistic	"ひとつの統計値
+ -
+ （↓高頻度語）
+ （statistics）
+ (統計(複扱い)・統計学)"
+convince	"*確信させる*
+ -
+ （↓高頻度語）
+ （convinced）"
+text	"本文､原文
+ -
+ (動詞）
+ 携帯電話でメールを
+ 書く、打つ"
+core	"芯
+ (the core 核心)"
+whereby	"それによって・・する
+ (by whichの堅い語)"
+generate	"*を発生する*
+ -
+ （↓高頻度語）
+ （generated）"
+sphere	球
+shift	"を変える
+ 変化・交替"
+incidence	"発生率
+ -
+ (注.incident 事故)"
+series	"連続
+ 続き物"
+conclude	"結論づける
+ を終える
+ -
+ （↓高頻度語）
+ （conclusion 結論）"
+rely	"に頼る(rely on)
+ -
+ （↓高頻度語）
+ （reliance 信頼）"
+input	"（名動 同発音）
+ 入力
+ 入力する"
+environment	環境
+uniform	"制服
+ 同じの"
+found	"を設立する
+ -
+ （↓高頻度語）
+ （founded）"
+device	装置
+brief	"短時間の
+ 簡潔な"
+partner	"パートナー
+ -
+ （↓高頻度語）
+ （partnership）
+ （共同､協力）"
+intense	"激しい
+ 感情的な
+ -
+ （↓高頻度語）
+ （intensity）
+ （ 激しいこと ､強度）"
+inhibit	"抑制する
+ -
+ （↓高頻度語）
+ （inhibition 抑制）"
+administration	"管理
+ 行政
+ -
+ (米では the と 大文字で 政府=大統領+閣僚)
+ (the Obama Administration)"
+flexible	"柔軟な
+ -
+ （↓高頻度語）
+ （flexibility 柔軟性）"
+sector	"部門
+ 分野
+ 扇形"
+expert	"専門家
+ 専門家の"
+differentiate	"を識別する
+ -
+ （↓高頻度語）
+ （differentiation 差別）"
+trend	"傾向
+ -
+ （↓高頻度語）
+ （trends）"
+induce	"(人に説いて)・・*させる*
+ *引き起こす*
+ 帰*納する*
+ -
+ （↓高頻度語）
+ （induced)
+ -
+ (induction：帰納法
+ 個々の事象から一般的原理を
+ 導く 経験則的 推論)"
+fund	"*資金*
+ 資金を供給する
+ -
+ （↓高頻度語）
+ （funds）"
+attach	"*を付ける*
+ (を添える)
+ -
+ （↓高頻度語）
+ （attached）"
+neutral	中立の
+eventual	"結果として起こる
+ -
+ （↓高頻度語）
+ （eventually 結局は）"
+adjacent	に近接した
+formula	公式 (式)
+compensate	"補償する
+ -
+ （↓高頻度語）
+ （compensation 補償）"
+occupy	"を占有する
+ -
+ （↓高頻度語）
+ （occupational 職業の）"
+hence	"それゆえ
+ (therefore 堅い語)"
+likewise	"*同*様に
+ さらに"
+proportion	"*割合*
+ *均衡*
+ -
+ （参考）
+ (direct proportion 正比例)
+ (inverse proportion 反比例)"
+behalf	"(米 in behalf of)
+ (英 on behalf of)
+ のために
+ の代わりに"
+cite	"を引用する
+ -
+ （↓高頻度語）
+ （cited）"
+commodity	"日用品
+ (例：price of commodities)"
+promote	"促進する
+ 昇進させる"
+locate	"を置く
+ に位置する
+ (be located in)
+ -
+ （↓高頻度語）
+ （location 所在地）"
+parameter	"*媒介変数*
+ -
+ （↓高頻度語）
+ （parameters）"
+accompany	"に付いて行く
+ を伴う
+ -
+ （↓AWL高頻度語） 
+ （accompanied）"
+exhibit	展示する
+evolve	"発展する
+ 進化する
+ -
+ （↓高頻度語）
+ （evolution 発展・進化）
+ (参考：Darwin's theory of evolution)"
+legal	"法律上の
+ 合法的な"
+trigger	"引き金を引く
+ 引き金"
+sufficient	"十分な
+ (enoughの堅い語)
+ -
+ （注意：「十分な」と訳すが
+ 沢山ではなく「足る」の意。
+ 沢山はquite enough や
+ abundant、ampleなど）"
+issue	"*問題点*
+ 発*行*(*版*・号)
+ を発*行*する
+ -
+ （↓高頻度語）
+ （issues）"
+prohibit	"を禁止する
+ -
+ （↓高頻度語）
+ （prohibited）"
+process	"（名動 同発音）
+ -
+ 過程・製法
+ 加工する"
+complement	"補完物
+ (文法:補語)"
+academy	"専門学校
+ 協会 (Academy)
+ -
+ （↓AWL高頻度語）
+ （ academic ）
+ （特に大学レベルの
+ 学校の､学問の）"
+reluctance	"気が進まないこと
+ -
+ （↓高頻度語）
+ （reluctant）
+ （乗り気でない）"
+unify	"*統一する*
+ -
+ （↓高頻度語）
+ （unified）"
+comment	"（名動 同発音）
+ *論評*、*論評する*
+ -
+ （↓高頻度語）
+ （comments）"
+objective	"客観的な
+ 目的"
+"approach
+ (名詞・動詞 同じ発音 )"	"*接近*・*取組み*
+ *接近する*・*取組む* 
+ -
+ (*注意* )
+ (自動詞 Spring is approaching.)
+ (他動詞 The plane is approaching London. ""toは不要"")"
+"utilize
+ (英綴り utilise)"	"*を利用する*
+ -
+ （↓高頻度語）
+ （utility 役に立つこと､設備）
+ -
+ (参考：public utilities such as
+ running water,electricity and gas)"
+policy	政策(方策)
+straightforward	"判り易い
+ 正直な"
+qualitative	質的な
+injure	"を傷つける
+ -
+ （↓高頻度語）
+ （injury 負傷）"
+currency	"通貨
+ 流通"
+index	"（名動 同発音）
+ 見出し
+ 目盛り
+ を指示する"
+theme	主題
+foundation	"土台、基礎
+ 財団
+ 創立
+ ﾌｧｳﾝﾃﾞｰｼｮﾝ(化粧)"
+affect	"に影響する
+ を感動させる"
+intervene	"仲裁する
+ -
+ （↓高頻度語）
+ （intervention 仲裁）"
+tape	"テープ
+ テープをはる
+ 録音・録画する
+ -
+ （↓高頻度語）
+ （tapes）"
+highlight	"強*調*する
+ -
+ （↓高頻度語）
+ (highlighted)"
+team	チーム
+interval	休止時間
+offset	埋め合わせる
+precise	正確な
+valid	"妥当な
+ -
+ （↓高頻度語）
+ （validity ）
+ （妥当性・正当性）"
+comprehensive	包括的な
+research	"研究・調査
+ -
+ （動詞発音 ri-'sә:(r)ʧ ）
+ （研究・調査する）"
+appreciate	"感謝する
+ 鑑賞する
+ 認識する
+ -
+ （↓高頻度語）
+ （appreciation 感謝､鑑賞､理解）"
+scheme	"*計*画
+ 組織
+ 陰謀"
+globe	"地球(the globe) 
+ 地球儀､球体(globe) 
+ -
+ （↓高頻度語）
+ （global 全世界の）"
+isolate	"を孤立させる
+ -
+ （↓高頻度語）
+ （isolated)"
+display	"（名動 同発音）
+ *陳列*
+ *陳列する*"
+considerable	かなりの
+phase	段階
+aggregate	総計
+data	"データ (資料)
+ -
+ (複数形だが
+ 集合的に単数扱い
+ することも多い)"
+mutual	相互の
+fluctuate	"変*動*する
+ -
+ （↓高頻度語）
+ (fluctuations)"
+guideline	"指針
+ -
+ （↓高頻度語）
+ (guidelines)"
+final	"最終の
+ 決勝戦(複数)
+ 期末試験(複数)"
