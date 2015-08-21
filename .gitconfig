@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/kounobunya/.gitignore_global
+	excludesfile = /Users/kounobunya/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
