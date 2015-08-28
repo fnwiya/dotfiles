@@ -10,8 +10,8 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors
 colors
  
-# vim  風キーバインドにする
-bindkey -v
+# emacs 風キーバインドにする
+bindkey -e
  
 # ヒストリの設定
 HISTFILE=~/.zsh_history
@@ -173,3 +173,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias E="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias emacs="TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/bin/emacsclient -nw"
 alias ekill="emacsclient -e '(kill-emacs)'"
+
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
