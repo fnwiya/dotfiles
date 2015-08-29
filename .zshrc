@@ -22,7 +22,7 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
+PROMPT="%{${fg[green]}%}[%n@]%{${reset_color}%} %~
 %# "
  
  #for zsh-completions
@@ -176,3 +176,23 @@ alias ekill="emacsclient -e '(kill-emacs)'"
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+# notify pwd to ansi-term
+function chpwd_emacs_ansi_term() {
+    echo '\033AnSiTc' $PWD
+}
+
+if [[ $EMACS =~ "(term:.*)" ]]; then
+    chpwd_functions=($chpwd_functions chpwd_emacs_ansi_term)
+
+    echo "\033AnSiTu" $USER
+    echo "\033AnSiTh" $HOST
+    chpwd_emacs_ansi_term
+fi
+
+
+## z easy jump dir
+. /usr/local/etc/profile.d/z.sh
+    function precmd () {
+    z --add "$(pwd -P)"
+}
