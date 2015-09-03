@@ -71,9 +71,3 @@ if [[ $EMACS =~ "(term:.*)" ]]; then
     chpwd_emacs_ansi_term
 fi
 
-
-## z easy jump dir
-. /usr/local/etc/profile.d/z.sh
-    function precmd () {
-    z --add "$(pwd -P)"
-}

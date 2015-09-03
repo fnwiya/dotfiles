@@ -10,4 +10,3 @@ path=(
    /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    $path
 )
-
