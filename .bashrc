@@ -1,2 +1,1 @@
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+PS1='\[\e[32m\][\u@\s] \[\e[37m\]\w \n% '
