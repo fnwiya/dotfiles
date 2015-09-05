@@ -63,6 +63,8 @@ function chpwd_emacs_ansi_term() {
     echo '\033AnSiTc' $PWD
 }
 
+alias em="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+
 if [[ $EMACS =~ "(term:.*)" ]]; then
     chpwd_functions=($chpwd_functions chpwd_emacs_ansi_term)
 
