@@ -50,7 +50,7 @@ case ${OSTYPE} in
         ;;
 esac
 
-######################################## 
+########################################  
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -62,7 +62,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 function chpwd_emacs_ansi_term() {
     echo '\033AnSiTc' $PWD
 }
-
+export TERM=xterm-256color
 alias em="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 
 if [[ $EMACS =~ "(term:.*)" ]]; then
@@ -73,3 +73,7 @@ if [[ $EMACS =~ "(term:.*)" ]]; then
     chpwd_emacs_ansi_term
 fi
 
+########################################  
+# alias
+alias la="ls -a"
+alias ll="ls -l"
