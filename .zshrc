@@ -54,10 +54,6 @@ esac
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-#virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
-
 # notify pwd to ansi-term
 function chpwd_emacs_ansi_term() {
     echo '\033AnSiTc' $PWD
