@@ -1,42 +1,43 @@
 ########################################
 # 環境変数
 export LANG=ja_JP.UTF-8
- 
+
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
- 
+
 # emacs 風キーバインドにする
 bindkey -e
- 
-# ヒストリの設定
-HISTFILE=~/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=1000000
- 
+
 # プロンプト
 PROMPT="%{${fg[green]}%}[%n@]%{${reset_color}%} %~
 %# "
-  
-# 補完機能を有効にする
-autoload -Uz compinit
-compinit -u
- 
-# 補完で小文字でも大文字にマッチさせる
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
- 
+
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
- 
+
 # beep を無効にする
 setopt no_beep
 
 # ディレクトリ名だけでcdする
 setopt auto_cd
-  
-# 同時に起動したzshの間でヒストリを共有する
-setopt share_history
-   
+
+########################################
+# ヒストリ
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
+setopt hist_ignore_dups
+setopt share_history # 同時に起動したzshの間でヒストリを共有する
+
+########################################
+# 補完
+autoload -Uz compinit
+compinit -u
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # 小文字でも大文字にマッチさせる
+
+
+########################################
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
@@ -49,11 +50,16 @@ case ${OSTYPE} in
         alias ls='ls -F --color=auto'
         ;;
 esac
+########################################
+# alias
+alias la="ls -a"
+alias ll="ls -l"
 
-########################################  
-### Added by the Heroku Toolbelt
+########################################
+# Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+########################################
 # notify pwd to ansi-term
 function chpwd_emacs_ansi_term() {
     echo '\033AnSiTc' $PWD
@@ -69,7 +75,13 @@ if [[ $EMACS =~ "(term:.*)" ]]; then
     chpwd_emacs_ansi_term
 fi
 
-########################################  
-# alias
-alias la="ls -a"
-alias ll="ls -l"
+########################################
+# peco
+function peco-history-selection() {
+    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+
+zle -N peco-history-selection
+bindkey '^R' peco-history-selection
