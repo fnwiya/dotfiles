@@ -1,0 +1,5 @@
+
+((digest . "7df74eb3a845d370c8bfcad9b2e01d9d") (undo-list nil (nil fontified nil 1648 . 1649) (nil fontified nil 1644 . 1648) (1644 . 1649) nil (1643 . 1644) nil (" " . -1643) ("	" . 1644) ((marker) . -1) (1640 . 1644) 1641 nil (1639 . 1641) (t 22064 52995 0 0) nil (nil rear-nonsticky nil 822 . 823) (nil fontified nil 815 . 823) (815 . 823) nil (814 . 815) nil (" " . -814) ("	" . 815) (811 . 815) 812 nil (811 . 812) (811 . 812) (t 22063 9925 0 0) nil (nil rear-nonsticky nil 958 . 959) (nil fontified nil 954 . 959) (954 . 959) nil (953 . 954) nil (" " . -953) ("	" . 954) (950 . 954) 951 nil (949 . 951) nil (nil rear-nonsticky nil 965 . 966) (nil fontified nil 954 . 966) (954 . 966) nil (953 . 954) nil (" " . -953) ("	" . 954) (950 . 954) 951 nil (949 . 951) (t 22055 20809 0 0) nil ("    smartparens
+" . 1600) (t 22053 10430 0 0) nil ("(when load-file-name
+  (setq user-emacs-directory (file-name-directory load-file-name)))
+" . 1) 90 (t 22053 10423 0 0) nil (516 . 527) ("~/" . -516) nil (516 . 518) nil (")" . -538) nil ("(locate-user-emacs-file" . 514) 537 (t 22053 10181 0 0)))

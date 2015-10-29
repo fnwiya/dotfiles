@@ -1,13 +1,13 @@
 # ignore all
-.emacs.d/
-
-# allow
-!.emacs.d/README.md
-!.emacs.d/init.el
-!.emacs.d/loader-init/
-!.emacs.d/snippets/
-!.emacs.d/themes/
-!.emacs.d/elisp/
-
-# but ignore
-.emacs.d/loader-init/*.elc
+#.emacs.d/
+# 
+## allow
+#!.emacs.d/README.md
+#!.emacs.d/init.el
+#!.emacs.d/loader-init/
+#!.emacs.d/snippets/
+#!.emacs.d/themes/
+#!.emacs.d/elisp/
+# 
+## but ignore
+#.emacs.d/loader-init/*.elc

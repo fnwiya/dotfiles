@@ -1,0 +1,30 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ (#("/Users/fnwiya/.emacs.d/" 14 23 (face flx-highlight-face)) . #("loader-init/" 0 2 (face flx-highlight-face)))
+)
+
+;; ----- ido-work-directory-list -----
+(
+ #("/Users/fnwiya/.emacs.d/loader-init/" 14 23 (face flx-highlight-face) 23 25 (face flx-highlight-face))
+)
+
+;; ----- ido-work-file-list -----
+(
+ "11-multi-term.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/fnwiya/.emacs.d/loader-init/" (22064 51762 0 0) "nw-emacs.el" "cocoa-emacs-aspell.el" "_31-helm.el" "_27-neotree.el" "_09-hydra.el" "99-global-keybind.el" "90-after-init.el" "84-browse-current-file.el" "83-reopen-file-as-root.el" "82-newline-or-openline.el" "81-kill-nonactive-buffer.el" "74-auto-capitalize.el" "73-codic.el" "72-aspell.el" "71-google-translate.el" "65-imp.el" "63-ahg.el" "62-git.el" "61-eww.el" "60-web-mode.el" "60-view-mode.el" "60-sql-mode.el" "60-python_mode.el" "60-nxml-mode.el" "60-markdown-mode.el" "60-js-mode.el" "60-elisp-mode.el" "60-clojure-mode.el" "60-c-mode.el" "50-flycheck.el" "49-sequential-command.el" "48-corral.el" "47-isearch-region.el" "46-open-junk-file.el" "45-projectile.el" "43-ace-jump.el" "42-smartchr.el" "41-undohist.el" "40-wgrep.el" "39-undo-tree.el" "38-quickrun.el" "37-multiple-cursors.el" "36-expand-region.el" "35-anzu.el" "34-yasnippet.el" "33-auto-complete.el" "32-popwin.el" "31-ido.el" "30-dired.el" "29-whitespace.el" "26-rainbow-delimiters.el" "25-highlight-symbol.el" "24-rainbow-mode.el" "23-tabbar.el" "22-mode-line.el" "21-color-theme.el" "20-display.el" "11-multi-term.el" "10-exec-path-from-shell.elc" "10-exec-path-from-shell.el" "08-font.el" "07-hooks.el" "06-recentf.el" "04-language.el" "02-scroll.el" "01-basic-setting.el" "../" "./")
+
+ (#("/Users/fnwiya/.emacs.d/" 14 23 (face flx-highlight-face)) (22064 50196 0 0) "url/" "themes/" "snippets/" "README.md" "loader-init/" "init.el" "elisp/" "cache/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/fnwiya/" (22064 51108 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zshenv" ".zsh_history" ".zcompdump" ".z" ".virtualenvs/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".tern-config" ".terminfo/" ".subversion/" ".ssh/" ".ruby-version" ".python_history" ".pyenv/" ".putty/" ".oracle_jre_usage/" ".npm/" ".node-gyp/" ".netrc" ".m2/" ".lein/" ".heroku/" ".gitignore_global" ".gitconfig" ".gemrc" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".cups/" ".credentials/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" ".atom/" ".aspell.conf" ".anyenv/" ".android/" "../" "./")
+
+ ("/Users/fnwiya/dotfiles/" (22064 50710 0 0) "setup.sh" "README.md" "git@github.com:fnwiya/" ".zshrc" ".zshenv" ".vimrc" ".vim/" ".tern-config" ".gitmodules" ".gitignore" ".gitconfig" ".git/" ".DS_Store" ".bashrc" ".bash_profile" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,1 @@
+(define-package "auto-capitalize" "20131013.2205" "Automatically capitalize (or upcase) words" 'nil :keywords '("text" "wp" "convenience rcs $id: auto-capitalize.el" "v 2.20 2005/05/25 18:47:22 kevinr exp $"))
