@@ -5,6 +5,7 @@ export LANG=ja_JP.UTF-8
 export KCODE=u
 export EDITOR=vim
 
+export PATH="/usr/local/bin:$PATH"
 
 ########################################
 # 見た目
@@ -107,27 +108,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
-########################################
-# Added by the Heroku Toolbelt
-########################################
-export PATH="/usr/local/heroku/bin:$PATH"
-
-########################################
-# notify pwd to ansi-term
-########################################
-function chpwd_emacs_ansi_term() {
-    echo '\033AnSiTc' $PWD
-}
-export TERM=xterm-256color
-alias em="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-
-if [[ $EMACS =~ "(term:.*)" ]]; then
-    chpwd_functions=($chpwd_functions chpwd_emacs_ansi_term)
-
-    echo "\033AnSiTu" $USER
-    echo "\033AnSiTh" $HOST
-    chpwd_emacs_ansi_term
-fi
 
 ########################################
 # peco
