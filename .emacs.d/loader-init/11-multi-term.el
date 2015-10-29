@@ -10,12 +10,9 @@
             '(lambda ()
                (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
                (define-key term-raw-map (kbd "C-y") 'term-paste)
+               (define-key term-raw-map (kbd "C-r") 'term-send-raw)
                (setq next-screen-context-lines 0)
                ))
-
-  (global-set-key (kbd "C-c m") '(lambda ()
-                                   (interactive)
-                                   (multi-term)))
 
   (defadvice linum-on(around my-linum-term-on() activate)
   (unless (eq major-mode 'term-mode) ad-do-it))
@@ -32,5 +29,5 @@
           (lambda ()
             "ESCを渡す"
             (interactive)
-            (term-send-raw-string "e")))
+            (term-send-raw)))
         ))

@@ -1,0 +1,15 @@
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim
+[include]
+    path = ~/.gitconfig.local
+[color]
+    ui = auto
+        status = auto
+            diff = auto
+                branch = auto
+                    interactive = auto
+                        grep = auto
+[user]
+name = fnwiya
+email = fnwiya@gmail.com
