@@ -1,1 +1,0 @@
-/home/fnwiya/dotfiles/.vim

@@ -1,0 +1,1 @@
+/Users/fnwiya/dotfiles/vim/.vim

@@ -4,14 +4,14 @@
 setup.sh
 ```
 
-
 ```
 which zsh
 chsh -s /usr/local/bin/zsh
 ```
 
 ##dependency
-peco zsh sbcl
+- brew install : peco zsh sbcl git leiningen
+- npm install -g : tern
 
 ##to install
 shutter dropbox
