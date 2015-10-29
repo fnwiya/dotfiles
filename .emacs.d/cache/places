@@ -1,5 +1,9 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/fnwiya/.emacs.d/cache/.recentf" . 10901)
+(("/Users/fnwiya/.emacs.d/cache/ido.last" . 1936)
+ ("/Users/fnwiya/.emacs.d/cache/.recentf" . 3305)
+ ("/Users/fnwiya/.netrc" . 193)
+ ("/Users/fnwiya/dotfiles/setup.sh" . 330)
+ ("/Users/fnwiya/dotfiles/.gitignore" . 2)
  ("/Users/fnwiya/dotfiles/README.md" . 136)
  ("/Users/fnwiya/.emacs.d/loader-init/60-common-lisp-mode.el" . 108)
  ("/Users/fnwiya/.emacs.d/loader-init/32-popwin.el" . 1750)
@@ -12,8 +16,6 @@
  ("/Users/fnwiya/.emacs.d/elisp/package/js2-mode-20151027.456/js2-mode-autoloads.el" . 1256)
  ("/Users/fnwiya/.emacs.d/elisp/package/slime-20151021.1304/slime-autoloads.el" . 1306)
  ("/Users/fnwiya/.emacs.d/loader-init/11-multi-term.el" . 547)
- ("/Users/fnwiya/.emacs.d/cache/ido.last" . 2958)
- ("/Users/fnwiya/.emacs.d/.gitignore" . 120)
  ("/Users/fnwiya/.emacs.d/loader-init/60-clojure-mode.el" . 132)
  ("/Users/fnwiya/.emacs.d/elisp/package/avy-20151026.59/avy-autoloads.el" . 2994)
  ("/Users/fnwiya/.emacs.d/elisp/package/queue-0.1.1/queue-autoloads.el" . 333)
@@ -122,11 +124,9 @@
  ("/Users/fnwiya/.emacs.d/themes/base16-monokai-dark.el" . 23537)
  ("/Users/fnwiya/Downloads/" . 136)
  ("/Users/fnwiya/.emacs.d/snippets/c-mode/function" . 80)
- ("/Users/fnwiya/dotfiles/.gitmodules" . 122)
  ("/Users/fnwiya/Documents/workspace_env1/"
   (dired-filename . "/Users/fnwiya/Documents/workspace_env1/todo"))
  ("/Users/fnwiya/Documents/"
   (dired-filename . "/Users/fnwiya/Documents/workspace_env1"))
  ("/Users/fnwiya/dotfiles/"
-  (dired-filename . "/Users/fnwiya/dotfiles/.vim"))
- ("/Users/fnwiya/dotfiles/setup.sh" . 280))
+  (dired-filename . "/Users/fnwiya/dotfiles/.vim")))

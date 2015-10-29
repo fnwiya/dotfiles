@@ -1,0 +1,6 @@
+
+((digest . "25eac3f31a1bc6a2e5f8fd9ea77e208f") (undo-list nil ("ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
+" . 330) ((marker . 330) . -56) ((marker) . -56) (t 22066 9521 0 0) nil ("ln -sf ~/dotfiles/bash/.bashrc ~/.bash_history
+" . 203) ((marker) . -47) ((marker) . -47) ((marker) . -47) nil ("ln -sf ~/dotfiles/zsh/.zshrc ~/.zsh_history
+" . 162) ((marker) . -44) ((marker) . -44) ((marker . 162) . -43) ((marker) . -44) (t 22066 9252 0 0) nil (197 . 205) nil ("e" . -197) nil ("n" . -198) nil ("v" . -199) nil (nil rear-nonsticky nil 200 . 201) (nil fontified nil 200 . 201) (nil fontified nil 191 . 200) (nil fontified nil 164 . 191) (nil fontified nil 162 . 164) (162 . 201) (t 22066 9166 0 0) nil (289 . 296) nil ("h" . -289) nil ("i" . -290) nil ("s" . -291) nil ("t" . -292) nil ("o" . -293) nil ("r" . -294) nil ("y" . -295) nil (nil fontified nil 296 . 297) (nil fontified nil 281 . 296) (nil fontified nil 252 . 281) (nil fontified nil 250 . 252) (250 . 297) (t 22066 9148 0 0) nil (240 . 249) nil ("h" . -240) nil ("r" . -241) nil ("c" . -242) (t 22066 9141 0 0) nil (nil rear-nonsticky nil 84 . 85) (nil fontified nil 53 . 85) (nil fontified nil 51 . 53) (51 . 85) nil ("ln -sf ~/dotfiles/vim/.vim ~/.vim
+" . 248) 282 nil (nil rear-nonsticky nil 209 . 210) (nil fontified nil 171 . 210) (nil fontified nil 169 . 171) (169 . 210) (t 22066 7588 0 0)))
