@@ -1,7 +1,7 @@
 (use-package ido
   :bind
   (("C-x C-r" . ido-recentf-open)
-   ("C-x C-f" . ido-find-file)
+   ("C-x C-f" . find-file)
    ("C-x C-d" . ido-dired)
    ("C-x b" . ido-switch-buffer)
    ("C-x C-b" . ido-switch-buffer)
@@ -21,7 +21,7 @@
   (setq ido-enable-flex-matching t)
   (setq ido-use-faces nil)
   (setq ido-create-new-buffer 'always)
-  (setq ido-use-filename-at-point 'guess)
+  (setq ido-use-filename-at-point nil)
   (setq ido-save-directory-list-file "~/.emacs.d/cache/ido.last")
   (ido-vertical-mode 1)
   (setq ido-vertical-define-keys 'C-n-C-p-up-and-down)
