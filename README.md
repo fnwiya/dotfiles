@@ -11,4 +11,7 @@ chsh -s /usr/local/bin/zsh
 ```
 
 ##dependency
-peco zsh 
+peco zsh sbcl
+
+##to install
+shutter dropbox
