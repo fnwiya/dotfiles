@@ -1,7 +1,0 @@
-
-((digest . "b34c43667247ce6f11eec7ccc481c1b7") (undo-list nil (128 . 136) (t 22064 54845 0 0) nil (128 . 129) 120 nil (108 . 120) nil (107 . 108) nil (nil rear-nonsticky nil 114 . 115) (nil fontified nil 108 . 115) (108 . 115) nil (107 . 108) (t 22064 52233 0 0) nil (nil rear-nonsticky nil 105 . 106) (nil fontified nil 102 . 106) (102 . 106) (t 22064 50630 0 0) nil ("
-" . -18) nil (18 . 19) (t 22064 50626 0 0) nil (19 . 27) nil (18 . 19) nil (19 . 22) nil (18 . 19) nil (17 . 18) nil (17 . 18) nil (15 . 17) nil (15 . 17) (t 22064 50591 0 0) nil (83 . 84) 14 nil (2 . 14) nil (1 . 2) nil (43 . 46) nil ("{" . -43) nil (43 . 44) ("}" . 43) ("{" . -43) nil (43 . 45) nil (2 . 5) nil (1 . 2) nil ("
-" . -11) nil (nil rear-nonsticky nil 38 . 39) (nil fontified nil 2 . 39) (2 . 39) nil (1 . 4) nil (15 . 24) nil ("ぺ" . -15) (15 . 16) ("ｐ" . -15) (14 . 16) nil (nil rear-nonsticky nil 13 . 14) (nil fontified nil 4 . 14) (4 . 14) nil ("D" . -4) nil ("e" . -5) nil ("p" . -6) nil ("e" . -7) nil ("n" . -8) nil ("d" . -9) nil ("e" . -10) nil ("n" . -11) nil (9 . 12) nil (2 . 4) nil (2 . 7) nil ("-" . -2) nil (" " . -3) nil ("p" . -4) nil ("e" . -5) nil ("c" . -6) nil ("o" . -7) nil ("
-" . -8) nil ("-" . -9) nil (" " . -10) nil ("z" . -11) nil ("s" . -12) nil ("h" . -13) nil ("
-" . -14) nil ("
-" . -15) nil ("P" . -16) nil ("e" . -17) nil ("c" . -18) nil ("o" . -19) nil (" " . -20) nil ("z" . -21) nil (21 . 22) (16 . 20) ("peco" . 16) nil (16 . 21) nil (14 . 16) nil (10 . 14) nil (9 . 10) nil (8 . 9) nil (3 . 8) nil (2 . 3) nil (1 . 2) (t 22064 50235 0 0)))
