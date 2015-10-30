@@ -1,1 +1,1 @@
-/Users/fnwiya/dotfiles/vim/.vim
+/home/forcia/dotfiles/vim/.vim

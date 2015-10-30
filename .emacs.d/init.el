@@ -103,7 +103,7 @@
 ;; Packages to install from el-get
 (defvar my/el-get-packages
   '(
-    smartchr
+;    smartchr
     )
   "A list of packages to install from el-get at launch.")
 (el-get 'sync my/el-get-packages)
@@ -115,7 +115,7 @@
   :config
   (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
-  (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
+;  (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
 )
 
 

@@ -47,4 +47,4 @@ gnutls                  node                    zsh-completions
 go                      openssl
 goaccess                pcre
 nvm rbenv
-exit 0
+
