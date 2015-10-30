@@ -1,7 +1,7 @@
 (use-package ido
   :bind
   (("C-x C-r" . ido-recentf-open)
-   ("C-x C-f" . find-file)
+   ("C-x C-f" . ido-find-file)
    ("C-x C-d" . ido-dired)
    ("C-x b" . ido-switch-buffer)
    ("C-x C-b" . ido-switch-buffer)

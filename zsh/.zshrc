@@ -30,8 +30,8 @@ setopt no_beep
 # looks like bellow
 # [name@hostname]                                                     [/your/dir]
 # %                                                                  [git:branch]
-prompt_bar_left="[%n@%m]"
-prompt_bar_right="[%d]"
+prompt_bar_left="[%n@%m] "
+prompt_bar_right=" [%d]"
 prompt_left="%# " # 一般ユーザなら%/rootユーザなら#
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%s:%b]'
@@ -51,11 +51,11 @@ update_prompt(){
     local separator="${(l:${bar_rest_length}:: :)}"
     bar_right="%${bar_rest_length}<<${separator}${bar_right}%<<"
 
-    PROMPT="${bar_left}${bar_right}"$'\n'"${prompt_left}"
+    PROMPT="%F{green}${bar_left}${bar_right}%f"$'\n'"${prompt_left}"
 
     LANG=C vcs_info >&/dev/null
     if [ -n "$vcs_info_msg_0_" ]; then
-        RPROMPT="${vcs_info_msg_0_}"
+        RPROMPT="%F{green}${vcs_info_msg_0_}%f"
     fi
 }
 
