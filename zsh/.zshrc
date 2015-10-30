@@ -117,6 +117,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
+alias restart='exec $SHELL -l'
 
 ########################################
 # option

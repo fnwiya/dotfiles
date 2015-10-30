@@ -46,5 +46,5 @@ gmp                     nkf                     zsh
 gnutls                  node                    zsh-completions
 go                      openssl
 goaccess                pcre
-nvm rbenv
+nvm rbenv tmux
 
