@@ -9,3 +9,5 @@ ln -sf ~/dotfiles/bash/.bashrc ~/.bash_profile
 ln -sf ~/dotfiles/gem/.gemrc ~/.gemrc
 ln -sf ~/dotfiles/gem/.gem ~/.gem
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/osx/key4remap/private.xml ~/Library/Application Support/Karabiner/private.xml
+

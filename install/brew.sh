@@ -31,5 +31,20 @@ brew upgrade --all
 
 # Install homebrew packages
 brew install tern
-
+aspell                  htop-osx                peco
+autoconf                jpeg                    pixman
+bdw-gc                  leiningen               pkg-config
+brew-cask               libffi                  postgresql
+cmigemo                 libsigsegv              pyenv
+ctags                   libtasn1                pyenv-virtualenv
+gdbm                    makedepend              qemu
+gettext                 mecab                   readline
+git                     multimarkdown           w3m
+glib                    nasm                    xz
+global                  nettle                  z
+gmp                     nkf                     zsh
+gnutls                  node                    zsh-completions
+go                      openssl
+goaccess                pcre
+nvm rbenv
 exit 0

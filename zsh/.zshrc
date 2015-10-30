@@ -4,8 +4,10 @@
 export LANG=ja_JP.UTF-8
 export KCODE=u
 export EDITOR=vim
-
-export PATH="/usr/local/bin:$PATH"
+## vimがなくてもvimでviを起動する。
+if ! type vim > /dev/null 2>&1; then
+    alias vim=vi
+fi
 
 ########################################
 # 見た目
@@ -14,29 +16,50 @@ export PATH="/usr/local/bin:$PATH"
 autoload -Uz colors
 colors
 
-# プロンプト
-PROMPT="%{${fg[green]}%}[%n@]%{${reset_color}%} %~
-%# "
-
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 
 # beep を無効にする
 setopt no_beep
+
 ########################################
-# vcs_info
+# プロンプト
 ########################################
+# Copyright 2011-2015 Kouhei Sutou <kou@clear-code.com>
+# https://github.com/clear-code/zsh.d/blob/master/zshrc
+# looks like bellow
+# [name@hostname]                                                     [/your/dir]
+# %                                                                  [git:branch]
+prompt_bar_left="[%n@%m]"
+prompt_bar_right="[%d]"
+prompt_left="%# " # 一般ユーザなら%/rootユーザなら#
 autoload -Uz vcs_info
-autoload -Uz add-zsh-hook
+zstyle ':vcs_info:*' formats '[%s:%b]'
 
-zstyle ':vcs_info:*' formats '%F{green}(%s)-[%b]%f'
-zstyle ':vcs_info:*' actionformats '%F{red}(%s)-[%b|%a]%f'
-
-function _update_vcs_info_msg() {
-    LANG=en_US.UTF-8 vcs_info
-    RPROMPT="${vcs_info_msg_0_}"
+count_prompt_characters(){
+    print -n -P -- "$1" | sed -e $'s/\e\[[0-9;]*m//g' | wc -m | sed -e 's/ //g'
 }
-add-zsh-hook precmd _update_vcs_info_msg
+
+update_prompt(){
+    local bar_left_length=$(count_prompt_characters "$prompt_bar_left")
+    local bar_rest_length=$[COLUMNS - bar_left_length]
+    local bar_left="$prompt_bar_left"
+    local bar_right_without_path="${prompt_bar_right:s/%d//}"
+    local bar_right_without_path_length=$(count_prompt_characters "$bar_right_without_path")
+    local max_path_length=$[bar_rest_length - bar_right_without_path_length]
+    bar_right=${prompt_bar_right:s/%d/%(C,%${max_path_length}<...<%d%<<,)/}
+    local separator="${(l:${bar_rest_length}:: :)}"
+    bar_right="%${bar_rest_length}<<${separator}${bar_right}%<<"
+
+    PROMPT="${bar_left}${bar_right}"$'\n'"${prompt_left}"
+
+    LANG=C vcs_info >&/dev/null
+    if [ -n "$vcs_info_msg_0_" ]; then
+        RPROMPT="${vcs_info_msg_0_}"
+    fi
+}
+
+precmd_functions=($precmd_functions update_prompt)
 ########################################
 # 操作感
 ########################################
@@ -44,18 +67,11 @@ add-zsh-hook precmd _update_vcs_info_msg
 bindkey -e
 
 ########################################
-# option
-########################################
-# '#' 以降をコメントとして扱う
-setopt interactive_comments
-
-
-########################################
 # ディレクトリ
 ########################################
 setopt auto_cd           # ディレクトリ名だけでcdする
 setopt auto_pushd        # cd時にディレクトリスタックにpushdする
-
+function chpwd() { ls } #cdしたあとで、自動的に ls する
 ########################################
 # ヒストリ
 ########################################
@@ -65,13 +81,6 @@ SAVEHIST=1000000
 setopt hist_ignore_dups
 setopt share_history # 同時に起動したzshの間でヒストリを共有する
 setopt hist_reduce_blanks # 余分なスペースを削除してヒストリに保存する
-
-# マッチしたコマンドのヒストリを表示できるようにする
-autoload history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-bindkey "^P" history-beginning-search-backward-end
-bindkey "^N" history-beginning-search-forward-end
 
 ########################################
 # 補完
@@ -110,13 +119,11 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 
 ########################################
-# peco
+# option
 ########################################
-function peco-history-selection() {
-    BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-    CURSOR=$#BUFFER
-    zle reset-prompt
-}
+# '#' 以降をコメントとして扱う
+setopt interactive_comments
 
-zle -N peco-history-selection
-bindkey '^R' peco-history-selection
+########################################
+# 
+########################################
