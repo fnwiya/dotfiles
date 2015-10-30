@@ -30,6 +30,6 @@ brew update
 brew upgrade --all
 
 # Install homebrew packages
-brew install tern
+brew install tern peco zsh sbcl git leiningen
 
 exit 0

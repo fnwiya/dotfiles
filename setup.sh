@@ -9,3 +9,5 @@ ln -sf ~/dotfiles/bash/.bashrc ~/.bash_profile
 ln -sf ~/dotfiles/gem/.gemrc ~/.gemrc
 ln -sf ~/dotfiles/gem/.gem ~/.gem
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+which zsh
+chsh -s /usr/local/bin/zsh
