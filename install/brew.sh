@@ -24,26 +24,27 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Make sure we’re using the latest Homebrew.
+brew doctor
 brew update
-
-# Upgrade any already-installed formulae.
 brew upgrade --all
 
 # Install homebrew packages
-brew install
-aspell                  htop-osx                peco
-autoconf                jpeg                    pixman
-bdw-gc                  leiningen               pkg-config
-brew-cask               libffi                  postgresql
-cmigemo                 libsigsegv              pyenv
-ctags                   libtasn1                pyenv-virtualenv
-gdbm                    makedepend              qemu
-gettext                 mecab                   readline
-git                     multimarkdown           w3m
-glib                    nasm                    xz
-global                  nettle                  z
-gmp                     nkf                     zsh
-gnutls                  node                    zsh-completions
-go                      openssl
-goaccess                pcre
-nvm rbenv tmux
+brew install aspell
+brew install cmigemo
+brew install git
+brew install global
+brew install go
+brew install leiningen
+brew install mecab
+brew install node
+brew install nvm
+brew install peco
+brew install postgresql
+brew install pyenv
+brew install pyenv-virtualenv
+brew install rbenv
+brew install tmux
+brew install z
+brew install zsh
+
+brew cleanup

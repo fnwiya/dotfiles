@@ -16,6 +16,24 @@ fi
 autoload -Uz colors
 colors
 
+# Color定義
+DEFAULT=$'%{\e[0;0m%}'
+RESET="%{${reset_color}%}"
+GREEN="%{${fg[green]}%}"
+BOLD_GREEN="%{${fg_bold[green]}%}"
+BLUE="%{${fg[blue]}%}"
+BOLD_BLUE="%{${fg_bold[blue]}%}"
+RED="%{${fg[red]}%}"
+BOLD_RED="%{${fg_bold[red]}%}"
+CYAN="%{${fg[cyan]}%}"
+BOLD_CYAN="%{${fg_bold[cyan]}%}"
+YELLOW="%{${fg[yellow]}%}"
+BOLD_YELLOW="%{${fg_bold[yellow]}%}"
+MAGENTA="%{${fg[magenta]}%}"
+BOLD_MAGENTA="%{${fg_bold[magenta]}%}"
+WHITE="%{${fg[white]}%}"
+
+
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 

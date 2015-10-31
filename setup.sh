@@ -10,4 +10,4 @@ ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/gem/.gemrc ~/.gemrc
 ln -sf ~/dotfiles/gem/.gem ~/.gem
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/osx/key4remap/private.xml ~/Library/Application Support/Karabiner/private.xml
+ln -sf ~/dotfiles/install/osx/key4remap/private.xml ~/Library/Application Support/Karabiner/private.xml
