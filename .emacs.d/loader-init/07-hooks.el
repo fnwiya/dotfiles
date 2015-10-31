@@ -9,9 +9,10 @@
     Javascript-IDE-mode-hook
     js2-mode-hook
     lisp-mode-hook
-    ruby-mode-hook
-    sh-mode-hook
     python-mode-hook
+    ruby-mode-hook
+    REPL-mode-hook
+    sh-mode-hook
     web-mode))
 
 (defvar *txt-hooks*

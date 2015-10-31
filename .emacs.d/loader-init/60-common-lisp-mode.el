@@ -1,3 +1,5 @@
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+
 (use-package slime
   :config
   (slime-setup '(slime-repl slime-fancy slime-banner))

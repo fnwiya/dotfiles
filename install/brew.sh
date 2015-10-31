@@ -43,6 +43,7 @@ brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
 brew install rbenv
+brew install sbcl
 brew install tmux
 brew install z
 brew install zsh

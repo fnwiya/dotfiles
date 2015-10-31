@@ -146,5 +146,5 @@ alias restart='exec $SHELL -l'
 setopt interactive_comments
 
 ########################################
-# 
+# peco
 ########################################
