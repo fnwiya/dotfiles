@@ -31,6 +31,7 @@ brew upgrade --all
 # Install homebrew packages
 brew install aspell
 brew install cmigemo
+brew install --cocoa emacs
 brew install git
 brew install global
 brew install go

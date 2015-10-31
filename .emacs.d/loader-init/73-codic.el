@@ -1,5 +1,6 @@
 (use-package codic
-  :defer t
+  :commands
+  (codic)
   :config
   (push '("*Codic Result*") popwin:special-display-config)
   )

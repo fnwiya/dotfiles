@@ -10,21 +10,21 @@ if ! type vim > /dev/null 2>&1; then
 fi
 
 ########################################
-# 見た目
+# look&feel
 ########################################
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
-export TERM="xterm-256color"
+if [ "$TERM" = "xterm" ]; then
+    export TERM="xterm-256color"
+fi
 
-# 日本語ファイル名を表示可能にする
-setopt print_eight_bit
-
-# beep を無効にする
-setopt no_beep
+setopt print_eight_bit # 日本語ファイル名を表示可能にする
+setopt no_beep         # beep を無効にする
+bindkey -e             # emacs 風キーバインドにする
 
 ########################################
-# プロンプト
+# prompt
 ########################################
 # Copyright 2011-2015 Kouhei Sutou <kou@clear-code.com>
 # https://github.com/clear-code/zsh.d/blob/master/zshrc
@@ -61,20 +61,15 @@ update_prompt(){
 }
 
 precmd_functions=($precmd_functions update_prompt)
-########################################
-# 操作感
-########################################
-# emacs 風キーバインドにする
-bindkey -e
 
 ########################################
-# ディレクトリ
+# directory
 ########################################
 setopt auto_cd           # ディレクトリ名だけでcdする
 setopt auto_pushd        # cd時にディレクトリスタックにpushdする
 function chpwd() { ls } #cdしたあとで、自動的に ls する
 ########################################
-# ヒストリ
+# history
 ########################################
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
@@ -92,9 +87,9 @@ zshaddhistory() {
     local cmd=${line%% *}  # １つ目のコマンド
     # 以下の条件をすべて満たすものだけをヒストリに追加する
     [[ ${#line} -ge 5
-        && ${cmd} != (l[sal])
+        && ${cmd} != (l|l[sal])
         && ${cmd} != (cd)
-        && ${cmd} != (man)
+        && ${cmd} != (m|man)
         && ${cmd} != (r[mr])
     ]]
 }
@@ -105,7 +100,7 @@ zshaddhistory() {
 autoload -Uz compinit
 compinit -u
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # 小文字でも大文字にマッチさせる
-setopt correct           # コマンドのスペルを訂正する
+setopt correct                 # コマンドのスペルを訂正する
 setopt auto_list               # 補完候補を一覧で表示する(d)
 setopt auto_menu               # 補完キー連打で補完候補を順に表示する(d)
 setopt list_packed             # 補完候補をできるだけ詰めて表示する
@@ -120,7 +115,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias restart='exec $SHELL -l'
-
+alias evalenv='source dotfiles/zsh/.zshenv'
 
 # OS 別の設定
 case ${OSTYPE} in
@@ -128,7 +123,7 @@ case ${OSTYPE} in
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
-        alias em='env TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/Emacs -nw'
+        alias em='env TERM=xterm-256color /usr/local/bin/emacs'
         alias brewupd='brew update && brew upgrade --all && brew doctor'
         ;;
     linux*)
@@ -146,8 +141,8 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 ########################################
 # peco
 ########################################
-alias -g P='| peco'
 if [ -x "`which peco`" ]; then
+    alias -g P='| peco'
     alias ll='ls -la | peco'
     alias tp='top | peco'
     alias pp='ps aux | peco'
