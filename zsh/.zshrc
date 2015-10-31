@@ -95,6 +95,8 @@ setopt list_packed             # 補完候補をできるだけ詰めて表示�
 setopt list_types              # 補完候補にファイルの種類も表示する
 bindkey "^[[Z" reverse-menu-complete  # Shift-Tabで補完候補を逆順する("\e[Z"でも動作する)
 
+
+
 ########################################
 # alias
 ########################################
@@ -103,16 +105,15 @@ case ${OSTYPE} in
     darwin*)
         #Mac用の設定
         export CLICOLOR=1
-        alias ls='ls -G -F'
-alias em='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
+        alias ls='ls -A -G -F'
+        alias em='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
         ;;
     linux*)
         #Linux用の設定
-        alias ls='ls -F --color=auto'
+        alias ls='ls -A -F --color=auto'
         ;;
 esac
 
-alias la="ls -a"
 alias ll="ls -l"
 alias rm='rm -i'
 alias cp='cp -i'

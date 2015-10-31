@@ -30,7 +30,7 @@ brew update
 brew upgrade --all
 
 # Install homebrew packages
-brew install tern
+brew install
 aspell                  htop-osx                peco
 autoconf                jpeg                    pixman
 bdw-gc                  leiningen               pkg-config
@@ -47,4 +47,3 @@ gnutls                  node                    zsh-completions
 go                      openssl
 goaccess                pcre
 nvm rbenv tmux
-

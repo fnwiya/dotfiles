@@ -1,4 +1,3 @@
-;; Ricty フォントの利用
 (when (memq window-system '(mac ns))
   (create-fontset-from-ascii-font "Ricty-14:weight=normal:slant=normal" nil "ricty")
   (set-fontset-font "fontset-ricty"
