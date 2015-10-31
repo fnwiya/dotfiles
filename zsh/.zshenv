@@ -8,8 +8,12 @@ path=(
    /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    $path
 )
-# nvm
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
+
+# for go lang
+if [ -x "`which go`" ]; then
+  export GOPATH=$HOME/go
+  export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
