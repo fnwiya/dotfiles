@@ -15,24 +15,7 @@ fi
 # 色を使用出来るようにする
 autoload -Uz colors
 colors
-
-# Color定義
-DEFAULT=$'%{\e[0;0m%}'
-RESET="%{${reset_color}%}"
-GREEN="%{${fg[green]}%}"
-BOLD_GREEN="%{${fg_bold[green]}%}"
-BLUE="%{${fg[blue]}%}"
-BOLD_BLUE="%{${fg_bold[blue]}%}"
-RED="%{${fg[red]}%}"
-BOLD_RED="%{${fg_bold[red]}%}"
-CYAN="%{${fg[cyan]}%}"
-BOLD_CYAN="%{${fg_bold[cyan]}%}"
-YELLOW="%{${fg[yellow]}%}"
-BOLD_YELLOW="%{${fg_bold[yellow]}%}"
-MAGENTA="%{${fg[magenta]}%}"
-BOLD_MAGENTA="%{${fg_bold[magenta]}%}"
-WHITE="%{${fg[white]}%}"
-
+export TERM="xterm-256color"
 
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
@@ -111,33 +94,30 @@ setopt auto_list               # 補完候補を一覧で表示する(d)
 setopt auto_menu               # 補完キー連打で補完候補を順に表示する(d)
 setopt list_packed             # 補完候補をできるだけ詰めて表示する
 setopt list_types              # 補完候補にファイルの種類も表示する
-bindkey "^[[Z" reverse-menu-complete  # Shift-Tabで補完候補を逆順する("\e[Z"でも動作する)
-
-
 
 ########################################
 # alias
 ########################################
-# OS 別の設定
-case ${OSTYPE} in
-    darwin*)
-        #Mac用の設定
-        export CLICOLOR=1
-        alias ls='ls -A -G -F'
-        alias em='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
-        ;;
-    linux*)
-        #Linux用の設定
-        alias ls='ls -A -F --color=auto'
-        ;;
-esac
-
 alias ll="ls -l"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias restart='exec $SHELL -l'
+
+# OS 別の設定
+case ${OSTYPE} in
+    darwin*)
+        #Mac用の設定
+        export CLICOLOR=1
+        alias ls='ls -A -G -F'
+        alias em='env TERM=xterm-256color /Applications/Emacs.app/Contents/MacOS/Emacs -nw'
+        ;;
+    linux*)
+        #Linux用の設定
+        alias ls='ls -A -F --color=auto'
+        ;;
+esac
 
 ########################################
 # option
@@ -148,3 +128,54 @@ setopt interactive_comments
 ########################################
 # peco
 ########################################
+alias -g P='| peco'
+if [ -x "`which peco`" ]; then
+    alias ll='ls -la | peco'
+    alias tp='top | peco'
+    alias pp='ps aux | peco'
+
+    function peco-select-history() {
+        local tac
+        if which tac > /dev/null; then
+            tac="tac"
+        else
+            tac="tail -r"
+        fi
+        BUFFER=$(history -n 1 | \
+                        eval $tac | \
+                        peco --query "$LBUFFER")
+        CURSOR=$#BUFFER
+        zle clear-screen
+    }
+
+    autoload -Uz is-at-least
+    if is-at-least 4.3.11
+    then
+        autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+        add-zsh-hook chpwd chpwd_recent_dirs
+        zstyle ':chpwd:*' recent-dirs-max 5000
+        zstyle ':chpwd:*' recent-dirs-default yes
+        zstyle ':completion:*' recent-dirs-insert both
+    fi
+    zle -N peco-select-history
+    bindkey '^r' peco-select-history
+
+    function peco-cdr () {
+        local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
+        if [ -n "$selected_dir" ]; then
+            BUFFER="cd ${selected_dir}"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N peco-cdr
+    bindkey '^@' peco-cdr
+
+    function peco-kill-process () {
+        ps -ef | peco | awk '{ print $2 }' | xargs kill
+        zle clear-screen
+    }
+    zle -N peco-kill-process
+    bindkey '^xk' peco-kill-process
+
+fi
