@@ -115,7 +115,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias restart='exec $SHELL -l'
-alias evalenv='source dotfiles/zsh/.zshenv'
+alias evalenv='source ~/dotfiles/zsh/.zshenv'
 
 # OS 別の設定
 case ${OSTYPE} in
@@ -189,4 +189,29 @@ if [ -x "`which peco`" ]; then
     zle -N peco-kill-process
     bindkey '^xk' peco-kill-process
 
+    function peco-z-search
+    {
+      which peco z > /dev/null
+      if [ $? -ne 0 ]; then
+        echo "Please install peco and z"
+        return 1
+      fi
+      local res=$(z | sort -rn | cut -c 12- | peco)
+      if [ -n "$res" ]; then
+        BUFFER+="cd $res"
+        zle accept-line
+      else
+        return 1
+      fi
+    }
+    zle -N peco-z-search
+    bindkey '^f' peco-z-search
 fi
+########################################
+# z
+########################################
+#_Z_CMD=j
+. `brew --prefix`/etc/profile.d/z.sh
+function precmd() {
+    z --add "$(pwd -P)"
+}
