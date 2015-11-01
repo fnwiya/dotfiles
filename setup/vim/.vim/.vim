@@ -1,1 +1,0 @@
-/home/forcia/dotfiles/vim/.vim

@@ -10,8 +10,6 @@ ln -sf ~/dotfiles/setup/bash/.bash_profile ~
 ln -sf ~/dotfiles/setup/.tmux.conf ~
 ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
-ln -sf ~/dotfiles/setup/gem/.gemrc ~
-ln -sf ~/dotfiles/setup/gem/.gem ~
 #karabinerDir=~/Library/Application Support/Karabiner
 #if [ -e $karabinerDir ]; then
 #    ln -sf ~/dotfiles/install/osx/key4remap/private.xml $karabinerDir/private.xml

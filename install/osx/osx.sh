@@ -5,7 +5,7 @@
 #
 
 # 起動音を小さく
-sudo nvram SystemAudioVolume=%05
+sudo nvram SystemAudioVolume=%00
 
 # フルキーボードアクセスを有効
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
