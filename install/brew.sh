@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #http://qiita.com/b4b4r07/items/6efebc2f3d1cbbd393fc
+# at first install xcode from app store
+# xcode-select --install
 
 # Check for Homebrew
 if test ! $(which brew)
@@ -29,8 +31,11 @@ brew update
 brew upgrade --all
 
 # Install homebrew packages
+# brewfile使うなら http://tech.basicinc.jp/Mac/2014/04/20/mac_app_engineer/
 brew install aspell
+brew install brew-cask
 brew install cmigemo
+brew install curl
 brew install --cocoa emacs
 brew install git
 brew install global
@@ -46,8 +51,22 @@ brew install pyenv-virtualenv
 brew install rbenv
 brew install sbcl
 brew install tmux
+brew install vim
 brew install wget
 brew install z
 brew install zsh
+
+brew cask install iterm2
+brew cask install alfred
+brew cask install evernote
+brew cask install dropbox
+brew cask install skype
+brew cask install firefox
+brew cask install google-chrome
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install sublime-text
+brew cask install the-unarchiver
+brew cask install google-japanese-ime
 
 brew cleanup

@@ -26,37 +26,78 @@ bindkey -e             # emacs 風キーバインドにする
 ########################################
 # prompt
 ########################################
-# Copyright 2011-2015 Kouhei Sutou <kou@clear-code.com>
-# https://github.com/clear-code/zsh.d/blob/master/zshrc
 # looks like bellow
-# [name@hostname]                                                     [/your/dir]
-# %                                                                  [git:branch]
-prompt_bar_left="[%n@%m] "
-prompt_bar_right=" [%d]"
+# [/your/dir]                                            [name@hostname]
+# %                                                         [git:branch]
+prompt_bar_left="[%d] "
+prompt_bar_right="[%n@%m]"
 prompt_left="%# " # 一般ユーザなら%/rootユーザなら#
+# http://eseth.org/2010/git-in-zsh.html
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats '[%s:%b]'
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*:*' get-revision true
+zstyle ':vcs_info:git*:*' check-for-changes true
+
+# hash changes branch misc
+zstyle ':vcs_info:git*' formats "[%s] %12.12i %c%u %b%m"
+zstyle ':vcs_info:git*' actionformats "(%s|%a) %12.12i %c%u %b%m"
+
+zstyle ':vcs_info:git*+set-message:*' hooks git-st git-stash
+
+# Show remote ref name and number of commits ahead-of or behind
+function +vi-git-st() {
+    local ahead behind remote
+    local -a gitstatus
+
+    # Are we on a remote-tracking branch?
+    remote=${$(git rev-parse --verify ${hook_com[branch]}@{upstream} \
+        --symbolic-full-name 2>/dev/null)/refs\/remotes\/}
+    if [[ -n ${remote} ]] ; then
+        # for git prior to 1.7
+        # ahead=$(git rev-list origin/${hook_com[branch]}..HEAD | wc -l)
+        ahead=$(git rev-list ${hook_com[branch]}@{upstream}..HEAD 2>/dev/null | wc -l)
+        (( $ahead )) && gitstatus+=( "${c3}+${ahead}${c2}" )
+        # for git prior to 1.7
+        # behind=$(git rev-list HEAD..origin/${hook_com[branch]} | wc -l)
+        behind=$(git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l)
+        (( $behind )) && gitstatus+=( "${c4}-${behind}${c2}" )
+
+        hook_com[branch]="${hook_com[branch]} [${remote} ${(j:/:)gitstatus}]"
+    fi
+}
+# Show count of stashed changes
+function +vi-git-stash() {
+    local -a stashes
+    if [[ -s ${hook_com[base]}/.git/refs/stash ]] ; then
+        stashes=$(git stash list 2>/dev/null | wc -l)
+        hook_com[misc]+=" (${stashes} stashed)"
+    fi
+}
 
 count_prompt_characters(){
     print -n -P -- "$1" | sed -e $'s/\e\[[0-9;]*m//g' | wc -m | sed -e 's/ //g'
 }
 
 update_prompt(){
-    local bar_left_length=$(count_prompt_characters "$prompt_bar_left")
-    local bar_rest_length=$[COLUMNS - bar_left_length]
-    local bar_left="$prompt_bar_left"
-    local bar_right_without_path="${prompt_bar_right:s/%d//}"
-    local bar_right_without_path_length=$(count_prompt_characters "$bar_right_without_path")
-    local max_path_length=$[bar_rest_length - bar_right_without_path_length]
-    bar_right=${prompt_bar_right:s/%d/%(C,%${max_path_length}<...<%d%<<,)/}
-    local separator="${(l:${bar_rest_length}:: :)}"
-    bar_right="%${bar_rest_length}<<${separator}${bar_right}%<<"
+    local bar_right_length=$(count_prompt_characters "$prompt_bar_right")
+    local bar_without_right_length=$[COLUMNS - bar_right_length]
+    local bar_right="$prompt_bar_right"
+    local bar_left_without_path="${prompt_bar_left:s/%d//}"
+    local bar_left_without_path_length=$(count_prompt_characters "$bar_left_without_path")
+    local max_path_length=$[bar_without_right_length - bar_left_without_path_length]
+    bar_left=${prompt_bar_left:s/%d/%(C,%${max_path_length}<...<%d%<<,)/}
+    local bar_left_length=$(count_prompt_characters ${bar_left})
+    local separator_length=$[bar_without_right_length - bar_left_length]
+    local separator="${(l:${separator_length}:: :)}"
+    bar_right="${separator}${bar_right}"
 
     PROMPT="%F{green}${bar_left}${bar_right}%f"$'\n'"${prompt_left}"
 
     LANG=C vcs_info >&/dev/null
     if [ -n "$vcs_info_msg_0_" ]; then
         RPROMPT="%F{green}${vcs_info_msg_0_}%f"
+    else
+        RPROMPT=""
     fi
 }
 
