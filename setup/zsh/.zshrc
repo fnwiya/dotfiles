@@ -56,6 +56,7 @@ update_prompt(){
 precmd_functions=($precmd_functions update_prompt)
 
 ## vcs_info
+# http://qiita.com/mollifier/items/8d5a627d773758dd8078
 autoload -Uz vcs_info
 autoload -Uz add-zsh-hook
 autoload -Uz is-at-least
@@ -73,11 +74,13 @@ zstyle ':vcs_info:*' actionformats '[%s-%b]' '%m' '<!%a>'
 zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
 
+
+# for git
 if is-at-least 4.3.10; then
     # git 用のフォーマット
     # git のときはステージしているかどうかを表示
-    zstyle ':vcs_info:git*' formats "[%s-%b]" "%c%u" "%m"
-    zstyle ':vcs_info:git*' actionformats "[%s-%b]" "%c%u" "%m" "<!%a>"
+    zstyle ':vcs_info:git*' formats "[%s-%b]" "%c%u %m"
+    zstyle ':vcs_info:git*' actionformats "[%s-%b]" "%c%u %m" "<!%a>"
     zstyle ':vcs_info:git:*' check-for-changes true
     zstyle ':vcs_info:git:*' stagedstr "+"    # %c で表示する文字列
     zstyle ':vcs_info:git:*' unstagedstr "-"  # %u で表示する文字列
@@ -210,7 +213,7 @@ add-zsh-hook precmd _update_vcs_info_msg
 ########################################
 setopt auto_cd           # ディレクトリ名だけでcdする
 setopt auto_pushd        # cd時にディレクトリスタックにpushdする
-function chpwd() { ls } #cdしたあとで、自動的に ls する
+function chpwd() { ls -A -F} #cdしたあとで、自動的に ls する
 ########################################
 # history
 ########################################
@@ -258,7 +261,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias restart='exec $SHELL -l'
-alias evalenv='source ~/dotfiles/zsh/.zshenv'
+alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
 
 # OS 別の設定
 case ${OSTYPE} in
