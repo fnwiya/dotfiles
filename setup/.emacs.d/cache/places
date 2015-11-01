@@ -1,11 +1,11 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/fnwiya/.emacs.d/cache/ido.last" . 3099)
+(("/Users/fnwiya/dotfiles/setup/zsh/.zshrc" . 11160)
  ("/Users/fnwiya/.emacs.d/cache/.recentf" . 3657)
- ("/Users/fnwiya/dotfiles/setup/zsh/.zshrc" . 8958)
+ ("/Users/fnwiya/dotfiles/setup.sh" . 44)
+ ("/Users/fnwiya/.emacs.d/cache/ido.last" . 3099)
  ("/Users/fnwiya/dotfiles/setup/.emacs.d/loader-init/06-recentf.el" . 160)
  ("/Users/fnwiya/dotfiles/install/osx/osx.sh" . 65)
  ("/Users/fnwiya/dotfiles/install.sh" . 180)
- ("/Users/fnwiya/dotfiles/setup.sh" . 44)
  ("/Users/fnwiya/.gitconfig" . 26)
  ("/Users/fnwiya/dotfiles/"
   (dired-filename . "/Users/fnwiya/dotfiles/setup.sh"))

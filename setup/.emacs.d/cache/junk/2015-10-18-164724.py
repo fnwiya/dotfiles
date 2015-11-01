@@ -1,3 +1,0 @@
-print("test")
-if cond:
-    
