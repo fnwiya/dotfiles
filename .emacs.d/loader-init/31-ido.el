@@ -21,7 +21,7 @@
   (setq ido-enable-flex-matching t)
   (setq ido-use-faces nil)
   (setq ido-create-new-buffer 'always)
-  (setq ido-use-filename-at-point nil)
+  (setq ido-use-filename-at-point 'guess)
   (setq ido-save-directory-list-file "~/.emacs.d/cache/ido.last")
   (ido-vertical-mode 1)
   (setq ido-vertical-define-keys 'C-n-C-p-up-and-down)

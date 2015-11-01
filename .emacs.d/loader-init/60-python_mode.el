@@ -8,12 +8,6 @@
   (setq tab-width 4)
   )
 
-(use-package highlight-indentation
-  :config
-  (add-hook 'python-mode-hook  'highlight-indentation-mode)
-  (set-face-background 'highlight-indentation-face "#343d46")
-)
-
 
 ;(use-package jedi
 ;  :config

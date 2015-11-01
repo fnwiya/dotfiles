@@ -123,7 +123,7 @@ case ${OSTYPE} in
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
-        alias em='env TERM=xterm-256color /usr/local/bin/emacs'
+        alias em='TERM=xterm-256color /usr/local/bin/emacs'
         alias brewupd='brew update && brew upgrade --all && brew doctor'
         ;;
     linux*)
@@ -180,7 +180,7 @@ if [ -x "`which peco`" ]; then
         zle clear-screen
     }
     zle -N peco-cdr
-    bindkey '^@' peco-cdr
+    bindkey '^f' peco-cdr
 
     function peco-kill-process () {
         ps -ef | peco | awk '{ print $2 }' | xargs kill
@@ -189,29 +189,29 @@ if [ -x "`which peco`" ]; then
     zle -N peco-kill-process
     bindkey '^xk' peco-kill-process
 
-    function peco-z-search
-    {
-      which peco z > /dev/null
-      if [ $? -ne 0 ]; then
-        echo "Please install peco and z"
-        return 1
-      fi
-      local res=$(z | sort -rn | cut -c 12- | peco)
-      if [ -n "$res" ]; then
-        BUFFER+="cd $res"
-        zle accept-line
-      else
-        return 1
-      fi
-    }
-    zle -N peco-z-search
-    bindkey '^f' peco-z-search
+#    function peco-z-search
+#    {
+#      which peco z > /dev/null
+#      if [ $? -ne 0 ]; then
+#        echo "Please install peco and z"
+#        return 1
+#      fi
+#      local res=$(z | sort -rn | cut -c 12- | peco)
+#      if [ -n "$res" ]; then
+#        BUFFER+="cd $res"
+#        zle accept-line
+#      else
+#        return 1
+#      fi
+#    }
+#    zle -N peco-z-search
+#    bindkey '^f' peco-z-search
 fi
 ########################################
 # z
 ########################################
 #_Z_CMD=j
-. `brew --prefix`/etc/profile.d/z.sh
-function precmd() {
-    z --add "$(pwd -P)"
-}
+#. `brew --prefix`/etc/profile.d/z.sh
+#function precmd() {
+#    z --add "$(pwd -P)"
+#}
