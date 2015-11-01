@@ -1,0 +1,33 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/fnwiya/dotfiles/" . "zsh/")
+ ("/Users/fnwiya/" . "dotfiles/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/fnwiya/dotfiles/zsh/"
+ "/Users/fnwiya/dotfiles/install/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".zshrc"
+ "brew.sh"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/fnwiya/dotfiles/zsh/" (22069 43394 0 0) ".zshrc" ".zshenv" ".zsh.d/" "../" "./")
+
+ ("/Users/fnwiya/dotfiles/install/" (22069 46280 0 0) "sbcl.sh" "pip.sh" "osx/" "npm.sh" "brew.sh" "apt-get.sh" "../" "./")
+
+ ("/Users/fnwiya/dotfiles/" (22068 46880 0 0) "zsh/" "vim/" "setup.sh" "README.md" "install.sh" "install/" "doc/" "bash/" ".tmux.conf" ".tern-config" ".sbclrc" ".peco/" ".gitignore" ".gitconfig" ".git/" ".emacs.d/" "../" "./")
+
+ ("/Users/fnwiya/" (22069 45278 0 0) "quicklisp/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zshenv" ".zsh_history" ".zcompdump" ".z" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmux.conf" ".tern-config" ".terminfo/" ".ssh/" ".slime-history.eld" ".slime/" ".sbclrc" ".ruby-version" ".rbenv/" ".python_history" ".pyenv/" ".peco/" ".npm/" ".node-gyp/" ".netrc" ".lein/" ".heroku/" ".gitconfig" ".gemrc" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".chpwd-recent-dirs" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

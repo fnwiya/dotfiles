@@ -6,8 +6,6 @@ echo "Installing dotfiles"
 echo "Initializing submodule(s)"
 git submodule update --init --recursive
 
-source install/link.sh
-
 if [ "$(uname)" == "Darwin" ]; then
     echo "Running on OSX"
 
@@ -16,9 +14,6 @@ if [ "$(uname)" == "Darwin" ]; then
 
     echo "Updating OSX settings"
     source install/osx.sh
-
-    echo "Installing node (from nvm)"
-    source install/nvm.sh
 
     echo "Configuring nginx"
     # create a backup of the original nginx.conf
