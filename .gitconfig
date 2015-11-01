@@ -1,5 +1,5 @@
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = /Users/fnwiya/.gitignore_global
     editor = vim
 [include]
     path = ~/.gitconfig.local
