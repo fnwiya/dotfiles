@@ -42,6 +42,7 @@ brew install global
 brew install go
 brew install leiningen
 brew install mecab
+brew install mecab-ipadic
 brew install node
 brew install nvm
 brew install peco

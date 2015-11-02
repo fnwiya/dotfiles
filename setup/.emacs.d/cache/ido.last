@@ -2,36 +2,48 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/fnwiya/.emacs.d/" . "loader-init/")
- ("/Users/fnwiya/" . ".emacs.d/")
- ("/Users/fnwiya/.emacs.d/cache/" . "junk/")
+ ("/Users/fnwiya/dotfiles/setup/.emacs.d/" . "loader-init/")
+ ("/Users/fnwiya/dotfiles/" . "install/")
+ ("/Users/fnwiya/" . "dotfiles/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/fnwiya/.emacs.d/loader-init/"
+ "/Users/fnwiya/dotfiles/install/"
+ "/Users/fnwiya/dotfiles/setup/.emacs.d/loader-init/"
  "/Users/fnwiya/dotfiles/"
+ "/Users/fnwiya/Downloads/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".gitignore"
- "37-multiple-cursors.el"
+ "pip.sh"
+ "08-font.el"
+ "install.sh"
+ "test.py"
+ "brew.sh"
+ "npm.sh"
+ "easy_install.sh"
+ ".gitconfig"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/fnwiya/.emacs.d/loader-init/" (22070 266 0 0) "nw-emacs.el" "cocoa-emacs-aspell.el" "_31-helm.el" "_27-neotree.el" "_09-hydra.el" "99-global-keybind.el" "90-after-init.el" "84-browse-current-file.el" "83-reopen-file-as-root.el" "82-newline-or-openline.el" "81-kill-nonactive-buffer.el" "74-auto-capitalize.el" "73-codic.el" "72-aspell.el" "71-google-translate.el" "65-imp.el" "63-ahg.el" "62-git.el" "61-eww.el" "60-web-mode.el" "60-view-mode.el" "60-sql-mode.el" "60-python_mode.el" "60-nxml-mode.el" "60-markdown-mode.el" "60-js-mode.el" "60-elisp-mode.el" "60-common-lisp-mode.el" "60-clojure-mode.el" "60-c-mode.el" "50-flycheck.el" "49-sequential-command.el" "48-corral.el" "47-isearch-region.el" "46-open-junk-file.el" "45-projectile.el" "43-ace-jump.el" "42-smartchr.el" "41-undohist.el" "40-wgrep.el" "39-undo-tree.el" "38-quickrun.el" "37-multiple-cursors.el" "36-expand-region.el" "35-anzu.el" "34-yasnippet.el" "33-auto-complete.el" "32-popwin.el" "31-ido.el" "30-dired.el" "29-whitespace.el" "26-rainbow-delimiters.el" "25-highlight-symbol.el" "24-rainbow-mode.el" "23-tabbar.el" "22-mode-line.el" "21-color-theme.el" "20-display.el" "11-multi-term.el" "10-exec-path-from-shell.elc" "10-exec-path-from-shell.el" "08-font.el" "07-hooks.el" "06-recentf.el" "04-language.el" "02-scroll.el" "01-basic-setting.el" "../" "./")
+ ("/Users/fnwiya/dotfiles/install/" (22070 14163 0 0) "sbcl.sh" "pyenv.sh" "pip.sh" "osx/" "npm.sh" "mecab.sh" "easy_install.sh" "brew.sh" "apt-get.sh" "../" "./")
 
- ("/Users/fnwiya/" (22070 358 0 0) "quicklisp/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zshenv" ".zsh_history" ".zcompdump" ".z" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmux.conf" ".tern-config" ".terminfo/" ".ssh/" ".slime-history.eld" ".slime/" ".sbclrc" ".ruby-version" ".rbenv/" ".python_history" ".pyenv/" ".peco/" ".npm/" ".node-gyp/" ".netrc" ".lein/" ".heroku/" ".gitconfig" ".gemrc" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".chpwd-recent-dirs" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" "../" "./")
+ ("/Users/fnwiya/Downloads/" (22070 13316 0 0) "test.py" "mecab-python-0.996.tar.gz" "mecab-python-0.996/" "mecab-ipadic-neologd/" "get_tweet.py" ".DS_Store" "../" "./")
 
- ("/Users/fnwiya/dotfiles/" (22069 63808 0 0) "setup.sh" "setup/" "README.md" "install.sh" "install/" "doc/" ".gitignore" ".gitconfig" ".git/" "../" "./")
+ ("/Users/fnwiya/dotfiles/setup/.emacs.d/loader-init/" (22070 12008 0 0) "nw-emacs.el" "cocoa-emacs-aspell.el" "_31-helm.el" "_27-neotree.el" "_09-hydra.el" "99-global-keybind.el" "90-after-init.el" "84-browse-current-file.el" "83-reopen-file-as-root.el" "82-newline-or-openline.el" "81-kill-nonactive-buffer.el" "74-auto-capitalize.el" "73-codic.el" "72-aspell.el" "71-google-translate.el" "65-imp.el" "63-ahg.el" "62-git.el" "61-eww.el" "60-web-mode.el" "60-view-mode.el" "60-sql-mode.el" "60-python_mode.el" "60-nxml-mode.el" "60-markdown-mode.el" "60-js-mode.el" "60-elisp-mode.el" "60-common-lisp-mode.el" "60-clojure-mode.el" "60-c-mode.el" "50-flycheck.el" "49-sequential-command.el" "48-corral.el" "47-isearch-region.el" "46-open-junk-file.el" "45-projectile.el" "43-ace-jump.el" "42-smartchr.el" "41-undohist.el" "40-wgrep.el" "39-undo-tree.el" "38-quickrun.el" "37-multiple-cursors.el" "36-expand-region.el" "35-anzu.el" "34-yasnippet.el" "33-auto-complete.el" "32-popwin.el" "31-ido.el" "30-dired.el" "29-whitespace.el" "26-rainbow-delimiters.el" "25-highlight-symbol.el" "24-rainbow-mode.el" "23-tabbar.el" "22-mode-line.el" "21-color-theme.el" "20-display.el" "11-multi-term.el" "10-exec-path-from-shell.elc" "10-exec-path-from-shell.el" "08-font.el" "07-hooks.el" "06-recentf.el" "04-language.el" "02-scroll.el" "01-basic-setting.el" "../" "./")
 
- ("/Users/fnwiya/.emacs.d/" (22069 65379 0 0) "themes/" "snippets/" "README.md" "loader-init/" "init.el" "elisp/" "cache/" "../" "./")
+ ("/Users/fnwiya/dotfiles/" (22070 11992 0 0) "setup.sh" "setup/" "README.md" "install.sh" "install/" "doc/" ".gitignore" ".gitconfig" ".git/" "../" "./")
 
- ("/Users/fnwiya/.emacs.d/cache/" (22069 64142 0 0) "undohist/" "tramp" "toodledo/" "places" "junk/" "ido.last" "auto-save-list33334-kounobunyas-MacBook-Air.local~" "auto-save-list/" "ac-comphist.dat" ".smex-items" ".recentf" "../" "./")
+ ("/Users/fnwiya/" (22070 13602 0 0) "quicklisp/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "dotfiles/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zshenv" ".zsh_history" ".zcompdump" ".z" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".tmux.conf" ".tern-config" ".terminfo/" ".subversion/" ".ssh/" ".slime-history.eld" ".slime/" ".sbclrc" ".ruby-version" ".rbenv/" ".python_history" ".pyenv/" ".peco/" ".npm/" ".node-gyp/" ".netrc" ".lein/" ".heroku/" ".gitignore_global" ".gitconfig" ".gemrc" ".gem/" ".emacs.d/" ".DS_Store" ".dropbox/" ".chpwd-recent-dirs" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" "../" "./")
 
- ("/Users/fnwiya/.emacs.d/cache/junk/" (22069 65296 0 0) "2015-11-01-205535.txt" "2015-11-01-151215.py" "2015-11-01-132621.txt" "2015-10-30-203243.txt" "2015-10-30-075658.txt" "2015-10-30-073600.ext" "2015-10-29-203558.txt" "2015-10-25-233542.sql" "2015-10-25-225311.c" "2015-10-24-122453.html" "2015-10-24-005250.html" "2015-10-24-003359.html" "2015-10-19-013947.jsp" "2015-10-19-013802.html" "2015-10-19-013524.js" "2015-10-18-164724.py" "2015-10-18-164255.py" "2015-10-18-164100.html" "2015-10-18-044449.py" "2015-10-18-001807.txt" "2015-10-15-231600.js" "2015-10-15-091429.js" ".#2015-10-15-205139.md" "#2015-10-15-205139.md#" "../" "./")
+ ("/Users/fnwiya/dotfiles/setup/.emacs.d/" (22069 65379 0 0) "themes/" "snippets/" "README.md" "loader-init/" "init.el" "elisp/" "cache/" "../" "./")
+
+ ("/Users/fnwiya/dotfiles/setup/.emacs.d/cache/" (22070 11860 0 0) "undohist/" "tramp" "toodledo/" "places" "junk/" "ido.last" "auto-save-list33334-kounobunyas-MacBook-Air.local~" "auto-save-list/" "ac-comphist.dat" ".smex-items" ".recentf" "../" "./")
+
+ ("/Users/fnwiya/dotfiles/setup/" (22070 6550 0 0) "zsh/" "vim/" "easy_install.sh" "bash/" ".tmux.conf" ".tern-config" ".sbclrc" ".peco/" ".gitignore_global" ".emacs.d/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
