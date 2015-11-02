@@ -9,9 +9,7 @@
   )
 
 
-;(use-package jedi
-;  :config
-;  (add-hook 'python-mode-hook 'jedi:setup)
-;  (setq jedi:complete-on-dot t)
-;)
+; (require 'jedi)
+; (add-hook 'python-mode-hook 'jedi:setup)
+; (setq jedi:complete-on-dot t)
 ;; M-x jedi:install-server

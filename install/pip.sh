@@ -16,6 +16,8 @@ pip install tweepy
 pip install xlrd
 pip install xlwt
 pip install xlutils
+pip install epc
+pip install jedi
 
 # pip freeze > requirements.txt
 # pip install -r requirements.txt
