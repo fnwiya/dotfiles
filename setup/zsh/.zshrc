@@ -49,7 +49,7 @@ update_prompt(){
     local bar_left_length=$(count_prompt_characters ${bar_left})
     local separator_length=$[bar_without_right_length - bar_left_length]
     local separator="${(l:${separator_length}:: :)}"
-    bar_right="${separator} ${bar_right}"
+    bar_right="${separator}${bar_right}"
 
     PROMPT="%F{green}${bar_left}${bar_right}%f"$'\n'"${prompt_left}"
 }
