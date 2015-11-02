@@ -13,7 +13,9 @@ pip install numpy
 brew install gfortran
 pip install scipy
 pip install tweepy
-
+pip install xlrd
+pip install xlwt
+pip install xlutils
 
 # pip freeze > requirements.txt
 # pip install -r requirements.txt

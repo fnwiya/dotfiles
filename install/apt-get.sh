@@ -10,3 +10,6 @@ sudo apt-get install wget
 sudo apt-get install build-essential
 sudo apt-get install python-setuptools
 sudo apt-get install python-pip
+sudo apt-get install python-numpy
+sudo apt-get install python-scipy
+sudo apt-get install python-matplotlib
