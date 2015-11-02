@@ -6,7 +6,6 @@ path=(
    /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    $path
 )
-export PATH="/usr/local/bin:$PATH"
 # for go lang
 if [ -x "`which go`" ]; then
   export GOROOT=/usr/local/go
@@ -15,15 +14,21 @@ if [ -x "`which go`" ]; then
 fi
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
+if [ -e $HOME/.rbenv ] ;then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 # pyenv
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-
+if [ -e $HOME/.pyenv ] ;then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 # virtualenv
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/Devel
-#source /path/to/your/virtualenvwrapper.sh
+if [ -e $HOME/.virtualenvs ] ;then
+  export WORKON_HOME=$HOME/.virtualenvs
+  export PROJECT_HOME=$HOME/Devel
+  source /path/to/your/virtualenvwrapper.sh
+fi
+
+export PATH="/usr/local/bin:$PATH"
