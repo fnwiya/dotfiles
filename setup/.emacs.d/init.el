@@ -9,15 +9,15 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-(add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
-(setq el-get-dir "~/.emacs.d/elisp/el-get/")
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
-    (goto-char (point-max))
-    (eval-print-last-sexp)))
-(el-get 'sync)
+;(add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
+;(setq el-get-dir "~/.emacs.d/elisp/el-get/")
+;(unless (require 'el-get nil 'noerror)
+;  (with-current-buffer
+;      (url-retrieve-synchronously
+;       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+;    (goto-char (point-max))
+;    (eval-print-last-sexp)))
+;(el-get 'sync)
 
 (require 'cl)
 
@@ -101,12 +101,12 @@
                   (package-install pkg))))
 
 ;; Packages to install from el-get
-(defvar my/el-get-packages
-  '(
+;(defvar my/el-get-packages
+;  '(
 ;    smartchr
-    )
-  "A list of packages to install from el-get at launch.")
-(el-get 'sync my/el-get-packages)
+;    )
+;  "A list of packages to install from el-get at launch.")
+;(el-get 'sync my/el-get-packages)
 
 (require 'use-package)
 (require 'bind-key)
@@ -118,6 +118,11 @@
 ;  (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
 )
 
+(global-set-key (kbd "C-x l") 'my-load-init-file)
+(defun my-load-init-file()
+  "init.elを読み込む"
+  (interactive)
+  (find-file "~/.emacs.d/init.el"))
 
 ;; (use-package auto-async-byte-compile
 ;;   :config
@@ -128,20 +133,3 @@
 ;;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
 
 ;;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(anzu-deactivate-region t)
- '(anzu-mode-lighter "")
- '(anzu-search-threshold 1000)
- '(custom-safe-themes
-   (quote
-	("d6ad95addd1ddb4eafbd037c8f4d127c334e04e37c46fdc9f24dc329f7ae24e6" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
