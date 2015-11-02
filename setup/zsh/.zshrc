@@ -50,7 +50,6 @@ update_prompt(){
     local separator_length=$[bar_without_right_length - bar_left_length]
     local separator="${(l:${separator_length}:: :)}"
     bar_right="${separator}${bar_right}"
-
     PROMPT="%F{green}${bar_left}${bar_right}%f"$'\n'"${prompt_left}"
 }
 precmd_functions=($precmd_functions update_prompt)
@@ -65,7 +64,6 @@ autoload -Uz is-at-least
 #   $vcs_info_msg_1_ : 警告メッセージ用 (黄色)
 #   $vcs_info_msg_2_ : エラーメッセージ用 (赤)
 zstyle ':vcs_info:*' max-exports 3
-
 zstyle ':vcs_info:*' enable git svn hg bzr
 # 標準のフォーマット(git 以外で使用)
 # misc(%m) は通常は空文字列に置き換えられる
@@ -73,7 +71,6 @@ zstyle ':vcs_info:*' formats '[%s-%b]'
 zstyle ':vcs_info:*' actionformats '[%s-%b]' '%m' '<!%a>'
 zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
 zstyle ':vcs_info:bzr:*' use-simple true
-
 
 # for git
 if is-at-least 4.3.10; then
@@ -213,7 +210,18 @@ add-zsh-hook precmd _update_vcs_info_msg
 ########################################
 setopt auto_cd           # ディレクトリ名だけでcdする
 setopt auto_pushd        # cd時にディレクトリスタックにpushdする
-function chpwd() { ls -A -F} #cdしたあとで、自動的に ls する
+#cdしたあとで、自動的に ls する(OS 別の設定)
+case ${OSTYPE} in
+    darwin*)
+        #Mac用の設定
+        export CLICOLOR=1
+        function chpwd() { ls -A -G -F}
+        ;;
+    linux*)
+        #Linux用の設定
+        function chpwd() { ls -A -F --color=auto}
+        ;;
+esac
 ########################################
 # history
 ########################################
