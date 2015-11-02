@@ -1,7 +1,8 @@
 
 ##initialize
 ```
-setup.sh
+./setup.sh
 ```
 
-##
+##policy
+
