@@ -289,7 +289,6 @@ WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 ########################################
 if [ -x "`which peco`" ]; then
     alias -g P='| peco'
-    alias ll='ls -la | peco'
     alias tp='top | peco'
     alias pp='ps aux | peco'
 

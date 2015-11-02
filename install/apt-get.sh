@@ -8,3 +8,5 @@ sudo apt-get install zsh
 sudo apt-get install git
 sudo apt-get install wget
 sudo apt-get install build-essential
+sudo apt-get install python-setuptools
+sudo apt-get install python-pip
