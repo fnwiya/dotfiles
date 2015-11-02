@@ -1,4 +1,0 @@
-
-((digest . "0213945fef77a4f14b0f8fbe1723cd5c") (undo-list nil (266 . 267) nil (266 . 267) (": " . -266) nil (266 . 268) nil (":" . -266) (t 22064 52295 0 0) nil (283 . 284) nil (282 . 283) nil (259 . 266) nil (290 . 292) nil ("t" . -275) nil ("e" . -276) nil ("r" . -277) nil ("n" . -278) nil (":" . -279) nil ("-" . -275) nil (" " . -276) nil ("- git :
-- 
-" . -302) ((marker . 307) . -10) ((marker . 307) . -10) ((marker) . -11) nil (253 . 254) nil (252 . 253) nil (nil rear-nonsticky nil 271 . 272) (nil fontified nil 263 . 272) (263 . 272) nil ("leiningen" . 301) ((marker . 307) . -9) ((marker . 307) . -9) ((marker) . -9) nil (259 . 263) nil (" " . -259) nil ("g" . -260) nil ("i" . -261) nil (259 . 262) nil (257 . 259) nil (252 . 257) (t 22063 10069 0 0) nil (299 . 300) (t 22063 10068 0 0) nil (299 . 300) nil (nil rear-nonsticky nil 298 . 299) (nil fontified nil 290 . 299) (290 . 299) nil (289 . 290) nil (288 . 289) (t 22047 45932 0 0)))

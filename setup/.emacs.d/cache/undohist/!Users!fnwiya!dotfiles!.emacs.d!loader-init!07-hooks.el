@@ -1,4 +1,0 @@
-
-((digest . "6f8ee2ac827d237c0c20a27278b63842") (undo-list nil (nil rear-nonsticky nil 251 . 252) (nil fontified nil 251 . 252) (nil fontified nil 235 . 251) (nil fontified nil 231 . 235) (231 . 252) nil ("    python-mode-hook
-" . 250) ((marker) . -21) ((marker) . -21) ((marker) . -21) ((marker) . -21) 271 nil (nil rear-nonsticky nil 306 . 307) (nil fontified nil 290 . 307) (290 . 307) nil ("    sh-mode-hook
-" . 250) ((marker) . -17) ((marker) . -17) ((marker) . -17) ((marker) . -17) 267 nil (302 . 306) nil (301 . 302) nil (297 . 301) nil (296 . 297) (t 22068 31721 0 0) nil (291 . 292) nil (" " . -291) ((marker . 231) . -1) ((marker . 274) . -1) ("	" . 292) ((marker . 231) . -1) ((marker . 274) . -1) (288 . 292) 289 nil (nil rear-nonsticky nil 292 . 293) (nil fontified nil 289 . 293) (289 . 293) nil (287 . 289) (t 22053 4366 0 0)))
