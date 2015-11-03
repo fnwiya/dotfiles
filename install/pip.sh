@@ -19,5 +19,8 @@ pip install xlutils
 pip install epc
 pip install jedi
 
+wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
+pip install mecab-python-0.996.tar.gz
+
 # pip freeze > requirements.txt
 # pip install -r requirements.txt
