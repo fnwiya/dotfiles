@@ -7,9 +7,3 @@
   (setq python-indent 4)
   (setq tab-width 4)
   )
-
-
-; (require 'jedi)
-; (add-hook 'python-mode-hook 'jedi:setup)
-; (setq jedi:complete-on-dot t)
-;; M-x jedi:install-server
