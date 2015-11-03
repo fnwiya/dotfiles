@@ -1,5 +1,3 @@
-(use-package simple-httpd)
-
 (use-package impatient-mode
   :commands (impatient-mode)
   :init
