@@ -18,6 +18,10 @@ pip install xlwt
 pip install xlutils
 pip install epc
 pip install jedi
+pip install elpy
+pip install rope
+pip install pip-tools
+
 
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
