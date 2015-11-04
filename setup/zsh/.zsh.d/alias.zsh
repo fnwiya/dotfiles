@@ -6,7 +6,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias mkdir='mkdir -p'
-alias restart='exec $SHELL -l'
+alias reload='exec $SHELL -l'
 alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
 evalenv # call at login
 
