@@ -4,6 +4,7 @@ sudo apt-get upgrade
 # develop-tool
 sudo apt-get install build-essential
 sudo apt-get install git
+sudo apt-get install sqlite3
 sudo apt-get install tmux
 sudo apt-get install wget
 sudo apt-get install zsh
