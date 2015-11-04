@@ -43,6 +43,7 @@
 
 ;;; デフォルトのタブ幅を 4 に設定
 (setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
 
 ;; M-wやC-kでコピーしたものを、他のアプルケーションで貼り付け可能にする
 (cond (window-system

@@ -5,6 +5,7 @@
 ;; (google-translate-enja-or-jaen “日本語文字列”): 日本語→英語
 
 (use-package google-translate
+  :defer t
   :config
   (defvar google-translate-english-chars "[:ascii:]"
     "これらの文字が含まれているときは英語とみなす")

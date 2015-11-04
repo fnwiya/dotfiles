@@ -1,4 +1,6 @@
 (use-package smartchr
+  :defer t
+  :commands (smartchr)
   :config
   (global-set-key (kbd "=") (smartchr '(" = " " == " "=" " === ")))
   (global-set-key (kbd "+") (smartchr '(" + " "+" " += " "++")))

@@ -1,4 +1,6 @@
 (use-package clojure-mode
+  :mode
+  (("\.clj$" . clojure-mode))
   )
 
 (use-package cider

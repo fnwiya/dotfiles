@@ -5,6 +5,7 @@
     cperl-mode-hook
     css-mode-hook
     emacs-lisp-mode-hook
+    elisp-mode-hook
     jade-mode-hook
     Javascript-IDE-mode-hook
     js2-mode-hook
