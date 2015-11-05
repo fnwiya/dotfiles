@@ -36,6 +36,7 @@ brew install aspell
 brew install caskroom/cask/brew-cask
 brew install cmigemo
 brew install curl
+brew install elixir
 brew install --cocoa emacs
 brew install git
 brew install global
@@ -57,18 +58,18 @@ brew install wget
 brew install z
 brew install zsh
 
-brew cask install iterm2
 brew cask install alfred
-brew cask install evernote
+brew cask install bettertouchtool
 brew cask install dropbox
-brew cask install skype
+brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
-brew cask install virtualbox
-brew cask install vagrant
+brew cask install google-japanese-ime
+brew cask install iterm2
+brew cask install skype
 brew cask install sublime-text
 brew cask install the-unarchiver
-brew cask install google-japanese-ime
-brew cask install bettertouchtool
+brew cask install virtualbox
+brew cask install vagrant
 
 brew cleanup

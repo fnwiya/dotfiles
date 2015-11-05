@@ -10,7 +10,9 @@ pip install django
 pip install pandas
 pip install nose
 pip install numpy
-brew install gfortran
+if [ "$(uname)" == "Darwin" ]; then
+    brew install gfortran
+fi
 pip install scipy
 pip install tweepy
 pip install xlrd

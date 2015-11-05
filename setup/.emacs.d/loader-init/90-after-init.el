@@ -1,7 +1,7 @@
 (when (memq window-system '(mac ns))
     (add-hook 'after-init-hook (lambda()
         (set-frame-position (selected-frame) 0 0)
-        (set-frame-size (selected-frame) 94 47)
+        (set-frame-size (selected-frame) 91 47)
         (setq w (selected-window))
         (setq w2 (split-window w (- (window-height w) 8)))
         (select-window w2)
