@@ -63,11 +63,14 @@ defaults write com.apple.dock magnification -bool yes
 # 拡大時のサイズ (一般的な最大: 128)
 defaults write com.apple.dock largesize -int 128
 
-# Dockを自動的に隠す
-defaults write com.apple.dock autohide -bool true
+# Dockを自動的に隠さない
+defaults write com.apple.dock autohide -bool false
 
 # Dockをすぐに表示する
 defaults write com.apple.dock autohide-delay -float 0
+
+# Dockの位置を右端、または下端によせる
+defaults write com.apple.dock pinning -string end
 
 # 設定反映
 killall Dock
@@ -80,6 +83,12 @@ killall Dock
 # Dashboardを無効にする
 defaults write com.apple.dashboard mcx-disabled -bool true
 
+#
+# Mission Control
+#
+
+# Mission Controlを無効にする
+defaults write com.apple.dock mcx-expose-disabled -bool true
 
 #
 # Finder
@@ -87,6 +96,9 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 
 # デフォルトはカラムビュー表示
 defaults write com.apple.finder FXPreferredViewStyle clmv
+
+# 隠しファイルや隠しフォルダを表示
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # デスクトップ上にアイコンを表示しない
 defaults write com.apple.finder CreateDesktop -boolean false
@@ -106,8 +118,32 @@ defaults write com.apple.finder QLHidePanelOnDeactivate -bool true
 # Quick Look上でテキストの選択を可能に
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
+# フォルダを開くときのアニメーションを無効
+defaults write com.apple.finder AnimateWindowZoom -bool false
+
+# ファイルを開くときのアニメーションを無効
+defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
+# Finderのアニメーション効果を全て無効にする
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# スクロールバーの弾むアニメーションを無効にする
+defaults write -g NSScrollViewRubberbanding -bool no
+
+# ダイアログ表示やウィンドウリサイズ速度を高速化
+defaults write -g NSWindowResizeTime 0.1
+
+# Finderの効果音を無効にする
+defaults write com.apple.finder FinderSounds -bool no
+
+# ファイルを開く際の警告ダイアログを無効にする
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
 # 「ライブラリ」を常に表示
 chflags nohidden ~/Library
+
+# クラッシュリポーターを無効にする
+defaults write com.apple.CrashReporter DialogType none
 
 # Finder再起動して設定を反映
 killall Finder

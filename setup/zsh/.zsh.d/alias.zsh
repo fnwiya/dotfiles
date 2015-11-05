@@ -8,7 +8,6 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias reload='exec $SHELL -l'
 alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
-evalenv # call at login
 
 # OS 別の設定
 case ${OSTYPE} in
@@ -16,7 +15,7 @@ case ${OSTYPE} in
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
-        alias em='TERM=xterm-256color /usr/local/bin/emacs'
+        alias em='TERM=xterm-256color /usr/local/bin/emacs -nw'
         alias brewupd='brew update && brew upgrade --all && brew doctor'
         ;;
     linux*)
@@ -24,3 +23,4 @@ case ${OSTYPE} in
         alias ls='ls -A -F --color=auto'
         ;;
 esac
+evalenv # call at login
