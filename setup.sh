@@ -15,6 +15,9 @@ ln -sf ~/dotfiles/setup/zsh/.zshenv ~
 ln -sf ~/dotfiles/setup/zsh/.zsh.d ~
 ln -sf ~/dotfiles/setup/bash/.bashrc ~
 ln -sf ~/dotfiles/setup/bash/.bash_profile ~
+if [ -e $HOME/Dropbox/config-file ]; then
+    ln -sf ~/Dropbox/config-file/.netrc ~
+fi
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
