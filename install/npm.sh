@@ -1,2 +1,3 @@
 #!/bin/bash
-npm install -g express tern
+npm install -g express
+npm install -g express

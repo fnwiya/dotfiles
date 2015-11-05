@@ -1,8 +1,8 @@
 #!/bin/bash
-#if test ! $(which pip)
-#then
-#    curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
-#fi
+if test ! $(which pip)
+then
+    curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+fi
 pip install -U pip
 pip install virtualenv
 pip install virtualenvwrapper
@@ -27,5 +27,6 @@ pip install pip-tools
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
 
+pip freeze
 # pip freeze > requirements.txt
 # pip install -r requirements.txt
