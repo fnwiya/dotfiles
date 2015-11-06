@@ -24,10 +24,17 @@ pip install jedi
 pip install elpy
 pip install rope
 pip install pip-tools
+pip install pillow
+pip install beautifulsoup4
+pip install image
 
 
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
+
+git clone https://github.com/amueller/word_cloud
+cd word_cloud
+python setup.py install
 
 pip freeze
 # pip freeze > requirements.txt

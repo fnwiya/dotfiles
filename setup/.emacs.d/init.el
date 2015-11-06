@@ -115,7 +115,7 @@
   :config
   (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
-;  (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
+  (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
 )
 
 (global-set-key (kbd "C-x l") 'my-load-init-file)
@@ -133,20 +133,3 @@
 ;;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
 
 ;;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(anzu-deactivate-region t)
- '(anzu-mode-lighter "")
- '(anzu-search-threshold 1000)
- '(custom-safe-themes
-   (quote
-	("d6ad95addd1ddb4eafbd037c8f4d127c334e04e37c46fdc9f24dc329f7ae24e6" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

@@ -38,6 +38,7 @@ brew install cmigemo
 brew install curl
 brew install elixir
 brew install --cocoa emacs
+brew install gcc
 brew install git
 brew install global
 brew install go
@@ -71,5 +72,9 @@ brew cask install sublime-text
 brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vagrant
+
+brew tap homebrew/science
+brew cask install xquartz
+brew install r
 
 brew cleanup
