@@ -1,9 +1,7 @@
 
 ##initialize
 ```
-[~]
-git clone https://github.com/fnwiya/dotfiles.git
-cd dotfiles
+curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 ./install.sh
 ./setup.sh
 ```

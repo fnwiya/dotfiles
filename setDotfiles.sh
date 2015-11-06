@@ -1,10 +1,11 @@
 #...
 
 DOTPATH=~/.dotfiles
+GITHUB_URL=https://github.com/fnwiya/dotfiles.git
 
 # git が使えるなら git
 if has "git"; then
-    git clone --recursive "$GITHUB_URL" "$DOTPATH"
+    git clone "$GITHUB_URL" "$DOTPATH"
 
 # 使えない場合は curl か wget を使用する
 elif has "curl" || has "wget"; then
