@@ -9,15 +9,15 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-;(add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
-;(setq el-get-dir "~/.emacs.d/elisp/el-get/")
-;(unless (require 'el-get nil 'noerror)
-;  (with-current-buffer
-;      (url-retrieve-synchronously
-;       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
-;    (goto-char (point-max))
-;    (eval-print-last-sexp)))
-;(el-get 'sync)
+(add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
+(setq el-get-dir "~/.emacs.d/elisp/el-get/")
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+(el-get 'sync)
 
 (require 'cl)
 
@@ -31,6 +31,7 @@
     auto-async-byte-compile
     auto-capitalize
     auto-complete
+    avy
     bind-key
     c-eldoc
     cider
@@ -39,6 +40,8 @@
     corral
     dash
     easy-kill
+    elpy
+    ess
     exec-path-from-shell
     expand-region
     flx-ido
@@ -57,6 +60,7 @@
     impatient-mode
     init-loader
     jabber
+    jedi
     jquery-doc
     js2-mode
     magit
@@ -85,8 +89,8 @@
     tern
     tern-auto-complete
     twittering-mode
-    undohist
     undo-tree
+    undohist
     use-package
     web-mode
     wgrep
@@ -101,12 +105,12 @@
                   (package-install pkg))))
 
 ;; Packages to install from el-get
-;(defvar my/el-get-packages
-;  '(
-;    smartchr
-;    )
-;  "A list of packages to install from el-get at launch.")
-;(el-get 'sync my/el-get-packages)
+(defvar my/el-get-packages
+  '(
+    smartchr
+    )
+  "A list of packages to install from el-get at launch.")
+(el-get 'sync my/el-get-packages)
 
 (require 'use-package)
 (require 'bind-key)
@@ -115,7 +119,9 @@
   :config
   (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
-  (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
+  (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
+      (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
+      nil)
 )
 
 (global-set-key (kbd "C-x l") 'my-load-init-file)
