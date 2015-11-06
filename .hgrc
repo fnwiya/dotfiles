@@ -1,1 +1,4 @@
-/Users/fnwiya/dotfiles/.hgrc
+[extensions]
+fetch =
+[ui]
+ignore = ~/.hgignore_global
