@@ -1,7 +1,6 @@
 (use-package ess
-  :init
-  (add-to-list 'auto-mode-alist '("\\.[rR]$" . R-mode))
-  (autoload 'R-mode "ess-site" "Emacs Speaks Statistics mode" t)
+  :mode
+  (("\\.[rR]$" . R-mode))
   :config
   ;; 起動時にワーキングディレクトリを尋ねられないようにする
   (setq ess-ask-for-ess-directory nil)

@@ -1,3 +1,5 @@
+(setq tramp-persistency-file-name "~/.emacs.d/cache/tramp")
+
 (defun th-rename-tramp-buffer ()
   (when (file-remote-p (buffer-file-name))
     (rename-buffer
@@ -7,8 +9,6 @@
 
 (add-hook 'find-file-hook
           'th-rename-tramp-buffer)
-
-(setq tramp-persistency-file-name "~/.emacs.d/cache/tramp")
 
 (defadvice find-file (around th-find-file activate)
   "Open FILENAME using tramp's sudo method if it's read-only."
