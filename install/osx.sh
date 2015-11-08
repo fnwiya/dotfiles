@@ -84,13 +84,6 @@ killall Dock
 defaults write com.apple.dashboard mcx-disabled -bool true
 
 #
-# Mission Control
-#
-
-# Mission Controlを無効にする
-defaults write com.apple.dock mcx-expose-disabled -bool true
-
-#
 # Finder
 #
 
