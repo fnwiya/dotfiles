@@ -3,6 +3,7 @@
   (("\.py$" . python-mode))
   :interpreter ("python" . python-mode)
   :config
+  (auto-complete-mode nil)
   (setq indent-tabs-mode nil)
   (setq indent-level 4)
   (setq python-indent 4)
