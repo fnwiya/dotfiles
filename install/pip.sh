@@ -27,7 +27,7 @@ pip install pip-tools
 pip install pillow
 pip install beautifulsoup4
 pip install image
-
+pip install pyinstaller
 
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
