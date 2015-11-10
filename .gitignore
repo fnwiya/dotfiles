@@ -1,2 +1,4 @@
 setup/.emacs.d/cache
-serup/.emacs.d/url
+setup/.emacs.d/url
+setup/.emacs.d/esisp/el-get
+setup/.emacs.d/esisp/package
