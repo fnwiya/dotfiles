@@ -1,4 +1,4 @@
+[extensions]
+fetch =
 [ui]
-username = fumiya_kohno <fumiya_kohno@forcia.com>
-editor = vi  
 ignore = ~/.hgignore_global

@@ -1,4 +1,0 @@
-[extensions]
-fetch =
-[ui]
-ignore = ~/.hgignore_global

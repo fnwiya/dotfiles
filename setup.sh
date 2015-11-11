@@ -1,8 +1,8 @@
 #!/bin/bash
-ln -sf ~/dotfiles/.gitconfig ~
-ln -sf ~/dotfiles/.gitignore_global ~
-ln -sf ~/dotfiles/.hgrc ~
-ln -sf ~/dotfiles/.hgignore_global ~
+ln -sf ~/dotfiles/setup/.gitconfig ~
+ln -sf ~/dotfiles/setup/.gitignore_global ~
+ln -sf ~/dotfiles/setup/.hgrc ~
+ln -sf ~/dotfiles/setup/.hgignore_global ~
 ln -sf ~/dotfiles/setup/.tmux.conf ~
 ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
