@@ -21,7 +21,7 @@ case ${OSTYPE} in
     linux*)
         #Linux用の設定
         alias ls='ls -A -F --color=auto'
-        alias aptupd='sudo apt-get update && sudo apt-get upgrade'
+        alias aptupd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove'
         ;;
 esac
 evalenv # call at login

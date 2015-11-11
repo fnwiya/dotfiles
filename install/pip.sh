@@ -28,6 +28,7 @@ pip install pillow
 pip install beautifulsoup4
 pip install image
 pip install pyinstaller
+pip install zenhan
 
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
