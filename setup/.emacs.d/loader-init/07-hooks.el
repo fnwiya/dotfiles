@@ -14,6 +14,8 @@
     ruby-mode-hook
     REPL-mode-hook
     sh-mode-hook
+    slime-mode-hook
+    slime-repl-mode-hook
     web-mode))
 
 (defvar *txt-hooks*

@@ -63,7 +63,7 @@
     jedi
     jquery-doc
     js2-mode
-    magit
+;;    magit
     markdown-mode
     multi-term
     multiple-cursors
