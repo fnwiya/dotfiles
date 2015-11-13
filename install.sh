@@ -6,28 +6,41 @@ echo "Installing dotfiles"
 echo "Initializing submodule(s)"
 git submodule update --init --recursive
 
-if [ "$(uname)" == "Darwin" ]; then
-    echo "Running on OSX"
+case ${OSTYPE} in
+    darwin*)
+        echo "Running on OSX"
 
-    echo "Brewing all the things"
-    source install/brew.sh
+        echo "Brewing all the things"
+        source install/brew.sh
 
-    echo "Updating OSX settings"
-    source install/osx.sh
+        echo "Updating OSX settings"
+        source install/osx.sh
 
-    echo "npm settings"
-    source install/npm.sh
+        echo "npm settings"
+        source install/npm.sh
 
-    echo "pyenv settings"
-    source install/pyenv.sh
+        echo "pyenv settings"
+        source install/pyenv.sh
 
-    echo "pip settings"
-    source install/pip.sh
+        echo "pip settings"
+        source install/pip.sh
 
-    echo "sbcl settings"
-    source install/sbcl.sh
+        echo "sbcl settings"
+        source install/sbcl.sh
 
-fi
+        echo "rm m4 from emacs term"
+        mkdir -p ~/.terminfo/65/
+        cp /usr/share/terminfo/65/eterm ~/.terminfo/65/eterm-color
+        ;;
+    linux*)
+        source install/apt-get.sh
+        source install/npm.sh
+        source install/pyenv.sh
+        source install/pip.sh
+        source install/sbcl.sh
+        source install/peco4linux.sh
+        ;;
+esac
 
 echo "Configuring zsh as default shell"
 which zsh
@@ -36,9 +49,6 @@ echo "add which zsh to /usr/local/bin/zsh"
 vi /etc/shells
 chsh -s $(which zsh)
 
-echo "rm m4 from emacs term"
-mkdir -p ~/.terminfo/65/
-cp /usr/share/terminfo/65/eterm ~/.terminfo/65/eterm-color
 
 
 echo "Done."
