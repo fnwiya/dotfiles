@@ -9,7 +9,7 @@ sudo apt-get install fish
 sudo apt-get install gcc
 sudo apt-get install git
 sudo apt-get install global
-sudo apt-get install go
+sudo apt-get install golang
 sudo apt-get install leiningen
 sudo apt-get install sqlite3
 sudo apt-get install tmux
@@ -27,4 +27,5 @@ sudo apt-get install python-virtualenv
 sudo apt-get install dropbox
 sudo apt-get install shutter
 
+sudo apt-get clean
 sudo apt-get autoremove
