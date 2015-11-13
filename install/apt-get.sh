@@ -26,3 +26,5 @@ sudo apt-get install python-virtualenv
 # others
 sudo apt-get install dropbox
 sudo apt-get install shutter
+
+sudo apt-get autoremove
