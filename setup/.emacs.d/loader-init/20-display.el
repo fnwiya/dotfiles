@@ -7,10 +7,9 @@
 ;; scratchの初期メッセージ消去
 (setq initial-scratch-message "")
 
-(when window-system 
-  (menu-bar-mode -1)
-  (tool-bar-mode -1)
-  (scroll-bar-mode -1))
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
 
 ;; タイトルバーにファイルのフルパス表示
