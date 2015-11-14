@@ -15,6 +15,7 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 pip install scipy
 pip install tweepy
+pip install twitter
 pip install xlrd
 pip install xlwt
 pip install xlutils
