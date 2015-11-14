@@ -25,6 +25,7 @@
   (push '("*slime-description*") popwin:special-display-config)
   (push '("*slime-compilation*" :noselect t) popwin:special-display-config)
   (push '("*slime-xref*") popwin:special-display-config)
+  (push '("*slime-repl sbcl") popwin:special-display-config)
   (push '(sldb-mode :stick t) popwin:special-display-config)
   (push '(slime-repl-mode) popwin:special-display-config)
   (push '(slime-connection-list-mode) popwin:special-display-config)

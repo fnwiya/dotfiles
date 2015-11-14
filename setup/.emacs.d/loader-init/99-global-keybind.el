@@ -19,6 +19,7 @@
 (bind-key "C-x C-x" 'smex)
 (bind-key "C-x C-k" 'ido-kill-buffer)
 (bind-key "C-t" 'other-window)
+(bind-key "C-@" 'toggle-input-method)
 
 (global-set-key [M-right] 'split-window-horizontally)
 (global-set-key [M-left] 'split-window-horizontally)
