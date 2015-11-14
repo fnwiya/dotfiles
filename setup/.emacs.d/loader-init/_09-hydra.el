@@ -1,3 +1,0 @@
-(use-package hydra
-  :config
-  )
