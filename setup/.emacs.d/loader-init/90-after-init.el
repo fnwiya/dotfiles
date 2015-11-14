@@ -10,7 +10,7 @@
         (recentf-open-files)))
 )
 
-(if (eq system-type 'gnu/linux)
+(when (eq system-type 'gnu/linux)
     (add-hook 'after-init-hook (lambda()
         (set-frame-position (selected-frame) 0 0)
         (set-frame-size (selected-frame) 101 50)

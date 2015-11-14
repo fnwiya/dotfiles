@@ -6,7 +6,6 @@
 
 ;;; smooth-scroll
 (use-package smooth-scroll
-  :defer t
   :config
   (smooth-scroll-mode t)
   )
