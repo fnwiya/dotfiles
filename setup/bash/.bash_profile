@@ -2,12 +2,8 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-for D in `ls $HOME/.anyenv/envs`
-do
-    export PATH="$HOME/.anyenv/envs/$D/shims:$PATH"
-done
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+PATH=$PATH:$HOME/bin
+export PATH
 
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
@@ -15,5 +11,3 @@ if [ -d "${PYENV_ROOT}" ]; then
   eval "$(pyenv init -)"
 fi
 
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
