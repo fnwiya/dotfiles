@@ -18,5 +18,4 @@
 
 (add-hook 'slime-repl-mode-hook
    '(lambda ()
-      (setq indent-tabs-mode nil)
       (define-key slime-repl-mode-map "\C-c\M-r" 'slime-restart-inferior-lisp)))

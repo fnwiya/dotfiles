@@ -12,11 +12,10 @@
     lisp-mode-hook
     python-mode-hook
     ruby-mode-hook
-    REPL-mode-hook
     sh-mode-hook
     slime-mode-hook
     slime-repl-mode-hook
-    web-mode))
+    web-mode-hook))
 
 (defvar *txt-hooks*
   '(text-mode-hook

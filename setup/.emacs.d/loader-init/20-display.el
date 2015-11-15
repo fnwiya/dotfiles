@@ -11,10 +11,9 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-
-;; タイトルバーにファイルのフルパス表示
+;; タイトルバー
 (setq frame-title-format
-      (format "%%f - Emacs@fnwiya" (system-name)))
+      (format "Emacs@fnwiya" (system-name)))
 
 ;; 行番号を表示
 (use-package linum

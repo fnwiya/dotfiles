@@ -72,6 +72,7 @@ brew cask install sublime-text
 brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install filezilla
 
 brew tap homebrew/science
 brew cask install xquartz

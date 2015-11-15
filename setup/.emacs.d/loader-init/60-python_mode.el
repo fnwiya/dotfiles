@@ -1,6 +1,6 @@
 (use-package python
   :mode
-  (("\.py$" . python-mode))
+  (("\\.py\\'" . python-mode))
   :config
   (auto-complete-mode nil)
   (setq indent-tabs-mode nil)
