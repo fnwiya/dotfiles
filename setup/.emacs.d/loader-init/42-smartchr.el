@@ -44,7 +44,7 @@
     (local-set-key (kbd ">") (smartchr '(">")))
     (local-set-key (kbd "=") (smartchr '("=")))
     (local-set-key (kbd "*") (smartchr '("*")))
-    (local-set-key (kbd "!") (smartchr '("<!-- -- >")))
+    (local-set-key (kbd "!") (smartchr '("!" "<!--`!!'-->")))
   )
   (add-hook 'web-mode-hook 'web-mode-smartchr)
 )
