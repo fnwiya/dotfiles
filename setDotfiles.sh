@@ -9,7 +9,7 @@ if [ -x "`which git`" ] ; then
 elif [ -x "`which curl`" ] || [ -x "`which wget`" ] ; then
     tarball="https://github.com/fnwiya/dotfiles/archive/master.tar.gz"
 
-    # どっちかでダウンロードして，tar に流す
+    # ダウンロードして，tar に流す
     if [ -x "`which curl`" ] ; then
         curl -L "$tarball"
 
@@ -22,10 +22,10 @@ elif [ -x "`which curl`" ] || [ -x "`which wget`" ] ; then
     mv -f dotfiles-master "$DOTPATH"
 
 else
-    die "curl or wget required"
+    echo "curl or wget required"
 fi
 
-cd ~/.dotfiles
+cd ~/dotfiles
 if [ $? -ne 0 ]; then
-    die "not found: $DOTPATH"
+    echo "not found: $DOTPATH"
 fi
