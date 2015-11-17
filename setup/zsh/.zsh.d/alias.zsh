@@ -25,6 +25,7 @@ case ${OSTYPE} in
         #Linux用の設定
         alias ls='ls -A -F --color=auto'
         alias la='ls -A -G -F'
+        alias emc='emacs -nw'
         alias aptupd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove'
         ;;
 esac
