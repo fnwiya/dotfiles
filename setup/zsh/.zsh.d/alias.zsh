@@ -8,6 +8,8 @@ alias mv='mv -i'
 alias mkdir='mkdir -p'
 alias reload='exec $SHELL -l'
 alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
+alias em='emacsclient -n'
+alias ekill='emacsclient -e "(kill-emacs)"'
 
 # OS 別の設定
 case ${OSTYPE} in
@@ -16,7 +18,7 @@ case ${OSTYPE} in
         export CLICOLOR=1
         alias ls='ls -A -G -F'
         alias ls='la -A -G -F'
-        alias em='TERM=xterm-256color /usr/local/bin/emacs -nw'
+        alias emc='TERM=xterm-256color /usr/local/bin/emacs -nw'
         alias brewupd='brew update && brew upgrade --all && brew doctor'
         ;;
     linux*)
