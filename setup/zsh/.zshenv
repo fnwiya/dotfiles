@@ -33,5 +33,4 @@ if [ -e /usr/local/etc/profile.d/z.sh ] ;then
   export PATH="/usr/local/etc/profile.d:$PATH"
 fi
 
-
 export PATH="/usr/local/bin:$PATH"

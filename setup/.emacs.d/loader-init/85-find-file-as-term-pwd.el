@@ -2,6 +2,3 @@
   "Find file as term pwd"
   (interactive)
   )
-(add-hook 'term-mode-hook
-          ()
-          )
