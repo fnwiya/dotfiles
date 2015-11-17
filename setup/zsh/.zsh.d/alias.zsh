@@ -15,12 +15,14 @@ case ${OSTYPE} in
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
+        alias ls='la -A -G -F'
         alias em='TERM=xterm-256color /usr/local/bin/emacs -nw'
         alias brewupd='brew update && brew upgrade --all && brew doctor'
         ;;
     linux*)
         #Linux用の設定
         alias ls='ls -A -F --color=auto'
+        alias la='ls -A -G -F'
         alias aptupd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove'
         ;;
 esac
