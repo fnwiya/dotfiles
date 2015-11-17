@@ -8,6 +8,7 @@ sudo apt-get install elixir
 sudo apt-get install fish
 sudo apt-get install gcc
 sudo apt-get install git
+sudo apt-get install guake
 sudo apt-get install global
 sudo apt-get install golang
 sudo apt-get install leiningen
