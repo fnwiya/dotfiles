@@ -1,6 +1,8 @@
-setup/.emacs.d/cache
-setup/.emacs.d/url
-setup/.emacs.d/auto-save-list
-setup/.emacs.d/loader-init/*.elc
-setup/.emacs.d/elisp/el-get
-setup/.emacs.d/elisp/package
+setup/.emacs.d/*
+!setup/.emacs.d/init.el
+!setup/.emacs.d/elisp/myElisp
+!setup/.emacs.d/snippets
+!setup/.emacs.d/loader-init
+!setup/.emacs.d/themes
+!setup/.emacs.d/README.md
+
