@@ -17,7 +17,7 @@ case ${OSTYPE} in
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
-        alias ls='la -A -G -F'
+        alias la='ls -A -G -F'
         alias emc='TERM=xterm-256color /usr/local/bin/emacs -nw'
         alias brewupd='brew update && brew upgrade --all && brew doctor'
         ;;
