@@ -2,6 +2,7 @@
 (setq completion-ignore-case t)
 
 (use-package auto-complete-config
+  :diminish auto-complete-mode
   :commands (auto-complete-mode)
   :init
   (loop for hook in *programing-hooks*

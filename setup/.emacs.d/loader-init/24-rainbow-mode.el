@@ -7,6 +7,7 @@
    ))
 
 (use-package rainbow-mode
+  :diminish rainbow-mode
   :commands (rainbow-mode)
   :init
   (loop for hook in *rainbow-mode-hooks*

@@ -1,4 +1,5 @@
 (use-package whitespace
+  :diminish whitespace-mode
   :commands (whitespace-mode)
   :init
   (loop for hook in *programing-hooks*

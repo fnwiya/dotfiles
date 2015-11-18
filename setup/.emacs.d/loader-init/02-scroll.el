@@ -6,6 +6,7 @@
 
 ;;; smooth-scroll
 (use-package smooth-scroll
+  :diminish smooth-scroll-mode
   :config
   (smooth-scroll-mode t)
   )

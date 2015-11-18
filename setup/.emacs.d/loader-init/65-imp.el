@@ -1,8 +1,10 @@
 (use-package impatient-mode
+  :diminish impatient-mode
   :commands (impatient-mode)
   :init
-  (loop for hook in *programing-hooks*
-        do (add-hook hook 'impatient-mode))
+  (add-hook 'web-mode-hook 'impatient-mode)
+  (add-hook 'html-mode-hook 'impatient-mode)
+  (add-hook 'Javascript-IDE-mode-hook 'impatient-mode)
   :config
   (defun my-html-mode-hook ()
     "Starts the `simple-httpd' server if it is not already running, and turns

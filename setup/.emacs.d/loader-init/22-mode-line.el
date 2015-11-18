@@ -108,25 +108,3 @@
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
              (setq mode-name "Elisp")))
-
-(setq my/hidden-minor-modes
-      '(undo-tree-mode
-        auto-complete-mode
-        helm-mode
-        volatile-highlights-mode
-        smartparens-mode
-        auto-composition-mode
-        auto-compression-mode
-        flyspell-mode
-        highlight-symbol-mode
-        rainbow-mode
-        rainbow-delimiters-mode
-        show-paren-mode
-        smartparens-mode
-        yas-minor-mode
-        ))
-
-(mapc (lambda (mode)
-        (setq minor-mode-alist
-              (cons (list mode "") (assq-delete-all mode minor-mode-alist))))
-      my/hidden-minor-modes)

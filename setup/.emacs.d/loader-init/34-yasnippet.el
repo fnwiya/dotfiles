@@ -1,6 +1,7 @@
 ;; (add-to-list 'load-path
 ;;              (expand-file-name "~/.emacs.d/elisp/yasnippet"))
 (use-package yasnippet
+  :diminish yas-minor-mode
   :commands
   (yas-global-mode)
   :init

@@ -1,4 +1,5 @@
 (use-package highlight-symbol
+  :diminish highlight-symbol-mode
   :commands (highlight-symbol-mode)
   :init
   (loop for hook in *programing-hooks*
