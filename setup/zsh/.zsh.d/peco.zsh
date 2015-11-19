@@ -39,7 +39,7 @@ if [ -x "`which peco`" ]; then
         zle clear-screen
     }
     zle -N peco-cdr
-    bindkey '^f' peco-cdr
+    bindkey '^d' peco-cdr
 
     function peco-kill-process () {
         ps -ef | peco | awk '{ print $2 }' | xargs kill
