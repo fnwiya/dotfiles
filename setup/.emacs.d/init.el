@@ -130,11 +130,11 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
-(use-package auto-async-byte-compile
-  :config
-  (setq auto-async-byte-compile-exclude-files-regexp "/junk/")
-  (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
-  )
+;(use-package auto-async-byte-compile
+;  :config
+;  (setq auto-async-byte-compile-exclude-files-regexp "/junk/")
+;  (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
+;  )
 
 (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
 

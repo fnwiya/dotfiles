@@ -3,6 +3,7 @@
   :init
   (loop for hook in *programing-hooks*
         do (add-hook hook 'projectile-mode))
+  :diminish (projectile-mode)
   :config
   (projectile-global-mode)
   (setq projectile-enable-caching t)
