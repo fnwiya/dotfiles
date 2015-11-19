@@ -15,6 +15,10 @@
 (setq frame-title-format
       (format "Emacs@fnwiya" (system-name)))
 
+;; 行間
+(setq-default line-spacing 0)
+
+(add-hook 'after-init-hook (lambda()
 ;; 行番号を表示
 (use-package linum
   :commands (linum-mode)
@@ -27,9 +31,6 @@
 
 ;; 現在の行をハイライト
 (global-hl-line-mode t)
-
-;; 行間
-(setq-default line-spacing 0)
 
 ;; リージョンを色付きにする
 (transient-mark-mode 1)
@@ -46,3 +47,4 @@
 
 ;; 画像ファイルを表示
 (auto-image-file-mode t)
+))

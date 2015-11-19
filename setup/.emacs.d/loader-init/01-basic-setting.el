@@ -2,14 +2,15 @@
 (setq user-full-name "fnwiya")
 (setq user-mail-address "fnwiya@gmail.com")
 
+;; バックアップファイルを作らないようにする
+(setq make-backup-files nil)
+
+(add-hook 'after-init-hook (lambda()
 ;; 警告音もフラッシュも全て無効
 (setq ring-bell-function 'ignore)
 
 ;; yes or noをy or n
 (fset 'yes-or-no-p 'y-or-n-p)
-
-;; バックアップファイルを作らないようにする
-(setq make-backup-files nil)
 
 ;;; 終了時にオートセーブファイルを消す
 (setq delete-auto-save-files t)
@@ -51,3 +52,4 @@
 
 ;; 矩形選択
 (cua-mode t)
+))
