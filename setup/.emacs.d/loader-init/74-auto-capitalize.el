@@ -3,5 +3,6 @@
   :init
   (loop for hook in *txt-hooks*
         do (add-hook hook 'turn-on-auto-capitalize-mode))
+  :diminish auto-capitalize-mode
   :config
   )
