@@ -1,5 +1,5 @@
 (use-package magit
   :if (executable-find "git")
-  :defer t
+  :commands magit-status
   :config
   )
