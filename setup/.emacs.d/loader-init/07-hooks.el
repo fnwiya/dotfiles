@@ -10,6 +10,7 @@
     Javascript-IDE-mode-hook
     js2-mode-hook
     lisp-mode-hook
+    nxml-mode-hook
     python-mode-hook
     ruby-mode-hook
     sh-mode-hook

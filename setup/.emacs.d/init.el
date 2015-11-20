@@ -137,7 +137,6 @@
                 (byte-compile-file "~/.emacs.d/init.el"))
             (byte-recompile-directory "~/.emacs.d/loader-init" 0)
             (byte-recompile-directory "~/.emacs.d/theme" 0)
-            (byte-recompile-directory "~/.emacs.d/elisp" 0)
             ))
 
 ;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
