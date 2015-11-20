@@ -45,9 +45,9 @@
                keymap)
 
              (defun view-mode-hook0 ()
-               (define-many-keys view-mode-map pager-keybind)
+               (define-many-keys 'view-mode-map pager-keybind)
                (hl-line-mode 1)
-               (define-key view-mode-map " " 'scroll-up))
+               (define-key 'view-mode-map " " 'scroll-up))
              (add-hook 'view-mode-hook 'view-mode-hook0)
 
              ;; 書き込み不能な場合は view-mode を抜けないように
@@ -60,6 +60,6 @@
                       (message "File is unwritable, so stay in view-mode.")
                     ad-do-it)))
 
-             (do-not-exit-view-mode-unless-writable-advice view-mode-exit)
-             (do-not-exit-view-mode-unless-writable-advice view-mode-disable)
+             (do-not-exit-view-mode-unless-writable-advice 'view-mode-exit)
+             (do-not-exit-view-mode-unless-writable-advice 'view-mode-disable)
              ))
