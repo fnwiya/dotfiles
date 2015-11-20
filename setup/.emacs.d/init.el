@@ -108,6 +108,7 @@
 (defvar my/el-get-packages
   '(
     smartchr
+    title-time
     )
   "A list of packages to install from el-get at launch.")
 (el-get 'sync my/el-get-packages)

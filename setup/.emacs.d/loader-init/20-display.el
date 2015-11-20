@@ -12,8 +12,20 @@
 (scroll-bar-mode -1)
 
 ;; タイトルバー
-(setq frame-title-format
-      (format "Emacs@fnwiya" (system-name)))
+(defadvice title-time-set (around title-time-set-around)
+  (setq frame-title-format
+        (if (buffer-file-name)
+          (concat display-time-string " - " "%f")
+          (concat display-time-string " - " "%b")
+      )))
+(ad-activate 'title-time-set)
+(setq display-time-interval 30)
+(setq display-time-string-forms
+      '((format " [ %s/%02d/%02d (%s) - %s:%s ] "
+                year (string-to-number month)(string-to-number day)
+                dayname 24-hours minutes)))
+(use-package title-time)
+(display-time)
 
 ;; 行間
 (setq-default line-spacing 0)
