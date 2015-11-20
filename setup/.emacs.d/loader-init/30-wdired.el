@@ -1,5 +1,4 @@
 (use-package wdired
-  :commands (ido-dired)
   :config
   ;; diredバッファでC-sした時にファイル名だけにマッチするように
   (setq dired-isearch-filenames t)

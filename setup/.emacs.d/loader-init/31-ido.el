@@ -1,13 +1,12 @@
 (use-package ido
   :bind
   (("C-x C-r" . ido-recentf-open)
-   ("C-x C-f" . ido-find-file)
    ("C-x C-d" . ido-dired)
-   ("C-x k" . ido-kill-buffer)
+   ("C-x C-f" . ido-find-file)
+   ("C-x k"   . ido-kill-buffer)
    ("C-x C-k" . ido-kill-buffer)
-   ("C-x b" . ido-switch-buffer)
-   ("C-x C-b" . ido-switch-buffer)
-   ("M-x" . smex))
+   ("C-x b"   . ido-switch-buffer)
+   ("C-x C-b" . ido-switch-buffer))
   :init
   (defun ido-recentf-open ()
     "Use `ido-completing-read' to \\[find-file] a recent file"
@@ -38,4 +37,5 @@
   (setq smex-save-file "~/.emacs.d/cache/.smex-items")
   :config
   (smex-initialize)
-  )
+)
+;;; 31-ido.el ends here
