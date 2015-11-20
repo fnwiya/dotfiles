@@ -130,12 +130,15 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
-;(use-package auto-async-byte-compile
-;  :config
-;  (setq auto-async-byte-compile-exclude-files-regexp "/junk/")
-;  (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
-;  )
-
+;; 終了時バイトコンパイル
+(add-hook 'kill-emacs-query-functions
+          (lambda ()
+            (if (file-newer-than-file-p "~/.emacs.d/init.el" "~/.emacs.d/loader-init/init.elc")
+                (byte-compile-file "~/.emacs.d/init.el"))
+            (byte-recompile-directory "~/.emacs.d/loader-init" 0)
+            (byte-recompile-directory "~/.emacs.d/theme" 0)
+            (byte-recompile-directory "~/.emacs.d/elisp" 0)
+            ))
 
 ;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
 
