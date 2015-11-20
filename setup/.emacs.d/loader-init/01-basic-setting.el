@@ -5,12 +5,12 @@
 ;; バックアップファイルを作らないようにする
 (setq make-backup-files nil)
 
-(add-hook 'after-init-hook (lambda()
-;; 警告音もフラッシュも全て無効
-(setq ring-bell-function 'ignore)
-
 ;; yes or noをy or n
 (fset 'yes-or-no-p 'y-or-n-p)
+
+(run-with-timer 5 nil (lambda ()
+;; 警告音もフラッシュも全て無効
+(setq ring-bell-function 'ignore)
 
 ;;; 終了時にオートセーブファイルを消す
 (setq delete-auto-save-files t)
@@ -33,6 +33,7 @@
 ;; バッファ自動再読み込み
 (global-auto-revert-mode 1)
 
+(require 'server)
 (unless (server-running-p)
   (server-start))
 

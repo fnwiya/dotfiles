@@ -1,26 +1,19 @@
+;; GCのスレッドを増量して高速化
+(setq gc-cons-threshold (* 128 1024 1024))
+
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
       (normal-top-level-add-subdirs-to-load-path)))
-
 
 (require 'package)
 (setq package-user-dir "~/.emacs.d/elisp/package/")
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-(add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
-(setq el-get-dir "~/.emacs.d/elisp/el-get/")
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.githubusercontent.com/dimitri/el-get/master/el-get-install.el")
-    (goto-char (point-max))
-    (eval-print-last-sexp)))
-(el-get 'sync)
-
 (require 'cl)
 
+(unless (file-directory-p "~/.emacs.d/elisp/package/")
 (defvar installing-package-list
   '(
     ac-slime
@@ -38,9 +31,11 @@
     clojure-mode
     codic
     corral
+    cperl-mode
     dash
     easy-kill
     elpy
+    el-get
     ess
     exec-path-from-shell
     expand-region
@@ -103,33 +98,43 @@
       (package-refresh-contents)
           (dolist (pkg not-installed)
                   (package-install pkg))))
-
-;; Packages to install from el-get
-(defvar my/el-get-packages
-  '(
-    smartchr
-    title-time
-    )
-  "A list of packages to install from el-get at launch.")
-(el-get 'sync my/el-get-packages)
+)
 
 (require 'use-package)
 (require 'bind-key)
 
+(use-package el-get
+  :init
+  (add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
+  (setq el-get-dir "~/.emacs.d/elisp/el-get/")
+  :config
+  (el-get 'sync)
+)
+
+(unless (file-directory-p "~/.emacs.d/elisp/el-get/smartchr/")
+  (defvar my/el-get-packages
+    '(
+      smartchr
+      )
+    "A list of packages to install from el-get at launch.")
+  (el-get 'sync my/el-get-packages)
+)
+
+
+
 (use-package init-loader
   :config
-  (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
   (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
       (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
       nil)
 )
 
-(global-set-key (kbd "C-x l") 'my-load-init-file)
 (defun my-load-init-file()
   "init.elを読み込む"
   (interactive)
   (find-file "~/.emacs.d/init.el"))
+(global-set-key (kbd "C-x l") 'my-load-init-file)
 
 ;;; 終了時バイトコンパイル
 ;(add-hook 'kill-emacs-query-functions
@@ -141,5 +146,3 @@
 ;            ))
 
 ;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-
-;;; init.el ends here

@@ -11,7 +11,4 @@
   (recentf-mode 1)
   )
 
-(use-package recentf-ext
-  :commands
-  (recentf-open-files)
-)
+(autoload 'recentf-ext "recentf-ext" nil t) 

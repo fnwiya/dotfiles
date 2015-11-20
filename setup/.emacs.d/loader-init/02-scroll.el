@@ -3,10 +3,3 @@
 (setq scroll-step 1)
 (setq scroll-margin 3)
 (setq next-screen-context-lines 2)
-
-;;; smooth-scroll
-(use-package smooth-scroll
-  :diminish smooth-scroll-mode
-  :config
-  (smooth-scroll-mode t)
-  )

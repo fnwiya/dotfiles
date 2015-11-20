@@ -1,4 +1,4 @@
-(add-hook 'after-init-hook (lambda()
+(run-with-timer 5 nil (lambda ()
   (use-package hydra-examples
     :config
     (global-set-key

@@ -7,29 +7,33 @@
 ;; scratchの初期メッセージ消去
 (setq initial-scratch-message "")
 
-(add-hook 'after-init-hook (lambda()
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
 ;; タイトルバー
 (when (window-system)
-(defadvice title-time-set (around title-time-set-around)
+  (run-with-timer 5 5 (lambda ()
+  (setq display-time-day-and-date t
+    display-time-24hr-format t)
+  (setq display-time-string-forms
+    '((if display-time-day-and-date
+      (format "%s/%s/%s " year month day)
+        "")
+      (format "%s:%s%s"
+        (if display-time-24hr-format 24-hours 12-hours)
+        minutes
+        (if display-time-24hr-format "" am-pm))))
+  (display-time)
   (setq frame-title-format
-        (if (buffer-file-name)
-          (concat display-time-string " - " "%f")
-          (concat display-time-string " - " "%b")
-      )))
-(ad-activate 'title-time-set)
-(setq display-time-interval 30)
-(setq display-time-string-forms
-      '((format " [ %s/%02d/%02d (%s) - %s:%s ] "
-                year (string-to-number month)(string-to-number day)
-                dayname 24-hours minutes)))
-(use-package title-time)
-(display-time)
-)
+    (concat "[" display-time-string "]"
+            " - "
+            (if (buffer-file-name)
+            (format "%%f")
+            (format "%%b"))))
+    )))
 
+(run-with-timer 5 nil (lambda ()
 ;; 行間
 (setq-default line-spacing 0)
 
