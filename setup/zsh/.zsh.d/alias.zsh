@@ -27,6 +27,8 @@ case ${OSTYPE} in
         alias la='ls -A -G -F'
         alias emc='emacs -nw'
         alias aptupd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove'
+        alias webstart = 'sudo /home/forcia/bin/restartWeb.sh start'
+        alias webstop = 'sudo /home/forcia/bin/restartWeb.sh stop'
         ;;
 esac
 evalenv # call at login
