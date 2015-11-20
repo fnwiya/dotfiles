@@ -24,7 +24,6 @@
 
 (unless (window-system)
 (add-hook 'after-init-hook (lambda()
-    (delete-window)
     (recentf-open-files)
     ))
   )
@@ -38,6 +37,5 @@
 
 ;; check-frame-size
 ;; at *scratch*
-;; (frame-height)
-;; (frame-width)
-;; C-j
+;; (frame-height) => C-j
+;; (frame-width)  => C-j

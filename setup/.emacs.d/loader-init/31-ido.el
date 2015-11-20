@@ -38,4 +38,3 @@
   :config
   (smex-initialize)
 )
-;;; 31-ido.el ends here

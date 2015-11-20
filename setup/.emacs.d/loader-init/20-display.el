@@ -7,11 +7,13 @@
 ;; scratchの初期メッセージ消去
 (setq initial-scratch-message "")
 
+(add-hook 'after-init-hook (lambda()
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
 ;; タイトルバー
+(when (window-system)
 (defadvice title-time-set (around title-time-set-around)
   (setq frame-title-format
         (if (buffer-file-name)
@@ -26,11 +28,11 @@
                 dayname 24-hours minutes)))
 (use-package title-time)
 (display-time)
+)
 
 ;; 行間
 (setq-default line-spacing 0)
 
-(add-hook 'after-init-hook (lambda()
 ;; 行番号を表示
 (use-package linum
   :commands (linum-mode)
