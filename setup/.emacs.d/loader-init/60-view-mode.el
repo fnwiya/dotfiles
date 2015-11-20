@@ -1,32 +1,16 @@
 (setq view-read-only t)
-(defvar pager-keybind
-      `( ;; vi-like
-        ("h" . backward-char)
-        ("l" . forward-char)
-        ("j" . next-line)
-        ("k" . previous-line)
-        ("J" . ,(lambda () (interactive) (scroll-up 1)))
-        ("K" . ,(lambda () (interactive) (scroll-down 1)))
-        ;; langhelp-like
-        ))
-(defun define-many-keys (keymap key-table &optional includes)
-  (let (key cmd)
-    (dolist (key-cmd key-table)
-      (setq key (car key-cmd)
-            cmd (cdr key-cmd))
-      (if (or (not includes) (member key includes))
-        (define-key keymap key cmd))))
-  keymap)
-
-(defun view-mode-hook0 ()
-  (define-many-keys view-mode-map pager-keybind)
-  (hl-line-mode 1)
-  (define-key view-mode-map " " 'scroll-up))
-(add-hook 'view-mode-hook 'view-mode-hook0)
+(add-hook 'view-mode-hook
+          '(lambda()
+             (progn
+               (define-key view-mode-map "h" 'backward-char)
+               (define-key view-mode-map "l" 'forward-char)
+               (define-key view-mode-map "j" 'next-line)
+               (define-key view-mode-map "k" 'previous-line)
+               )))
 
 ;; 書き込み不能なファイルはview-modeで開くように
 (defadvice find-file
-  (around find-file-switch-to-view-file (file &optional wild) activate)
+    (around find-file-switch-to-view-file (file &optional wild) activate)
   (if (and (not (file-writable-p file))
            (not (file-directory-p file)))
       (view-file file)
@@ -43,3 +27,4 @@
 
 (do-not-exit-view-mode-unless-writable-advice view-mode-exit)
 (do-not-exit-view-mode-unless-writable-advice view-mode-disable)
+;;; 60-view-mode.el ends here
