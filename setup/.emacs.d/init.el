@@ -136,6 +136,7 @@
 ;  (add-hook 'emacs-lisp-mode-hook 'enable-auto-async-byte-compile-mode)
 ;  )
 
-(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+
+;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
 
 ;;; init.el ends here
