@@ -10,6 +10,7 @@ alias reload='exec $SHELL -l'
 alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
 alias em='emacsclient -n'
 alias ekill='emacsclient -e "(kill-emacs)"'
+alias gitupd='git add . && git commit -m "update" && git push'
 
 # OS 別の設定
 case ${OSTYPE} in
