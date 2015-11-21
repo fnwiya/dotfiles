@@ -6,8 +6,3 @@
 
 ## bite-compile at first
 rm-comment-out init.el>;;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)&restart
-
-## dependency
-- brew install : git leiningen
-- npm install -g : tern
-
