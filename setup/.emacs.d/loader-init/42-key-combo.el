@@ -38,7 +38,7 @@
   (key-combo-define-hook key-combo-python-mode-hooks
                         'key-combo-python-load-default
                          key-combo-python-default)
-  ;; lisp-
+  ;; lisp
   (setq key-combo-lisp-mode-hooks
       '(lisp-mode-hook
         emacs-lisp-mode-hook
