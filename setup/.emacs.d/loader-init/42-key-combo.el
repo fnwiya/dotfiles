@@ -1,4 +1,5 @@
 (use-package key-combo
+  :diminish key-combo-mode
   :config
   (global-key-combo-mode t)
   (setq key-combo-common-mode-hooks
