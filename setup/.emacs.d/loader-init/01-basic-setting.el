@@ -13,7 +13,7 @@
 ;; yes or noをy or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(add-hook 'after-init-hook (lambda ()
+(add-hook 'emacs-startup-hook (lambda ()
 ;; 警告音もフラッシュも全て無効
 (setq ring-bell-function 'ignore)
 

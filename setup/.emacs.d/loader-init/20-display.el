@@ -45,7 +45,7 @@
   (setq linum-format "%04d|")
 )
 
-(add-hook 'after-init-hook (lambda ()
+(add-hook 'emacs-startup-hook (lambda ()
 ;; 行間
 (setq-default line-spacing 0)
 

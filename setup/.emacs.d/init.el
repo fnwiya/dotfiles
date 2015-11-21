@@ -58,6 +58,7 @@
     jedi
     jquery-doc
     js2-mode
+    key-combo
     magit
     markdown-mode
     multi-term
@@ -101,26 +102,23 @@
 )
 
 (require 'use-package)
-(require 'bind-key)
 
-(use-package el-get
-  :init
-  (add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
-  (setq el-get-dir "~/.emacs.d/elisp/el-get/")
-  :config
-  (el-get 'sync)
-)
-
-(unless (file-directory-p "~/.emacs.d/elisp/el-get/smartchr/")
-  (defvar my/el-get-packages
-    '(
-      smartchr
-      )
-    "A list of packages to install from el-get at launch.")
-  (el-get 'sync my/el-get-packages)
-)
-
-
+;(use-package el-get
+;  :init
+;  (add-to-list 'load-path  "~/.emacs.d/elisp/el-get/el-get/")
+;  (setq el-get-dir "~/.emacs.d/elisp/el-get/")
+;  :config
+;  (el-get 'sync)
+;)
+;
+;(unless (file-directory-p "~/.emacs.d/elisp/el-get/smartchr/")
+;  (defvar my/el-get-packages
+;    '(
+;      smartchr
+;      )
+;    "A list of packages to install from el-get at launch.")
+;  (el-get 'sync my/el-get-packages)
+;)
 
 (use-package init-loader
   :config
@@ -136,13 +134,9 @@
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "C-x l") 'my-load-init-file)
 
-;;; 終了時バイトコンパイル
-;(add-hook 'kill-emacs-query-functions
-;          (lambda ()
-;            (if (file-newer-than-file-p "~/.emacs.d/init.el" "~/.emacs.d/loader-init/init.elc")
-;                (byte-compile-file "~/.emacs.d/init.el"))
-;            (byte-recompile-directory "~/.emacs.d/loader-init" 0)
-;            (byte-recompile-directory "~/.emacs.d/theme" 0)
-;            ))
-
+(add-hook 'after-save-hook
+  (function (lambda ()
+    (if (eq major-mode 'emacs-lisp-mode)
+        (save-excursion
+          (byte-compile-file buffer-file-name))))))
 ;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
