@@ -12,7 +12,6 @@
 ;;                   (interactive)
 ;;                   (compile (format "gcc %s" buffer-file-name))))
 
-(bind-key "C-_" nil)
 (bind-key "C-/" 'undo)
 (bind-key "C-z" 'undo)
 (bind-key "M-w" 'easy-kill)

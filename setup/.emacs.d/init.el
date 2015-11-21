@@ -1,4 +1,3 @@
-;; GCのスレッドを増量して高速化
 (setq gc-cons-threshold (* 128 1024 1024))
 
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
@@ -14,91 +13,92 @@
 (eval-when-compile (require 'cl))
 
 (unless (file-directory-p "~/.emacs.d/elisp/package/")
-(defvar installing-package-list
-  '(
-    ac-slime
-    ace-jump-mode
-    ace-link
-    ahg
-    anzu
-    auto-async-byte-compile
-    auto-capitalize
-    auto-complete
-    avy
-    bind-key
-    c-eldoc
-    cider
-    clojure-mode
-    codic
-    corral
-    cperl-mode
-    dash
-    easy-kill
-    elpy
-    el-get
-    ess
-    exec-path-from-shell
-    expand-region
-    flx-ido
-    flycheck
-    flyspell
-    google-c-style
-    google-translate
-;;    helm
-;;    helm-flyspell
-;;    helm-projectile
-    highlight-indentation
-    highlight-symbol
-    hydra
-    ido-ubiquitous
-    ido-vertical-mode
-    impatient-mode
-    init-loader
-    jabber
-    jedi
-    jquery-doc
-    js2-mode
-    key-combo
-    magit
-    markdown-mode
-    multi-term
-    multiple-cursors
-    neotree
-    open-junk-file
-    popwin
-    projectile
-    python-mode
-    quickrun
-    rainbow-delimiters
-    rainbow-mode
-    recentf-ext
-    saveplace
-    sequential-command
-    simple-httpd
-    slime
-    smartrep
-    smex
-    smooth-scroll
-    sql-indent
-    sqlup-mode
-    tabbar
-    tern
-    tern-auto-complete
-    twittering-mode
-    undo-tree
-    undohist
-    use-package
-    web-mode
-    wgrep
-    yasnippet
-    ))
-(let ((not-installed (loop for x in installing-package-list
-                            when (not (package-installed-p x))
-                                                        collect x)))
-  (when not-installed
-      (package-refresh-contents)
-          (dolist (pkg not-installed)
-                  (package-install pkg))))
+  (defvar installing-package-list
+    '(
+      ac-slime
+      ace-jump-mode
+      ace-link
+      ahg
+      anzu
+      auto-async-byte-compile
+      auto-capitalize
+      auto-complete
+      avy
+      bind-key
+      c-eldoc
+      cider
+      clojure-mode
+      codic
+      corral
+      cperl-mode
+      dash
+      easy-kill
+      elpy
+      el-get
+      ess
+      exec-path-from-shell
+      expand-region
+      flx-ido
+      flycheck
+      flyspell
+      google-c-style
+      google-translate
+  ;;    helm
+  ;;    helm-flyspell
+  ;;    helm-projectile
+      highlight-indentation
+      highlight-symbol
+      hydra
+      ido-ubiquitous
+      ido-vertical-mode
+      impatient-mode
+      init-loader
+      jabber
+      jedi
+      jquery-doc
+      js2-mode
+      key-combo
+      magit
+      markdown-mode
+      multi-term
+      multiple-cursors
+      neotree
+      open-junk-file
+      popwin
+      projectile
+      python-mode
+      quickrun
+      rainbow-delimiters
+      rainbow-mode
+      recentf-ext
+      redo+
+      saveplace
+      sequential-command
+      simple-httpd
+      slime
+      smartrep
+      smex
+      smooth-scroll
+      sql-indent
+      sqlup-mode
+      tabbar
+      tern
+      tern-auto-complete
+      twittering-mode
+      undo-tree
+      undohist
+      use-package
+      web-mode
+      wgrep
+      yasnippet
+      ))
+  (let ((not-installed (loop for x in installing-package-list
+                              when (not (package-installed-p x))
+                                                          collect x)))
+    (when not-installed
+        (package-refresh-contents)
+            (dolist (pkg not-installed)
+                    (package-install pkg))))
 )
 
 (require 'use-package)
@@ -135,8 +135,7 @@
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "C-x l") 'my-load-init-file)
 
-(add-hook 'after-save-hook
-  (function (lambda ()
+(add-hook 'after-save-hook (function (lambda ()
     (if (eq major-mode 'emacs-lisp-mode)
         (save-excursion
           (byte-compile-file buffer-file-name))))))

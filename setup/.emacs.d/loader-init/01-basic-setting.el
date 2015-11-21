@@ -14,9 +14,14 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (add-hook 'emacs-startup-hook (lambda ()
+;;;クライアントを終了するとき終了するかどうかを聞かない
+(remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
+
+;;; symlinkは必ず追いかける
+(setq vc-follow-symlinks t)
+
 ;; 警告音もフラッシュも全て無効
 (setq ring-bell-function 'ignore)
-
 
 ;;; カーソルの場所を保存する
 (setq-default save-place t)
