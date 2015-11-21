@@ -106,6 +106,7 @@
           '(lambda ()
              (setq mode-name "Elisp")))
 
+(add-hook 'emacs-startup-hook (lambda ()
 (setq my/hidden-minor-modes
       '(
         auto-complete-mode
@@ -115,3 +116,4 @@
           (setq minor-mode-alist
                 (cons (list mode "") (assq-delete-all mode minor-mode-alist))))
         my/hidden-minor-modes)
+))

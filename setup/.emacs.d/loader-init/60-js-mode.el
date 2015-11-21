@@ -10,4 +10,5 @@
 (use-package jquery-doc
   :commands (jquery-doc-setup)
   :init
-  (add-hook 'js2-mode-hook 'jquery-doc-setup))
+  (add-hook 'js2-mode-hook 'jquery-doc-setup)
+  )
