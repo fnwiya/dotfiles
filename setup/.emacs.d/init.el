@@ -130,7 +130,7 @@
 )
 
 (defun my-load-init-file()
-  "init.elを読み込む"
+  "re-load init.el"
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "C-x l") 'my-load-init-file)
@@ -140,4 +140,11 @@
     (if (eq major-mode 'emacs-lisp-mode)
         (save-excursion
           (byte-compile-file buffer-file-name))))))
-;(byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+
+(defun compile-inits()
+  "compile my init-files"
+  (interactive)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
+  (byte-compile-file "~/.emacs.d/init.el")
+)
