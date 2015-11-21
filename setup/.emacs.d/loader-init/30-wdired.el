@@ -1,3 +1,4 @@
+(add-hook 'dired-mode-hook (lambda()
 (use-package wdired
   :config
   ;; diredバッファでC-sした時にファイル名だけにマッチするように
@@ -9,3 +10,4 @@
   ;; 「a」を押したときに新規バッファを作って開くようにする
   (define-key dired-mode-map "a" 'dired-advertised-find-file)
   )
+))

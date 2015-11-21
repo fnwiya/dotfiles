@@ -1,15 +1,17 @@
-;; 透過
-(set-frame-parameter (selected-frame) 'alpha '(95 90))
-
 ;; スタートアップ画面
 (setq inhibit-startup-screen t)
 
 ;; scratchの初期メッセージ消去
 (setq initial-scratch-message "")
 
+(add-hook 'after-init-hook (lambda()
+;; 透過
+(set-frame-parameter (selected-frame) 'alpha '(95 90))
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+))
 
 ;; タイトルバー
 (when (window-system)
@@ -33,10 +35,6 @@
             (format "%%b"))))
     )))
 
-(run-with-timer 5 nil (lambda ()
-;; 行間
-(setq-default line-spacing 0)
-
 ;; 行番号を表示
 (use-package linum
   :commands (linum-mode)
@@ -46,6 +44,10 @@
   :config
   (setq linum-format "%04d|")
 )
+
+(run-with-timer 5 nil (lambda ()
+;; 行間
+(setq-default line-spacing 0)
 
 ;; 現在の行をハイライト
 (global-hl-line-mode t)

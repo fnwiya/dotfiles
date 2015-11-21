@@ -5,6 +5,11 @@
 ;; バックアップファイルを作らないようにする
 (setq make-backup-files nil)
 
+(setq auto-save-list-file-prefix "~/.emacs.d/cache/auto-save-list/")
+
+;;; 終了時にオートセーブファイルを消す
+(setq delete-auto-save-files t)
+
 ;; yes or noをy or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -12,14 +17,11 @@
 ;; 警告音もフラッシュも全て無効
 (setq ring-bell-function 'ignore)
 
-;;; 終了時にオートセーブファイルを消す
-(setq delete-auto-save-files t)
 
 ;;; カーソルの場所を保存する
 (setq-default save-place t)
 (setq save-place-file "~/.emacs.d/cache/places")
 
-(setq auto-save-list-file-prefix "~/.emacs.d/cache/auto-save-list/")
 
 ;;; 同じ内容を履歴に記録しないようにする
 (setq history-delete-duplicates t)

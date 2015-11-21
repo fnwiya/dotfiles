@@ -70,7 +70,7 @@
    `(mode-line-buffer-id ((t (:foreground ,base0E :background nil))))
    `(mode-line-emphasis ((t (:foreground ,base06 :slant italic))))
    `(mode-line-highlight ((t (:foreground ,base0E :box nil :weight bold))))
-   
+
    ;; linum-mode
    `(linum ((t (:background ,base00 :foreground ,base03))))
 
@@ -104,10 +104,6 @@
    `(popup-scroll-bar-background-face ((t (:background ,base00))))
    `(popup-isearch-match ((t (:background ,base00 :foreground ,base05))))
 
-   ;; Flymake
-   `(flymake-warnline ((t (:underline ,base09 :background ,base01))))
-   `(flymake-errline ((t (:underline ,base08 :background ,base01))))
-
    ;; Flycheck
     `(flycheck-error
      ((((supports :underline (:style wave)))
@@ -129,7 +125,7 @@
    `(clojure-test-failure-face ((t (:background nil :inherit flymake-warnline))))
    `(clojure-test-error-face ((t (:background nil :inherit flymake-errline))))
    `(clojure-test-success-face ((t (:background nil :foreground nil :underline ,base0B))))
-   
+
    ;; For Brian Carper's extended clojure syntax table
    `(clojure-keyword ((t (:foreground ,base0A))))
    `(clojure-parens ((t (:foreground ,base06))))
@@ -188,7 +184,7 @@
    `(helm-swoop-target-line-face ((t (:foreground ,base05 :background ,base00))))
    `(helm-swoop-target-word-face ((t (:foreground ,base0A :background ,base00 :weight bold))))
 
-   
+
    ;; IDO
    `(ido-subdir ((t (:foreground ,base04))))
    `(ido-first-match ((t (:foreground ,base09 :weight bold))))
@@ -254,22 +250,6 @@
    `(undo-tree-visualizer-active-branch-face ((t (:foreground ,base08))))
    `(undo-tree-visualizer-register-face ((t (:foreground ,base0A))))
 
-   ;; auctex
-   `(font-latex-bold-face ((t (:foreground ,base0B))))
-   `(font-latex-doctex-documentation-face ((t (:background ,base03))))
-   `(font-latex-italic-face ((t (:foreground ,base0B))))
-   `(font-latex-math-face ((t (:foreground ,base09))))
-   `(font-latex-sectioning-0-face ((t (:foreground ,base0A))))
-   `(font-latex-sectioning-1-face ((t (:foreground ,base0A))))
-   `(font-latex-sectioning-2-face ((t (:foreground ,base0A))))
-   `(font-latex-sectioning-3-face ((t (:foreground ,base0A))))
-   `(font-latex-sectioning-4-face ((t (:foreground ,base0A))))
-   `(font-latex-sectioning-5-face ((t (:foreground ,base0A))))
-   `(font-latex-sedate-face ((t (:foreground ,base0C))))
-   `(font-latex-string-face ((t (:foreground ,base0A))))
-   `(font-latex-verbatim-face ((t (:foreground ,base09))))
-   `(font-latex-warning-face ((t (:foreground ,base08))))
-
    ;; dired+
    `(diredp-compressed-file-suffix ((t (:foreground ,base0D))))
    `(diredp-dir-heading ((t (:foreground nil :background nil :inherit heading))))
@@ -307,7 +287,7 @@
      ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
           [unspecified ,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
 
-   
+
    ;; Magit (a patch is pending in magit to make these standard upstream)
    `(magit-branch ((t (:foreground ,base0B))))
    `(magit-header ((t (:inherit nil :weight bold))))
@@ -390,19 +370,6 @@
    `(js2-function-param-face ((t (:foreground ,base0D))))
    `(js2-instance-member-face ((t (:foreground ,base0D))))
    `(js2-private-function-call-face ((t (:foreground ,base08))))
-
-   ;; js3-mode
-   `(js3-warning-face ((t (:underline ,base09))))
-   `(js3-error-face ((t (:foreground nil :underline ,base08))))
-   `(js3-external-variable-face ((t (:foreground ,base0E))))
-   `(js3-function-param-face ((t (:foreground ,base0D))))
-   `(js3-jsdoc-tag-face ((t (:foreground ,base09))))
-   `(js3-jsdoc-type-face ((t (:foreground ,base0C))))
-   `(js3-jsdoc-value-face ((t (:foreground ,base0A))))
-   `(js3-jsdoc-html-tag-name-face ((t (:foreground ,base0D))))
-   `(js3-jsdoc-html-tag-delimiter-face ((t (:foreground ,base0B))))
-   `(js3-instance-member-face ((t (:foreground ,base0D))))
-   `(js3-private-function-call-face ((t (:foreground ,base08))))
 
    ;; nxml
    `(nxml-name-face ((t (:foreground unspecified :inherit font-lock-constant-face))))
@@ -540,8 +507,6 @@
    `(whitespace-tab ((t (:background ,base04 :foreground ,base04))))
    `(whitespace-trailing ((t (:background ,base08 :foreground ,base0A))))
    )
-
-
 
 
 (provide-theme 'fnwiya)

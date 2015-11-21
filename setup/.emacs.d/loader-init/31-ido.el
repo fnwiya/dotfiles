@@ -1,3 +1,4 @@
+(add-hook 'after-init-hook (lambda()
 (use-package ido
   :bind
   (("C-x C-r" . ido-recentf-open)
@@ -38,3 +39,4 @@
   :config
   (smex-initialize)
 )
+))
