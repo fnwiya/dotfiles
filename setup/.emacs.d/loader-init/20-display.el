@@ -16,24 +16,11 @@
 ;; タイトルバー
 (when (window-system)
   (run-with-timer 5 5 (lambda ()
-  (setq display-time-day-and-date t)
-  (setq display-time-24hr-format t)
-  (setq display-time-string-forms
-    '((if display-time-day-and-date
-      (format "%s/%s/%s " year month day)
-        "")
-      (format "%s:%s%s"
-        (if display-time-24hr-format 24-hours 12-hours)
-        minutes
-        (if display-time-24hr-format "" am-pm))))
-  (display-time)
   (setq frame-title-format
-    (concat "[" display-time-string "]"
-            " - "
-            (if (buffer-file-name)
-            (format "%%f")
-            (format "%%b"))))
-)))
+     (if (buffer-file-name)
+         (format "[%%f]")
+         (format "[%%b]"))
+))))
 
 ;; 行番号を表示
 (use-package linum

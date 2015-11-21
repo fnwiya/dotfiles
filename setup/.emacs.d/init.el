@@ -11,7 +11,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-(require 'cl)
+(eval-when-compile (require 'cl))
 
 (unless (file-directory-p "~/.emacs.d/elisp/package/")
 (defvar installing-package-list
@@ -122,6 +122,7 @@
 
 (use-package init-loader
   :config
+  (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
   (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
       (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
