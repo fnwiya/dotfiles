@@ -13,7 +13,7 @@
 ;; yes or noをy or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(run-with-timer 5 nil (lambda ()
+(add-hook 'after-init-hook (lambda ()
 ;; 警告音もフラッシュも全て無効
 (setq ring-bell-function 'ignore)
 

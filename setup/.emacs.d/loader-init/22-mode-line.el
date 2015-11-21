@@ -1,14 +1,13 @@
-(setq-default
- mode-line-format
+(setq-default mode-line-format
  '(; Position
    (:eval (format "%04d" (count-lines (point-max) (point-min))))
    (:propertize "(%04l" face mode-line-position-face)
    ":"
    (:propertize "%03c)"  face mode-line-position-face)
-                                        ; emacsclient [default -- keep?]
+   ; emacsclient [default -- keep?]
    mode-line-client
    "  "
-                                        ; read-only or modified status
+   ; read-only or modified status
    (:eval
     (cond (buffer-read-only
            (propertize " RO " 'face 'mode-line-read-only-face))
@@ -16,14 +15,14 @@
            (propertize " ** " 'face 'mode-line-modified-face))
           (t" -- ")))
    "  "
-                                        ; directory and buffer/file name
+   ; directory and buffer/file name
    (:propertize (:eval (shorten-directory default-directory 30))
                 face mode-line-folder-face)
    (:propertize "%b"
                 face mode-line-filename-face)
-                                        ; narrow [default -- keep?]
+   ; narrow [default -- keep?]
    "%n"
-                                        ; mode indicators: vc, recursive edit, major mode, minor modes, process, global
+   ; mode indicators: vc, recursive edit, major mode, minor modes, process, global
    (vc-mode vc-mode)
    " %["
    (:propertize mode-name
@@ -99,8 +98,6 @@
   :inherit 'mode-line-face
   :foreground (face-attribute 'mode-line :foreground))
 
-
-
 ;;http://www.bookshelf.jp/soft/meadow_16.html
 (add-hook 'lisp-interaction-mode-hook
           '(lambda ()
@@ -108,3 +105,13 @@
 (add-hook 'emacs-lisp-mode-hook
           '(lambda ()
              (setq mode-name "Elisp")))
+
+(setq my/hidden-minor-modes
+      '(
+        auto-complete-mode
+        ))
+
+(mapc (lambda (mode)
+          (setq minor-mode-alist
+                (cons (list mode "") (assq-delete-all mode minor-mode-alist))))
+        my/hidden-minor-modes)

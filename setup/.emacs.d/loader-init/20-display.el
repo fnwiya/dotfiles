@@ -16,8 +16,8 @@
 ;; タイトルバー
 (when (window-system)
   (run-with-timer 5 5 (lambda ()
-  (setq display-time-day-and-date t
-    display-time-24hr-format t)
+  (setq display-time-day-and-date t)
+  (setq display-time-24hr-format t)
   (setq display-time-string-forms
     '((if display-time-day-and-date
       (format "%s/%s/%s " year month day)
@@ -33,7 +33,8 @@
             (if (buffer-file-name)
             (format "%%f")
             (format "%%b"))))
-    )))
+  (setcar (cdr (assq 'display-time-mode minor-mode-alist)) "")
+)))
 
 ;; 行番号を表示
 (use-package linum
@@ -45,7 +46,7 @@
   (setq linum-format "%04d|")
 )
 
-(run-with-timer 5 nil (lambda ()
+(add-hook 'after-init-hook (lambda ()
 ;; 行間
 (setq-default line-spacing 0)
 
