@@ -33,7 +33,6 @@
             (if (buffer-file-name)
             (format "%%f")
             (format "%%b"))))
-  (setcar (cdr (assq 'display-time-mode minor-mode-alist)) "")
 )))
 
 ;; 行番号を表示
