@@ -8,25 +8,11 @@ git submodule update --init --recursive
 
 case ${OSTYPE} in
     darwin*)
-        echo "Running on OSX"
-
         echo "Brewing all the things"
         source install/brew.sh
 
         echo "Updating OSX settings"
         source install/osx.sh
-
-        echo "npm settings"
-        source install/npm.sh
-
-        echo "pyenv settings"
-        source install/pyenv.sh
-
-        echo "pip settings"
-        source install/pip.sh
-
-        echo "sbcl settings"
-        source install/sbcl.sh
 
         echo "rm m4 from emacs term"
         mkdir -p ~/.terminfo/65/
@@ -40,10 +26,7 @@ case ${OSTYPE} in
                 # Ubuntu
                 distri_name="ubuntu"
                 source install/apt-get.sh
-                source install/npm.sh
-                source install/pyenv.sh
-                source install/pip.sh
-                source install/sbcl.sh
+                source install/ubuntu.sh
                 source install/peco4linux.sh
             else
                 # Debian
@@ -84,13 +67,23 @@ case ${OSTYPE} in
         ;;
 esac
 
+echo "npm settings"
+source install/npm.sh
+
+echo "pyenv settings"
+source install/pyenv.sh
+
+echo "pip settings"
+source install/pip.sh
+
+echo "sbcl settings"
+source install/sbcl.sh
+
 echo "Configuring zsh as default shell"
 which zsh
 which zsh | pbcopy
 echo "add which zsh to /usr/local/bin/zsh"
 vi /etc/shells
 chsh -s $(which zsh)
-
-
 
 echo "Done."
