@@ -15,7 +15,7 @@
   (add-to-list 'ac-modes 'org-mode)
   (add-to-list 'ac-modes 'yatex-mode)
   (add-to-list 'ac-modes 'sql-mode)
-  (ac-set-trigger-key "TAB")
+  (ac-set-trigger-key "C-v")
   (setq ac-use-menu-map t)
   (define-key ac-completing-map (kbd "C-n") 'ac-next)
   (define-key ac-completing-map (kbd "C-p") 'ac-previous)
