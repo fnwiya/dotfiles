@@ -31,12 +31,11 @@
   (setq ido-max-window-height 0.75)
 )
 (use-package smex
-  :bind
-  (("M-x" . smex)
-   ("M-X" . smex-major-mode-commands))
   :init
   (setq smex-save-file "~/.emacs.d/cache/.smex-items")
   :config
   (smex-initialize)
+  (bind-key "M-x" 'smex)
+  (bind-key "M-X" 'smex-major-mode-commands)
 )
 ))

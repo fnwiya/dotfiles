@@ -19,6 +19,10 @@
 (bind-key "C-x C-k" 'ido-kill-buffer)
 (bind-key "C-t" 'other-window)
 (bind-key "M-@" 'toggle-input-method)
+(bind-key "C-{" 'previous-buffer)
+(bind-key "C-}" 'next-buffer)
+(bind-key "C-c ;" 'comment-or-uncomment-region)
+(setq comment-style 'multi-line)
 
 (global-set-key [M-right] 'split-window-horizontally)
 (global-set-key [M-left] 'split-window-horizontally)
