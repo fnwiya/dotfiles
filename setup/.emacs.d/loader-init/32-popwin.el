@@ -29,4 +29,5 @@
   (push '(sldb-mode :stick t) popwin:special-display-config)
   (push '(slime-repl-mode) popwin:special-display-config)
   (push '(slime-connection-list-mode) popwin:special-display-config)
+  (push '("*Async Shell Command*") popwin:special-display-config)
   )
