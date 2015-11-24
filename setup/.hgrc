@@ -1,4 +1,5 @@
 [extensions]
 fetch =
 [ui]
+username = kohno
 ignore = ~/.hgignore_global
