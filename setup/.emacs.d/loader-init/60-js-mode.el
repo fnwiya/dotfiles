@@ -6,7 +6,7 @@
   :config
   (flycheck-add-mode 'javascript-eslint 'js2-jsx-mode)
   (add-hook 'js2-jsx-mode-hook 'flycheck-mode)
-  (setq indent-level 2)
+  (setq indent-level 4)
   )
 (use-package jquery-doc
   :commands (jquery-doc-setup)
