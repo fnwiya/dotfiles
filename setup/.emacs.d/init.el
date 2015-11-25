@@ -59,6 +59,8 @@
     key-combo
     magit
     markdown-mode
+    mmm-mako
+    mmm-mode
     multi-term
     multiple-cursors
     neotree
