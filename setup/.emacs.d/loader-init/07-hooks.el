@@ -8,6 +8,7 @@
     elisp-mode-hook
     jade-mode-hook
     Javascript-IDE-mode-hook
+    js-mode-hook
     js2-mode-hook
     lisp-mode-hook
     nxml-mode-hook
