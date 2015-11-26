@@ -1,11 +1,3 @@
-;; -*- coding: utf-8 -*-
-
-;;;; mmm-mode configuration ;;;;;
-;; load this file by using (load-file path-to-this-file)
-
-;;; general configuration ;;;
-
-                                        ;(require 'mmm-mode)
 (require 'mmm-auto)
 (setq mmm-submode-decoration-level 2)
 (setq mmm-font-lock-available-p t)
@@ -85,7 +77,7 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js-mode))
 
 ;; Honeybee XML & SQLRepository.xml
-                                        ;(mmm-add-mode-ext-class nil "\\.xml\\'" 'honeybee-xml-group)
+;(mmm-add-mode-ext-class nil "\\.xml\\'" 'honeybee-xml-group)
 (mmm-add-group
  'honeybee-xml-group
  '(
@@ -164,19 +156,10 @@
    ))
 (add-to-list 'auto-mode-alist '("\\.xml\\'" . xml-mode))
 
-;; mmm-mako 
+;; mmm-mako
 ;; https://bitbucket.org/pjenvey/mmm-mako
 (require 'mmm-mako)
 (add-to-list 'auto-mode-alist '("\\.sqltmpl\\'" . sql-mode))
 (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)
 
 (global-set-key "\M-p"	 'mmm-parse-buffer)
-
-;; タブの改善
-;; (defun save-mmm-c-locals ()
-;;	  (with-temp-buffer
-;;	 (js-mode)
-;;	 (dolist (v (buffer-local-variables))
-;;	   (when (string-match "\\`c-" (symbol-name (car v)))
-;;	(add-to-list 'mmm-save-local-variables `(,(car v) nil, mmm-c-derived-modes))))))
-;; (save-mmm-c-locals)

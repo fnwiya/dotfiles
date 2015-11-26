@@ -42,9 +42,9 @@
     flyspell
     google-c-style
     google-translate
-    ;;    helm
-    ;;    helm-flyspell
-    ;;    helm-projectile
+    ;;helm
+    ;;helm-flyspell
+    ;;helm-projectile
     highlight-indentation
     highlight-symbol
     hydra
