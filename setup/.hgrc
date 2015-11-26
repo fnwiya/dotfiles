@@ -1,5 +1,6 @@
 [extensions]
 fetch =
+mq =
 [ui]
 username = kohno
 ignore = ~/.hgignore_global
