@@ -1,3 +1,5 @@
+(use-package deferred)
+
 (cond
  ((or (eq window-system 'ns) (eq window-system 'mac))
   (add-hook 'after-init-hook
@@ -28,8 +30,17 @@
               (multi-term)
               (select-window w)
               (recentf-open-files)
+              (deferred:$
+                (deferred:next
+                  (lambda ()
+                    (save-window-excursion
+                      (list-packages)
+                      ))))
               ))
   )
+
+
+
 
 (unless (window-system)
   (add-hook 'after-init-hook
