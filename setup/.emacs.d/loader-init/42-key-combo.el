@@ -83,7 +83,7 @@
     (">" . (">"))
     ("=" . ("="))
     ("*" . ("*"))
-    ("!" . ("!" "<!--`!!'-->"))
+    ("!" . ("!" "<!-- `!!' -->"))
     ))
   (key-combo-define-hook key-combo-web-mode-hooks
                         'key-combo-web-load-default

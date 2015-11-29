@@ -26,8 +26,8 @@
               (multi-term)
               (select-window w)
               (recentf-open-files)
-              (save-window-excursion
-                (list-packages))
+;              (save-window-excursion
+;                (list-packages))
               )))
 
 
