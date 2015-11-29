@@ -1,5 +1,3 @@
-(use-package deferred)
-
 (cond
  ((or (eq window-system 'ns) (eq window-system 'mac))
   (add-hook 'after-init-hook
@@ -7,8 +5,7 @@
               (set-frame-position (selected-frame) 0 0)
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
-                (async-shell-command "brew update && brew upgrade --all && brew doctor")
-              )
+                (async-shell-command "brew update && brew upgrade --all && brew doctor"))
               )))
  ((eq system-type 'gnu/linux)
   (add-hook 'after-init-hook
@@ -16,8 +13,7 @@
               (set-frame-position (selected-frame) 0 0)
               (set-frame-size (selected-frame) 101 50)
               (save-window-excursion
-                (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove")
-              )
+                (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove"))
               )))
  )
 
@@ -30,24 +26,16 @@
               (multi-term)
               (select-window w)
               (recentf-open-files)
-              (deferred:$
-                (deferred:next
-                  (lambda ()
-                    (save-window-excursion
-                      (list-packages)
-                      ))))
-              ))
-  )
-
-
+              (save-window-excursion
+                (list-packages))
+              )))
 
 
 (unless (window-system)
   (add-hook 'after-init-hook
             (lambda()
               (recentf-open-files)
-              ))
-  )
+              )))
 
 (defun reset-window()
   (interactive)

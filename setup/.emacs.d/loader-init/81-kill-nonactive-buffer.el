@@ -8,7 +8,7 @@
           ;; 消さないバッファ名を指定
           (list (buffer-name (current-buffer))
                 "*Messages*" "*Compile-Log*" "*Help*"
-                "*init log*" "*Ibuffer*" "*scratch*"
+                "*Ibuffer*" "*scratch*"
                 "*MULTI-TERM-DEDICATED*" "*eshell*"))
          (interested-buffers
           (my/filter
