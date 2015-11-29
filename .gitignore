@@ -1,8 +1,11 @@
 setup/.emacs.d/*
+
 !setup/.emacs.d/init.el
 !setup/.emacs.d/elisp/myElisp
 !setup/.emacs.d/snippets
 !setup/.emacs.d/loader-init/
 !setup/.emacs.d/themes
 !setup/.emacs.d/README.md
+
+setup/.emacs.d/elisp/myElisp/*.elc
 setup/.emacs.d/loader-init/*.elc
