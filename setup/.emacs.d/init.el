@@ -37,6 +37,7 @@
     ess
     exec-path-from-shell
     expand-region
+    f
     flx-ido
     flycheck
     flyspell
