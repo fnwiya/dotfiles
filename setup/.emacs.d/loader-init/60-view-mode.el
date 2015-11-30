@@ -8,7 +8,6 @@
                (define-key view-mode-map "k" 'previous-line)
                )))
 
-(add-hook 'after-init-hook (lambda()
 ;; 書き込み不能なファイルはview-modeで開くように
 (defadvice find-file
     (around find-file-switch-to-view-file (file &optional wild) activate)
@@ -28,4 +27,3 @@
 
 (do-not-exit-view-mode-unless-writable-advice view-mode-exit)
 (do-not-exit-view-mode-unless-writable-advice view-mode-disable)
-))
