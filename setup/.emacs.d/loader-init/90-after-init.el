@@ -48,5 +48,3 @@
 ;; at *scratch*
 ;; (frame-height) => C-j
 ;; (frame-width)  => C-j
-(add-to-list 'load-path "~/.emacs.d/elisp/myElisp/meigen")
-(use-package meigen)
