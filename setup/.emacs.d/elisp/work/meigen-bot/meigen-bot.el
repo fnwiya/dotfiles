@@ -3,7 +3,7 @@
 ;; Author: fnwiya
 ;; URL: https://github.com/fnwiya/meigen-bot
 ;; Package-Requires: ()
-;; Keywords: meigen
+;; Keywords: meigen mini-buffer
 ;; Version: 0.1
 
 ;; Copyright (c) 2015 fnwiya
