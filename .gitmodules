@@ -1,0 +1,3 @@
+[submodule "setup/.emacs.d/elisp/work/hatena-blog-mode"]
+	path = setup/.emacs.d/elisp/work/hatena-blog-mode
+	url = https://github.com/fnwiya/hatena-blog-mode.git
