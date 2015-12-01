@@ -7,5 +7,4 @@ setup/.emacs.d/*
 !setup/.emacs.d/themes/*
 !setup/.emacs.d/README.md
 
-setup/.emacs.d/elisp/myElisp/*.elc
 setup/.emacs.d/loader-init/*.elc
