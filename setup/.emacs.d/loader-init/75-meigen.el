@@ -1,7 +1,7 @@
-(add-to-list 'load-path "~/.emacs.d/elisp/myElisp/meigen-bot")
+(add-to-list 'load-path "~/.emacs.d/elisp/work/meigen-bot")
 (use-package meigen-bot
   :config
-  (setq meigen-file-path "~/.emacs.d/elisp/myElisp/meigen-bot/meigen.txt")
+  (setq meigen-file-path "~/.emacs.d/elisp/work/meigen-bot/meigen.txt")
   (add-hook 'emacs-startup-hook
           (lambda ()
             (echo-meigen-to-minibuffer)
