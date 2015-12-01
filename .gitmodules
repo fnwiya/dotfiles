@@ -1,3 +1,6 @@
 [submodule "setup/.emacs.d/elisp/work/hatena-blog-mode"]
 	path = setup/.emacs.d/elisp/work/hatena-blog-mode
 	url = https://github.com/fnwiya/hatena-blog-mode.git
+[submodule "setup/.emacs.d/elisp/work/meigen-bot"]
+	path = setup/.emacs.d/elisp/work/meigen-bot
+	url = https://github.com/fnwiya/meigen-bot.git
