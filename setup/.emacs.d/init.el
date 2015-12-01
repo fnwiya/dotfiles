@@ -27,6 +27,7 @@
     c-eldoc
     cider
     clojure-mode
+    company
     codic
     corral
     cperl-mode
