@@ -3,7 +3,7 @@ GITHUB_URL=https://github.com/fnwiya/dotfiles.git
 
 # git が使えるなら git
 if [ -x "`which git`" ] ; then
-    git clone "$GITHUB_URL" "$DOTPATH"
+    git clone --recursive "$GITHUB_URL" "$DOTPATH"
 
 # 使えない場合は curl か wget を使用する
 elif [ -x "`which curl`" ] || [ -x "`which wget`" ] ; then
