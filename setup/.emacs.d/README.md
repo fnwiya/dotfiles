@@ -1,4 +1,5 @@
 ## initialize
-1.clone this repository to home
-2.start emacs and auto-install pkg
-3.restart emacs
+
+0. clone this repository to home
+0. start emacs and auto-install pkg
+0. restart emacs
