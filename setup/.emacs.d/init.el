@@ -1,4 +1,9 @@
 (setq gc-cons-threshold (* 128 1024 1024))
+(shell-command "git -C $HOME/dotfiles pull")
+(add-hook 'kill-emacs-hook
+          (lambda()
+            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
+
 
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
@@ -132,7 +137,3 @@
                                        (if (eq major-mode 'emacs-lisp-mode)
                                            (save-excursion
                                              (byte-compile-file buffer-file-name))))))
-(use-package epl
-  :config
-  (global-set-key (kbd "C-x U") epl-upgrade)
-)
