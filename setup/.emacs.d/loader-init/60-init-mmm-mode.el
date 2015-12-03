@@ -158,8 +158,8 @@
 
 ;; mmm-mako
 ;; https://bitbucket.org/pjenvey/mmm-mako
-(require 'mmm-mako)
+(use-package mmm-mako)
 (add-to-list 'auto-mode-alist '("\\.sqltmpl\\'" . sql-mode))
 (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)
 
-(global-set-key "\M-p"	 'mmm-parse-buffer)
+(global-set-key "\M-p" 'mmm-parse-buffer)
