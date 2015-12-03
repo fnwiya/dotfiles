@@ -132,3 +132,7 @@
                                        (if (eq major-mode 'emacs-lisp-mode)
                                            (save-excursion
                                              (byte-compile-file buffer-file-name))))))
+(use-package epl
+  :config
+  (global-set-key (kbd "C-x U") epl-upgrade)
+)
