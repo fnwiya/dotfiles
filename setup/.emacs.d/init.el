@@ -1,3 +1,14 @@
+(defun compile-inits()
+  "compile my init-files"
+  (interactive)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
+  (byte-compile-file "~/.emacs.d/init.el")
+  )
+(cond ((file-exists-p "~/emacs.d/init.elc")
+			 (compile-inits)
+))
+
 (setq gc-cons-threshold (* 128 1024 1024))
 (shell-command "git -C $HOME/dotfiles pull")
 (add-hook 'kill-emacs-hook
@@ -111,14 +122,6 @@
       (package-install pkg))))
 
 (require 'use-package)
-
-(defun compile-inits()
-  "compile my init-files"
-  (interactive)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
-  (byte-compile-file "~/.emacs.d/init.el")
-  )
 
 (use-package init-loader
   :config
