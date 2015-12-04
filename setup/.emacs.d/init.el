@@ -118,6 +118,11 @@
   (byte-compile-file "~/.emacs.d/init.el")
   )
 
+(add-hook 'after-save-hook (function (lambda ()
+                                       (if (eq major-mode 'emacs-lisp-mode)
+                                           (save-excursion
+                                             (byte-compile-file buffer-file-name))))))
+
 (use-package init-loader
   :config
   (setq init-loader-show-log-after-init 'error-only)
@@ -132,8 +137,3 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "C-x l") 'my-load-init-file)
-
-(add-hook 'after-save-hook (function (lambda ()
-                                       (if (eq major-mode 'emacs-lisp-mode)
-                                           (save-excursion
-                                             (byte-compile-file buffer-file-name))))))
