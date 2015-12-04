@@ -73,6 +73,7 @@
     multiple-cursors
     neotree
     open-junk-file
+	org
     popwin
     projectile
     python-mode
