@@ -8,5 +8,6 @@ setup/.emacs.d/*
 !setup/.emacs.d/README.md
 
 setup/.emacs.d/loader-init/*.elc
+setup/.emacs.d/themes/*.elc
 setup/.emacs.d/elisp/el-get
 setup/.emacs.d/elisp/package

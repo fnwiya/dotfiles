@@ -1,23 +1,15 @@
+(require 'mmm-mode)
 (require 'mmm-auto)
 (setq mmm-submode-decoration-level 2)
 (setq mmm-font-lock-available-p t)
 (setq mmm-global-mode 'maybe)
 
  ;;;; color setting ;;;;
-;; mmm-default-submode-face : javascript
-;; mmm-code-submode-face : sql
-;; mmm-comment-submode-face : comment
+;; mmm-default-submode-face     : javascript
+;; mmm-code-submode-face        : sql
+;; mmm-comment-submode-face     : comment
 ;; mmm-declaration-submode-face : perl
 
-;;(set-face-bold-p 'mmm-default-submode-face t)
-
-;; color setting for color-theme-snow
-;; (set-face-background 'mmm-default-submode-face "LightCyan2")
-;; (set-face-background 'mmm-code-submode-face "wheat")
-;; (set-face-background 'mmm-comment-submode-face "gray76")
-;; (set-face-background 'mmm-declaration-submode-face "thistle2")
-
-;; color setting for color-theme-clarity
 (set-face-background 'mmm-default-submode-face "gray30")
 (set-face-background 'mmm-code-submode-face "gray15")
 (set-face-background 'mmm-comment-submode-face "gray5")
@@ -48,7 +40,6 @@
     :back "--%>"
     )
    ))
-(add-to-list 'auto-mode-alist '("\\.fsp\\'" . web-mode))
 
 ;; FSP in javascript
 (mmm-add-mode-ext-class nil "\\.js\\'" 'fsp-in-js-group)
@@ -74,7 +65,6 @@
     :back "--%>"
     )
    ))
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js-mode))
 
 ;; Honeybee XML & SQLRepository.xml
 ;(mmm-add-mode-ext-class nil "\\.xml\\'" 'honeybee-xml-group)
@@ -154,12 +144,10 @@
     :back "\\]\\]></return>"
     )
    ))
-(add-to-list 'auto-mode-alist '("\\.xml\\'" . xml-mode))
 
 ;; mmm-mako
 ;; https://bitbucket.org/pjenvey/mmm-mako
 (use-package mmm-mako)
 (add-to-list 'auto-mode-alist '("\\.sqltmpl\\'" . sql-mode))
 (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)
-
-(global-set-key "\M-p" 'mmm-parse-buffer)
+(global-set-key "M-P"  'mmm-parse-buffer)
