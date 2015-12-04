@@ -40,6 +40,7 @@
     :back "--%>"
     )
    ))
+(add-to-list 'auto-mode-alist '("\\.fsp?\\'" . fsp-group-mode))
 
 ;; FSP in javascript
 (mmm-add-mode-ext-class nil "\\.js\\'" 'fsp-in-js-group)
@@ -65,9 +66,10 @@
     :back "--%>"
     )
    ))
+(add-to-list 'auto-mode-alist '("\\.fsp?\\'" . fsp-in-js-group-mode))
 
 ;; Honeybee XML & SQLRepository.xml
-;(mmm-add-mode-ext-class nil "\\.xml\\'" 'honeybee-xml-group)
+(mmm-add-mode-ext-class nil "\\.xml\\'" 'honeybee-xml-group)
 (mmm-add-group
  'honeybee-xml-group
  '(
@@ -101,12 +103,6 @@
     :front "<eval>"
     :back "</eval>"
     )
-   ;; (perl-sql
-   ;;	 :submode sql-mode
-   ;;	 :face mmm-code-submode-face
-   ;;	 :front "<<_SQL;"
-   ;;	 :back "_SQL"
-   ;;	 )
    (honeybee-xml-mode-fsp-comment
     :submode text-mode
     :face mmm-comment-submode-face
@@ -150,4 +146,5 @@
 (use-package mmm-mako)
 (add-to-list 'auto-mode-alist '("\\.sqltmpl\\'" . sql-mode))
 (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)
+
 (global-set-key "M-P"  'mmm-parse-buffer)
