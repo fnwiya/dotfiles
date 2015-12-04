@@ -147,6 +147,4 @@
   (use-package mmm-mako)
   (add-to-list 'auto-mode-alist '("\\.sqltmpl\\'" . sql-mode))
   (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)
-
-  (global-set-key "M-P"  'mmm-parse-buffer)
   ))
