@@ -6,10 +6,7 @@
             (setq c-auto-newline t) ;; ';' を入力したら、自動改行+インデント
             ))
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-(use-package google-c-style
-  :init
-  (add-hook 'c-mode-common-hook 'google-set-c-style)
-  :commands
-  (google-set-c-style)
-  :config
-)
+(require 'google-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c++-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
