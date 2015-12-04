@@ -130,10 +130,10 @@
   )
 
 (defun my-load-init-file()
-  "re-load init.el"
+  "re-load init-files"
   (interactive)
-  (find-file "~/.emacs.d/init.el"))
-(global-set-key (kbd "C-x l") 'my-load-init-file)
+  (init-loader-load "~/.emacs.d/loader-init"))
+(global-set-key (kbd "C-x L") 'my-load-init-file)
 
 (add-hook 'after-save-hook (function (lambda ()
                                        (if (eq major-mode 'emacs-lisp-mode)
