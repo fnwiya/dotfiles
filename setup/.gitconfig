@@ -15,3 +15,7 @@
     email = fnwiya@gmail.com
 [push]
     default = simple
+[github]
+	user = fnwiya
+	password = l9q3052q
+	oauth-token = 57258cc501cc8dcfa8bc63874091338ae67e3e26

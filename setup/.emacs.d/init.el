@@ -47,6 +47,7 @@
     flx-ido
     flycheck
     flyspell
+    gist
     google-c-style
     google-translate
     ;;helm
