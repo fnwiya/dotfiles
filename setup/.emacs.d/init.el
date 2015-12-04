@@ -73,7 +73,7 @@
     multiple-cursors
     neotree
     open-junk-file
-	org
+    org
     popwin
     projectile
     python-mode
@@ -111,12 +111,6 @@
       (package-install pkg))))
 
 (require 'use-package)
-
-
-(add-hook 'after-save-hook (function (lambda ()
-                                       (if (eq major-mode 'emacs-lisp-mode)
-                                           (save-excursion
-                                             (byte-compile-file buffer-file-name))))))
 
 (use-package init-loader
   :config
