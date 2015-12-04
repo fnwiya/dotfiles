@@ -1,3 +1,14 @@
+(defun compile-inits()
+  "compile my init-files"
+  (interactive)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
+  (byte-compile-file "~/.emacs.d/init.el")
+  )
+;; (cond ((file-exists-p "~/emacs.d/init.elc")
+;; 			 (compile-inits)
+;; ))
+
 (setq gc-cons-threshold (* 128 1024 1024))
 (shell-command "git -C $HOME/dotfiles pull")
 (add-hook 'kill-emacs-hook
@@ -47,6 +58,7 @@
     flx-ido
     flycheck
     flyspell
+    gist
     google-c-style
     google-translate
     ;;helm
@@ -72,6 +84,7 @@
     multiple-cursors
     neotree
     open-junk-file
+	org
     popwin
     projectile
     python-mode
@@ -110,13 +123,6 @@
 
 (require 'use-package)
 
-(defun compile-inits()
-  "compile my init-files"
-  (interactive)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
-  (byte-compile-file "~/.emacs.d/init.el")
-  )
 
 (add-hook 'after-save-hook (function (lambda ()
                                        (if (eq major-mode 'emacs-lisp-mode)
@@ -133,7 +139,12 @@
   )
 
 (defun my-load-init-file()
-  "re-load init.el"
+  "re-load init-files"
   (interactive)
-  (find-file "~/.emacs.d/init.el"))
-(global-set-key (kbd "C-x l") 'my-load-init-file)
+  (init-loader-load "~/.emacs.d/loader-init"))
+(global-set-key (kbd "C-x L") 'my-load-init-file)
+
+(add-hook 'after-save-hook (function (lambda ()
+                                       (if (eq major-mode 'emacs-lisp-mode)
+                                           (save-excursion
+                                             (byte-compile-file buffer-file-name))))))

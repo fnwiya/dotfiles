@@ -43,7 +43,7 @@
         (output ""))
     (when (and path (equal "" (car path)))
       (setq path (cdr path)))
-    (while (and path (< (length output) (- max-length 4)))
+    (while (and path (< (length output) (- max-length 5)))
       (setq output (concat (car path) "/" output))
       (setq path (cdr path)))
     (when path
