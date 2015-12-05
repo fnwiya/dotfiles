@@ -38,6 +38,7 @@ brew install cmigemo
 brew install curl
 brew install elixir
 brew install --cocoa emacs
+brew install heroku
 brew install gcc
 brew install git
 brew install global
