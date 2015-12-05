@@ -53,4 +53,7 @@
 
 ;; 矩形選択
 (cua-mode t)
+
+;; タブの無効化
+(setq-default indent-tabs-mode nil)
 ))
