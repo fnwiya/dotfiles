@@ -30,4 +30,5 @@
   (push '(slime-repl-mode) popwin:special-display-config)
   (push '(slime-connection-list-mode) popwin:special-display-config)
   (push '("*Async Shell Command*") popwin:special-display-config)
+  (push '("*Kill Ring*") popwin:special-display-config)
   )
