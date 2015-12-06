@@ -35,12 +35,11 @@
                       :weight 'bold)
   (set-face-attribute 'whitespace-empty nil
                       :background my/bg-color)
-
-  (defun save-with-cleaning-space()
-    (interactive)
-    (lambda()
-      (whitespace-cleanup)
-      (save-buffer)
-      ))
-  (bind-key "C-x C-S" 'save-with-cleaning-space)
+  (cond
+    ((or (eq window-system 'ns) (eq window-system 'mac))
+      (add-hook 'after-save-hook
+                (lambda()
+                  (whitespace-cleanup)
+                  )))
+    )
 )
