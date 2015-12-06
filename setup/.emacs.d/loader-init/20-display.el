@@ -4,14 +4,12 @@
 ;; scratchの初期メッセージ消去
 (setq initial-scratch-message "")
 
-(add-hook 'after-init-hook (lambda()
 ;; 透過
 (set-frame-parameter (selected-frame) 'alpha '(95 90))
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-))
 
 ;; タイトルバー
 (when (window-system)

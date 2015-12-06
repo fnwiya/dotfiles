@@ -11,4 +11,4 @@
   (recentf-mode 1)
   )
 
-(autoload 'recentf-ext "recentf-ext" nil t) 
+(autoload 'recentf-ext "recentf-ext" nil t)

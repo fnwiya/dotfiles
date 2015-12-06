@@ -1,4 +1,4 @@
 #!/bin/bash
-npm install -g express
-npm install -g tern
-npm install -g mocha
+sudo npm install -g express
+sudo npm install -g tern
+sudo npm install -g mocha
