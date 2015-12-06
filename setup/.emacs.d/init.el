@@ -29,6 +29,7 @@
     auto-complete
     avy
     bind-key
+    browse-kill-ring
     c-eldoc
     cider
     clojure-mode

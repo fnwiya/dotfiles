@@ -3,4 +3,4 @@
   (("\.md$" . markdown-mode)
    ("\.markdown$" . markdown-mode))
   :config
-)
+ )
