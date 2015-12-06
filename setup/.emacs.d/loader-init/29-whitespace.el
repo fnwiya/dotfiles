@@ -35,11 +35,4 @@
                       :weight 'bold)
   (set-face-attribute 'whitespace-empty nil
                       :background my/bg-color)
-  (cond
-    ((or (eq window-system 'ns) (eq window-system 'mac))
-      (add-hook 'after-save-hook
-                (lambda()
-                  (whitespace-cleanup)
-                  )))
-    )
 )
