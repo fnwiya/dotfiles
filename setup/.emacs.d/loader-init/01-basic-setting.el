@@ -13,7 +13,6 @@
 ;; yes or noをy or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(add-hook 'emacs-startup-hook (lambda ()
 ;;;クライアントを終了するとき終了するかどうかを聞かない
 (remove-hook 'kill-buffer-query-functions 'server-kill-buffer-query-function)
 
@@ -56,4 +55,3 @@
 
 ;; タブの無効化
 (setq-default indent-tabs-mode nil)
-))
