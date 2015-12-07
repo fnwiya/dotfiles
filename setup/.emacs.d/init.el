@@ -103,6 +103,8 @@
     wgrep
     yasnippet
     ))
+(defun install-listed-pkg()
+  (interactive)
 (let ((not-installed (loop for x in installing-package-list
                            when (not (package-installed-p x))
                            collect x)))
@@ -110,6 +112,8 @@
     (package-refresh-contents)
     (dolist (pkg not-installed)
       (package-install pkg))))
+  )
+(install-listed-pkg)
 
 (require 'use-package)
 
