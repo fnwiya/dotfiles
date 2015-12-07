@@ -14,6 +14,7 @@ sudo apt-get install golang
 sudo apt-get install leiningen
 sudo apt-get install sqlite3
 sudo apt-get install tmux
+sudo apt-get install tree
 sudo apt-get install wget
 sudo apt-get install z
 sudo apt-get install zsh
