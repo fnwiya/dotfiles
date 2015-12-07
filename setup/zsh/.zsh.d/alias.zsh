@@ -30,6 +30,7 @@ case ${OSTYPE} in
         alias pkgupd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove'
         alias webstart='sudo /home/forcia/bin/restartWeb.sh start'
         alias webstop='sudo /home/forcia/bin/restartWeb.sh stop'
+        alias pbcopy='xsel --clipboard --input'
         ;;
 esac
 evalenv # call at login
