@@ -81,7 +81,14 @@ source install/sbcl.sh
 
 echo "Configuring zsh as default shell"
 which zsh
-which zsh | pbcopy
+case ${OSTYPE} in
+    darwin*)
+        which zsh | pbcopy
+        ;;
+    linux*)
+        which zsh | xsel --clipboard --input
+        ;;
+esac
 echo "add which zsh to /usr/local/bin/zsh"
 vi /etc/shells
 chsh -s $(which zsh)
