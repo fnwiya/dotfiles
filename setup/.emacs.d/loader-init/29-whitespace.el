@@ -35,4 +35,10 @@
                       :weight 'bold)
   (set-face-attribute 'whitespace-empty nil
                       :background my/bg-color)
+  (defun save-whiteapace-clean()
+    (interactive)
+    (whitespace-cleanup)
+    (save-buffer)
+    )
+  (bind-key "C-x C-s" 'save-whiteapace-clean)
 )

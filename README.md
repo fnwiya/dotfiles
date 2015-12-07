@@ -32,6 +32,14 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 ├── install.sh
 ├── setDotfiles.sh
 ├── setup
+│   ├── .gitconfig
+│   ├── .gitignore_global
+│   ├── .hgignore_global
+│   ├── .hgrc
+│   ├── .sbclrc
+│   ├── .tern-config
+│   ├── .tmux.conf
+│   ├── .peco
 │   ├── .emacs.d
 │   │   ├── init.el
 │   │   ├── cache
@@ -41,7 +49,6 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 │   │   ├── loader-init
 │   │   ├── snippets
 │   │   └── themes
-│   ├── .peco
 │   ├── bash
 │   │   ├── .bash_profile
 │   │   └── .bashrc
@@ -53,8 +60,8 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 │   │   ├── .vim
 │   │   └── .vimrc
 │   └── zsh
-│       ├── .zsh.d
-│       ├── .zshrc
-│       └── .zshenv
+│        ├── .zsh.d
+│        ├── .zshrc
+│        └── .zshenv
 └── setup.sh
 ```
