@@ -1,5 +1,5 @@
 (setq gc-cons-threshold (* 128 1024 1024))
-(shell-command "git -C $HOME/dotfiles pull && git submodule update")
+(shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
 (add-hook 'kill-emacs-hook
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
