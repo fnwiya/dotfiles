@@ -25,6 +25,7 @@
       ("[" . ("[`!!']" "["))
       ("\"" . ("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
       ("\'" . ("\'`!!'\'"  "\'"))
+      (";" . (";\n" ";"))
   ))
   (key-combo-define-hook key-combo-common-mode-hooks
                         'key-combo-common-load-default
@@ -39,16 +40,6 @@
   (key-combo-define-hook key-combo-python-mode-hooks
                         'key-combo-python-load-default
                          key-combo-python-default)
-  ;; js
-  (setq key-combo-js-mode-hooks
-        '(js-mode-hook))
-  (setq key-combo-js-default
-  '(
-    (";" . (";\n" ";"))
-    ))
-  (key-combo-define-hook key-combo-js-mode-hooks
-                        'key-combo-js-load-default
-                         key-combo-js-default)
   ;; lisp
   (setq key-combo-lisp-mode-hooks
       '(lisp-mode-hook
