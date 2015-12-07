@@ -10,5 +10,5 @@
     )
   nil
 )
-(add-hook 'find-file-not-found-hooks
+(add-hook 'find-file-hooks
           'make-directory-unless-directory-exists)
