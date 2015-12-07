@@ -13,6 +13,9 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 ```
 .
 ├── .git
+├── .gitignore
+├── .gitmodules
+├──  README.md
 ├── doc
 │   ├── osx_manual.md
 │   └── ubuntu_manual.md
@@ -28,26 +31,30 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 │   └── ubuntu.sh
 ├── install.sh
 ├── setDotfiles.sh
-└── setup
-    ├── .emacs.d
-    │   ├── cache
-    │   ├── elisp
-    │   │   ├── package
-    │   │   └── work
-    │   ├── loader-init
-    │   ├── snippets
-    │   └── themes
-    ├── .peco
-    ├── bash
-    ├── linux
-    │   └── .shutter
-    │       └── profiles
-    ├── osx
-    │   └── key4remap
-    ├── vim
-    │   └── .vim
-    │       ├── bundle
-    │       └── colors
-    └── zsh
-        └── .zsh.d
+├── setup
+｜   ├── .emacs.d
+｜   │   ├── init.el
+｜   │   ├── cache
+｜   │   ├── elisp
+｜   │   │   ├── package
+｜   │   │   └── work
+｜   │   ├── loader-init
+｜   │   ├── snippets
+｜   │   └── themes
+｜   ├── .peco
+｜   ├── bash
+｜   │   ├── .bash_profile
+｜   │   └── .bashrc
+｜   ├── linux
+｜   │   └── .shutter
+｜   ├── osx
+｜   │   └── key4remap
+｜   ├── vim
+｜   │   ├── .vim
+｜   │   └── .vimrc
+｜   └── zsh
+｜       ├── .zsh.d
+｜       ├── .zshrc
+｜       └── .zshenv
+└── setup.sh
 ```

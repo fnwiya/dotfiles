@@ -55,6 +55,7 @@ brew install pyenv-virtualenv
 brew install rbenv
 brew install sbcl
 brew install tmux
+brew install tree
 brew install vim
 brew install wget
 brew install z
