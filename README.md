@@ -10,6 +10,7 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 
 
 ##structure
+```
 .
 ├── README.md
 ├── doc
@@ -36,3 +37,4 @@ curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
 │   ├── vim
 │   └── zsh
 └── setup.sh
+```
