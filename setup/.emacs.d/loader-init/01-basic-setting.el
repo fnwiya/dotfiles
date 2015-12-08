@@ -1,6 +1,9 @@
 ;;; ユーザー情報
 (setq user-full-name "fnwiya")
 (setq user-mail-address "fnwiya@gmail.com")
+(defvar system-name-simple
+  (replace-regexp-in-string "\\..*\\'" "" (system-name))
+  "The simple host name of the machine Emacs is running on, which is without domain information.")
 
 ;; バックアップファイルを作らないようにする
 (setq make-backup-files nil)

@@ -144,7 +144,3 @@
   (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
   (byte-compile-file "~/.emacs.d/init.el")
   )
-
-(defvar system-name-simple
-  (replace-regexp-in-string "\\..*\\'" "" (system-name))
-  "The simple host name of the machine Emacs is running on, which is without domain information.")
