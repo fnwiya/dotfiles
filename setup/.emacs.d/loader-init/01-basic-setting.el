@@ -37,7 +37,7 @@
 (setq history-length 1000)
 
 ;; 最後に改行を追加
-(setq require-final-newline nil)
+;; (setq require-final-newline t)
 
 ;; バッファ自動再読み込み
 (global-auto-revert-mode 1)
