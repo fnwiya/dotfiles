@@ -1,3 +1,6 @@
+(defvar system-name-simple
+  (replace-regexp-in-string "\\..*\\'" "" (system-name))
+  "The simple host name of the machine Emacs is running on, which is without domain information.")
 (cond
  ((or (eq window-system 'ns) (eq window-system 'mac))
   (add-hook 'after-init-hook
