@@ -1,5 +1,8 @@
-(cond 
- ((eq system-type 'gnu/linux)
+(defvar system-name-simple
+  (replace-regexp-in-string "\\..*\\'" "" (system-name))
+  "The simple host name of the machine Emacs is running on, which is without domain information.")
+(cond
+ ((equal system-name-simple "forcia-VirtualBox")
   (require 'mmm-mode)
   (require 'mmm-auto)
   (setq mmm-submode-decoration-level 2)
