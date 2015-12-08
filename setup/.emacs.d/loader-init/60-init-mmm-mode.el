@@ -1,5 +1,5 @@
-(cond 
- ((eq system-type 'gnu/linux)
+(cond
+ ((equal system-name-simple "forcia")
   (require 'mmm-mode)
   (require 'mmm-auto)
   (setq mmm-submode-decoration-level 2)

@@ -7,14 +7,15 @@
               (save-window-excursion
                 (async-shell-command "brew update && brew upgrade --all && brew doctor"))
               )))
- ((eq system-type 'gnu/linux)
+ ((eq window-system 'x)
+  (when (equal system-name-simple "forcia")
   (add-hook 'after-init-hook
             (lambda()
               (set-frame-position (selected-frame) 0 0)
               (set-frame-size (selected-frame) 101 50)
               (save-window-excursion
                 (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove"))
-              )))
+              ))))
  )
 
 (when (window-system)
