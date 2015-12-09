@@ -21,14 +21,14 @@
 (when (window-system)
   (add-hook 'after-init-hook
             (lambda()
+              (save-window-excursion
+                (list-packages))
               (setq w (selected-window))
               (setq w2 (split-window w (- (window-height w) 8)))
               (select-window w2)
               (multi-term)
               (select-window w)
               (recentf-open-files)
-;              (save-window-excursion
-;                (list-packages))
               )))
 
 
