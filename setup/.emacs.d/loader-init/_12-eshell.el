@@ -1,11 +1,12 @@
 ;; prompt
+(defvar eshell-prompt-function nil)
 (setq eshell-prompt-function
       (lambda ()
         (concat "[fnwiya"
-                (eshell/pwd)
                 (if (= (user-uid) 0) "]\n# " "]\n$ "))))
 
 ;; alias
+(defvar eshell-command-aliases-list nil)
 (setq eshell-command-aliases-list
       (append
        (list
