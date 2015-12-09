@@ -32,11 +32,12 @@ pip install pyinstaller
 pip install zenhan
 pip install tornado
 pip install facebook-sdk
+pip install Mako
+pip install psycopg2
 
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
 rm -f ~/dotfiles/mecab-python-0.996.tar.gz
-
 
 git clone https://github.com/amueller/word_cloud
 cd word_cloud

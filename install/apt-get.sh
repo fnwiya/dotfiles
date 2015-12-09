@@ -25,6 +25,10 @@ sudo apt-get install python-pip
 sudo apt-get install python-setuptools
 sudo apt-get install python-scipy
 sudo apt-get install python-virtualenv
+
+# perl
+sudo apt-get install lib{anyevent,class-accessor-lite,crypt-ssleay,datetime,dbd-sqlite3,dbd-mysql,dbd-pg,dbi,dbix-class,extutils-parsexs,file-homedir,file-sharedir,file-spec,ipc-run3,json,module-build,module-install,mojolicious,moo,moose,mouse,net-ssleay,path-class,plack,test-exception,test-fatal,test-requires,test-warnings,tie-ixhash,try-tiny,uri,uri-encode,www,xml-libxml,yaml}-perl
+
 # others
 sudo apt-get install dropbox
 sudo apt-get install shutter

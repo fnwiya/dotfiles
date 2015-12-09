@@ -1,7 +1,6 @@
 (use-package sequential-command-config
-  :bind
-  (("C-a" . seq-home)
-   ("C-e" . seq-end))
   :config
   (sequential-command-setup-keys)
+  (bind-key "C-a" 'seq-home)
+  (bind-key "C-e" 'seq-end)
   )
