@@ -29,17 +29,13 @@
 (defvar installing-package-list
   '(
     ac-slime
-    ace-jump-mode
     ace-link
-    ahg
     anzu
     auto-async-byte-compile
     auto-capitalize
-    auto-complete
     avy
     bind-key
     browse-kill-ring
-    c-eldoc
     cider
     clojure-mode
     company
@@ -65,7 +61,6 @@
     ;;helm-projectile
     highlight-indentation
     highlight-symbol
-    hydra
     ido-ubiquitous
     ido-vertical-mode
     impatient-mode
@@ -81,7 +76,6 @@
     mmm-mode
     multi-term
     multiple-cursors
-    neotree
     open-junk-file
     org
     popwin
