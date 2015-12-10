@@ -24,97 +24,97 @@
 
 (eval-when-compile (require 'cl))
 
-(defvar installing-package-list
-  '(
-    ac-slime
-    ace-link
-    anzu
-    auto-async-byte-compile
-    auto-capitalize
-    avy
-    bind-key
-    browse-kill-ring
-    cider
-    clojure-mode
-    company
-    codic
-    corral
-    cperl-mode
-    dash
-    easy-kill
-    elpy
-    el-get
-    ess
-    exec-path-from-shell
-    expand-region
-    f
-    flx-ido
-    flycheck
-    flyspell
-    gist
-    google-c-style
-    google-translate
-    ;;helm
-    ;;helm-flyspell
-    ;;helm-projectile
-    highlight-indentation
-    highlight-symbol
-    ido-ubiquitous
-    ido-vertical-mode
-    impatient-mode
-    init-loader
-    jabber
-    jedi
-    jquery-doc
-    js2-mode
-    key-combo
-    magit
-    markdown-mode
-    mmm-mako
-    mmm-mode
-    multi-term
-    multiple-cursors
-    open-junk-file
-    org
-    popwin
-    projectile
-    python-mode
-    quickrun
-    rainbow-delimiters
-    rainbow-mode
-    recentf-ext
-    redo+
-    saveplace
-    sequential-command
-    simple-httpd
-    slime
-    smartrep
-    smex
-    smooth-scroll
-    sql-indent
-    sqlup-mode
-    tabbar
-    tern
-    tern-auto-complete
-    twittering-mode
-    undo-tree
-    undohist
-    use-package
-    web-mode
-    wgrep
-    yasnippet
-    ))
-(defun install-listed-pkg()
-  (interactive)
-(let ((not-installed (loop for x in installing-package-list
-                           when (not (package-installed-p x))
-                           collect x)))
-  (when not-installed
-    (package-refresh-contents)
-    (dolist (pkg not-installed)
-      (package-install pkg))))
-  )
-(install-listed-pkg)
+;(defvar installing-package-list
+;  '(
+;    ac-slime
+;    ace-link
+;    anzu
+;    auto-async-byte-compile
+;    auto-capitalize
+;    avy
+;    bind-key
+;    browse-kill-ring
+;    cider
+;    clojure-mode
+;    company
+;    codic
+;    corral
+;    cperl-mode
+;    dash
+;    easy-kill
+;    elpy
+;    el-get
+;    ess
+;    exec-path-from-shell
+;    expand-region
+;    f
+;    flx-ido
+;    flycheck
+;    flyspell
+;    gist
+;    google-c-style
+;    google-translate
+;    ;;helm
+;    ;;helm-flyspell
+;    ;;helm-projectile
+;    highlight-indentation
+;    highlight-symbol
+;    ido-ubiquitous
+;    ido-vertical-mode
+;    impatient-mode
+;    init-loader
+;    jabber
+;    jedi
+;    jquery-doc
+;    js2-mode
+;    key-combo
+;    magit
+;    markdown-mode
+;    mmm-mako
+;    mmm-mode
+;    multi-term
+;    multiple-cursors
+;    open-junk-file
+;    org
+;    popwin
+;    projectile
+;    python-mode
+;    quickrun
+;    rainbow-delimiters
+;    rainbow-mode
+;    recentf-ext
+;    redo+
+;    saveplace
+;    sequential-command
+;    simple-httpd
+;    slime
+;    smartrep
+;    smex
+;    smooth-scroll
+;    sql-indent
+;    sqlup-mode
+;    tabbar
+;    tern
+;    tern-auto-complete
+;    twittering-mode
+;    undo-tree
+;    undohist
+;    use-package
+;    web-mode
+;    wgrep
+;    yasnippet
+;    ))
+;(defun install-listed-pkg()
+;  (interactive)
+;(let ((not-installed (loop for x in installing-package-list
+;                           when (not (package-installed-p x))
+;                           collect x)))
+;  (when not-installed
+;    (package-refresh-contents)
+;    (dolist (pkg not-installed)
+;      (package-install pkg))))
+;  )
+;(install-listed-pkg)
 
 (require 'use-package)
 
