@@ -1,8 +1,8 @@
 (setq gc-cons-threshold (* 128 1024 1024))
-(shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
-(add-hook 'kill-emacs-hook
-          (lambda()
-            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
+;(shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
+;(add-hook 'kill-emacs-hook
+;          (lambda()
+;            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
 
 ;(defun compile-inits()
 ;  "compile my init-files"
