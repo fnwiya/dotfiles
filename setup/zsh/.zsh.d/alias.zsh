@@ -1,6 +1,7 @@
 ########################################
 # alias
 ########################################
+alias sudo='sudo '
 alias ll="ls -l"
 alias rm='rm -i'
 alias cp='cp -i'
