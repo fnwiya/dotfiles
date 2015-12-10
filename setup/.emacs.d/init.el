@@ -19,7 +19,8 @@
 
 (require 'package)
 (setq package-user-dir "~/.emacs.d/elisp/package/")
-(package-initialize)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))(package-initialize)
 
 (eval-when-compile (require 'cl))
 
