@@ -1,9 +1,11 @@
 (setq gc-cons-threshold (* 128 1024 1024))
+;; git-pull/push
 (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
 (add-hook 'kill-emacs-hook
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
 
+;; byte-compile
 (defun compile-inits()
   "compile my init-files"
   (interactive)
@@ -11,7 +13,13 @@
   (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
   (byte-compile-file "~/.emacs.d/init.el")
   )
+(add-hook 'after-save-hook
+          (lambda ()
+            (if (eq major-mode 'emacs-lisp-mode)
+                (save-excursion
+                  (byte-compile-file buffer-file-name)))))
 
+;; package-manager
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
@@ -19,6 +27,8 @@
 
 (require 'package)
 (setq package-user-dir "~/.emacs.d/elisp/package/")
+(add-to-list 'package-archives
+                   '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (eval-when-compile (require 'cl))
@@ -117,6 +127,7 @@
 
 (require 'use-package)
 
+;; init
 (use-package init-loader
   :config
   (setq init-loader-show-log-after-init 'error-only)
@@ -131,9 +142,3 @@
   (interactive)
   (init-loader-load "~/.emacs.d/loader-init"))
 (global-set-key (kbd "C-x L") 'my-load-init-file)
-
-(add-hook 'after-save-hook
-          (lambda ()
-            (if (eq major-mode 'emacs-lisp-mode)
-                (save-excursion
-                  (byte-compile-file buffer-file-name)))))
