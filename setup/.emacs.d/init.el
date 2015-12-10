@@ -1,9 +1,4 @@
 (setq gc-cons-threshold (* 128 1024 1024))
-(shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
-(add-hook 'kill-emacs-hook
-          (lambda()
-            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
-
 (defun compile-inits()
   "compile my init-files"
   (interactive)
@@ -12,7 +7,12 @@
   (byte-compile-file "~/.emacs.d/init.el")
   )
 (save-window-excursion
+  (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
   (compile-inits))
+
+(add-hook 'kill-emacs-hook
+          (lambda()
+            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
 
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
