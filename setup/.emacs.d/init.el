@@ -8,7 +8,8 @@
   )
 (save-window-excursion
   (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
-  (compile-inits))
+  ;; (compile-inits) 
+ )
 (add-hook 'kill-emacs-hook
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
