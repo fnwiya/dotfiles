@@ -27,8 +27,7 @@
 
 (require 'package)
 (setq package-user-dir "~/.emacs.d/elisp/package/")
-(add-to-list 'package-archives
-                   '("melpa" . "https://melpa.org/packages/") t)
+;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (eval-when-compile (require 'cl))
@@ -140,5 +139,6 @@
 (defun my-load-init-file()
   "re-load init-files"
   (interactive)
-  (init-loader-load "~/.emacs.d/loader-init"))
+  (load-file "~/.emacs.d/init.el")
+  )
 (global-set-key (kbd "C-x L") 'my-load-init-file)
