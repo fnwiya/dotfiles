@@ -122,16 +122,16 @@
   :config
   (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
-  (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
-      (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
-    nil)
+;  (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
+;      (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
+;    nil)
   )
 
-(defun my-load-init-file()
-  "re-load init-files"
-  (interactive)
-  (init-loader-load "~/.emacs.d/loader-init"))
-(global-set-key (kbd "C-x L") 'my-load-init-file)
+;(defun my-load-init-file()
+;  "re-load init-files"
+;  (interactive)
+;  (init-loader-load "~/.emacs.d/loader-init"))
+;(global-set-key (kbd "C-x L") 'my-load-init-file)
 
 ;; (add-hook 'after-save-hook
 ;;           (lambda ()
