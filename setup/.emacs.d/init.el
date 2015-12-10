@@ -133,8 +133,8 @@
   (init-loader-load "~/.emacs.d/loader-init"))
 (global-set-key (kbd "C-x L") 'my-load-init-file)
 
-(add-hook 'after-save-hook
-          (lambda ()
-            (if (eq major-mode 'emacs-lisp-mode)
-                (save-excursion
-                  (byte-compile-file buffer-file-name)))))
+;; (add-hook 'after-save-hook
+;;           (lambda ()
+;;             (if (eq major-mode 'emacs-lisp-mode)
+;;                 (save-excursion
+;;                   (byte-compile-file buffer-file-name)))))
