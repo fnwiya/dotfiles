@@ -8,7 +8,8 @@
   )
 (save-window-excursion
   (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
-  (compile-inits))
+  ;; (compile-inits))
+  )
 (add-hook 'kill-emacs-hook
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
@@ -134,8 +135,8 @@
   (init-loader-load "~/.emacs.d/loader-init"))
 (global-set-key (kbd "C-x L") 'my-load-init-file)
 
-(add-hook 'after-save-hook
-          (lambda ()
-            (if (eq major-mode 'emacs-lisp-mode)
-                (save-excursion
-                  (byte-compile-file buffer-file-name)))))
+;; (add-hook 'after-save-hook
+;;           (lambda ()
+;;             (if (eq major-mode 'emacs-lisp-mode)
+;;                 (save-excursion
+;;                   (byte-compile-file buffer-file-name)))))
