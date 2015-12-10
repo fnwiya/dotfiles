@@ -1,4 +1,9 @@
 (setq gc-cons-threshold (* 128 1024 1024))
+(shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
+(add-hook 'kill-emacs-hook
+          (lambda()
+            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
+
 (defun compile-inits()
   "compile my init-files"
   (interactive)
@@ -6,13 +11,7 @@
   (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
   (byte-compile-file "~/.emacs.d/init.el")
   )
-(save-window-excursion
-  (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
-  ;; (compile-inits) 
- )
-(add-hook 'kill-emacs-hook
-          (lambda()
-            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
+(compile-inits)
 
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
@@ -29,13 +28,17 @@
 (defvar installing-package-list
   '(
     ac-slime
+    ace-jump-mode
     ace-link
+    ahg
     anzu
     auto-async-byte-compile
     auto-capitalize
+    auto-complete
     avy
     bind-key
     browse-kill-ring
+    c-eldoc
     cider
     clojure-mode
     company
@@ -61,6 +64,7 @@
     ;;helm-projectile
     highlight-indentation
     highlight-symbol
+    hydra
     ido-ubiquitous
     ido-vertical-mode
     impatient-mode
@@ -76,6 +80,7 @@
     mmm-mode
     multi-term
     multiple-cursors
+    neotree
     open-junk-file
     org
     popwin
@@ -118,7 +123,6 @@
   )
 (install-listed-pkg)
 
-(require 'use-package)
 
 (use-package init-loader
   :config
