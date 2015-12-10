@@ -11,8 +11,6 @@
   (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
   (byte-compile-file "~/.emacs.d/init.el")
   )
-(save-window-excursion
-  (compile-inits))
 
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
