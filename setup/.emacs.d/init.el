@@ -116,12 +116,16 @@
   )
 (install-listed-pkg)
 
-(require 'init-loader)
+(require 'use-package)
+
+(use-package init-loader
+  :config
   (setq init-loader-show-log-after-init 'error-only)
   (init-loader-load "~/.emacs.d/loader-init")
   (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
       (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
     nil)
+  )
 
 (defun my-load-init-file()
   "re-load init-files"
