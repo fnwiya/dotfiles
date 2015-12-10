@@ -4,13 +4,13 @@
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
 
-(defun compile-inits()
-  "compile my init-files"
-  (interactive)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
-  (byte-compile-file "~/.emacs.d/init.el")
-  )
+;(defun compile-inits()
+;  "compile my init-files"
+;  (interactive)
+;  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+;  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
+;  (byte-compile-file "~/.emacs.d/init.el")
+;  )
 
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
