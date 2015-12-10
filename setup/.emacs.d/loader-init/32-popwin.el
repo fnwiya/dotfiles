@@ -1,7 +1,7 @@
 (use-package popwin
   :config
   (setq helm-samewindow nil)
-  (setq display-buffer-alist 'popwin:display-buffer)
+  (setq display-buffer-function 'popwin:display-buffer)
   (setq popwin:popup-window-position 'bottom)
   (setq popwin:special-display-config '(("*compilation*" :noselect t)
                                         ("helm" :regexp t :height 20)
