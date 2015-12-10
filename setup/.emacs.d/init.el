@@ -3,11 +3,8 @@
   "compile my init-files"
   (interactive)
   (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init"))
   (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes"))
   (byte-compile-file "~/.emacs.d/init.el")
-  (byte-recompile-file "~/.emacs.d/init.el")
   )
 (save-window-excursion
   (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
