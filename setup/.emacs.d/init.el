@@ -110,6 +110,8 @@
   )
 (install-listed-pkg)
 
+(require 'use-package)
+
 ;; byte-compile
 (defun compile-inits()
   "compile my init-files"
@@ -133,7 +135,6 @@
             (shell-command "rm -f ~/.emacs.d/loader-init/*.elc")))
 
 ;; init
-(require 'use-package)
 (use-package init-loader
   :config
   (setq init-loader-show-log-after-init 'error-only)
