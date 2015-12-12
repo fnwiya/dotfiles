@@ -4,8 +4,6 @@
    ("\.json$" . js2-mode)
    ("\.jsx$" . js2-jsx-mode))
   :config
-  (flycheck-add-mode 'javascript-eslint 'js2-jsx-mode)
-  (add-hook 'js2-jsx-mode-hook 'flycheck-mode)
   )
 (use-package jquery-doc
   :commands (jquery-doc-setup)
