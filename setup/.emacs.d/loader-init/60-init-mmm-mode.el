@@ -3,7 +3,7 @@
   (require 'mmm-mode)
   (require 'mmm-auto)
   (setq mmm-submode-decoration-level 2)
-  (setq mmm-font-lock-available-p t)
+  (set-variable mmm-font-lock-available-p t)
   (setq mmm-global-mode 'maybe)
 
  ;;;; color setting ;;;;
