@@ -5,23 +5,6 @@
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
 
-;; byte-compile
-(defun compile-inits()
-  "compile my init-files"
-  (interactive)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
-  (byte-compile-file "~/.emacs.d/init.el")
-  )
-(save-window-excursion
-  (compile-inits)
-)
-(add-hook 'after-save-hook
-          (lambda ()
-            (if (eq major-mode 'emacs-lisp-mode)
-                (save-excursion
-                  (byte-compile-file buffer-file-name)))))
-
 ;; package-manager
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
@@ -128,6 +111,23 @@
 (install-listed-pkg)
 
 (require 'use-package)
+
+;; byte-compile
+(defun compile-inits()
+  "compile my init-files"
+  (interactive)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
+  (byte-compile-file "~/.emacs.d/init.el")
+  )
+(save-window-excursion
+  (compile-inits)
+)
+(add-hook 'after-save-hook
+          (lambda ()
+            (if (eq major-mode 'emacs-lisp-mode)
+                (save-excursion
+                  (byte-compile-file buffer-file-name)))))
 
 ;; init
 (use-package init-loader
