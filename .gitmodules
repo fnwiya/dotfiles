@@ -4,3 +4,6 @@
 [submodule "setup/.emacs.d/elisp/work/meigen-bot"]
 	path = setup/.emacs.d/elisp/work/meigen-bot
 	url = https://github.com/fnwiya/meigen-bot.git
+[submodule "setup/.emacs.d/themes/emacs-material-theme"]
+	path = setup/.emacs.d/themes/emacs-material-theme
+	url = https://github.com/cpaulik/emacs-material-theme.git
