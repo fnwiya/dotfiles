@@ -21,8 +21,8 @@
 (bind-key "M-@" 'toggle-input-method)
 (bind-key "C-c ;" 'comment-or-uncomment-region)
 (setq comment-style 'multi-line)
-(bind-key "C-[" 'backward-list)
-(bind-key "C-]" 'forward-list)
+(bind-key "C-g C-8" 'backward-list)
+(bind-key "C-g C-9" 'forward-list)
 
 (global-set-key [M-right] 'split-window-horizontally)
 (global-set-key [M-left] 'split-window-horizontally)
