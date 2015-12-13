@@ -8,7 +8,6 @@
                                         ))
 
 
-  (push '(" *undo-tree*" :width 0.3 :position right) popwin:special-display-config)
   (push '("*Shell Command Output*") popwin:special-display-config)
   (push '("*compilation*" :height 20 :noselect t :stick t) popwin:special-display-config)
   (push '("*magit-edit-log*" :height 20) popwin:special-display-config)
@@ -20,6 +19,9 @@
   (push '("*Google Translate*" :height 20) popwin:special-display-config)
   (push '("*Compile-Log*" :height 20 :noselect t) popwin:special-display-config)
   (push '("*auto-async-byte-compile*" :height 20) popwin:special-display-config)
+  (push '("*Async Shell Command*") popwin:special-display-config)
+  (push '("*Kill Ring*") popwin:special-display-config)
+  ;; slime
   (push '("*slime-apropos*") popwin:special-display-config)
   (push '("*slime-macroexpansion*") popwin:special-display-config)
   (push '("*slime-description*") popwin:special-display-config)
@@ -29,6 +31,4 @@
   (push '(sldb-mode :stick t) popwin:special-display-config)
   (push '(slime-repl-mode) popwin:special-display-config)
   (push '(slime-connection-list-mode) popwin:special-display-config)
-  (push '("*Async Shell Command*") popwin:special-display-config)
-  (push '("*Kill Ring*") popwin:special-display-config)
   )

@@ -8,19 +8,19 @@
   (custom-set-variables
    '(company-idle-delay nil))
   (set-face-attribute 'company-tooltip nil
-					  :foreground "black" :background "lightgrey")
+                      :foreground "black" :background "lightgrey")
   (set-face-attribute 'company-tooltip-common nil
-					  :foreground "black" :background "lightgrey")
+                      :foreground "black" :background "lightgrey")
   (set-face-attribute 'company-tooltip-common-selection nil
-					  :foreground "white" :background "steelblue")
+                      :foreground "white" :background "steelblue")
   (set-face-attribute 'company-tooltip-selection nil
-					  :foreground "black" :background "steelblue")
+                      :foreground "black" :background "steelblue")
   (set-face-attribute 'company-preview-common nil
-					  :background nil :foreground "lightgrey" :underline t)
+                      :background nil :foreground "lightgrey" :underline t)
   (set-face-attribute 'company-scrollbar-fg nil
-					  :background "orange")
+                      :background "orange")
   (set-face-attribute 'company-scrollbar-bg nil
-					  :background "gray40")
+                      :background "gray40")
   (global-set-key (kbd "C-M-i") 'company-complete)
 
   ;; C-n, C-pで補完候補を次/前の候補を選択

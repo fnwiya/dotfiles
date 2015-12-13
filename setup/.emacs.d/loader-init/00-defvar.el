@@ -1,3 +1,7 @@
+(defvar system-name-simple
+  (replace-regexp-in-string "\\..*\\'" "" (system-name))
+  "The simple host name of the machine Emacs is running on, which is without domain information.")
+
 (defvar *programing-hooks*
   '(c-mode-hook
     c++-mode-hook
