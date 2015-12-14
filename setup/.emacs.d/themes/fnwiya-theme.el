@@ -14,7 +14,6 @@
       (base05 "#c0c5ce")
       (base06 "#dfe1e8")
       (base07 "#eff1f5")
-      ;;exchange flat
       (base08 "#E74C3C")
       (base09 "#E67E22")
       (base0A "#F1C40F")
@@ -24,7 +23,7 @@
       (base0E "#9B59B6")
       (base0F "#be643c"))
 
-  (custom-theme-set-faces 
+  (custom-theme-set-faces
    'fnwiya
 
    ;; Built-in stuff
