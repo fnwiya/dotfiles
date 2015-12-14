@@ -80,7 +80,6 @@
     saveplace
     sequential-command
     simple-httpd
-    slime
     smartrep
     smex
     smooth-scroll
