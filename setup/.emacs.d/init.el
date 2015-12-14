@@ -20,7 +20,6 @@
 
 (defvar installing-package-list
   '(
-    ac-slime
     ace-link
     anzu
     auto-async-byte-compile
