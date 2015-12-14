@@ -1,11 +1,11 @@
 (setq gc-cons-threshold (* 128 1024 1024))
-;; git-pull/push
+;;; git-pull/push
 (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
 (add-hook 'kill-emacs-hook
           (lambda()
             (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
 
-;; package-manager
+;;; package-manager
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
@@ -112,29 +112,29 @@
 
 (require 'use-package)
 
-;; byte-compile
-(defun compile-inits()
-  "compile my init-files"
-  (interactive)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
-  (byte-compile-file "~/.emacs.d/init.el")
-  )
-(save-window-excursion
-  (compile-inits)
-)
-(add-hook 'after-save-hook
-          (lambda ()
-            (if (eq major-mode 'emacs-lisp-mode)
-                (save-excursion
-                  (byte-compile-file buffer-file-name)))))
-(add-hook 'kill-emacs-hook
-          (lambda()
-            (shell-command "rm -f ~/.emacs.d/init.elc")
-            (shell-command "rm -f ~/.emacs.d/themes/*.elc")
-            (shell-command "rm -f ~/.emacs.d/loader-init/*.elc")))
+;;; byte-compile
+;; (defun compile-inits()
+;;   "compile my init-files"
+;;   (interactive)
+;;   (byte-recompile-directory (expand-file-name "~/.emacs.d/loader-init") 0)
+;;   (byte-recompile-directory (expand-file-name "~/.emacs.d/themes") 0)
+;;   (byte-compile-file "~/.emacs.d/init.el")
+;;   )
+;; (save-window-excursion
+;;   (compile-inits)
+;; )
+;; (add-hook 'after-save-hook
+;;           (lambda ()
+;;             (if (eq major-mode 'emacs-lisp-mode)
+;;                 (save-excursion
+;;                   (byte-compile-file buffer-file-name)))))
+;; (add-hook 'kill-emacs-hook
+;;           (lambda()
+;;             (shell-command "rm -f ~/.emacs.d/init.elc")
+;;             (shell-command "rm -f ~/.emacs.d/themes/*.elc")
+;;             (shell-command "rm -f ~/.emacs.d/loader-init/*.elc")))
 
-;; init
+;;; init
 (use-package init-loader
   :config
   (setq init-loader-show-log-after-init 'error-only)
