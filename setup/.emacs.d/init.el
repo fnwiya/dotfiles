@@ -13,7 +13,8 @@
 
 (require 'package)
 (setq package-user-dir "~/.emacs.d/elisp/package/")
-;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
 (package-initialize)
 
 (eval-when-compile (require 'cl))
