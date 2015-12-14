@@ -1,4 +1,4 @@
-;; (setq gc-cons-threshold (* 128 1024 1024))
+(setq gc-cons-threshold (* 128 1024 1024))
 ;; git-pull/push
 (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update")
 (add-hook 'kill-emacs-hook

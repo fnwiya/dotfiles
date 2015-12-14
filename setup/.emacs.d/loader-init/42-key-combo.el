@@ -17,7 +17,7 @@
       ("|" . (" || " "|"))
       ("?" . (" ? " "?"))
       (":" . (": " ":" " : "))
-      ("," . (", " ","))
+      ("," . (", " "," ",\n"))
       ("{" . ("{\n`!!'\n}" "{" "{`!!'}" "{}"))
       ("(" . ("(`!!')" "(" "()"))
       ("<" . (" < " "<`!!'>" "<"  " <= "))
@@ -35,7 +35,7 @@
         '(python-mode-hook))
   (setq key-combo-python-default
   '(
-    (":" . (":" "::"))
+    (":" . (":" ":\n" "::"))
     ))
   (key-combo-define-hook key-combo-python-mode-hooks
                         'key-combo-python-load-default
