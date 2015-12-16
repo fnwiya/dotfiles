@@ -7,6 +7,7 @@
    ; emacsclient [default -- keep?]
    mode-line-client
    "  "
+   mode-line-mule-info
    ; read-only or modified status
    (:eval
     (cond (buffer-read-only
