@@ -6,7 +6,7 @@
    (:propertize "%03c)"  face mode-line-position-face)
    ; emacsclient [default -- keep?]
    mode-line-client
-   "  "
+   " "
    mode-line-mule-info
    ; read-only or modified status
    (:eval
@@ -15,7 +15,7 @@
           ((buffer-modified-p)
            (propertize " ** " 'face 'mode-line-modified-face))
           (t" -- ")))
-   "  "
+   " "
    ; directory and buffer/file name
    (:propertize (:eval (shorten-directory default-directory 30))
                 face mode-line-folder-face)
@@ -34,7 +34,7 @@
    (:propertize mode-line-process
                 face mode-line-process-face)
    (global-mode-string global-mode-string)
-   "  "
+   " "
    ))
 
 ;; Helper function
