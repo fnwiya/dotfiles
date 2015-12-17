@@ -5,6 +5,7 @@ setup/.emacs.d/*
 !setup/.emacs.d/snippets/
 !setup/.emacs.d/loader-init/
 !setup/.emacs.d/themes/
+!setup/.emacs.d/insert-tmp/
 !setup/.emacs.d/README.md
 
 setup/.emacs.d/loader-init/*.elc
