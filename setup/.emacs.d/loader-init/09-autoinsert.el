@@ -13,7 +13,7 @@
       (append  '(
                ("\\.cpp$" . ["template.cpp" my-template])
                ("\\.h$"   . ["template.h" my-template])
-               ("\\.lisp$" . ["template.lisp" my-template])
+               ("\\.html$"   . ["template.html" my-template])
                ("\\.sh$" . ["template.sh"
                             (lambda() (my-template-exec "/bin/sh"))
                             my-template])
@@ -22,6 +22,9 @@
                             my-template])
                ("\\.rb$" . ["template.sh"
                             (lambda() (my-template-exec "/usr/bin/ruby"))
+                            my-template])
+               ("\\.pl$" . ["template.sh"
+                            (lambda() (my-template-exec "/usr/bin/perl"))
                             my-template])
                ) auto-insert-alist))
 
@@ -35,7 +38,6 @@
     ("%include-guard%"    . (lambda () (format "__SCHEME_%s__" (upcase (file-name-sans-extension (file-name-nondirectory buffer-file-name))))))
     ("%cyear%" . (lambda()(substring (current-time-string) -4)))
     ;; ("%license%" . (lambda()(read-from-minibuffer "License: ")))
-    ;; ("%bdesc%" . (lambda()(read-from-minibuffer "Brief dscription: ")))
     ))
 
 (defmacro defreplace (name replace-string)
