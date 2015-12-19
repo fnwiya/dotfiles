@@ -86,6 +86,7 @@
     smooth-scroll
     sql-indent
     sqlup-mode
+    swiper
     tabbar
     tern
     tern-auto-complete
