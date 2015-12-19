@@ -13,6 +13,7 @@
                ("\\.cpp$" . ["template.cpp" my-template])
                ("\\.h$"   . ["template.h" my-template])
                ("\\.html$"   . ["template.html" my-template])
+               ("readme.md"   . ["template.md" my-template])
                ("\\.sh$" . ["template.sh"
                             (lambda() (my-template-exec "/bin/sh"))
                             my-template])
