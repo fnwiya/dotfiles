@@ -1,0 +1,6 @@
+(defun auto-scroll-mode ()
+  (interactive)
+  (run-with-timer 1 1 (lambda ()
+    (next-line)
+  ))
+  )

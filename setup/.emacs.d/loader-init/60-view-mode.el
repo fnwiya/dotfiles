@@ -6,7 +6,6 @@
                (define-key view-mode-map "l" 'forward-char)
                (define-key view-mode-map "j" 'next-line)
                (define-key view-mode-map "k" 'previous-line)
-               (define-key view-mode-map "/" 'isearch-forward)
                )))
 
 ;; 書き込み不能なファイルはview-modeで開くように

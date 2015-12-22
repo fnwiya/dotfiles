@@ -111,6 +111,7 @@
 (setq my/hidden-minor-modes
       '(
         auto-complete-mode
+        rng-validate-mode
         ))
 
 (mapc (lambda (mode)

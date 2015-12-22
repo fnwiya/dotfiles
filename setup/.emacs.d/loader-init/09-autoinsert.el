@@ -5,7 +5,7 @@
 (setq user-fll-name "Fnwiya")
 (setq user-mail-address "fnwiya@gmail.com")
 
-(setq auto-insert-query nil)
+(setq auto-insert-query t)
 (setq auto-insert-directory "~/.emacs.d/insert-tmp/")
 
 (setq auto-insert-alist
