@@ -7,7 +7,7 @@
   (let* ((no-kill-buffer-names
           ;; 消さないバッファ名を指定
           (list (buffer-name (current-buffer))
-                "*Messages*" "*Compile-Log*" "*Help*"
+                "*Messages*" "*Help*"
                 "*Ibuffer*" "*scratch*"
                 "*MULTI-TERM-DEDICATED*" "*eshell*"))
          (interested-buffers
