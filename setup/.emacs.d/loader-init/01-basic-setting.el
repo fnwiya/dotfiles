@@ -57,3 +57,10 @@
 (if (equal system-name-simple "forcia-VirtualBox")
     (setq-default indent-tabs-mode t)
     (setq-default indent-tabs-mode nil))
+
+;; 複数ウィンドウを禁止する
+(setq ns-pop-up-frames nil)
+
+;; シフト＋矢印で範囲選択
+(setq pc-select-selection-keys-only t)
+(pc-selection-mode 1)
