@@ -23,7 +23,6 @@
     ace-link
     anzu
     auto-async-byte-compile
-    auto-capitalize
     avy
     bind-key
     browse-kill-ring
@@ -34,8 +33,6 @@
     corral
     cperl-mode
     dash
-    easy-kill
-    elpy
     el-get
     ess
     exec-path-from-shell
@@ -47,17 +44,11 @@
     gist
     google-c-style
     google-translate
-    ;;helm
-    ;;helm-flyspell
-    ;;helm-projectile
-    highlight-indentation
     highlight-symbol
     ido-ubiquitous
     ido-vertical-mode
     impatient-mode
     init-loader
-    jabber
-    jedi
     jquery-doc
     js2-mode
     key-combo
@@ -77,7 +68,6 @@
     rainbow-delimiters
     rainbow-mode
     recentf-ext
-    redo+
     saveplace
     sequential-command
     simple-httpd
