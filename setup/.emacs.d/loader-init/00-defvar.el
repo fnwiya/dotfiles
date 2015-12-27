@@ -28,3 +28,12 @@
   '(text-mode-hook
     org-mode-hook
     twittering-edit-mode-hook))
+
+(defvar *lisp-mode-hooks*
+  '(lisp-mode-hook
+    emacs-lisp-mode-hook
+    lisp-interaction-mode-hook
+    inferior-gauche-mode-hook
+    scheme-mode-hook))
+
+(defvar *cache-dir* "~/.emacs.d/cache")

@@ -63,3 +63,9 @@
 
 ;; シフト＋矢印で範囲選択
 (setq pc-select-selection-keys-only t)
+
+;; C-k １回で行全体を削除する
+(setq kill-whole-line t)
+
+;; C-c c で compile コマンドを呼び出す
+(define-key mode-specific-map "c" 'compile)
