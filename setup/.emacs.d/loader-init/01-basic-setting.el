@@ -26,7 +26,6 @@
 (setq-default save-place t)
 (setq save-place-file "~/.emacs.d/cache/places")
 
-
 ;;; 同じ内容を履歴に記録しないようにする
 (setq history-delete-duplicates t)
 

@@ -44,6 +44,7 @@
     gist
     google-c-style
     google-translate
+    haskell-mode
     highlight-symbol
     ido-ubiquitous
     ido-vertical-mode
