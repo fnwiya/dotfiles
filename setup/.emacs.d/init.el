@@ -51,6 +51,7 @@
     impatient-mode
     init-loader
     jquery-doc
+    json-mode
     js2-mode
     key-combo
     magit
