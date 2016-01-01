@@ -5,8 +5,7 @@
               (set-frame-position (selected-frame) 0 0)
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
-                (async-shell-command "brew update && brew upgrade --all && brew doctor"))
-              )))
+                (async-shell-command "brew update && brew upgrade --all && brew doctor")))))
  ((eq window-system 'x)
   (when (equal system-name-simple "forcia-VirtualBox")
   (add-hook 'after-init-hook
@@ -14,9 +13,7 @@
               (set-frame-position (selected-frame) 0 0)
               (set-frame-size (selected-frame) 101 50)
               (save-window-excursion
-                (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove"))
-              ))))
- )
+                (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove")))))))
 
 (when (window-system)
   (add-hook 'after-init-hook
@@ -28,22 +25,19 @@
               (select-window w2)
               (multi-term)
               (select-window w)
-              (recentf-open-files)
-              )))
+              (recentf-open-files))))
 
 
 (unless (window-system)
   (add-hook 'after-init-hook
             (lambda()
-              (recentf-open-files)
-              )))
+              (recentf-open-files))))
 
 (defun reset-window()
   (interactive)
   (delete-other-windows)
   (setq w (selected-window))
-  (setq w2 (split-window w (- (window-height w) 8)))
-  )
+  (setq w2 (split-window w (- (window-height w) 8))))
 
 ;; check-frame-size
 ;; at *scratch*
