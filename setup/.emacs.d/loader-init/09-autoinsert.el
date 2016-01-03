@@ -13,13 +13,11 @@
                ("\\.cpp$" . ["template.cpp" my-template])
                ("\\.h$"   . ["template.h" my-template])
                ("\\.html$"   . ["template.html" my-template])
+               ("\\.py$"   . ["template.py" my-template])
                ("readme.md"   . ["template.md" my-template])
                ("README.md"   . ["template.md" my-template])
                ("\\.sh$" . ["template.sh"
                             (lambda() (my-template-exec "/bin/sh"))
-                            my-template])
-               ("\\.py$" . ["template.sh"
-                            (lambda() (my-template-exec "/usr/bin/python"))
                             my-template])
                ("\\.rb$" . ["template.sh"
                             (lambda() (my-template-exec "/usr/bin/ruby"))
