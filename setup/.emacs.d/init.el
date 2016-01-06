@@ -111,7 +111,8 @@
   (setq auto-package-update-delete-old-versions t)
   (add-hook 'auto-package-update-before-hook
             (lambda () (message "I will update packages now")))
-  (auto-package-update-now)
+  (save-window-excursion
+                (auto-package-update-now))
   ;; (setq auto-package-update-interval 2)
   ;; (auto-package-update-maybe)
   )
