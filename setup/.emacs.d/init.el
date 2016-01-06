@@ -23,6 +23,7 @@
     ace-link
     anzu
     auto-async-byte-compile
+    auto-package-update
     avy
     bind-key
     browse-kill-ring
@@ -105,19 +106,29 @@
 
 (require 'use-package)
 
-;;; init
-(use-package init-loader
+(use-package auto-package-update
   :config
-  (setq init-loader-show-log-after-init 'error-only)
-  (init-loader-load "~/.emacs.d/loader-init")
-  (if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
-      (init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
-    nil)
+  (setq auto-package-update-delete-old-versions t)
+  (add-hook 'auto-package-update-before-hook
+            (lambda () (message "I will update packages now")))
+  (auto-package-update-now)
+  ;; (setq auto-package-update-interval 2)
+  ;; (auto-package-update-maybe)
   )
 
-(defun my-load-init-file()
-  "re-load init-files"
-  (interactive)
-  (load-file "~/.emacs.d/init.el")
-  )
-(global-set-key (kbd "C-x L") 'my-load-init-file)
+;;; init
+  (use-package init-loader
+	:config
+	(setq init-loader-show-log-after-init 'error-only)
+	(init-loader-load "~/.emacs.d/loader-init")
+	(if (file-directory-p "~/Dropbox/config-file/.emacs.d/inits")
+		(init-loader-load "~/Dropbox/config-file/.emacs.d/inits")
+	  nil)
+	)
+
+  (defun my-load-init-file()
+	"re-load init-files"
+	(interactive)
+	(load-file "~/.emacs.d/init.el")
+	)
+  (global-set-key (kbd "C-x L") 'my-load-init-file)
