@@ -2,8 +2,7 @@
 (use-package meigen-bot
   :config
   (setq meigen-file-path "~/.emacs.d/elisp/work/meigen-bot/meigen.txt")
-  (add-hook 'emacs-startup-hook
+  (add-hook 'after-init-hook
           (lambda ()
             (echo-meigen-to-minibuffer)
-            ))
-)
+            )))
