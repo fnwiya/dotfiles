@@ -23,7 +23,8 @@
               (select-window w2)
               (multi-term)
               (select-window w)
-              (recentf-open-files))))
+              (recentf-open-files)
+              (echo-meigen-to-minibuffer))))
 
 
 (unless (window-system)
