@@ -1,7 +1,6 @@
 ;;; http://syohex.hatenablog.com/entry/20121215/1355579575
 (add-to-list 'load-path "~/.emacs.d/elisp/vendor/pomodoro.el")
-(use-package pomodoro
-  :config
+(require 'pomodoro)
 ;; 作業時間終了後に開くファイル。デフォルトでは "~/.emacs.d/pomodoro.org"
 (setq pomodoro:file "~/.emacs.d/mywork.txt")
 
@@ -31,4 +30,3 @@
 (add-hook 'pomodoro:long-rest-hook
           (lambda ()
             (my/pomodoro-notification :body "Long Break time now")))
-)
