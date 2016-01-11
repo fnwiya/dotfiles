@@ -210,7 +210,7 @@
 
 ;;;###autoload
 (defun pomodoro:start (minutes)
-  (interactive)
+  (interactive "p")
   (when pomodoro:timer
     (error "Already start timer!!"))
   (when (consp current-prefix-arg)
