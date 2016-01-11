@@ -190,7 +190,7 @@
   (force-mode-line-update))
 
 (defun pomodoro:current-time-to-string ()
-  (format-time-string "%m:%d" (current-time)))
+  (format-time-string "%m:%d " (current-time)))
 
 (defvar pomodoro:last-work-time nil
   "Last time of pomodoro work(format 'Month:Day')")
