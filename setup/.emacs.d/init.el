@@ -65,7 +65,7 @@
     open-junk-file
     org
     org-pomodoro
-    ;; org-toodledo
+    org-toodledo
     popwin
     projectile
     python-mode
