@@ -64,6 +64,7 @@
     multiple-cursors
     open-junk-file
     org
+    org-pomodoro
     popwin
     projectile
     python-mode
