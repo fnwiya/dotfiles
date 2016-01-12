@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: require
+# key: req
+# --
+var ${1:modName} = require('$2$1');
+$0
