@@ -7,3 +7,6 @@
 [submodule "setup/.emacs.d/themes/emacs-material-theme"]
 	path = setup/.emacs.d/themes/emacs-material-theme
 	url = https://github.com/cpaulik/emacs-material-theme.git
+[submodule "setup/spacemacs"]
+	path = setup/spacemacs
+	url = https://github.com/syl20bnr/spacemacs.git
