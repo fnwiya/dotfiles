@@ -39,6 +39,7 @@
     ess
     exec-path-from-shell
     expand-region
+    evil
     f
     flx-ido
     flycheck
