@@ -40,6 +40,7 @@
     exec-path-from-shell
     expand-region
     evil
+    evil-leader
     f
     flx-ido
     flycheck

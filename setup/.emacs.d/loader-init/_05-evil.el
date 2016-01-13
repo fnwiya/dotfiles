@@ -1,9 +1,12 @@
 (use-package evil
   :config
-  (setq evil-cross-lines t
-        evil-want-C-i-jump nil
-        evil-search-module 'isearch
-        )
+  ;; evil leader
+  (setq evil-leader/in-all-states 1)
+  (global-evil-leader-mode)
+
+  (setq evil-cross-lines t)  ;行の端でhlしたとき前/次の行に移動する
+  (evil-want-C-i-jump nil)   ;C-iはTABとして使う
+  (evil-search-module 'isearch)  ;searchはemacs風
   (setq indicate-empty-lines t)
   (setq indicate-buffer-boundaries 'left)
   (defun evil-escape-or-quit (&optional prompt)
@@ -12,8 +15,8 @@
      ((or (evil-normal-state-p) (evil-insert-state-p) (evil-visual-state-p)
           (evil-replace-state-p) (evil-visual-state-p)) [escape])
      (t (kbd "C-g"))))
-  (define-key key-translation-map (kbd "C-v") #'evil-escape-or-quit)
-  (define-key evil-operator-state-map (kbd "C-v") #'evil-escape-or-quit)
+  (define-key key-translation-map (kbd "C-q") #'evil-escape-or-quit)
+  (define-key evil-operator-state-map (kbd "C-q") #'evil-escape-or-quit)
   (define-key evil-normal-state-map [escape] #'keyboard-quit)
   (evil-mode 1)
   (defun evil-swap-key (map key1 key2)
