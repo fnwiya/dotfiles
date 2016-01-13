@@ -47,3 +47,7 @@ to next line."
                  (call-interactively 'next-line)
                (signal (car err) (cdr err))))))
   )
+
+(use-package evil-matchit
+  :config
+(global-evil-matchit-mode 1))

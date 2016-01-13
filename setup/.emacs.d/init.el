@@ -41,6 +41,7 @@
     expand-region
     evil
     evil-leader
+    evil-matchit
     f
     flx-ido
     flycheck
