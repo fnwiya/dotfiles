@@ -48,7 +48,6 @@ brew install mecab
 brew install mecab-ipadic
 brew install node
 brew install nvm
-brew install peco
 brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv

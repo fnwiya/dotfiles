@@ -50,6 +50,7 @@
     google-c-style
     google-translate
     haskell-mode
+    helm
     highlight-symbol
     ido-ubiquitous
     ido-vertical-mode
