@@ -3,7 +3,8 @@
   ;; evil leader
   (setq evil-leader/in-all-states 1)
   (global-evil-leader-mode)
-
+  (evil-leader/set-leader "SPC")
+  ;; basic
   (setq evil-cross-lines t)  ;行の端でhlしたとき前/次の行に移動する
   (evil-want-C-i-jump nil)   ;C-iはTABとして使う
   (evil-search-module 'isearch)  ;searchはemacs風
@@ -18,7 +19,9 @@
   (define-key key-translation-map (kbd "C-q") #'evil-escape-or-quit)
   (define-key evil-operator-state-map (kbd "C-q") #'evil-escape-or-quit)
   (define-key evil-normal-state-map [escape] #'keyboard-quit)
+
   (evil-mode 1)
+  ;; key-binding
   (defun evil-swap-key (map key1 key2)
     ;; MAP中のKEY1とKEY2を入れ替え
     "Swap KEY1 and KEY2 in MAP."
@@ -46,6 +49,13 @@ to next line."
       (error (if (eq this-command 'evil-paste-pop-next)
                  (call-interactively 'next-line)
                (signal (car err) (cdr err))))))
+  ;;cursor-color
+  (setq evil-emacs-state-cursor '("red" box))
+  (setq evil-normal-state-cursor '("green" box))
+  (setq evil-visual-state-cursor '("orange" box))
+  (setq evil-insert-state-cursor '("red" bar))
+  (setq evil-replace-state-cursor '("red" bar))
+  (setq evil-operator-state-cursor '("red" hollow))
   )
 
 (use-package evil-matchit
