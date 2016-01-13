@@ -8,7 +8,7 @@ path=(
 )
 # for go lang
 if [ -x "`which go`" ]; then
-  export GOROOT=`which go`
+  # export GOROOT=`which go`
   export GOPATH=$HOME/go
   export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
 fi
