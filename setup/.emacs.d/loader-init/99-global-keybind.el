@@ -7,6 +7,7 @@
 (bind-key "M-w" 'easy-kill)
 (bind-key "C-x C-x" 'smex)
 (bind-key "C-x C-k" 'ido-kill-buffer)
+(bind-key "C-c C-s" 'shell-command)
 (bind-key "C-t" 'other-window)
 (bind-key "M-@" 'toggle-input-method)
 (bind-key "C-c ;" 'comment-or-uncomment-region)
