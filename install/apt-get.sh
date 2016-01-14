@@ -3,6 +3,7 @@ sudo apt-get update
 sudo apt-get upgrade
 # develop-tool
 sudo apt-get install build-essential
+sudo apt-get install cmigemo
 sudo apt-get install curl
 sudo apt-get install elixir
 sudo apt-get install fish
