@@ -134,6 +134,7 @@
       '(
         auto-complete-mode
         rng-validate-mode
+        undo-tree-mode
         ))
 
 (mapc (lambda (mode)
