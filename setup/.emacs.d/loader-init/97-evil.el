@@ -9,12 +9,12 @@
   ;; /before (evil-mode 1)
   (evil-mode 1)
   ;;cursor-color
-  (setq evil-emacs-state-cursor '("red" box))
-  (setq evil-normal-state-cursor '((face-attribute 'link :foreground) box))
-  (setq evil-visual-state-cursor '("orange" box))
-  (setq evil-insert-state-cursor '("red" bar))
-  (setq evil-replace-state-cursor '("red" bar))
-  (setq evil-operator-state-cursor '("red" hollow))
+  (setq evil-emacs-state-cursor '("#E74C3C" box))
+  (setq evil-normal-state-cursor '("#2ECC71" box))
+  (setq evil-visual-state-cursor '("#E67E22" box))
+  (setq evil-insert-state-cursor '("#E74C3C" bar))
+  (setq evil-replace-state-cursor '("#E74C3C" bar))
+  (setq evil-operator-state-cursor '("#E74C3C" hollow))
   (modify-syntax-entry ?_ "w" (standard-syntax-table)) ;_を単語境界にしない
   ;;ESCの割り当て
   (defun evil-escape-or-quit (&optional prompt)
@@ -38,6 +38,7 @@
   (evil-swap-key evil-motion-state-map "k" "gk")
   (setq evil-want-fine-undo t)    ;操作を元に戻す単位を細かくする
   (setq evil-mode-line-format 'before)
+  (setq evil-move-cursor-back nil)
   )
 
 (use-package evil-matchit
