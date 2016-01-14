@@ -10,6 +10,7 @@
 
 (setq auto-insert-alist
       (append  '(
+               ("\\.yml$" . ["template.yml" my-template])
                ("\\.cpp$" . ["template.cpp" my-template])
                ("\\.h$"   . ["template.h" my-template])
                ("\\.html$"   . ["template.html" my-template])
