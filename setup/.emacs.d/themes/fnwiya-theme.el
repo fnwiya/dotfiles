@@ -95,7 +95,7 @@
    `(eshell-ls-special ((t (:foreground ,base0A :weight bold))))
    `(eshell-ls-symlink ((t (:foreground ,base0C :weight bold))))
 
- ;;;;; auto-complete
+   ;; auto-complete
    `(ac-candidate-face ((t (:background ,base01 :foreground ,base05))))
    `(ac-selection-face ((t (:background ,base0D :foreground ,base05))))
    `(popup-tip-face ((t (:background ,base0A :foreground ,base00))))
@@ -136,16 +136,16 @@
 
    ;; helm
    `(helm-header
-	 ((t (:foreground ,base0B
-					  :background ,base00
-					  :underline nil
-					  :box nil))))
+     ((t (:foreground ,base0B
+                      :background ,base00
+                      :underline nil
+                      :box nil))))
    `(helm-source-header
-	 ((t (:foreground ,base0A
-					  :background ,base00
-					  :underline nil
-					  :weight bold
-					  :box (:line-width -1 :style released-button)))))
+     ((t (:foreground ,base0A
+                      :background ,base00
+                      :underline nil
+                      :weight bold
+                      :box (:line-width -1 :style released-button)))))
    `(helm-selection ((t (:background ,base01 :underline nil))))
    `(helm-selection-line ((t (:background ,base01))))
    `(helm-visible-mark ((t (:foreground ,base00 :background ,base0A))))
@@ -179,7 +179,7 @@
    `(helm-moccur-buffer ((t (:foreground ,base0D :background ,base00))))
    `(helm-mu-contacts-address-face ((t (:foreground ,base05 :background ,base00))))
    `(helm-mu-contacts-name-face ((t (:foreground ,base05 :background ,base00))))
-;;; helm-swoop
+   ;; helm-swoop
    `(helm-swoop-target-line-face ((t (:foreground ,base05 :background ,base00))))
    `(helm-swoop-target-word-face ((t (:foreground ,base0A :background ,base00 :weight bold))))
 
@@ -280,10 +280,10 @@
    `(term-color-blue ((t (:foreground ,base0D :background ,base0D))))
    `(term-color-magenta ((t (:foreground ,base0E :background ,base0E))))
    `(setq ansi-color-names-vector
-		  ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
-		  [,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
+          ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
+          [,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
    `(setq ansi-term-color-vector
-		  ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
+          ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
           [unspecified ,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
 
 
@@ -325,33 +325,33 @@
    `(mm/master-face ((t (:inherit region :foreground nil :background nil))))
    `(mm/mirror-face ((t (:inherit region :foreground nil :background nil))))
 
-										;   ;; org-mode
-										;   `(org-agenda-structure ((t (:foreground ,base0E))))
-										;   `(org-agenda-date ((t (:foreground ,base0D :underline nil))))
-										;   `(org-agenda-done ((t (:foreground ,base0B))))
-										;   `(org-agenda-dimmed-todo-face ((t (:foreground ,base04))))
-										;   `(org-block ((t (:foreground ,base09))))
-										;   `(org-code ((t (:foreground ,base0A))))
-										;   `(org-column ((t (:background ,base03))))
-										;   `(org-column-title ((t (:inherit org-column :weight bold :underline t))))
-										;   `(org-date ((t (:foreground ,base0E :underline t))))
-										;   `(org-document-info ((t (:foreground ,base0C))))
-										;   `(org-document-info-keyword ((t (:foreground ,base0B))))
-										;   `(org-document-title ((t (:weight bold :foreground ,base09 :height 1.44))))
-										;   `(org-done ((t (:foreground ,base0B))))
-										;   `(org-ellipsis ((t (:foreground ,base04))))
-										;   `(org-footnote ((t (:foreground ,base0C))))
-										;   `(org-formula ((t (:foreground ,base08))))
-										;   `(org-hide ((t (:foreground ,base03))))
-										;   `(org-link ((t (:foreground ,base0D))))
-										;   `(org-scheduled ((t (:foreground ,base0B))))
-										;   `(org-scheduled-previously ((t (:foreground ,base09))))
-										;   `(org-scheduled-today ((t (:foreground ,base0B))))
-										;   `(org-special-keyword ((t (:foreground ,base09))))
-										;   `(org-table ((t (:foreground ,base0E))))
-										;   `(org-todo ((t (:foreground ,base08))))
-										;   `(org-upcoming-deadline ((t (:foreground ,base09))))
-										;   `(org-warning ((t (:weight bold :foreground ,base08))))
+   ;; org-mode
+   `(org-agenda-structure ((t (:foreground ,base0E))))
+   `(org-agenda-date ((t (:foreground ,base0D :underline nil))))
+   `(org-agenda-done ((t (:foreground ,base0B))))
+   `(org-agenda-dimmed-todo-face ((t (:foreground ,base04))))
+   `(org-block ((t (:foreground ,base09))))
+   `(org-code ((t (:foreground ,base0A))))
+   `(org-column ((t (:background ,base03))))
+   `(org-column-title ((t (:inherit org-column :weight bold :underline t))))
+   `(org-date ((t (:foreground ,base0E :underline t))))
+   `(org-document-info ((t (:foreground ,base0C))))
+   `(org-document-info-keyword ((t (:foreground ,base0B))))
+   `(org-document-title ((t (:weight bold :foreground ,base09 :height 1.44))))
+   `(org-done ((t (:foreground ,base0B))))
+   `(org-ellipsis ((t (:foreground ,base04))))
+   `(org-footnote ((t (:foreground ,base0C))))
+   `(org-formula ((t (:foreground ,base08))))
+   `(org-hide ((t (:foreground ,base03))))
+   `(org-link ((t (:foreground ,base0D))))
+   `(org-scheduled ((t (:foreground ,base0B))))
+   `(org-scheduled-previously ((t (:foreground ,base09))))
+   `(org-scheduled-today ((t (:foreground ,base0B))))
+   `(org-special-keyword ((t (:foreground ,base09))))
+   `(org-table ((t (:foreground ,base0E))))
+   `(org-todo ((t (:foreground ,base08))))
+   `(org-upcoming-deadline ((t (:foreground ,base09))))
+   `(org-warning ((t (:weight bold :foreground ,base08))))
 
    `(markdown-url-face ((t (:inherit link))))
    `(markdown-link-face ((t (:foreground ,base0D :underline t))))
@@ -491,22 +491,21 @@
    `(custom-group-tag ((t (:foreground ,base0D))))
    `(custom-state ((t (:foreground ,base0B)))))
 
-   ;; which-function
-   `(which-func ((t (:foreground ,base0D :background nil :weight bold))))
+  ;; which-function
+  `(which-func ((t (:foreground ,base0D :background nil :weight bold))))
 
-   `(trailing-whitespace ((t (:background ,base0C :foreground ,base0A))))
-   `(whitespace-empty ((t (:foreground ,base08 :background ,base0A))))
-   `(whitespace-hspace ((t (:background ,base04 :foreground ,base04))))
-   `(whitespace-indentation ((t (:background ,base0A :foreground ,base08))))
-   `(whitespace-line ((t (:background ,base01 :foreground ,base0F))))
-   `(whitespace-newline ((t (:foreground ,base04))))
-   `(whitespace-space ((t (:background ,base01 :foreground ,base04))))
-   `(whitespace-space-after-tab ((t (:background ,base0A :foreground ,base08))))
-   `(whitespace-space-before-tab ((t (:background ,base09 :foreground ,base08))))
-   `(whitespace-tab ((t (:background ,base04 :foreground ,base04))))
-   `(whitespace-trailing ((t (:background ,base08 :foreground ,base0A))))
-   )
-
+  `(trailing-whitespace ((t (:background ,base0C :foreground ,base0A))))
+  `(whitespace-empty ((t (:foreground ,base08 :background ,base0A))))
+  `(whitespace-hspace ((t (:background ,base04 :foreground ,base04))))
+  `(whitespace-indentation ((t (:background ,base0A :foreground ,base08))))
+  `(whitespace-line ((t (:background ,base01 :foreground ,base0F))))
+  `(whitespace-newline ((t (:foreground ,base04))))
+  `(whitespace-space ((t (:background ,base01 :foreground ,base04))))
+  `(whitespace-space-after-tab ((t (:background ,base0A :foreground ,base08))))
+  `(whitespace-space-before-tab ((t (:background ,base09 :foreground ,base08))))
+  `(whitespace-tab ((t (:background ,base04 :foreground ,base04))))
+  `(whitespace-trailing ((t (:background ,base08 :foreground ,base0A))))
+  )
 
 (provide-theme 'fnwiya)
 ;;; fmwiya-theme.el ends here
