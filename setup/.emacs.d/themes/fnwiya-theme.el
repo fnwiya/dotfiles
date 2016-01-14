@@ -104,7 +104,7 @@
    `(popup-isearch-match ((t (:background ,base00 :foreground ,base05))))
 
    ;; Flycheck
-    `(flycheck-error
+   `(flycheck-error
      ((((supports :underline (:style wave)))
        (:underline (:style wave :color ,base08) :inherit unspecified))
       (t (:foreground ,base08 :weight bold :underline t))))
@@ -134,54 +134,54 @@
    `(clojure-special ((t (:foreground ,base0D))))
    `(clojure-java-call ((t (:foreground ,base0E))))
 
-;;;;; helm
-;   `(helm-header
-;     ((t (:foreground ,base0B
-;                      :background ,base00
-;                      :underline nil
-;                      :box nil))))
-;   `(helm-source-header
-;     ((t (:foreground ,base0A
-;                      :background ,base00
-;                      :underline nil
-;                      :weight bold
-;                      :box (:line-width -1 :style released-button)))))
-;   `(helm-selection ((t (:background ,base01 :underline nil))))
-;   `(helm-selection-line ((t (:background ,base01))))
-;   `(helm-visible-mark ((t (:foreground ,base00 :background ,base0A))))
-;   `(helm-candidate-number ((t (:foreground ,base0B :background ,base00))))
-;   `(helm-separator ((t (:foreground ,base08 :background ,base00))))
-;   `(helm-time-zone-current ((t (:foreground ,base0B :background ,base00))))
-;   `(helm-time-zone-home ((t (:foreground ,base08 :background ,base00))))
-;   `(helm-bookmark-addressbook ((t (:foreground ,base09 :background ,base00))))
-;   `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
-;   `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
-;   `(helm-bookmark-gnus ((t (:foreground ,base0E :background ,base00))))
-;   `(helm-bookmark-info ((t (:foreground ,base0B :background ,base00))))
-;   `(helm-bookmark-man ((t (:foreground ,base0A :background ,base00))))
-;   `(helm-bookmark-w3m ((t (:foreground ,base0E :background ,base00))))
-;   `(helm-buffer-not-saved ((t (:foreground ,base08 :background ,base00))))
-;   `(helm-buffer-process ((t (:foreground ,base0D :background ,base00))))
-;   `(helm-buffer-saved-out ((t (:foreground ,base05 :background ,base00))))
-;   `(helm-buffer-size ((t (:foreground ,base05 :background ,base00))))
-;   `(helm-ff-directory ((t (:foreground ,base0D :background ,base00 :weight bold))))
-;   `(helm-ff-file ((t (:foreground ,base05 :background ,base00 :weight normal))))
-;   `(helm-ff-executable ((t (:foreground ,base0B :background ,base00 :weight normal))))
-;   `(helm-ff-invalid-symlink ((t (:foreground ,base08 :background ,base00 :weight bold))))
-;   `(helm-ff-symlink ((t (:foreground ,base0A :background ,base00 :weight bold))))
-;   `(helm-ff-prefix ((t (:foreground ,base05 :background ,base00 :weight normal))))
-;   `(helm-grep-cmd-line ((t (:foreground ,base0D :background ,base00))))
-;   `(helm-grep-file ((t (:foreground ,base05 :background ,base00))))
-;   `(helm-grep-finish ((t (:foreground ,base0B :background ,base00))))
-;   `(helm-grep-lineno ((t (:foreground ,base05 :background ,base00))))
-;   `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
-;   `(helm-grep-running ((t (:foreground ,base08 :background ,base00))))
-;   `(helm-moccur-buffer ((t (:foreground ,base0D :background ,base00))))
-;   `(helm-mu-contacts-address-face ((t (:foreground ,base05 :background ,base00))))
-;   `(helm-mu-contacts-name-face ((t (:foreground ,base05 :background ,base00))))
-;;;;;; helm-swoop
-;   `(helm-swoop-target-line-face ((t (:foreground ,base05 :background ,base00))))
-;   `(helm-swoop-target-word-face ((t (:foreground ,base0A :background ,base00 :weight bold))))
+   ;; helm
+   `(helm-header
+	 ((t (:foreground ,base0B
+					  :background ,base00
+					  :underline nil
+					  :box nil))))
+   `(helm-source-header
+	 ((t (:foreground ,base0A
+					  :background ,base00
+					  :underline nil
+					  :weight bold
+					  :box (:line-width -1 :style released-button)))))
+   `(helm-selection ((t (:background ,base01 :underline nil))))
+   `(helm-selection-line ((t (:background ,base01))))
+   `(helm-visible-mark ((t (:foreground ,base00 :background ,base0A))))
+   `(helm-candidate-number ((t (:foreground ,base0B :background ,base00))))
+   `(helm-separator ((t (:foreground ,base08 :background ,base00))))
+   `(helm-time-zone-current ((t (:foreground ,base0B :background ,base00))))
+   `(helm-time-zone-home ((t (:foreground ,base08 :background ,base00))))
+   `(helm-bookmark-addressbook ((t (:foreground ,base09 :background ,base00))))
+   `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
+   `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
+   `(helm-bookmark-gnus ((t (:foreground ,base0E :background ,base00))))
+   `(helm-bookmark-info ((t (:foreground ,base0B :background ,base00))))
+   `(helm-bookmark-man ((t (:foreground ,base0A :background ,base00))))
+   `(helm-bookmark-w3m ((t (:foreground ,base0E :background ,base00))))
+   `(helm-buffer-not-saved ((t (:foreground ,base08 :background ,base00))))
+   `(helm-buffer-process ((t (:foreground ,base0D :background ,base00))))
+   `(helm-buffer-saved-out ((t (:foreground ,base05 :background ,base00))))
+   `(helm-buffer-size ((t (:foreground ,base05 :background ,base00))))
+   `(helm-ff-directory ((t (:foreground ,base0D :background ,base00 :weight bold))))
+   `(helm-ff-file ((t (:foreground ,base05 :background ,base00 :weight normal))))
+   `(helm-ff-executable ((t (:foreground ,base0B :background ,base00 :weight normal))))
+   `(helm-ff-invalid-symlink ((t (:foreground ,base08 :background ,base00 :weight bold))))
+   `(helm-ff-symlink ((t (:foreground ,base0A :background ,base00 :weight bold))))
+   `(helm-ff-prefix ((t (:foreground ,base05 :background ,base00 :weight normal))))
+   `(helm-grep-cmd-line ((t (:foreground ,base0D :background ,base00))))
+   `(helm-grep-file ((t (:foreground ,base05 :background ,base00))))
+   `(helm-grep-finish ((t (:foreground ,base0B :background ,base00))))
+   `(helm-grep-lineno ((t (:foreground ,base05 :background ,base00))))
+   `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
+   `(helm-grep-running ((t (:foreground ,base08 :background ,base00))))
+   `(helm-moccur-buffer ((t (:foreground ,base0D :background ,base00))))
+   `(helm-mu-contacts-address-face ((t (:foreground ,base05 :background ,base00))))
+   `(helm-mu-contacts-name-face ((t (:foreground ,base05 :background ,base00))))
+;;; helm-swoop
+   `(helm-swoop-target-line-face ((t (:foreground ,base05 :background ,base00))))
+   `(helm-swoop-target-word-face ((t (:foreground ,base0A :background ,base00 :weight bold))))
 
 
    ;; IDO
@@ -280,10 +280,10 @@
    `(term-color-blue ((t (:foreground ,base0D :background ,base0D))))
    `(term-color-magenta ((t (:foreground ,base0E :background ,base0E))))
    `(setq ansi-color-names-vector
-     ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
-     [,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
+		  ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
+		  [,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
    `(setq ansi-term-color-vector
-     ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
+		  ;; black, base08, base0B, base0A, base0D, magenta, cyan, white
           [unspecified ,base00 ,base08 ,base0B ,base0A ,base0D ,base0E ,base0D ,base05])
 
 
@@ -325,33 +325,33 @@
    `(mm/master-face ((t (:inherit region :foreground nil :background nil))))
    `(mm/mirror-face ((t (:inherit region :foreground nil :background nil))))
 
-;   ;; org-mode
-;   `(org-agenda-structure ((t (:foreground ,base0E))))
-;   `(org-agenda-date ((t (:foreground ,base0D :underline nil))))
-;   `(org-agenda-done ((t (:foreground ,base0B))))
-;   `(org-agenda-dimmed-todo-face ((t (:foreground ,base04))))
-;   `(org-block ((t (:foreground ,base09))))
-;   `(org-code ((t (:foreground ,base0A))))
-;   `(org-column ((t (:background ,base03))))
-;   `(org-column-title ((t (:inherit org-column :weight bold :underline t))))
-;   `(org-date ((t (:foreground ,base0E :underline t))))
-;   `(org-document-info ((t (:foreground ,base0C))))
-;   `(org-document-info-keyword ((t (:foreground ,base0B))))
-;   `(org-document-title ((t (:weight bold :foreground ,base09 :height 1.44))))
-;   `(org-done ((t (:foreground ,base0B))))
-;   `(org-ellipsis ((t (:foreground ,base04))))
-;   `(org-footnote ((t (:foreground ,base0C))))
-;   `(org-formula ((t (:foreground ,base08))))
-;   `(org-hide ((t (:foreground ,base03))))
-;   `(org-link ((t (:foreground ,base0D))))
-;   `(org-scheduled ((t (:foreground ,base0B))))
-;   `(org-scheduled-previously ((t (:foreground ,base09))))
-;   `(org-scheduled-today ((t (:foreground ,base0B))))
-;   `(org-special-keyword ((t (:foreground ,base09))))
-;   `(org-table ((t (:foreground ,base0E))))
-;   `(org-todo ((t (:foreground ,base08))))
-;   `(org-upcoming-deadline ((t (:foreground ,base09))))
-;   `(org-warning ((t (:weight bold :foreground ,base08))))
+										;   ;; org-mode
+										;   `(org-agenda-structure ((t (:foreground ,base0E))))
+										;   `(org-agenda-date ((t (:foreground ,base0D :underline nil))))
+										;   `(org-agenda-done ((t (:foreground ,base0B))))
+										;   `(org-agenda-dimmed-todo-face ((t (:foreground ,base04))))
+										;   `(org-block ((t (:foreground ,base09))))
+										;   `(org-code ((t (:foreground ,base0A))))
+										;   `(org-column ((t (:background ,base03))))
+										;   `(org-column-title ((t (:inherit org-column :weight bold :underline t))))
+										;   `(org-date ((t (:foreground ,base0E :underline t))))
+										;   `(org-document-info ((t (:foreground ,base0C))))
+										;   `(org-document-info-keyword ((t (:foreground ,base0B))))
+										;   `(org-document-title ((t (:weight bold :foreground ,base09 :height 1.44))))
+										;   `(org-done ((t (:foreground ,base0B))))
+										;   `(org-ellipsis ((t (:foreground ,base04))))
+										;   `(org-footnote ((t (:foreground ,base0C))))
+										;   `(org-formula ((t (:foreground ,base08))))
+										;   `(org-hide ((t (:foreground ,base03))))
+										;   `(org-link ((t (:foreground ,base0D))))
+										;   `(org-scheduled ((t (:foreground ,base0B))))
+										;   `(org-scheduled-previously ((t (:foreground ,base09))))
+										;   `(org-scheduled-today ((t (:foreground ,base0B))))
+										;   `(org-special-keyword ((t (:foreground ,base09))))
+										;   `(org-table ((t (:foreground ,base0E))))
+										;   `(org-todo ((t (:foreground ,base08))))
+										;   `(org-upcoming-deadline ((t (:foreground ,base09))))
+										;   `(org-warning ((t (:weight bold :foreground ,base08))))
 
    `(markdown-url-face ((t (:inherit link))))
    `(markdown-link-face ((t (:foreground ,base0D :underline t))))

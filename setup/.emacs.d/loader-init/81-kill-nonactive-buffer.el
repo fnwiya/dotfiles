@@ -32,4 +32,4 @@
                                      (get-buffer buffer-name))
                                   no-kill-buffer-names))))
     (mapc 'kill-buffer buffers-to-kill)))
-(global-set-key (kbd "C-c C-b C-b") 'kill-other-buffers)
+(global-set-key (kbd "C-x C-u C-k") 'kill-other-buffers)
