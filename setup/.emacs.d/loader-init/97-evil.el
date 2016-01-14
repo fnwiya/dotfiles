@@ -35,21 +35,22 @@
     "SPC" 'evil-buffer
     ":" 'shell-command
     "a" 'avy-goto-word-0
-    "b" 'switch-to-buffer
+    "b" 'helm-buffers-list
     "B" 'ibuffer
     "d" 'kill-this-buffer
-    "e" 'find-file
-    "F" 'find-file
+    "e" 'helm-find-file
+    "F" 'helm-find-file
     "f" 'projectile-find-file
     "g" 'magit-status
     "h" 'evil-search-highlight-persist-remove-all
     "j" 'dired-jump
     "k" 'kill-buffer
     "q" 'kill-buffer-and-window
+    "r" 'helm-recentf
     "s" 'isearch
     "t" 'other-window
     "w" 'save-buffer
-    "x" 'smex
+    "x" 'helm-M-x
     ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
