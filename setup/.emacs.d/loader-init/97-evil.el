@@ -2,8 +2,8 @@
   :config
   ;; before (evil-mode 1)
   (setq evil-cross-lines t)  ;行の端でhlしたとき前/次の行に移動する
-  (evil-want-C-i-jump nil)   ;C-iはTABとして使う
-  (evil-search-module 'isearch)  ;searchはemacs風
+  (setq evil-want-C-i-jump nil)   ;C-iはTABとして使う
+  (setq evil-search-module 'isearch)  ;searchはemacs風
   ;; (evil-ex-search-vim-style-regexp t) ;serch-moduleがevil-searchの場合に有効化
   (setq evil-esc-delay 0)
   ;; /before (evil-mode 1)
