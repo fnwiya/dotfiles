@@ -64,6 +64,7 @@
     key-combo
     magit
     markdown-mode
+    migemo
     mmm-mako
     mmm-mode
     multi-term
