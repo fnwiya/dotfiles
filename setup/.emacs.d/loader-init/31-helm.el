@@ -26,13 +26,13 @@
 
 (use-package helm-projectile)
 (use-package helm-ghq)
+(use-package helm-gtags)
 (defun helm-my-buffers ()
   (interactive)
   (let ((helm-ff-transformer-show-only-basename nil))
-	(helm-other-buffer '(helm-c-source-buffers-list
-						 helm-c-source-projectile-files-list
-						 helm-c-source-ctags
-						 helm-c-source-recentf
-						 helm-c-source-locate
+	(helm-other-buffer '(helm-source-buffers-list
+						 helm-source-projectile-files-list
+						 helm-source-recentf
+						 helm-source-locate
 						 helm-source-ghq)
 					   "*helm-my-buffers*")))

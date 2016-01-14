@@ -52,6 +52,7 @@
     haskell-mode
     helm
     helm-ghq
+    helm-gtags
     helm-projectile
     highlight-symbol
     ido-ubiquitous
