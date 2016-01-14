@@ -1,7 +1,6 @@
 (use-package helm-config
   :config
   (helm-mode 1)
-  ;; (helm-migemo-mode 1)
   (setq helm-buffers-fuzzy-matching t)
   (custom-set-variables '(helm-ff-auto-update-initial-value nil))
   (define-key global-map (kbd "M-x")     'helm-M-x)
