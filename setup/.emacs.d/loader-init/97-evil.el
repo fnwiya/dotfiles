@@ -33,7 +33,8 @@
   (evil-leader/set-leader "SPC")
   (evil-leader/set-key
     "SPC" 'evil-buffer
-    "a" 'ack-and-a-half
+    ":" 'shell-command
+    "a" 'avy-goto-word-0
     "b" 'switch-to-buffer
     "B" 'ibuffer
     "d" 'kill-this-buffer
@@ -105,13 +106,6 @@
    (t (kbd "C-g"))))
 (define-key key-translation-map     (kbd "C-q") #'evil-escape-or-quit)
 (define-key evil-operator-state-map (kbd "C-q") #'evil-escape-or-quit)
-;;物理行移動と論理行移動を入れ替え
-(defun evil-swap-key (map key1 key2)
-  ;; MAP中のKEY1とKEY2を入れ替え
-  "Swap KEY1 and KEY2 in MAP."
-  (let ((def1 (lookup-key map key1))
-        (def2 (lookup-key map key2)))
-    (define-key map key1 def2)
-    (define-key map key2 def1)))
-(evil-swap-key evil-motion-state-map "j" "gj")
-(evil-swap-key evil-motion-state-map "k" "gk")
+;;物理行移動
+(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)

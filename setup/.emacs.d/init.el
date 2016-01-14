@@ -73,6 +73,7 @@
     org-toodledo
     popwin
     projectile
+    project-explorer
     python-mode
     quickrun
     rainbow-delimiters
