@@ -51,6 +51,7 @@
     google-translate
     haskell-mode
     helm
+    helm-projectile
     highlight-symbol
     ido-ubiquitous
     ido-vertical-mode
