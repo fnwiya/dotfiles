@@ -22,7 +22,8 @@
     sh-mode-hook
     slime-mode-hook
     slime-repl-mode-hook
-    web-mode-hook))
+    web-mode-hook
+    yaml-mode-hook))
 
 (defvar *txt-hooks*
   '(text-mode-hook

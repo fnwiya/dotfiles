@@ -22,7 +22,6 @@
 (defvar installing-package-list
   '(
     ace-link
-    ansible
     anzu
     auto-async-byte-compile
     auto-package-update
