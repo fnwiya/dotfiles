@@ -1,4 +1,5 @@
 (use-package helm-config
+  :diminish helm-mode
   :config
   (helm-mode 1)
   (setq helm-buffers-fuzzy-matching t)
