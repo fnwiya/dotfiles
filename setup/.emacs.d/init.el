@@ -22,6 +22,7 @@
 (defvar installing-package-list
   '(
     ace-link
+    ansible
     anzu
     auto-async-byte-compile
     auto-package-update
@@ -101,6 +102,7 @@
     use-package
     web-mode
     wgrep
+    yaml-mode
     yasnippet
     ))
 (defun install-listed-pkg()
