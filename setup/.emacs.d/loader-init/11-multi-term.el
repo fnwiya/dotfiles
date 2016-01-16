@@ -19,9 +19,9 @@
 
   ;; emacs に認識させたいキー
   (add-to-list 'term-unbind-key-list "C-t")
-  (add-to-list 'term-unbind-key-list '"M-x")
+  (add-to-list 'term-unbind-key-list "M-x")
   (add-to-list 'term-unbind-key-list "C-f")
-  (add-to-list 'term-unbind-key-list '"C-b")
+  (add-to-list 'term-unbind-key-list "C-b")
 )
 
 ;; ESC2回でtermのESC1回分、vimから抜ける。

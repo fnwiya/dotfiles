@@ -54,11 +54,13 @@
     helm-ghq
     helm-gtags
     helm-projectile
+    helm-swoop
     highlight-symbol
     ido-ubiquitous
     ido-vertical-mode
     impatient-mode
     init-loader
+    jade-mode
     jquery-doc
     json-mode
     js2-mode
