@@ -22,6 +22,7 @@
   ;; helmを有効にしない操作をリストに追加していく
   ;; (add-to-list 'helm-completing-read-handlers-alist '(find-file . nil))
   ;; (add-to-list 'helm-completing-read-handlers-alist '(write-file . nil))
+  ;; (global-set-key (kbd "<f5>") 'helm-resume)
   )
 
 (use-package helm-projectile)
