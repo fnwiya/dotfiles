@@ -111,3 +111,9 @@
 ;; 物理行移動
 (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
 (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+(evil-define-key 'normal term-raw-map
+  "p" 'term-paste)
+(evil-define-key 'normal term-raw-map
+  "\C-y" 'term-paste)
+(evil-define-key 'insert term-raw-map
+  "\C-y" 'term-paste)
