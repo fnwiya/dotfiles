@@ -16,5 +16,5 @@
 [push]
     default = simple
 [ghq]
-    root = ~/ghq
+    root = ~/sandbox
     root = ~/go/src
