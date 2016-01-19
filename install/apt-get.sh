@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 # develop-tool
 sudo apt-get install ansible
 sudo apt-get install build-essential
