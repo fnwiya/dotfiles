@@ -35,6 +35,7 @@
     corral
     cperl-mode
     dash
+    easy-kill
     el-get
     ess
     exec-path-from-shell
