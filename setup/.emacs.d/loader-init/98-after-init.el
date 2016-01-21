@@ -6,8 +6,7 @@
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
                 (async-shell-command "brew update && brew upgrade --all && brew doctor")))))
- ((eq window-system 'x)
-  (when (equal system-name-simple "forcia-VirtualBox")
+ ((when (equal system-name-simple "forcia-VirtualBox")
   (add-hook 'after-init-hook
             (lambda()
               (set-frame-position (selected-frame) 0 0)
