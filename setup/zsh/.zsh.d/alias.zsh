@@ -28,7 +28,7 @@ case ${OSTYPE} in
         alias ls='ls -A -F --color=auto'
         alias la='ls -A -G -F'
         alias emc='emacs -nw'
-        alias pkgupd='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove'
+        alias pkgupd='sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove'
         alias webstart='sudo /home/forcia/bin/restartWeb.sh start'
         alias webstop='sudo /home/forcia/bin/restartWeb.sh stop'
         alias webrestart='sudo /home/forcia/bin/restartWeb.sh stop && sudo /home/forcia/bin/restartWeb.sh start'
