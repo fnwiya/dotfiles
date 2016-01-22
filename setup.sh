@@ -5,6 +5,7 @@ ln -sf ~/dotfiles/setup/.hgrc ~
 ln -sf ~/dotfiles/setup/.hgignore_global ~
 ln -sf ~/dotfiles/setup/.tmux.conf ~
 ln -sf ~/dotfiles/setup/.peco ~
+ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
 ln -sf ~/dotfiles/setup/.tern-config ~
 ln -sf ~/dotfiles/setup/vim/.vimrc ~
