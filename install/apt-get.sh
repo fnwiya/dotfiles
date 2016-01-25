@@ -14,6 +14,7 @@ sudo apt-get install guake
 sudo apt-get install global
 sudo apt-get install golang
 sudo apt-get install leiningen
+sudo apt-get install markdown
 sudo apt-get install pgadmin3
 sudo apt-get install sqlite3
 sudo apt-get install tmux
