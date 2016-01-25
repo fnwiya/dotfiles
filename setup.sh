@@ -28,5 +28,6 @@ case ${OSTYPE} in
         ;;
     linux*)
         ln -sf ~/dotfiles/setup/linux/.shutter ~
+        sudo -u postgres ln -s /home/forcia/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
         ;;
 esac
