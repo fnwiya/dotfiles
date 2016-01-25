@@ -34,5 +34,9 @@ sudo apt-get install python-virtualenv
 sudo apt-get install dropbox
 sudo apt-get install shutter
 
+wget -O google-webdesigner_amd64.deb https://dl.google.com/linux/direct/google-webdesigner_current_amd64.deb
+sudo dpkg -i google-webdesigner_amd64.deb
+rm google-webdesigner_amd64.deb
+
 sudo apt-get clean
 sudo apt-get autoremove
