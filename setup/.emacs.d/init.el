@@ -34,6 +34,7 @@
     codic
     corral
     cperl-mode
+    csv-mode
     dash
     easy-kill
     el-get
