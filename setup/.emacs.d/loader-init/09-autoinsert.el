@@ -18,7 +18,7 @@
                ("readme.md"   . ["template.md" my-template])
                ("README.md"   . ["template.md" my-template])
                ("\\.sh$" . ["template.sh"
-                            (lambda() (my-template-exec "/bin/sh"))
+                            (lambda() (my-template-exec "/bin/bash"))
                             my-template])
                ("\\.rb$" . ["template.sh"
                             (lambda() (my-template-exec "/usr/bin/ruby"))
