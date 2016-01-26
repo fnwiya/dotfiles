@@ -4,36 +4,17 @@ then
     curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 fi
 pip install -U pip
-pip install virtualenv
-pip install virtualenvwrapper
+pip install ansible
+pip install ansible-lint
 pip install django
-pip install pandas
-pip install nose
+pip install elpy
 pip install numpy
-if [ "$(uname)" == "Darwin" ]; then
-    brew install gfortran
-fi
+pip install pandas
+pip install pip-tools
 pip install scipy
 pip install tweepy
-pip install twitter
-pip install xlrd
-pip install xlwt
-pip install xlutils
-pip install openpyxl
-pip install epc
-pip install jedi
-pip install elpy
-pip install rope
-pip install pip-tools
-pip install pillow
-pip install beautifulsoup4
-pip install image
-pip install pyinstaller
-pip install zenhan
-pip install tornado
-pip install facebook-sdk
-pip install Mako
-pip install psycopg2
+pip install virtualenv
+pip install virtualenvwrapper
 
 wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 pip install mecab-python-0.996.tar.gz
