@@ -144,7 +144,7 @@ augroup END
 " cmap / cnoremap |    -     |  -   |       @        |     -      |  -   |    -     |
 "-----------------------------------------------------------------------------------"
 "evil-mode時にvimを起動しても大丈夫にする。
-inoremap <c-c><c-g> <esc>
+inoremap <c-,> <esc>
 noremap ;  :
 
 "インサートモードでもhjkl移動

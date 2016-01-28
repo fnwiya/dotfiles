@@ -9,7 +9,7 @@
                (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
                (define-key term-raw-map (kbd "C-y") 'term-paste)
                (define-key term-raw-map (kbd "C-r") 'term-send-raw)
-               (define-key term-raw-map (kbd "C-c C-g") 'term-send-raw)
+               (define-key term-raw-map (kbd "C-,") 'term-send-raw)
                (setq next-screen-context-lines 0)
                ))
   (defadvice linum-on(around my-linum-term-on() activate)
