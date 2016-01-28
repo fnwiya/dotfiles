@@ -8,7 +8,6 @@
             '(lambda ()
                (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
                (define-key term-raw-map (kbd "C-y") 'term-paste)
-               (define-key term-raw-map (kbd "C-[") 'term-send-raw)
                (define-key term-raw-map (kbd "C-r") 'term-send-raw)
                (setq next-screen-context-lines 0)
                ))
