@@ -35,3 +35,10 @@
      ((string-match "[\t\n -@\[-`{-~]" char) (kill-word 1))
      (t (forward-char) (backward-word) (kill-word 1)))))
 (bind-key "M-d" 'kill-word-at-point)
+
+;; kill-lineで行が連結したときにインデントを減らす
+(defadvice kill-line (before kill-line-and-fixup activate)
+  (when (and (not (bolp)) (eolp))
+    (forward-char)
+    (fixup-whitespace)
+    (backward-char)))
