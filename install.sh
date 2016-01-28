@@ -27,7 +27,6 @@ case ${OSTYPE} in
                 distri_name="ubuntu"
                 source install/apt-get.sh
                 source install/ubuntu.sh
-                source install/peco4linux.sh
             else
                 # Debian
                 distri_name="debian"
@@ -44,18 +43,9 @@ case ${OSTYPE} in
                 # CentOS
                 distri_name="redhat"
             fi
-        elif [ -e /etc/turbolinux-release ]; then
-            # Turbolinux
-            distri_name="turbol"
         elif [ -e /etc/SuSE-release ]; then
             # SuSE Linux
             distri_name="suse"
-        elif [ -e /etc/mandriva-release ]; then
-            # Mandriva Linux
-            distri_name="mandriva"
-        elif [ -e /etc/vine-release ]; then
-            # Vine Linux
-            distri_name="vine"
         elif [ -e /etc/gentoo-release ]; then
             # Gentoo Linux
             distri_name="gentoo"
@@ -78,6 +68,9 @@ source install/pip.sh
 
 echo "sbcl settings"
 source install/sbcl.sh
+
+echo "go settings"
+source install/go.sh
 
 echo "Configuring zsh as default shell"
 which zsh
