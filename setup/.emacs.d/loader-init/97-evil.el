@@ -121,3 +121,5 @@
   "\C-r" 'term-send-raw)
 (evil-define-key 'insert term-raw-map
   "\C-r" 'term-send-raw)
+(evil-define-key 'insert term-raw-map
+  "\C-[" 'term-send-raw)
