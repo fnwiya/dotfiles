@@ -26,3 +26,12 @@
 (global-set-key [M-left] 'split-window-horizontally)
 (global-set-key [M-up] 'split-window-vertically)
 (global-set-key [M-down] 'delete-other-windows)
+
+(defun kill-word-at-point ()
+  (interactive)
+  (let ((char (char-to-string (char-after (point)))))
+    (cond
+     ((string= " " char) (delete-horizontal-space))
+     ((string-match "[\t\n -@\[-`{-~]" char) (kill-word 1))
+     (t (forward-char) (backward-word) (kill-word 1)))))
+(bind-key "M-d" 'kill-word-at-point)
