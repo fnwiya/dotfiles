@@ -103,6 +103,7 @@
     undo-tree
     undohist
     use-package
+    vimrc-mode
     web-mode
     wgrep
     yaml-mode

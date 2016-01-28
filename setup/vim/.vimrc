@@ -1,21 +1,7 @@
-" Configuration file for vim
-set modelines=0		" CVE-2007-2438
-
-" Normally we use vim-extensions. If you want true vi-compatibility
-" remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
-
-" Don't write backup file if vim is being called by "crontab -e"
-au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
-" Don't write backup file if vim is being called by "chpass"
-au BufWrite /private/etc/pw.* set nowritebackup nobackup
-
-
-
 "-------------------------------------------------------------------------------
 " 基本設定
 "-------------------------------------------------------------------------------
+set nocompatible                  " Use Vim defaults instead of 100% vi compatibility
 set encoding=utf8                 "エンコーディング設定
 set fileencoding=utf-8            "カレントバッファ内のファイルの文字エンコーディングを設定する
 set scrolloff=5                   "カーソルの上または下に表示する最小限の行数
@@ -50,14 +36,14 @@ set showmatch
 set ambiwidth=double              "全角文字の幅を2に固定
 set pumheight=10                  "補完メニューの高さ
 set list                          "タブ文字、行末など不可視文字を表示する
-set listchars=tab:>-              "listで表示される文字のフォーマットを指定する 
+set listchars=tab:>-              "listで表示される文字のフォーマットを指定する
                                   "※デフォルト eol=$ を打ち消す意味で設定
-set laststatus=2                  "ステータスラインを表示するウィンドウを設定する 
+set laststatus=2                  "ステータスラインを表示するウィンドウを設定する
                                   "2:常にステータスラインを表示する
-set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P 
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
                                   "ステータス行の表示内容を設定する
 set showcmd                       "入力中のステータスに表示する
- 
+
 "全角スペース表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
 match ZenkakuSpace /　/
@@ -183,4 +169,3 @@ set shiftwidth=4                   "自動インデントの各段階に使わ�
 "-------------------------------------------------------------------------------
 " その他設定
 "-------------------------------------------------------------------------------
-

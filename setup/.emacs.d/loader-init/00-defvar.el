@@ -5,7 +5,7 @@
 (defvar *programing-hooks*
   '(c-mode-hook
     c++-mode-hook
-    clojure-mode
+    clojure-mode-hook
     coffee-mode-hook
     cperl-mode-hook
     css-mode-hook
@@ -23,6 +23,7 @@
     sh-mode-hook
     slime-mode-hook
     slime-repl-mode-hook
+    vimrc-mode-hook
     web-mode-hook
     yaml-mode-hook))
 
