@@ -83,7 +83,7 @@ case ${OSTYPE} in
         ;;
 esac
 echo "add which zsh to /usr/local/bin/zsh"
-vi /etc/shells
+sudo vi /etc/shells
 chsh -s $(which zsh)
 
 echo "Done."

@@ -7,6 +7,7 @@ sudo apt-get -y install build-essential
 sudo apt-get -y install cmigemo
 sudo apt-get -y install curl
 sudo apt-get -y install elixir
+sudo apt-get -y install emacs
 sudo apt-get -y install fish
 sudo apt-get -y install gcc
 sudo apt-get -y install git
@@ -32,10 +33,6 @@ sudo apt-get -y install dropbox
 sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install shutter
-
-wget -O google-webdesigner_amd64.deb https://dl.google.com/linux/direct/google-webdesigner_current_amd64.deb
-sudo dpkg -i google-webdesigner_amd64.deb
-rm google-webdesigner_amd64.deb
 
 sudo apt-get clean
 sudo apt-get autoremove
