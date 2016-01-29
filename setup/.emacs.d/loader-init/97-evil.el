@@ -38,8 +38,8 @@
     "b" 'helm-buffers-list
     "B" 'ibuffer
     "d" 'kill-this-buffer
-    "e" 'helm-find-file
-    "F" 'helm-find-file
+    "e" 'helm-find-files
+    "F" 'helm-find-files
     "f" 'projectile-find-file
     "g" 'magit-status
     "h" 'evil-search-highlight-persist-remove-all
