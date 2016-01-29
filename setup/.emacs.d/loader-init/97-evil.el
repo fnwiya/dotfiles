@@ -121,5 +121,12 @@
   "\C-r" 'term-send-raw)
 (evil-define-key 'insert term-raw-map
   "\C-r" 'term-send-raw)
-(evil-define-key 'insert term-raw-map
-  "\C-[" 'term-send-raw)
+;; ESC2回でtermのESC1回分、vimから抜ける。
+(add-hook 'term-mode-hook
+     (lambda ()
+        (evil-define-key 'insert term-raw-map (kbd "ESC ESC")
+          (lambda ()
+            "ESCを渡す"
+            (interactive)
+            (term-send-raw)))
+        ))
