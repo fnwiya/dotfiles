@@ -98,8 +98,8 @@
 (define-key evil-normal-state-map "\C-t" 'other-window)
 (define-key evil-insert-state-map "\C-t" 'other-window)
 (define-key evil-visual-state-map "\C-t" 'other-window)
-(define-key evil-normal-state-map "/" 'evil-search-forward)
-(define-key evil-normal-state-map ":" 'evil-ex)
+(define-key* evil-normal-state-map "/" 'evil-search-forward)
+(define-key* evil-normal-state-map ":" 'evil-ex)
 ;;ESCの割り当て
 (defun evil-escape-or-quit (&optional prompt)
   (interactive)
