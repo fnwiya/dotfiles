@@ -63,23 +63,15 @@ brew install z
 brew install zsh
 
 brew cask install alfred
-brew cask install bettertouchtool
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install iterm2
-# brew cask install java
-brew cask install skype
-brew cask install sublime-text
 brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install filezilla
-
-brew tap homebrew/science
-brew cask install xquartz
-brew install r
 
 brew cleanup
