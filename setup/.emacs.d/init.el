@@ -69,6 +69,7 @@
     key-combo
     magit
     markdown-mode
+    material-theme
     migemo
     mmm-mako
     mmm-mode
