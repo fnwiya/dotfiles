@@ -94,8 +94,10 @@
     smartrep
     smex
     smooth-scroll
+    solarized-theme
     sql-indent
     sqlup-mode
+    sublime-themes
     swiper
     tabbar
     tern
