@@ -8,6 +8,8 @@ ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
 ln -sf ~/dotfiles/setup/.tern-config ~
+mkdit -p ~/.lein
+ln -sf ~/dotfiles/setup/profiles.clj ~/.lein/profiles.clj
 ln -sf ~/dotfiles/setup/vim/.vimrc ~
 ln -sf ~/dotfiles/setup/vim/.vim ~
 ln -sf ~/dotfiles/setup/.emacs.d ~
