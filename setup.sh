@@ -8,7 +8,7 @@ ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
 ln -sf ~/dotfiles/setup/.tern-config ~
-mkdit -p ~/.lein
+mkdir -p ~/.lein
 ln -sf ~/dotfiles/setup/profiles.clj ~/.lein/profiles.clj
 ln -sf ~/dotfiles/setup/vim/.vimrc ~
 ln -sf ~/dotfiles/setup/vim/.vim ~
@@ -30,6 +30,6 @@ case ${OSTYPE} in
         ;;
     linux*)
         ln -sf ~/dotfiles/setup/linux/.shutter ~
-        sudo -u postgres ln -s /home/forcia/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
+        sudo -u postgres ln -sf /home/forcia/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
         ;;
 esac
