@@ -8,8 +8,8 @@
   ;; /before (evil-mode 1)
   (evil-mode 1)
   ;;cursor-color
-  (setq evil-emacs-state-cursor    '("#E74C3C" box))
-  (setq evil-normal-state-cursor   '("#2ECC71" box))
+  (setq evil-emacs-state-cursor    '((face-attribute 'warning :foreground) box))
+  (setq evil-normal-state-cursor   '((face-attribute 'link :foreground) box))
   (setq evil-visual-state-cursor   '("#E67E22" box))
   (setq evil-insert-state-cursor   '("#E74C3C" bar))
   (setq evil-replace-state-cursor  '("#E74C3C" bar))
