@@ -12,7 +12,7 @@
               (set-frame-position (selected-frame) 0 0)
               (set-frame-size (selected-frame) 101 50)
               ;; (save-window-excursion
-              ;;   (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove"))
+                 (async-shell-command "sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoremove");;)
               )))
 
 (when (window-system)
