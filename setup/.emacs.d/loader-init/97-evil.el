@@ -10,8 +10,8 @@
   ;;cursor-color
   (setq evil-emacs-state-cursor    '("#E74C3C" box))
   (setq evil-normal-state-cursor   '("#3498DB" box))
-  (setq evil-visual-state-cursor   '("#2ECC71W" box))
-  (setq evil-insert-state-cursor   '("#E67E22W" bar))
+  (setq evil-visual-state-cursor   '("#2ECC71" box))
+  (setq evil-insert-state-cursor   '("#E67E22" bar))
   (setq evil-replace-state-cursor  '("#E74C3C" bar))
   (setq evil-operator-state-cursor '("#E74C3C" hollow))
   ;;その他の設定
