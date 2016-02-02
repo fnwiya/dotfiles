@@ -29,7 +29,7 @@ sudo apt-get -y install python-matplotlib
 sudo apt-get -y install python-setuptools
 
 # others
-sudo apt-get -y install dropbox
+sudo apt-get -y install nautilus-dropbox
 sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install shutter
