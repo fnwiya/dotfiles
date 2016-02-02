@@ -1,6 +1,7 @@
 (use-package sql
   :mode
-  (("\.sql$" . sql-mode))
+  (("\.sql$" . sql-mode)
+   ("\.sqltmpl$" . sql-mode))
   )
 (use-package sql-indent
   :commands (sql-indent-mode)
