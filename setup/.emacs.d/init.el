@@ -58,6 +58,7 @@
     helm-projectile
     helm-swoop
     highlight-symbol
+    hlinum
     ido-ubiquitous
     ido-vertical-mode
     impatient-mode
