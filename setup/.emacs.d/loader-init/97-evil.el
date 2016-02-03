@@ -32,19 +32,13 @@
   (global-evil-leader-mode)
   (evil-leader/set-leader "SPC")
   (evil-leader/set-key
-    "SPC" 'evil-buffer
     ":" 'shell-command
     "a" 'avy-goto-word-0
     "b" 'helm-buffers-list
-    "B" 'ibuffer
-    "d" 'kill-this-buffer
     "e" 'helm-find-files
-    "F" 'helm-find-files
     "f" 'projectile-find-file
     "g" 'magit-status
-    "h" 'evil-search-highlight-persist-remove-all
-    "j" 'dired-jump
-    "k" 'kill-buffer
+    "k" 'kill-this-buffer
     "q" 'kill-buffer-and-window
     "r" 'helm-recentf
     "s" 'isearch
