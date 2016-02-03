@@ -45,6 +45,8 @@
     "t" 'other-window
     "w" 'save-buffer
     "x" 'helm-M-x
+    "h" 'seq-home
+    "l" 'seq-end
     ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
