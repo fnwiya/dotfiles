@@ -69,6 +69,7 @@
     js2-mode
     key-combo
     magit
+    macrostep
     markdown-mode
     material-theme
     migemo
