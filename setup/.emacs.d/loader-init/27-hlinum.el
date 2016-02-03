@@ -4,6 +4,7 @@
   (defadvice evil-set-cursor-color (after keu-hlinum activate)
     "Reflect cursor color change to `linum-highlight-face' for `hlinum'."
     (set-face-attribute 'linum-highlight-face nil
+                        :foreground (face-attribute 'linum :background)
                         :background (ad-get-arg 0)))
   ;; (custom-set-faces
   ;;    '(linum-highlight-face ((t (:foreground "black"
