@@ -8,6 +8,7 @@ ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
 ln -sf ~/dotfiles/setup/.tern-config ~
+ln -sf ~/dotfiles/setup/.conkyrc ~
 mkdir -p ~/.lein
 ln -sf ~/dotfiles/setup/profiles.clj ~/.lein/profiles.clj
 ln -sf ~/dotfiles/setup/vim/.vimrc ~
