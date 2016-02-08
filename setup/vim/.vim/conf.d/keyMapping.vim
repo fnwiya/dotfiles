@@ -19,6 +19,9 @@ inoremap <c-h> <left>
 inoremap <c-l> <right>
 inoremap <c-d> <delete>
 
+nnoremap + <C-a>
+nnoremap - <C-x>
+
 nnoremap <Esc><Esc> :noh<CR>   "unHilight
 
 "移動
