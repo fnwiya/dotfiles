@@ -3,7 +3,6 @@
 (keyboard-translate ?\C-h ?\C-?)
 
 (bind-key "C-/" 'undo)
-(bind-key "C-z" 'undo)
 (bind-key "M-w" 'easy-kill)
 ;; easy-kill cheatsheet
 ;; M-w   行
