@@ -1,6 +1,6 @@
+;;https://github.com/hyone/dot-emacs/blob/master/etc/hyone-key-combo.el
 (require 'key-combo)
 (require 'evil)
-
 
 (defun evil-key-combo-define (state keymap key commands)
   "key-combo-define with using evil-define-key"
