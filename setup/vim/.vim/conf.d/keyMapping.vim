@@ -12,6 +12,17 @@
 " imap / inoremap |    -    |   @    |     -     |   -    |  -   |    -     |
 " cmap / cnoremap |    -    |   -    |     @     |   -    |  -   |    -     |
 "-----------------------------------------------------------------------------------"
+" Alt as MetaKey
+if has("win32")
+  " altにキーを割り当てるためメニューバーを消す
+  set guioptions-=m
+endif
+
+if has("mac")
+  " optionキーを使う
+  set macmeta
+endif
+
 "移動
 inoremap jj  <Esc>
 nnoremap k   gk
@@ -39,6 +50,8 @@ inoremap <silent> <C-d>$ <Esc>lc$
 inoremap <silent> <C-y>0 <Esc>ly0<Insert>
 " カーソルから行末までヤンク
 inoremap <silent> <C-y>$ <Esc>ly$<Insert>
+" インサートモードでもundo
+inoremap <M-u> <Esc>:undo<CR> i
 
 "space
 nnoremap <Space>w  :<C-u>w<CR>
@@ -54,11 +67,6 @@ inoremap ( ()<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 inoremap <> <><Left>
-
-
-nnoremap + <C-a>
-nnoremap - <C-x>
-nnoremap <Esc><Esc> :noh<CR>   "unHilight
 
 " 矢印キーで入力するとA B C Dが入力される問題を解決
 set nocompatible
@@ -78,3 +86,8 @@ inoremap <Esc>A <up>
 inoremap <Esc>B <down>
 inoremap <Esc>C <right>
 inoremap <Esc>D <left>
+
+" others
+nnoremap + <C-a>
+nnoremap - <C-x>
+nnoremap <Esc><Esc> :noh<CR>   "unHilight
