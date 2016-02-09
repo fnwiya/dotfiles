@@ -68,13 +68,13 @@
   "\C-r" 'term-send-raw)
 ;; ESC2回でtermのESC1回分、vimから抜ける。
 (add-hook 'term-mode-hook
-     (lambda ()
-        (evil-define-key 'insert term-raw-map (kbd "ESC ESC")
           (lambda ()
-            "ESCを渡す"
-            (interactive)
-            (term-send-raw)))
-        ))
+            (evil-define-key 'insert term-raw-map (kbd "ESC ESC")
+              (lambda ()
+                "ESCを渡す"
+                (interactive)
+                (term-send-raw)))
+            ))
 
 (use-package key-combo
   :config
@@ -97,4 +97,8 @@
   (key-combo-define evil-insert-state-map (kbd ">")  '(" > " " >= " " > " " >> " ">>"))
   (key-combo-define evil-insert-state-map (kbd "\"") '("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
   (key-combo-define evil-insert-state-map (kbd ";") '(";\n" ";"))
-)
+  )
+(add-hook 'term-mode-hook
+          '(lambda ()
+             (key-combo-mode nil)
+             ))
