@@ -22,7 +22,7 @@ inoremap <c-d> <delete>
 nnoremap <Esc><Esc> :noh<CR>   "unHilight
 
 "移動
-inoremap jk  <Esc>
+inoremap jj  <Esc>
 nnoremap k   gk
 nnoremap j   gj
 vnoremap k   gk
