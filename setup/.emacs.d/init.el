@@ -51,6 +51,7 @@
     gist
     google-c-style
     google-translate
+    guide-key
     haskell-mode
     helm
     helm-ghq
