@@ -56,6 +56,7 @@
 ;; 物理行移動
 (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
 (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+;; term
 (evil-define-key 'normal term-raw-map
   "p" 'term-paste)
 (evil-define-key 'normal term-raw-map
