@@ -12,17 +12,6 @@
 " imap / inoremap |    -    |   @    |     -     |   -    |  -   |    -     |
 " cmap / cnoremap |    -    |   -    |     @     |   -    |  -   |    -     |
 "-----------------------------------------------------------------------------------"
-" Alt as MetaKey
-if has("win32")
-  " altにキーを割り当てるためメニューバーを消す
-  set guioptions-=m
-endif
-
-if has("mac")
-  " optionキーを使う
-  set macmeta
-endif
-
 "移動
 inoremap jj  <Esc>
 nnoremap k   gk

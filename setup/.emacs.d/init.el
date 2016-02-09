@@ -108,7 +108,6 @@
     undohist
     use-package
     vimrc-mode
-    wdired
     web-mode
     wgrep
     yaml-mode
