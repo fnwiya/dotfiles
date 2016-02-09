@@ -39,5 +39,14 @@
                                        (eq (cdr c) a))) pairs)
         (ad-set-arg 0 (hyone:trim (ad-get-arg 0))))))
 
+;; helper-function
+;; https://github.com/hyone/dot-emacs/blob/master/etc/hyone-util.el
+(defun hyone:filter (condp lst)
+  (delq nil
+    (mapcar (lambda (x) (and (funcall condp x) x)) lst)))
+(defun hyone:trim (s)
+  (let ((s1 (replace-regexp-in-string "[ \t]*$" "" s)))
+    (replace-regexp-in-string "^[ \t]*" "" s1)))
 
-;;(provide 'evil-key-combo)
+(key-combo-define evil-insert-state-map (kbd "=") " = " " == " "=" " === ")
+(key-combo-define evil-insert-state-map (kbd "/") "/" " / " " /= " " /* `!!' */ " "//")
