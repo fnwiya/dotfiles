@@ -77,6 +77,7 @@
             ))
 
 (use-package key-combo
+  :diminish key-combo-mode
   :commands (key-combo-mode)
   :init
   (loop for hook in *programing-hooks*
