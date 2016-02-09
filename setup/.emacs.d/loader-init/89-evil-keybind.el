@@ -88,6 +88,7 @@
   (key-combo-define evil-insert-state-map (kbd "+") '(" + " "+" " += " "++"))
   (key-combo-define evil-insert-state-map (kbd "-") '("-" " - " " -= " "--"))
   (key-combo-define evil-insert-state-map (kbd "*") '(" * " "*" " *= "))
+  (key-combo-define evil-normal-state-map (kbd "/") 'key-combo-execute-orignal)
   (key-combo-define evil-insert-state-map (kbd "/") '("/" " / " " /= " "/* `!!' */" "//"))
   (key-combo-define evil-insert-state-map (kbd "%") '("%" " % " " %= "))
   (key-combo-define evil-insert-state-map (kbd "!") '("!" " != "))
@@ -103,7 +104,3 @@
   (key-combo-define evil-insert-state-map (kbd "\"") '("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
   (key-combo-define evil-insert-state-map (kbd ";") '(";\n" ";"))
   )
-
-(add-hook 'term-mode-hook
-          '(lambda ()
-             ))
