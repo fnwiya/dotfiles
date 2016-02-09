@@ -28,7 +28,7 @@ inoremap <c-k> <up>
 inoremap <c-h> <left>
 inoremap <c-l> <right>
 " カーソル前の文字削除
-inoremap <silent> <C-h> <C-g>u<C-h>
+"inoremap <silent> <C-> <C-g>u<C-h>
 " カーソル後の文字削除
 inoremap <silent> <C-d> <Del>
 " カーソルから行頭まで削除
