@@ -18,4 +18,5 @@
   (setq evil-want-fine-undo t)     ;操作を元に戻す単位を細かくする
   (setq evil-move-cursor-back nil) ;改行文字の上に移動可能にする(C-x C-e用)
   (setq evil-esc-delay 0)
+;; (run-with-idle-timer 5 t 'evil-normal-state) ; 一定時間操作しないとノーマルモードに戻る
   )
