@@ -129,7 +129,7 @@
 
 (use-package key-combo
   :config
-  (key-combo-mode 1)
+  (global-key-combo-mode t)
   (key-combo-define evil-insert-state-map (kbd "=") '(" = " " == " "=" " === "))
   (key-combo-define evil-insert-state-map (kbd "+") '(" + " "+" " += " "++"))
   (key-combo-define evil-insert-state-map (kbd "-") '("-" " - " " -= " "--"))
@@ -147,4 +147,5 @@
   (key-combo-define evil-insert-state-map (kbd "<")  '(" < " " <= " " < " " << " "<<" "<`!!'>"))
   (key-combo-define evil-insert-state-map (kbd ">")  '(" > " " >= " " > " " >> " ">>"))
   (key-combo-define evil-insert-state-map (kbd "\"") '("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
+  (key-combo-define evil-insert-state-map (kbd ";") '(";\n" ";"))
 )
