@@ -77,8 +77,12 @@
             ))
 
 (use-package key-combo
-  :config
-  (global-key-combo-mode t)
+  :commands (key-combo-mode)
+  :init
+  (loop for hook in *programing-hooks*
+        do (add-hook hook 'key-combo-mode))
+   :config
+  ;; (global-key-combo-mode t)
   (key-combo-define evil-insert-state-map (kbd "=") '(" = " " == " "=" " === "))
   (key-combo-define evil-insert-state-map (kbd "+") '(" + " "+" " += " "++"))
   (key-combo-define evil-insert-state-map (kbd "-") '("-" " - " " -= " "--"))
@@ -98,7 +102,7 @@
   (key-combo-define evil-insert-state-map (kbd "\"") '("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
   (key-combo-define evil-insert-state-map (kbd ";") '(";\n" ";"))
   )
+
 (add-hook 'term-mode-hook
           '(lambda ()
-             (key-combo-mode nil)
              ))
