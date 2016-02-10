@@ -44,6 +44,7 @@
     evil
     evil-leader
     evil-matchit
+    evil-numbers
     f
     flx-ido
     flycheck
