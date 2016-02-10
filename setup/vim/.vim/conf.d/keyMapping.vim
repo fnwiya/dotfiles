@@ -49,14 +49,6 @@ nnoremap <Space>Q  :<C-u>q!<CR>
 nnoremap <Space>h  ^
 nnoremap <Space>l  $
 
-" 引用符, 括弧の設定
-inoremap { {}<Left>
-inoremap [ []<Left>
-inoremap ( ()<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap <> <><Left>
-
 " 矢印キーで入力するとA B C Dが入力される問題を解決
 set nocompatible
 imap OA <Up>

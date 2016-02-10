@@ -47,6 +47,8 @@
 (define-key evil-motion-state-map "gT" 'tabbar-backward-tab)    ; タブ
 (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)     ; 物理行移動
 (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line) ; 物理行移動
+(define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
+(define-key evil-normal-state-map (kbd "gk") 'evil-previous-line)
 
 ;;ESCの割り当て
 (defun evil-escape-or-quit (&optional prompt)
