@@ -25,7 +25,6 @@
               (select-window w)
               (recentf-open-files))))
 
-
 (unless (window-system)
   (add-hook 'after-init-hook
             (lambda()
