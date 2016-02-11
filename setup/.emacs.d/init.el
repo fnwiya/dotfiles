@@ -71,7 +71,7 @@
     json-mode
     js2-mode
     key-combo
-    magit
+    ;; magit
     macrostep
     markdown-mode
     material-theme
