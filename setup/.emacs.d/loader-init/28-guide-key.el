@@ -1,4 +1,5 @@
 (use-package guide-key
+  :diminish guide-key-mode
   :config
   (setq guide-key/popup-window-position 'bottom)
   (setq guide-key/guide-key-sequence '("C-x r" "C-c" "SPC" (org-mode "C-c C-x")))
