@@ -14,6 +14,7 @@
 "-----------------------------------------------------------------------------------"
 "移動
 inoremap jj  <Esc>
+cnoremap jj  <Esc>
 nnoremap k   gk
 nnoremap j   gj
 vnoremap k   gk
