@@ -38,6 +38,7 @@
     dash
     easy-kill
     el-get
+    eproject
     ess
     exec-path-from-shell
     expand-region
