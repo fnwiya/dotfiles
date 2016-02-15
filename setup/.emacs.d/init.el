@@ -38,6 +38,7 @@
     dash
     easy-kill
     el-get
+    eproject
     ess
     exec-path-from-shell
     expand-region
@@ -71,7 +72,7 @@
     json-mode
     js2-mode
     key-combo
-    magit
+    ;; magit
     macrostep
     markdown-mode
     material-theme

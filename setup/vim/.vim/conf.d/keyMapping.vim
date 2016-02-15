@@ -14,6 +14,7 @@
 "-----------------------------------------------------------------------------------"
 "移動
 inoremap jj  <Esc>
+cnoremap jj  <Esc>
 nnoremap k   gk
 nnoremap j   gj
 vnoremap k   gk
@@ -22,10 +23,10 @@ nnoremap gk  k
 nnoremap gj  j
 vnoremap gk  k
 vnoremap gj  j
-"インサートモードでもhjkl移動
 inoremap <c-j> <down>
 inoremap <c-k> <up>
 "inoremap <c-h> <left>
+inoremap <c-b> <left>
 inoremap <c-l> <right>
 " カーソル前の文字削除
 "inoremap <silent> <C-> <C-g>u<C-h>
