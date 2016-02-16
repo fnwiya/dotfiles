@@ -81,4 +81,8 @@
               "\C-r" 'term-send-raw)
             (evil-define-key 'insert term-raw-map
               "\C-r" 'term-send-raw)
-            ))
+            (evil-define-key 'normal term-raw-map
+              "\C-l" 'term-send-raw)
+            (evil-define-key 'insert term-raw-map
+              "\C-l" 'term-send-raw)
+             ))
