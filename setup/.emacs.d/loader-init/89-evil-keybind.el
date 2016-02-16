@@ -68,7 +68,9 @@
    (t (kbd "C-g"))))
 (define-key key-translation-map     (kbd "C-q") #'evil-escape-or-quit)
 (define-key evil-operator-state-map (kbd "C-q") #'evil-escape-or-quit)
+            (evil-make-overriding-map 'term-mode-map)
 
+(evil-make-overriding-map term-mode-map)
 (add-hook 'term-mode-hook
           (lambda ()
             (evil-define-key 'normal term-raw-map
