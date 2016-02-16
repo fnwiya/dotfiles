@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; key-binding
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;(define-key evil-normal-state-map           [escape] 'keyboard-quit)
+(define-key evil-normal-state-map           [escape] 'keyboard-quit)
 (define-key evil-visual-state-map           [escape] 'keyboard-quit)
 (define-key minibuffer-local-map            [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-ns-map         [escape] 'minibuffer-keyboard-quit)
@@ -88,8 +88,4 @@
               "\C-l" 'term-send-raw)
             (evil-define-key 'insert term-raw-map
               "\C-l" 'term-send-raw)
-            (evil-define-key 'normal term-raw-map
-              "ESC" 'term-send-raw)
-            (evil-define-key 'insert term-raw-map
-              "ESC" 'term-send-raw)
               ))
