@@ -26,7 +26,6 @@
      (lambda ()
         (define-key term-raw-map (kbd "ESC ESC")
           (lambda ()
-            "ESCを渡す"
             (interactive)
             (term-send-raw)))
         ))
