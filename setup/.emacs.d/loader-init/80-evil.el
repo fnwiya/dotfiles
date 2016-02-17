@@ -22,4 +22,15 @@
   (modify-syntax-entry ?_ "w" (standard-syntax-table)) ; 「_」を単語の一部とみなす
   (setq evil-want-fine-undo t)                         ; 操作を元に戻す単位を細かくする
   ;; (run-with-idle-timer 5 t 'evil-normal-state)      ; 一定時間操作しないとノーマルモードに戻る
-  )
+  ;; change mode-line color by evil state
+  (lexical-let ((default-color (cons (face-background 'mode-line)
+                                     (face-foreground 'mode-line))))
+    (add-hook 'post-command-hook
+              (lambda ()
+                (let ((color (cond ((minibufferp) default-color)
+                                   ((evil-insert-state-p) '("#e80000" . "#ffffff"))
+                                   ((evil-emacs-state-p)  '("#444488" . "#ffffff"))
+                                   ((buffer-modified-p)   '("#006fa0" . "#ffffff"))
+                                   (t default-color))))
+                  (set-face-background 'mode-line (car color))
+                  (set-face-foreground 'mode-line (cdr color)))))))
