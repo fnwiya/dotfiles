@@ -33,3 +33,6 @@
                                    (t default-color))))
                   (set-face-background 'mode-line (car color))
                   (set-face-foreground 'mode-line (cdr color)))))))
+(add-hook 'term-mode-hook
+          (lambda ()
+            (evil-emacs-state)))
