@@ -7,6 +7,7 @@
    ; emacsclient [default -- keep?]
    mode-line-client
    " "
+   ; encode
    mode-line-mule-info
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    ;;;［ファイルのコード系を示す文字の意味(日本語関係だけ)］
@@ -33,7 +34,7 @@
    ; evil-state
    (:eval
     (cond ((evil-insert-state-p)
-           (propertize " I " 'face 'mode-line-read-only-face))
+           (propertize " I " 'face 'mode-line-modified-face))
           ((evil-visual-state-p)
            (propertize " V " 'face 'mode-line-modified-face))
           ((evil-emacs-state-p)
@@ -41,7 +42,6 @@
           ((evil-normal-state-p)
            (propertize " N " 'face 'mode-line-modified-face))
             (t" - ")))
-   " "
    ; read-only or modified status
    (:eval
     (cond (buffer-read-only
