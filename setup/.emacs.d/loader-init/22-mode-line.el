@@ -30,6 +30,18 @@
    ;; それぞれ改行コードを「UNIX 系 LF」、「Windows 系の CR+LF」、
    ;; 「Mac 系の CR」に設定することができる。
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   ; evil-state
+   (:eval
+    (cond ((evil-insert-state-p)
+           (propertize " I " 'face 'mode-line-read-only-face))
+          ((evil-visual-state-p)
+           (propertize " V " 'face 'mode-line-modified-face))
+          ((evil-emacs-state-p)
+           (propertize " E " 'face 'mode-line-modified-face))
+          ((evil-normal-state-p)
+           (propertize " N " 'face 'mode-line-modified-face))
+            (t" - ")))
+   " "
    ; read-only or modified status
    (:eval
     (cond (buffer-read-only
