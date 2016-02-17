@@ -71,22 +71,19 @@
 
 (add-hook 'term-mode-hook
           (lambda ()
-            (evil-emacs-state)
-            ;; (evil-mode nil)
-            ;; (evil-make-overriding-map term-raw-map 'normal)
-            ;; (evil-make-overriding-map term-raw-map 'insert)
-            ;; (evil-define-key 'normal term-raw-map
-            ;;   "p" 'term-paste)
-            ;; (evil-define-key 'normal term-raw-map
-            ;;   "\C-y" 'term-paste)
-            ;; (evil-define-key 'insert term-raw-map
-            ;;   "\C-y" 'term-paste)
-            ;; (evil-define-key 'normal term-raw-map
-            ;;   "\C-r" 'term-send-raw)
-            ;; (evil-define-key 'insert term-raw-map
-            ;;   "\C-r" 'term-send-raw)
-            ;; (evil-define-key 'normal term-raw-map
-            ;;   "\C-l" 'term-send-raw)
-            ;; (evil-define-key 'insert term-raw-map
-            ;;   "\C-l" 'term-send-raw)
+            ;; (evil-emacs-state)
+            (evil-define-key 'normal term-raw-map
+              "p" 'term-paste)
+            (evil-define-key 'normal term-raw-map
+              "\C-y" 'term-paste)
+            (evil-define-key 'insert term-raw-map
+              "\C-y" 'term-paste)
+            (evil-define-key 'normal term-raw-map
+              "\C-r" 'term-send-raw)
+            (evil-define-key 'insert term-raw-map
+              "\C-r" 'term-send-raw)
+            (evil-define-key 'normal term-raw-map
+              "\C-l" 'term-send-raw)
+            (evil-define-key 'insert term-raw-map
+              "\C-l" 'term-send-raw)
               ))
