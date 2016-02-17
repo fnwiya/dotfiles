@@ -4,14 +4,14 @@
   :config
   (setq multi-term-program shell-file-name)
   (setenv "TERMINFO" "~/.terminfo")
-  (add-hook 'term-mode-hook
-            '(lambda ()
-               (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
-               (define-key term-raw-map (kbd "C-y") 'term-paste)
-               (define-key term-raw-map (kbd "C-r") 'term-send-raw)
-               (define-key term-raw-map (kbd "C-,") 'term-send-raw)
-               (setq next-screen-context-lines 0)
-               ))
+  ;; (add-hook 'term-mode-hook
+  ;;           '(lambda ()
+  ;;              (define-key term-raw-map (kbd "C-h") 'term-send-backspace)
+  ;;              (define-key term-raw-map (kbd "C-y") 'term-paste)
+  ;;              (define-key term-raw-map (kbd "C-r") 'term-send-raw)
+  ;;              (define-key term-raw-map (kbd "C-,") 'term-send-raw)
+  ;;              (setq next-screen-context-lines 0)
+  ;;              ))
   (defadvice linum-on(around my-linum-term-on() activate)
   (unless (eq major-mode 'term-mode) ad-do-it))
   ;; emacs に認識させたいキー
