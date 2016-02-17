@@ -68,6 +68,7 @@
     impatient-mode
     init-loader
     jade-mode
+    jdee
     jquery-doc
     json-mode
     js2-mode
