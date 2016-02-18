@@ -5,7 +5,7 @@
 (setq initial-scratch-message "")
 
 ;; 透過
-(set-frame-parameter (selected-frame) 'alpha '(95 90))
+(set-frame-parameter (selected-frame) 'alpha '(90 90))
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
