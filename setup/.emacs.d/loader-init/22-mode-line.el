@@ -34,7 +34,7 @@
    ; evil-state
    (:eval
     (cond ((evil-insert-state-p)
-           (propertize " I " 'face 'mode-line-modified-face))
+           (propertize " “φ(･ω･｡*)ｶｷｶｷ " 'face 'mode-line-modified-face))
           ((evil-visual-state-p)
            (propertize " V " 'face 'mode-line-modified-face))
           ((evil-emacs-state-p)
