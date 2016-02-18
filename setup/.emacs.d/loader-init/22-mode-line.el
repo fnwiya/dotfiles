@@ -34,13 +34,13 @@
    ; evil-state
    (:eval
     (cond ((evil-insert-state-p)
-           (propertize " I " 'face 'mode-line-modified-face))
+           (propertize " I " 'face 'mode-line-evil-insert-face))
           ((evil-visual-state-p)
-           (propertize " V " 'face 'mode-line-modified-face))
+           (propertize " V " 'face 'mode-line-evil-visual-face))
           ((evil-emacs-state-p)
-           (propertize " E " 'face 'mode-line-modified-face))
+           (propertize " E " 'face 'mode-line-evil-emacs-face))
           ((evil-normal-state-p)
-           (propertize " N " 'face 'mode-line-modified-face))
+           (propertize " N " 'face 'mode-line-evil-normal-face))
             (t" - ")))
    ; read-only or modified status
    (:eval
@@ -132,6 +132,18 @@
 (set-face-attribute 'mode-line-process-face nil
   :inherit 'mode-line-face
   :foreground (face-attribute 'mode-line :foreground))
+(set-face-attribute 'mode-line-evil-insert-face nil
+  :inherit 'mode-line-face
+  :foreground (face-attribute 'cursor :foreground))
+(set-face-attribute 'mode-line-evil-visual-face nil
+  :inherit 'mode-line-face
+  :foreground (face-attribute 'success :foreground))
+(set-face-attribute 'mode-line-evil-emacs-face nil
+  :inherit 'mode-line-face
+  :foreground (face-attribute 'link-visited :foreground))
+(set-face-attribute 'mode-line-evil-normal-face nil
+  :inherit 'mode-line-face
+  :foreground (face-attribute 'link :foreground))
 
 ;;http://www.bookshelf.jp/soft/meadow_16.html
 (add-hook 'lisp-interaction-mode-hook
