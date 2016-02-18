@@ -40,12 +40,6 @@
 (define-key evil-normal-state-map "\C-k" 'evil-previous-line)
 (define-key evil-insert-state-map "\C-k" 'evil-previous-line)
 (define-key evil-visual-state-map "\C-k" 'evil-previous-line)
-;; (define-key evil-normal-state-map "\C-k" 'kill-line)
-;; (define-key evil-insert-state-map "\C-k" 'kill-line)
-;; (define-key evil-visual-state-map "\C-k" 'kill-line)
-(define-key evil-normal-state-map "\C-w" 'evil-delete)
-(define-key evil-insert-state-map "\C-w" 'evil-delete)
-(define-key evil-visual-state-map "\C-w" 'evil-delete)
 (define-key evil-normal-state-map "\C-y" 'yank)
 (define-key evil-insert-state-map "\C-y" 'yank)
 (define-key evil-visual-state-map "\C-y" 'yank)
@@ -54,8 +48,8 @@
 (define-key evil-visual-state-map "\C-t" 'other-window)
 (define-key evil-motion-state-map "gt" 'tabbar-forward-tab)     ; タブ
 (define-key evil-motion-state-map "gr" 'tabbar-backward-tab)    ; タブ
-(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)     ; 物理行移動
-(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line) ; 物理行移動
+(define-key evil-normal-state-map (kbd "j")  'evil-next-visual-line)     ; 物理行移動
+(define-key evil-normal-state-map (kbd "k")  'evil-previous-visual-line) ; 物理行移動
 (define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
 (define-key evil-normal-state-map (kbd "gk") 'evil-previous-line)
 
