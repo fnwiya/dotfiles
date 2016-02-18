@@ -18,3 +18,19 @@ set virtualedit=block             "矩形選択でカーソル位置の制限を
 set textwidth=80                  "一行の文字数
 set whichwrap=h,l                 "行の端までいったら前/次の行へ
 set history=1000                  "コマンド、検索パターンを1000個まで履歴に残す
+"自動でpaste modeにする
+if &term =~ "xterm"
+    let &t_ti .= "\e[?2004h"
+    let &t_te .= "\e[?2004l"
+    let &pastetoggle = "\e[201~"
+
+    function XTermPasteBegin(ret)
+        set paste
+        return a:ret
+    endfunction
+
+    noremap <special> <expr> <Esc>[200~ XTermPasteBegin("0i")
+    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
+    cnoremap <special> <Esc>[200~ <nop>
+    cnoremap <special> <Esc>[201~ <nop>
+endif
