@@ -6,6 +6,7 @@ alias ll="ls -l"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+alias cd='cd ~'
 alias mkdir='mkdir -p'
 alias reload='exec $SHELL -l'
 alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
