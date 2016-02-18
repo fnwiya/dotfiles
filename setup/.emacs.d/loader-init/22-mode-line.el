@@ -94,6 +94,10 @@
 (make-face 'mode-line-mode-face)
 (make-face 'mode-line-minor-mode-face)
 (make-face 'mode-line-process-face)
+(make-face 'mode-line-evil-insert-face)
+(make-face 'mode-line-evil-visual-face)
+(make-face 'mode-line-evil-emacs-face)
+(make-face 'mode-line-evil-normal-face)
 
 (set-face-attribute 'mode-line nil
   :inverse-video nil
