@@ -138,7 +138,7 @@
   :foreground (face-attribute 'mode-line :foreground))
 (set-face-attribute 'mode-line-evil-insert-face nil
   :inherit 'mode-line-face
-  :foreground (face-attribute 'cursor :foreground))
+  :foreground (face-attribute 'cursor :background))
 (set-face-attribute 'mode-line-evil-visual-face nil
   :inherit 'mode-line-face
   :foreground (face-attribute 'success :foreground))
