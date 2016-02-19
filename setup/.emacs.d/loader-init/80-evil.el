@@ -22,4 +22,5 @@
   (modify-syntax-entry ?_ "w" (standard-syntax-table)) ; 「_」を単語の一部とみなす
   (setq evil-want-fine-undo t)                         ; 操作を元に戻す単位を細かくする
   ;; (run-with-idle-timer 5 t 'evil-normal-state)      ; 一定時間操作しないとノーマルモードに戻る
-)
+  (evil-set-initial-state 'term-mode 'emacs)
+  )
