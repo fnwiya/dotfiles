@@ -82,6 +82,7 @@
     mmm-mode
     multi-term
     multiple-cursors
+    neotree
     open-junk-file
     org
     org-pomodoro
