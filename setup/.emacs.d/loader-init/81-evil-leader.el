@@ -6,15 +6,16 @@
   (evil-leader/set-leader "SPC")
   (evil-leader/set-key
     ":" 'shell-command
-    "a" 'avy-goto-word-0
+    "=" 'indent-region
+    "a" 'mark-whole-buffer
     "b" 'helm-buffers-list
     "e" 'helm-find-files
     "f" 'projectile-find-file
-    "g" 'magit-status
+    "g" 'avy-goto-word-0
     "k" 'kill-this-buffer
-    "q" 'kill-buffer-and-window
+    "q" 'kill-this-buffer
     "r" 'helm-recentf
-    "s" 'isearch
+    "s" 'isearch-forward
     "t" 'other-window
     "w" 'save-buffer
     "x" 'helm-M-x
