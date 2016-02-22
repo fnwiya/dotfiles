@@ -73,3 +73,4 @@ inoremap <Esc>D <left>
 nnoremap + <C-a>
 nnoremap - <C-x>
 nnoremap <Esc><Esc> :noh<CR>   "unHilight
+cabbr w!! w !sudo tee > /dev/null %
