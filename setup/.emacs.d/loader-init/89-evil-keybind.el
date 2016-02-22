@@ -47,7 +47,7 @@
 (define-key evil-insert-state-map "\C-t" 'other-window)
 (define-key evil-visual-state-map "\C-t" 'other-window)
 (define-key evil-motion-state-map "gt" 'tabbar-forward-tab)     ; タブ
-(define-key evil-motion-state-map "gr" 'tabbar-backward-tab)    ; タブ
+(define-key evil-motion-state-map "gT" 'tabbar-backward-tab)    ; タブ
 (define-key evil-normal-state-map (kbd "j")  'evil-next-visual-line)     ; 物理行移動
 (define-key evil-normal-state-map (kbd "k")  'evil-previous-visual-line) ; 物理行移動
 (define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
