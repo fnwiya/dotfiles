@@ -29,6 +29,7 @@
     bind-key
     browse-kill-ring
     cider
+    clj-refactor
     clojure-mode
     company
     codic
