@@ -28,6 +28,7 @@
     avy
     bind-key
     browse-kill-ring
+    c-eldoc
     cider
     clj-refactor
     clojure-mode
@@ -54,6 +55,7 @@
     flyspell
     gist
     go-mode
+    go-eldoc
     google-c-style
     google-translate
     guide-key
