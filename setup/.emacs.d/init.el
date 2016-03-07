@@ -112,6 +112,7 @@
     tern
     tern-auto-complete
     twittering-mode
+    typescript-mode
     undo-tree
     undohist
     use-package
