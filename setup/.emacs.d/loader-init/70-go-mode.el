@@ -1,3 +1,7 @@
 (use-package go-mode
-  :config
-  )
+  :mode
+  (("\\.go\\'" . go-mode))
+   :config
+  (add-hook 'go-mode-hook (lambda ()
+    (add-hook 'before-save-hook 'gofmt-before-save)
+  )))
