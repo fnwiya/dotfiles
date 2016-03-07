@@ -53,6 +53,7 @@
     flycheck
     flyspell
     gist
+    go-mode
     google-c-style
     google-translate
     guide-key
