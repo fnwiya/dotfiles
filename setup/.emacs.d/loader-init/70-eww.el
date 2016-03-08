@@ -42,10 +42,8 @@
   (define-key eww-mode-map "c 0" 'eww-copy-page-url)
   (define-key eww-mode-map "p" 'scroll-down)
   (define-key eww-mode-map "n" 'scroll-up)
+  (use-package ace-link
+    :config
+    (ace-link-setup-default)
+    (define-key eww-mode-map "f" 'ace-link-eww))
 )
-
-(use-package ace-link
-  :config
-  (ace-link-setup-default)
-  (define-key eww-mode-map "f" 'ace-link-eww)
-  )
