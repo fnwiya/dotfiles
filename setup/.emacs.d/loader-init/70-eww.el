@@ -37,15 +37,15 @@
            (highlight-regexp eww-hl-search-word)
            (setq eww-hl-search-word nil)))
 
+  ;;キーバインド
   (define-key eww-mode-map "r" 'eww-reload)
   (define-key eww-mode-map "c 0" 'eww-copy-page-url)
   (define-key eww-mode-map "p" 'scroll-down)
   (define-key eww-mode-map "n" 'scroll-up)
+)
 
 (use-package ace-link
   :config
-  (define-key eww-mode-map "f" 'ace-link-eww)
   (ace-link-setup-default)
+  (define-key eww-mode-map "f" 'ace-link-eww)
   )
-  )
-
