@@ -44,6 +44,6 @@
   (define-key eww-mode-map "n" 'scroll-up)
   (use-package ace-link
     :config
-    (ace-link-setup-default)
-    (define-key eww-mode-map "f" 'ace-link-eww))
+    (eval-after-load 'eww '(define-key eww-mode-map "f" 'ace-link-eww))
+    (ace-link-setup-default))
 )
