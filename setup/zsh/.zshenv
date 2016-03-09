@@ -15,8 +15,12 @@ fi
 
 # rbenv
 if [ -e $HOME/.rbenv ] ;then
-  export PATH="$HOME/.rbenv/bin:$PATH"
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    if which rbenv > /dev/null; then
+        eval "$(rbenv init -)";
+    fi
 fi
+
 # pyenv
 if [ -e $HOME/.pyenv ] ;then
   export PYENV_ROOT="$HOME/.pyenv"
