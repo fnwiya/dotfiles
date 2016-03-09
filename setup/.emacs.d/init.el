@@ -99,6 +99,8 @@
     rainbow-delimiters
     rainbow-mode
     recentf-ext
+    ruby-block
+    ruby-end
     saveplace
     sequential-command
     simple-httpd
