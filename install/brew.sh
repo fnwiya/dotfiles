@@ -47,6 +47,7 @@ brew install leiningen
 brew install markdown
 brew install mecab
 brew install mecab-ipadic
+brew install multitail
 brew install node
 brew install nvm
 brew install postgresql
