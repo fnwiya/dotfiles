@@ -23,6 +23,10 @@
   ;; (add-to-list 'helm-completing-read-handlers-alist '(find-file . nil))
   ;; (add-to-list 'helm-completing-read-handlers-alist '(write-file . nil))
   ;; (global-set-key (kbd "<f5>") 'helm-resume)
+  (advice-add 'helm-ff-filter-candidate-one-by-one
+              :around (lambda (fcn file)
+                        (unless (string-match "\\(?:/\\|\\`\\)\\.\\{1,2\\}\\'" file)
+                          (funcall fcn file))))
   )
 
 (use-package helm-projectile)
