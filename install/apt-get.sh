@@ -41,3 +41,6 @@ sudo apt-get -y install shutter
 
 sudo apt-get clean
 sudo apt-get autoremove
+
+curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo \
+    -so ~/bin/gibo && chmod +x ~/bin/gibo && gibo -u

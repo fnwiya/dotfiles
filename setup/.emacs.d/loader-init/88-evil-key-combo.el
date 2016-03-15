@@ -45,6 +45,9 @@
               (key-combo-define evil-insert-state-map (kbd "<")  '("< " "<= " "<" " << " "<<" "<`!!'>"))
               (key-combo-define evil-insert-state-map (kbd ">")  '("> " ">= " ">" " >> " ">>"))
               (key-combo-define evil-insert-state-map (kbd "(") '("(`!!')" "(" "()" "((`!!'))"))
+              (key-combo-define evil-insert-state-map (kbd "&") '("&"))
+              (key-combo-define evil-insert-state-map (kbd "'") '("'"))
+              (key-combo-define evil-insert-state-map (kbd ",") '(","))
               ))
   (add-hook 'lisp-mode-hook
             (lambda()
@@ -56,5 +59,8 @@
               (key-combo-define evil-insert-state-map (kbd "<")  '("< " "<= " "<" " << " "<<" "<`!!'>"))
               (key-combo-define evil-insert-state-map (kbd ">")  '("> " ">= " ">" " >> " ">>"))
               (key-combo-define evil-insert-state-map (kbd "(") '("(`!!')" "(" "()" "((`!!'))"))
+              (key-combo-define evil-insert-state-map (kbd "&") '("&"))
+              (key-combo-define evil-insert-state-map (kbd "'") '("'"))
+              (key-combo-define evil-insert-state-map (kbd ",") '(","))
               ))
   )
