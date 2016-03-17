@@ -69,6 +69,7 @@
     hlinum
     ido-ubiquitous
     ido-vertical-mode
+    irony
     impatient-mode
     init-loader
     jade-mode
