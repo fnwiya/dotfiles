@@ -13,11 +13,11 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Fuキーを標準のファンクションキーとして使用
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
 
-# キーのリピート
-defaults write NSGlobalDomain KeyRepeat -int 2
+# キーのリピート（preferences panalでは、２が最小）
+defaults write NSGlobalDomain KeyRepeat -int 0
 
-# リピート入力認識までの時間
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+# リピート入力認識までの時間（preference panelでは１５が最小値）
+defaults write NSGlobalDomain InitialKeyRepeat -int 1
 
 # サイドバーのアイコンサイズを大きく
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 3
