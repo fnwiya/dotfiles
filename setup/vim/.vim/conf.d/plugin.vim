@@ -15,16 +15,16 @@ execute 'set runtimepath^=' . s:dein_repo_dir
 
 call dein#begin(s:dein_dir)
 
-" 管理するプラグインを記述したファイル
-let s:toml = '~/.vim/dein/plugins.toml'
-let s:lazy_toml = '~/.vim/dein/plugins_lazy.toml'
+  " 管理するプラグインを記述したファイル
+  let s:toml = '~/.vim/dein/plugins.toml'
+  let s:lazy_toml = '~/.vim/dein/plugins_lazy.toml'
 
-" TOML を読み込み、キャッシュしておく
-if dein#load_state([expand('<sfile>', s:toml, s:lazy_toml)])
-  call dein#load_toml(s:toml, {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
-  call dein#save_cache()
-endif
+  " TOML を読み込み、キャッシュしておく
+  if dein#load_state([expand('<sfile>', s:toml, s:lazy_toml)])
+    call dein#load_toml(s:toml, {'lazy': 0})
+    call dein#load_toml(s:lazy_toml, {'lazy': 1})
+    call dein#save_cache()
+  endif
 
 call dein#end()
 
