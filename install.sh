@@ -57,6 +57,9 @@ case ${OSTYPE} in
         ;;
 esac
 
+echo "go settings"
+source install/go.sh
+
 echo "npm settings"
 source install/npm.sh
 
@@ -69,20 +72,9 @@ source install/pip.sh
 echo "sbcl settings"
 source install/sbcl.sh
 
-echo "go settings"
-source install/go.sh
 
 echo "Configuring zsh as default shell"
-which zsh
-case ${OSTYPE} in
-    darwin*)
-        which zsh | pbcopy
-        ;;
-    linux*)
-        which zsh | xsel --clipboard --input
-        ;;
-esac
-sudo echo "/usr/local/bin/zsh" >> /etc/shell
+sudo which zsh >> "/usr/local/bin/zsh" >> /etc/shell
 chsh -s $(which zsh)
 
 echo "Done."
