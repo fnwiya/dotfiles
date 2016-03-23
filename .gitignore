@@ -18,3 +18,4 @@ setup/vim/.vim/dein/repos
 setup/vim/.vim/dein/temp
 setup/vim/.vim/dein/.dein
 setup/vim/.vim/dein/cache_vim
+setup/vim/.vim/dein/rollbacks
