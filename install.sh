@@ -82,8 +82,7 @@ case ${OSTYPE} in
         which zsh | xsel --clipboard --input
         ;;
 esac
-echo "add which zsh to /usr/local/bin/zsh"
-sudo vi /etc/shells
+sudo echo "/usr/local/bin/zsh" >> /etc/shell
 chsh -s $(which zsh)
 
 echo "Done."
