@@ -72,9 +72,8 @@ source install/pip.sh
 echo "sbcl settings"
 source install/sbcl.sh
 
-
 echo "Configuring zsh as default shell"
-sudo which zsh >> "/usr/local/bin/zsh" >> /etc/shell
+sudo which zsh >> /etc/shell
 chsh -s $(which zsh)
 
 echo "Done."

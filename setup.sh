@@ -1,19 +1,19 @@
 #!/bin/bash
-ln -sf ~/dotfiles/setup/bash/.bashrc ~
-ln -sf ~/dotfiles/setup/bash/.bash_profile ~
 ln -sf ~/dotfiles/setup/.conkyrc ~
 ln -sf ~/dotfiles/setup/.emacs.d ~
 ln -sf ~/dotfiles/setup/.gitconfig ~
 ln -sf ~/dotfiles/setup/.gitignore_global ~
 ln -sf ~/dotfiles/setup/.hgignore_global ~
 ln -sf ~/dotfiles/setup/.hgrc ~
-mkdir -p ~/.lein
-ln -sf ~/dotfiles/setup/lein/profiles.clj ~/.lein/profiles.clj
 ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
 ln -sf ~/dotfiles/setup/.tern-config ~
 ln -sf ~/dotfiles/setup/.tmux.conf ~
+ln -sf ~/dotfiles/setup/bash/.bashrc ~
+ln -sf ~/dotfiles/setup/bash/.bash_profile ~
+mkdir -p ~/.lein
+ln -sf ~/dotfiles/setup/lein/profiles.clj ~/.lein/profiles.clj
 ln -sf ~/dotfiles/setup/vim/.vimrc ~
 ln -sf ~/dotfiles/setup/vim/.vim ~
 ln -sf ~/dotfiles/setup/zsh/.zshrc ~
@@ -31,6 +31,6 @@ case ${OSTYPE} in
         ;;
     linux*)
         ln -sf ~/dotfiles/setup/linux/.shutter ~
-        sudo -u postgres ln -sf /home/forcia/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
+        sudo -u postgres ln -sf ~/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
         ;;
 esac
