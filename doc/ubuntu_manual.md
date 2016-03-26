@@ -25,3 +25,4 @@
 - Dock整理
     - 削除（Ofice,)
     - 追加（Chrome,)
+- [http://qiita.com/takeoverjp/items/9493a9838deb905ac519]([Ubuntu] emacsユーザがまずすべき設定)
