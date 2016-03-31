@@ -1,7 +1,6 @@
 [[plugins]]
-repo = 'Shougo/neomru.vim'
-on_path = '.*'
+repo = 'Shougo/unite.vim'
 
 [[plugins]]
-repo = 'Shougo/unite.vim'
-depends = 'neomru.vim'
+repo = 'Shougo/neomru.vim'
+on_source = ['unite.vim']
