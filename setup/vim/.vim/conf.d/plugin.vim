@@ -12,25 +12,38 @@ if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
   endif
-  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
+set runtimepath^=s:dein_repo_dir
 
 " 設定開始
-if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
+call dein#begin(s:dein_dir)
+  if dein#load_state(s:dein_dir)
+    call dein#add('Shougo/dein.vim')
+    call dein#add('Shougo/vimproc', {
+          \ 'build': {
+          \     'windows': 'tools\\update-dll-mingw',
+          \     'cygwin': 'make -f make_cygwin.mak',
+          \     'mac': 'make -f make_mac.mak',
+          \     'linux': 'make',
+          \     'unix': 'gmake'}})
+    call dein#add('Shougo/neomru.vim')
+    call dein#add('Shougo/unite.vim', {
+          \ 'depends': ['vimproc'],
+          \ 'on_cmd': ['Unite'],
+          \ 'lazy': 1})
 
-  " プラグインリストを収めた TOML ファイル
-  let s:toml      = s:dein_dir . '/plugins.toml'
-  let s:lazy_toml = s:dein_dir . '/plugins_lazy.toml'
+  " " プラグインリストを収めた TOML ファイル
+  " let s:toml      = s:dein_dir . '/plugins.toml'
+  " let s:lazy_toml = s:dein_dir . '/plugins_lazy.toml'
 
-  " TOML を読み込み、キャッシュしておく
-  call dein#load_toml(s:toml,      {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
+  " " TOML を読み込み、キャッシュしておく
+  " call dein#load_toml(s:toml,      {'lazy': 0})
+  " call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
   " 設定終了
-  call dein#end()
   call dein#save_state()
-endif
+  endif
+call dein#end()
 
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
