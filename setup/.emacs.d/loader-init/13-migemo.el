@@ -1,3 +1,4 @@
+(unless (equal system-name-simple "forcia-VirtualBox")
 (use-package migemo
   :config
   (setq migemo-command "cmigemo")
@@ -11,3 +12,4 @@
   (setq migemo-coding-system 'utf-8-unix)
   (load-library "migemo")
   (migemo-init))
+)
