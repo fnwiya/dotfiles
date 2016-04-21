@@ -21,10 +21,10 @@
   (setq whitespace-space-regexp "\\(\u3000+\\)")
 
   (defvar my/bg-color "#232323")
-  (set-face-attribute 'whitespace-trailing nil
-                      :background my/bg-color
-                      :foreground "DeepPink"
-                      :underline t)
+  ;; (set-face-attribute 'whitespace-trailing nil
+  ;;                     :background my/bg-color
+  ;;                     :foreground "DeepPink"
+  ;;                     :underline t)
   (set-face-attribute 'whitespace-tab nil
                       :background my/bg-color
                       :foreground "LightSkyBlue"
