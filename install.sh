@@ -73,7 +73,7 @@ echo "sbcl settings"
 source install/sbcl.sh
 
 echo "Configuring zsh as default shell"
-sudo which zsh >> /etc/shell
-chsh -s $(which zsh)
+sudo which zsh >> /etc/shells
+chsh
 
 echo "Done."
