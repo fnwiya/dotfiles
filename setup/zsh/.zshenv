@@ -39,7 +39,7 @@ fi
 
 # psql
 if [ -x "`which psql`" ] ;then
-  export PATH="$PATH:/usr/local/pgsql/bin"
+  export PATH="/usr/local/pgsql/bin:$PATH"
 fi
 
 
