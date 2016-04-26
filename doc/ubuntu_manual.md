@@ -8,6 +8,7 @@
 【 echo 2 > /sys/module/hid_apple/parameters/fnmode 】を追加
 - [capsをctrlに](http://masaoo.blogspot.jp/2015/01/ubuntu-1404-lts-caps-lock-ctrl.html)
 - [skypeインストール](http://www.skype.com/ja/download-skype/skype-for-linux/)
+- [slackをインストール](https://slack.com/downloads)
 - ログインの音無効化
     - ```sudo vim /usr/share/gnome/autostart/libcanberra-login-sound.desktop```
     - ->change the “NoDisplay” from “true” to “false”
