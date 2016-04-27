@@ -6,6 +6,7 @@ path=(
    /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    $path
 )
+
 # for go lang
 if [ -x "`which go`" ]; then
   # export GOROOT=`which go`
