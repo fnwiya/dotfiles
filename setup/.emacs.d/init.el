@@ -72,6 +72,7 @@
     irony
     impatient-mode
     init-loader
+    ivy
     jade-mode
     jdee
     jquery-doc
