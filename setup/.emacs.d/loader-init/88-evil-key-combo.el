@@ -26,7 +26,7 @@
   (key-combo-define evil-insert-state-map (kbd ">")  '(" > " " >= " ">" " >> " ">>"))
   (key-combo-define evil-insert-state-map (kbd "\"") '("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
   (key-combo-define evil-insert-state-map (kbd ";") '(";\n" ";"))
-  (add-hook 'cc-mode-hook
+  (add-hook 'c-mode-common-hook
             (lambda()
               (key-combo-define evil-insert-state-map (kbd "&") '(" & " "&"))
               (key-combo-define evil-insert-state-map (kbd "|") '(" || " " | " "|"))
