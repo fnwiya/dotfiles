@@ -26,6 +26,13 @@
   (key-combo-define evil-insert-state-map (kbd ">")  '(" > " " >= " ">" " >> " ">>"))
   (key-combo-define evil-insert-state-map (kbd "\"") '("\"`!!'\""  "\""  "\"\"\"`!!'\"\"\""))
   (key-combo-define evil-insert-state-map (kbd ";") '(";\n" ";"))
+  (add-hook 'c-mode-hook
+            (lambda()
+              (key-combo-define evil-insert-state-map (kbd "&") '(" & " "&"))
+              (key-combo-define evil-insert-state-map (kbd "|") '(" || " " | " "|"))
+              (key-combo-define evil-insert-state-map (kbd "<")  '("<`!!'>" " < " "<"))
+              (key-combo-define evil-insert-state-map (kbd "*")  '("* " "*"))
+              ))
   (add-hook 'web-mode-hook
             (lambda()
               (key-combo-define evil-insert-state-map (kbd "<")  '("<" "<`!!'>"))
