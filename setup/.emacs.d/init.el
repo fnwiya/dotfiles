@@ -57,6 +57,7 @@
     go-mode
     go-eldoc
     google-c-style
+    google-this
     google-translate
     guide-key
     haskell-mode
