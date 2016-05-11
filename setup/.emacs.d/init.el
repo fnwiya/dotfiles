@@ -23,6 +23,7 @@
   '(
     ace-link
     anzu
+    apache-mode
     auto-async-byte-compile
     auto-package-update
     avy
