@@ -1,7 +1,7 @@
 (use-package company
   :diminish company-mode
   :config
-  (global-company-mode) ; 全バッファで有効にする
+  (global-company-mode t) ; 全バッファで有効にする
   (setq company-idle-delay 0) ; デフォルトは0.5.自動補完を offにしたい場合はnilに設定する
   (setq company-minimum-prefix-length 2) ; デフォルトは4
   (setq company-selection-wrap-around t) ; 候補の一番下でさらに下に行こうとすると一番上に戻る

@@ -13,12 +13,15 @@
             (lambda ()
               (setq indent-tabs-mode t)
               (setq c-basic-offset 4)
+              (setq tab-width 4)
               )))))
+
 (use-package google-c-style
   :config
   (add-hook 'c-mode-common-hook 'google-set-c-style)
   (add-hook 'c++-mode-common-hook 'google-set-c-style)
   (add-hook 'c-mode-common-hook 'google-make-newline-indent))
+
 (use-package c-eldoc
   :config
   (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)

@@ -4,6 +4,7 @@
 
 (defvar *programing-hooks*
   '(c-mode-hook
+    c-mode-common-hook
     c++-mode-hook
     clojure-mode-hook
     coffee-mode-hook
