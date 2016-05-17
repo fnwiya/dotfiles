@@ -33,6 +33,7 @@ brew upgrade --all
 # Install homebrew packages
 # brewfile使うなら http://tech.basicinc.jp/Mac/2014/04/20/mac_app_engineer/
 brew install aspell
+brew install automake
 brew install caskroom/cask/brew-cask
 brew install cmigemo
 brew install curl
@@ -51,6 +52,8 @@ brew install mecab-ipadic
 brew install multitail
 brew install node
 brew install nvm
+brew install poppler # for https://github.com/politza/pdf-tools
+export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
