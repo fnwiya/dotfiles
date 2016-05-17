@@ -17,12 +17,14 @@
   (add-hook #'html-mode-hook #'my-html-mode-hook)
   (add-hook #'web-mode-hook #'my-html-mode-hook)
   (add-hook #'Javascript-IDE-mode-hook #'my-html-mode-hook)
+  (add-hook #'markdown-mode-hook #'my-html-mode-hook)
   (defun open-imp-preview()
     (interactive)
     (browse-url "http://localhost:8080/imp/")
     )
   (global-set-key (kbd "C-x C-v") 'open-imp-preview)
   ;;Markdown
+  ;; M-x imp-set-user-filter->markdown-html
   (defun markdown-html (buffer)
     (princ (with-current-buffer buffer
              (format "<!DOCTYPE html><html><title>Impatient Markdown</title><xmp theme=\"united\" style=\"display:none;\"> %s  </xmp><script src=\"http://strapdownjs.com/v/0.2/strapdown.js\"></script></html>" (buffer-substring-no-properties (point-min) (point-max))))
