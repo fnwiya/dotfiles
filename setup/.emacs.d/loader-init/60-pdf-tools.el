@@ -1,8 +1,13 @@
 (use-package pdf-tools
   ;;https://github.com/politza/pdf-tools
   ;;(pdf-tools-install)
-  (add-hook 'pdf-view-mode-hook
-   '(lambda ()
-      (pdf-view-mode)
-      ))
+  :config
+  (add-to-list 'auto-mode-alist '("\.pdf$" . pdf-view-mode))
+;  (add-hook 'pdf-view-mode-hook
+                                        ;
+                                        ;
+                                        ;
+  ;;'(lambda ()
+  ;    (pdf-view-mode)
+   ;   ))
   )
