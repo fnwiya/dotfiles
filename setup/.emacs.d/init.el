@@ -95,6 +95,7 @@
     org
     org-pomodoro
     org-toodledo
+    pdf-tools
     popwin
     projectile
     project-explorer
