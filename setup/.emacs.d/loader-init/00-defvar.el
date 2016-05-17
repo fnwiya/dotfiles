@@ -33,7 +33,8 @@
 (defvar *txt-hooks*
   '(text-mode-hook
     org-mode-hook
-    twittering-edit-mode-hook))
+    twittering-edit-mode-hook
+    pdf-view-mode-hook))
 
 (defvar *lisp-mode-hooks*
   '(lisp-mode-hook
