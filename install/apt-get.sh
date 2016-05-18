@@ -15,6 +15,7 @@ sudo apt-get -y install guake
 sudo apt-get -y install global
 sudo apt-get -y install golang
 sudo apt-get -y install leiningen
+sudo apt-get -y install libpoppler-glib-dev # for https://github.com/politza/pdf-tools
 sudo apt-get -y install lv
 sudo apt-get -y install markdown
 sudo apt-get -y install multitail
