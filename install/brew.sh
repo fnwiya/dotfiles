@@ -33,6 +33,7 @@ brew upgrade --all
 # Install homebrew packages
 # brewfile使うなら http://tech.basicinc.jp/Mac/2014/04/20/mac_app_engineer/
 brew install aspell
+brew install autojump
 brew install automake
 brew install caskroom/cask/brew-cask
 brew install cmigemo
