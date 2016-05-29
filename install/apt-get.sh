@@ -3,6 +3,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 # develop-tool
 sudo apt-get -y install ansible
+sudo apt-get -y install autojump
 sudo apt-get -y install build-essential
 sudo apt-get -y install cmigemo
 sudo apt-get -y install curl
