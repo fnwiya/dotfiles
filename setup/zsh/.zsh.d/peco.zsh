@@ -29,7 +29,7 @@ if [ -x "`which peco`" ]; then
     fi
     zle -N peco-select-history
     bindkey '^r' peco-select-history
-    alias pecoh='zle -N peco-select-history && peco-select-history'
+    alias pecoh='peco-select-history'
 
     function peco-cdr () {
         local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
@@ -41,7 +41,7 @@ if [ -x "`which peco`" ]; then
     }
     zle -N peco-cdr
     bindkey '^d' peco-cdr
-    alias pecoc='zle -N peco-cdr'
+    alias pecoc='peco-cdr'
 
     function peco-kill-process () {
         ps -ef | peco | awk '{ print $2 }' | xargs kill
@@ -49,7 +49,7 @@ if [ -x "`which peco`" ]; then
     }
     zle -N peco-kill-process
     bindkey '^xk' peco-kill-process
-    alias pecok='zle -N peco-kill-process'
+    alias pecok='peco-kill-process'
 
     function peco-src () {
         local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
@@ -61,5 +61,5 @@ if [ -x "`which peco`" ]; then
     }
     zle -N peco-src
     bindkey '^]' peco-src
-    alias pecos='zle -N peco-src'
+    alias pecos='peco-src'
 fi
