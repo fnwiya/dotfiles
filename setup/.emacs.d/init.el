@@ -1,10 +1,15 @@
 (setq gc-cons-threshold (* 128 1024 1024))
 ;;; git-pull/push
-(save-window-excursion
-  (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update"))
-(add-hook 'kill-emacs-hook
-          (lambda()
-            (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
+(defun git-dotfiles()
+  (interactive)
+  (save-window-excursion
+    (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update"))
+  (add-hook 'kill-emacs-hook
+            (lambda()
+              (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
+  )
+(when (window-system)
+  (git-dotfiles))
 
 ;;; package-manager
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
@@ -140,22 +145,24 @@
       (package-refresh-contents)
       (dolist (pkg not-installed)
         (package-install pkg)))))
+(when (window-system)
 (save-window-excursion
-  (install-listed-pkg))
+  (install-listed-pkg)))
 
 (require 'use-package)
 
-(use-package auto-package-update
-  :config
-  (setq auto-package-update-delete-old-versions t)
-  (setq apu--last-update-day-path "~/.emacs.d/cache/.last-package-update-day")
-  (add-hook 'auto-package-update-before-hook
-            (lambda () (message "I will update packages now")))
-  (save-window-excursion
-    (auto-package-update-now))
-  ;; (setq auto-package-update-interval 2)
-  ;; (auto-package-update-maybe)
-  )
+(when (window-system)
+  (use-package auto-package-update
+    :config
+    (setq auto-package-update-delete-old-versions t)
+    (setq apu--last-update-day-path "~/.emacs.d/cache/.last-package-update-day")
+    (add-hook 'auto-package-update-before-hook
+              (lambda () (message "I will update packages now")))
+    (save-window-excursion
+      (auto-package-update-now))
+    ;; (setq auto-package-update-interval 2)
+    ;; (auto-package-update-maybe)
+    ))
 
 ;;; init
 (use-package init-loader
