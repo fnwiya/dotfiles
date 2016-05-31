@@ -12,6 +12,7 @@ sudo apt-get -y install emacs
 sudo apt-get -y install fish
 sudo apt-get -y install gcc
 sudo apt-get -y install git
+sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get -y install guake
 sudo apt-get -y install global
 sudo apt-get -y install golang
@@ -41,8 +42,10 @@ sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install shutter
 
-sudo apt-get clean
-sudo apt-get autoremove
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y clean
+sudo apt-get -y autoremove
 
 curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo \
     -so ~/bin/gibo && chmod +x ~/bin/gibo && gibo -u
