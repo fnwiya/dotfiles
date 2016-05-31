@@ -22,7 +22,6 @@
   ;; helmを有効にしない操作をリストに追加していく
   ;; (add-to-list 'helm-completing-read-handlers-alist '(find-file . nil))
   ;; (add-to-list 'helm-completing-read-handlers-alist '(write-file . nil))
-  ;; (global-set-key (kbd "<f5>") 'helm-resume)
   (advice-add 'helm-ff-filter-candidate-one-by-one
               :around (lambda (fcn file)
                         (unless (string-match "\\(?:/\\|\\`\\)\\.\\{1,2\\}\\'" file)
@@ -52,7 +51,6 @@
   (global-set-key (kbd "C-x M-i") 'helm-multi-swoop-all)
   (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
   (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
-
   ;; Save buffer when helm-multi-swoop-edit complete
   (setq helm-multi-swoop-edit-save t)
   ;; 値がtの場合はウィンドウ内に分割、nilなら別のウィンドウを使用

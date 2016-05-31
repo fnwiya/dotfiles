@@ -7,7 +7,6 @@
    ("\\.fsp\\'" . web-mode)
    ("\\.gsp\\'" . web-mode))
   :config
-  ;; web-modeの設定
   (setq web-mode-markup-indent-offset 4)
   (setq web-mode-css-indent-offset 4)
   (setq web-mode-code-indent-offset 4)
@@ -46,19 +45,14 @@
         rlt))
      (t t))
     rlt))
-
 (put 'web-mode 'flyspell-mode-predicate 'web-mode-flyspell-verify)
-
 (defvar flyspell-check-doublon t
   "Check doublon (double word) when calling `flyspell-highlight-incorrect-region'.")
  (make-variable-buffer-local 'flyspell-check-doublon)
-
 (defadvice flyspell-highlight-incorrect-region (around flyspell-highlight-incorrect-region-hack activate)
   (if (or flyspell-check-doublon (not (eq 'doublon (ad-get-arg 2))))
       ad-do-it))
-
 (defun web-mode-hook-setup ()
   (flyspell-mode 1)
   (setq flyspell-check-doublon nil))
-
 (add-hook 'web-mode-hook 'web-mode-hook-setup)

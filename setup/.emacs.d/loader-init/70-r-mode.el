@@ -2,7 +2,6 @@
   :mode
   (("\\.[rR]$" . R-mode))
   :config
-  ;; 起動時にワーキングディレクトリを尋ねられないようにする
-  (setq ess-ask-for-ess-directory nil)
+  (setq ess-ask-for-ess-directory nil) ;; 起動時にワーキングディレクトリを尋ねない
   (autoload 'R "ess-site" "start R" t)
   )

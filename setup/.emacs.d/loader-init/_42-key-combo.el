@@ -63,7 +63,7 @@
   (key-combo-define-hook key-combo-lisp-mode-hooks
                         'key-combo-lisp-load-default
                          key-combo-lisp-default)
-  ;; web-mode-smartchr
+  ;; web-mode
   (setq key-combo-web-mode-hooks
         '(web-mode-hook))
   (setq key-combo-web-default

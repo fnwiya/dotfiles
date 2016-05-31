@@ -18,8 +18,7 @@
   (add-to-list 'term-unbind-key-list "C-t")
   (add-to-list 'term-unbind-key-list "M-x")
   (add-to-list 'term-unbind-key-list "C-f")
-  (add-to-list 'term-unbind-key-list "C-b")
-)
+  (add-to-list 'term-unbind-key-list "C-b"))
 
 ;; ESC2回でtermのESC1回分、vimから抜ける。
 (add-hook 'term-mode-hook
@@ -27,5 +26,4 @@
         (define-key term-raw-map (kbd "ESC ESC")
           (lambda ()
             (interactive)
-            (term-send-raw)))
-        ))
+            (term-send-raw)))))

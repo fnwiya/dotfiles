@@ -8,7 +8,6 @@
   (setq recentf-auto-cleanup 30)
   (setq recentf-auto-save-timer
         (run-with-idle-timer 60 t 'recentf-save-list))
-  (recentf-mode 1)
-  )
+  (recentf-mode 1))
 
 (autoload 'recentf-ext "recentf-ext" nil t)

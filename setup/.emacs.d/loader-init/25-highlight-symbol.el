@@ -9,5 +9,4 @@
 ;;  (global-set-key [f4] 'highlight-symbol-next)
 ;;  (global-set-key [(shift f4)] 'highlight-symbol-prev)
 ;;  (global-set-key [(meta f4)] 'highlight-symbol-query-replace)
-  (setq highlight-symbol-idle-delay 0.3)
-  )
+  (setq highlight-symbol-idle-delay 0.3))

@@ -1,4 +1,3 @@
-(add-hook 'after-init-hook (lambda()
 (use-package ido
   :bind
   (("C-x C-r" . ido-recentf-open)
@@ -38,4 +37,3 @@
   (bind-key "M-x" 'smex)
   (bind-key "M-X" 'smex-major-mode-commands)
 )
-))

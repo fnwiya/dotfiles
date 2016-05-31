@@ -23,7 +23,7 @@
     (browse-url "http://localhost:8080/imp/")
     )
   (global-set-key (kbd "C-x C-v") 'open-imp-preview)
-  ;;Markdown
+  ;; Markdown
   ;; M-x imp-set-user-filter->markdown-html
   (defun markdown-html (buffer)
     (princ (with-current-buffer buffer

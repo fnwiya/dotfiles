@@ -1,5 +1,7 @@
 (setq gc-cons-threshold (* 128 1024 1024))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; git-pull/push
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun git-dotfiles()
   (interactive)
   (save-window-excursion
@@ -11,7 +13,9 @@
 (when (window-system)
   (git-dotfiles))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package-manager
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (let ((default-directory (expand-file-name "~/.emacs.d/elisp")))
   (add-to-list 'load-path default-directory)
   (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
@@ -118,7 +122,6 @@
     smartrep
     smex
     smooth-scroll
-    solarized-theme
     sql-indent
     sqlup-mode
     swiper
@@ -146,8 +149,8 @@
       (dolist (pkg not-installed)
         (package-install pkg)))))
 (when (window-system)
-(save-window-excursion
-  (install-listed-pkg)))
+  (save-window-excursion
+    (install-listed-pkg)))
 
 (require 'use-package)
 
@@ -160,11 +163,11 @@
               (lambda () (message "I will update packages now")))
     (save-window-excursion
       (auto-package-update-now))
-    ;; (setq auto-package-update-interval 2)
-    ;; (auto-package-update-maybe)
     ))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package init-loader
   :config
   (setq init-loader-show-log-after-init 'error-only)

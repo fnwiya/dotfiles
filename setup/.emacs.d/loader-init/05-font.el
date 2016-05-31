@@ -6,7 +6,6 @@
                     (font-spec :family "Ricty" :size 14)
                     nil
                     'append)
-  (add-to-list 'default-frame-alist '(font . "fontset-ricty"))
-  ))
+  (add-to-list 'default-frame-alist '(font . "fontset-ricty"))))
 (bind-key "C-x <" 'text-scale-increase)
 (bind-key "C-x >" 'text-scale-decrease)

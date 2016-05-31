@@ -1,2 +1,2 @@
- (setq abbrev-file-name
-        "~/.emacs.d/cache/abbrev_defs")
+(setq abbrev-file-name
+   "~/.emacs.d/cache/abbrev_defs")

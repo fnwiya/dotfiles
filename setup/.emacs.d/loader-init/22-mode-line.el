@@ -1,16 +1,16 @@
-(setq-default mode-line-format
- '(; Position
+(setq-default mode-line-format '(
+   ;; position
    (:eval (format "%04d" (count-lines (point-max) (point-min))))
    (:propertize "(%04l" face mode-line-position-face)
    ":"
    (:propertize "%03c)"  face mode-line-position-face)
-   ; emacsclient [default -- keep?]
+   ;; emacsclient [default -- keep?]
    mode-line-client
    " "
-   ; encode
+   ;; encode
    mode-line-mule-info
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   ;;;［ファイルのコード系を示す文字の意味(日本語関係だけ)］
+   ;;;［↑ファイルのコード系を示す文字の意味(日本語関係だけ)］
    ;; E -> 日本語 EUC
    ;; J -> 日本語 JIS
    ;; S -> 日本語 Shift-JIS
@@ -31,7 +31,7 @@
    ;; それぞれ改行コードを「UNIX 系 LF」、「Windows 系の CR+LF」、
    ;; 「Mac 系の CR」に設定することができる。
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-   ; evil-state
+   ;; evil-state
    (:eval
     (cond ((evil-insert-state-p)
            (propertize " I " 'face 'mode-line-evil-insert-face))
@@ -42,7 +42,7 @@
           ((evil-normal-state-p)
            (propertize " N " 'face 'mode-line-evil-normal-face))
             (t" - ")))
-   ; read-only or modified status
+   ;; read-only or modified status
    (:eval
     (cond (buffer-read-only
            (propertize " RO " 'face 'mode-line-read-only-face))
@@ -50,14 +50,14 @@
            (propertize " ** " 'face 'mode-line-modified-face))
           (t" -- ")))
    " "
-   ; directory and buffer/file name
+   ;; directory and buffer/file name
    (:propertize (:eval (shorten-directory default-directory 30))
                 face mode-line-folder-face)
    (:propertize "%b"
                 face mode-line-filename-face)
-   ; narrow [default -- keep?]
+   ;; narrow [default -- keep?]
    "%n"
-   ; mode indicators: vc, recursive edit, major mode, minor modes, process, global
+   ;; mode indicators: vc, recursive edit, major mode, minor modes, process, global
    (vc-mode vc-mode)
    " %["
    (:propertize mode-name
@@ -158,15 +158,14 @@
              (setq mode-name "Elisp")))
 
 (add-hook 'emacs-startup-hook (lambda ()
-(setq my/hidden-minor-modes
-      '(
-        auto-complete-mode
-        rng-validate-mode
-        undo-tree-mode
-        ))
-
-(mapc (lambda (mode)
-          (setq minor-mode-alist
-                (cons (list mode "") (assq-delete-all mode minor-mode-alist))))
-        my/hidden-minor-modes)
-))
+  (setq my/hidden-minor-modes
+    '(
+      auto-complete-mode
+      rng-validate-mode
+      undo-tree-mode
+     ))
+  (mapc
+   (lambda (mode)
+     (setq minor-mode-alist
+      (cons (list mode "") (assq-delete-all mode minor-mode-alist))))
+   my/hidden-minor-modes)))

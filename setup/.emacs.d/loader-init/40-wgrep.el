@@ -1,4 +1,3 @@
-;; wgrep.el
 (use-package wgrep
   :defer t
   :config

@@ -7,7 +7,6 @@
                                         ("helm" :regexp t :height 20)
                                         ))
 
-
   (push '("*Shell Command Output*") popwin:special-display-config)
   (push '("*compilation*" :height 20 :noselect t :stick t) popwin:special-display-config)
   (push '("*magit-edit-log*" :height 20) popwin:special-display-config)

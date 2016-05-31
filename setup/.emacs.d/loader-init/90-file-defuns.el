@@ -1,4 +1,3 @@
-;;; 89-file-defuns.el ---
 ;; https://github.com/magnars/.emacs.d/blob/master/defuns/file-defuns.el
 (use-package eproject)
 (defun rename-current-buffer-file ()

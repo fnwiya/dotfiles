@@ -27,8 +27,6 @@
                             my-template])
                ) auto-insert-alist))
 
-(require 'cl)
-
 (defvar template-replacements-alists
   '(("%name%" . user-full-name)
     ("%mail%" . (lambda()(identity user-mail-address)))

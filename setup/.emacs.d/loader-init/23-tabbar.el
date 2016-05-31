@@ -1,13 +1,9 @@
 (use-package tabbar
   :config
-  ;; 1で表示/0で非表示
-  (tabbar-mode 1)
-  ;; タブ上でマウスホイール操作無効
-  (tabbar-mwheel-mode -1)
-  ;; グループ化しない
-  (setq tabbar-buffer-groups-function nil)
-  ;; 画像を使わないことで軽量化する
-  (setq tabbar-use-images nil)
+  (tabbar-mode 1)                          ; 1で表示/0で非表示
+  (tabbar-mwheel-mode -1)                  ; タブ上でマウスホイール操作無効
+  (setq tabbar-buffer-groups-function nil) ; グループ化しない
+  (setq tabbar-use-images nil)             ; 画像を使わないことで軽量化する
 
   ;; 左に表示されるボタンを無効化
   (dolist (btn '(tabbar-buffer-home-button
@@ -21,9 +17,9 @@
     "*Regexps matches buffer names always included tabs.")
   (defun my-tabbar-buffer-list ()
     "Return the list of buffers to show in tabs.
-Exclude buffers whose name starts with a space or an asterisk.
-The current buffer and buffers matches `my-tabbar-displayed-buffers'
-are always included."
+     Exclude buffers whose name starts with a space or an asterisk.
+     The current buffer and buffers matches `my-tabbar-displayed-buffers'
+     are always included."
     (let* ((hides (list ?\  ?\*))
            (re (regexp-opt my-tabbar-displayed-buffers))
            (cur-buf (current-buffer))

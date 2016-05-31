@@ -4,8 +4,7 @@
   (setq eww-search-prefix "http://www.google.co.jp/search?q=")
   (defadvice linum-on(around my-linum-eww-on() activate)
     (unless (eq major-mode 'eww-mode) ad-do-it))
-
-  ;;背景の白みを消す
+  ;; 背景の白みを消す
   (defvar eww-disable-colorize t)
   (defun shr-colorize-region--disable (orig start end fg &optional bg &rest _)
     (unless eww-disable-colorize
@@ -22,8 +21,7 @@
     (interactive)
     (setq-local eww-disable-colorize nil)
     (eww-reload))
-
-  ;;ewwを複数立ち上げる
+  ;; ewwを複数立ち上げる
   (defun eww-mode-hook--rename-buffer ()
   "Rename eww browser's buffer so sites open in new page."
   (rename-buffer "eww" t))
@@ -31,13 +29,11 @@
   (add-hook 'eww-after-render-hook (lambda ()
            (highlight-regexp eww-hl-search-word)
            (setq eww-hl-search-word nil)))
-
-  ;;検索ワードをハイライト
+  ;; 検索ワードをハイライト
   (add-hook 'eww-after-render-hook (lambda ()
            (highlight-regexp eww-hl-search-word)
            (setq eww-hl-search-word nil)))
-
-  ;;キーバインド
+  ;; キーバインド
   (define-key eww-mode-map "r" 'eww-reload)
   (define-key eww-mode-map "c 0" 'eww-copy-page-url)
   (define-key eww-mode-map "p" 'scroll-down)

@@ -1,10 +1,9 @@
+(use-package google-translate
 ;; C-c C-t (regionあり): regionを翻訳
 ;; C-c C-t (regionなし): 現在のセンテンスを翻訳
 ;; C-u C-c C-t: 入力文字列を翻訳
 ;; (google-translate-enja-or-jaen “english string”): 英語→日本語
 ;; (google-translate-enja-or-jaen “日本語文字列”): 日本語→英語
-
-(use-package google-translate
   :config
   (defvar google-translate-english-chars "[:ascii:]"
     "これらの文字が含まれているときは英語とみなす")

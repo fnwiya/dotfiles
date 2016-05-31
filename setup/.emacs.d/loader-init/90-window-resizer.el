@@ -24,7 +24,6 @@
                (enlarge-window dy))
               ((= c ?k)
                (shrink-window dy))
-              ;; otherwise
               (t
                (let ((last-command-char (aref action 0))
                      (command (key-binding action)))

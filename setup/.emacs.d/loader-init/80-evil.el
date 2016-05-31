@@ -11,14 +11,14 @@
   ;; /before (evil-mode 1)
   :config
   (evil-mode 1)
-  ;;cursor-color
+  ;; cursor-color
   (setq evil-emacs-state-cursor    '("#E74C3C" box))
   (setq evil-normal-state-cursor   '("#3498DB" box))
   (setq evil-visual-state-cursor   '("#2ECC71" box))
   (setq evil-insert-state-cursor   '("#E74C3C" bar))
   (setq evil-replace-state-cursor  '("#E67E22" bar))
   (setq evil-operator-state-cursor '("#E74C3C" hollow))
-  ;;その他の設定
+  ;; その他の設定
   (modify-syntax-entry ?_ "w" (standard-syntax-table)) ; 「_」を単語の一部とみなす
   (setq evil-want-fine-undo t)                         ; 操作を元に戻す単位を細かくする
   ;; (run-with-idle-timer 5 t 'evil-normal-state)      ; 一定時間操作しないとノーマルモードに戻る
