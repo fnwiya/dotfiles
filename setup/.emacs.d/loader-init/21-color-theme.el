@@ -1,4 +1,4 @@
-;; (when (window-system)
+(when (window-system)
   (setq custom-theme-directory "~/.emacs.d/themes/")
   (load-theme 'fnwiya t)
-  (enable-theme 'fnwiya);)
+  (enable-theme 'fnwiya))
