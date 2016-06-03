@@ -18,3 +18,4 @@ set virtualedit=block             "矩形選択でカーソル位置の制限を
 set textwidth=80                  "一行の文字数
 set whichwrap=h,l                 "行の端までいったら前/次の行へ
 set history=1000                  "コマンド、検索パターンを1000個まで履歴に残す
+set wildmenu
