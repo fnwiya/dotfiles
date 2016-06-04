@@ -1,0 +1,4 @@
+# TODO:高速化 http://qiita.com/yaotti/items/0af5d50f4f52d22a46fe
+if [ -x "`which peco`" ]; then
+    function git(){hub "$@"}
+fi

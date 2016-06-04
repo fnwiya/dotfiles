@@ -39,7 +39,6 @@ autoload -Uz is-at-least
 #   $vcs_info_msg_1_ : 警告メッセージ用 (黄色)
 #   $vcs_info_msg_2_ : エラーメッセージ用 (赤)
 zstyle ':vcs_info:*' max-exports 3
-local git==git # hubコマンドとの兼ね合い http://qiita.com/yaotti/items/0af5d50f4f52d22a46fe
 zstyle ':vcs_info:*' enable git svn hg bzr
 # 標準のフォーマット(git 以外で使用)
 # misc(%m) は通常は空文字列に置き換えられる
