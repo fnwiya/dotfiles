@@ -40,12 +40,13 @@ brew install cmigemo
 brew install curl
 brew install elixir
 brew install --cocoa emacs
-brew install heroku
 brew install gcc
 brew install gibo
 brew install git
 brew install global
 brew install go
+brew install heroku
+brew install hub
 brew install leiningen
 brew install markdown
 brew install mecab
