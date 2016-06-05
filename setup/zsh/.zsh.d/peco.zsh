@@ -29,6 +29,7 @@ if [ -x "`which peco`" ]; then
     fi
     zle -N peco-select-history
     bindkey '^r' peco-select-history
+    alias phist='peco-select-history'
 
     function peco-cdr () {
         local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
