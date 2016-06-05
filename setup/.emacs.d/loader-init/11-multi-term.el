@@ -10,6 +10,8 @@
                (define-key term-raw-map (kbd "C-y") 'term-paste)
                (define-key term-raw-map (kbd "C-r") 'term-send-raw)
                (define-key term-raw-map (kbd "C-,") 'term-send-raw)
+               (define-key term-raw-map (kbd "C-j") 'term-send-raw)
+               (define-key term-raw-map (kbd "C-k") 'term-send-raw)
                (setq next-screen-context-lines 0)
                ))
   (defadvice linum-on(around my-linum-term-on() activate)

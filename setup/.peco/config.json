@@ -14,6 +14,9 @@
 
     "C-l": "peco.DeleteAll",
 
+    "C-j": "peco.SelectDown",
+    "C-k": "peco.SelectUp",
+
     "M-v": "peco.SelectPreviousPage",
     "C-v": "peco.SelectNextPage",
 
@@ -23,7 +26,6 @@
     "C-a": "peco.SelectAll",
     "C-g": "peco.Cancel",
 
-    "C-m": "peco.Finish",
-    "C-j": "peco.Finish"
+    "C-m": "peco.Finish"
   }
 }
