@@ -25,6 +25,7 @@ sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 sudo apt-get -y install pgadmin3
+sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install sqlite3
 sudo apt-get -y install tmux
 sudo apt-get -y install tortoisehg
@@ -32,6 +33,10 @@ sudo apt-get -y install tree
 sudo apt-get -y install wget
 sudo apt-get -y install z
 sudo apt-get -y install zsh
+# hub
+sudo apt-get -y install ruby
+sudo curl https://hub.github.com/standalone -Lo /usr/bin/hub
+sudo chmod 755 /usr/bin/hub
 # python
 sudo apt-get -y install python-matplotlib
 sudo apt-get -y install python-setuptools
