@@ -31,6 +31,7 @@
 (defvar installing-package-list
   '(
     ace-link
+    ag
     anzu
     apache-mode
     auto-async-byte-compile
@@ -72,6 +73,7 @@
     guide-key
     haskell-mode
     helm
+    helm-ag
     helm-ghq
     helm-gtags
     helm-projectile
