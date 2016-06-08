@@ -29,7 +29,9 @@
   )
 
 (use-package helm-projectile)
+
 (use-package helm-ghq)
+
 (use-package helm-gtags)
 (defun helm-my-buffers ()
   (interactive)
@@ -57,4 +59,8 @@
   (setq helm-swoop-split-with-multiple-windows nil)
   ;; ウィンドウ分割方向 'split-window-vertically or 'split-window-horizontally
   (setq helm-swoop-split-direction 'split-window-vertically)
+  )
+
+(use-package helm-ag
+  :config
   )
