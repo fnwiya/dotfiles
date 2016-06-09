@@ -9,7 +9,7 @@
 (define-key evil-normal-state-map (kbd "gk") 'backward-sexp) ; C-M-b
 (define-key evil-normal-state-map (kbd "gd") 'kill-sexp)     ; C-M-k
 (define-key evil-normal-state-map (kbd "g@") 'mark-sexp)     ; C-M-@
-(define-key evil-normal-state-map (kbd "gf") nil)
+(define-key evil-normal-state-map (kbd "gf") nil)            ; set as a prefix-key
 (define-key evil-normal-state-map (kbd "gfa") 'beginning-of-defun) ; C-M-a
 (define-key evil-normal-state-map (kbd "gfe") 'end-of-defun)       ; C-M-e
 (define-key evil-normal-state-map (kbd "gf@") 'mark-defun)         ; C-M-h
