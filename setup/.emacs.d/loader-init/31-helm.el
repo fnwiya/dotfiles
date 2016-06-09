@@ -30,6 +30,21 @@
 
 (use-package helm-projectile)
 
+(use-package helm-swoop
+  :config
+  (global-set-key (kbd "M-i") 'helm-swoop)
+  (global-set-key (kbd "M-I") 'helm-swoop-back-to-last-point)
+  (global-set-key (kbd "C-c M-i") 'helm-multi-swoop)
+  (global-set-key (kbd "C-x M-i") 'helm-multi-swoop-all)
+  (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
+  (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
+  (setq helm-multi-swoop-edit-save t)
+  (setq helm-swoop-split-with-multiple-windows nil) ; tの場合はウィンドウ内に分割、nilなら別のウィンドウを使用
+  (setq helm-swoop-split-direction 'split-window-vertically) ; ウィンドウ分割方向 'split-window-vertically or 'split-window-horizontally
+  )
+
+(use-package helm-ag)
+
 (use-package helm-ghq)
 
 (use-package helm-gtags
@@ -52,19 +67,3 @@
   (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
   )
 
-(use-package helm-swoop
-  :config
-  (global-set-key (kbd "M-i") 'helm-swoop)
-  (global-set-key (kbd "M-I") 'helm-swoop-back-to-last-point)
-  (global-set-key (kbd "C-c M-i") 'helm-multi-swoop)
-  (global-set-key (kbd "C-x M-i") 'helm-multi-swoop-all)
-  (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
-  (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
-  (setq helm-multi-swoop-edit-save t)
-  (setq helm-swoop-split-with-multiple-windows nil) ; tの場合はウィンドウ内に分割、nilなら別のウィンドウを使用
-  (setq helm-swoop-split-direction 'split-window-vertically) ; ウィンドウ分割方向 'split-window-vertically or 'split-window-horizontally
-  )
-
-(use-package helm-ag
-  :config
-  )

@@ -64,6 +64,7 @@
     flx-ido
     flycheck
     flyspell
+    function-args
     gist
     go-mode
     go-eldoc
