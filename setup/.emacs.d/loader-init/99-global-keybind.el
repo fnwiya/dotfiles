@@ -3,9 +3,8 @@
 (keyboard-translate ?\C-h ?\C-?)
 
 (bind-key "C-/" 'undo)
-(bind-key "M-w" 'easy-kill)
 ;; easy-kill cheatsheet
-;; M-w   行
+(bind-key "M-w" 'easy-kill) ; 行
 ;; M-w w 単語
 ;; M-w s S式
 ;; M-w l リスト

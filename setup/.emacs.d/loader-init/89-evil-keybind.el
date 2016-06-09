@@ -6,12 +6,12 @@
 (define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-isearch-map    [escape] 'minibuffer-keyboard-quit)
 ;; (define-key evil-normal-state-map "gj" 'forward-sexp) ; C-M-f
-;; (define-key evil-normal-state-map "gk" 'backward-sexp)
-;; (define-key evil-normal-state-map "gk" 'kill-sexp)
-;; (define-key evil-normal-state-map "g@" 'mark-sexp)
-;; (define-key evil-normal-state-map "g@" 'beginning-of-defun)
-;; (define-key evil-normal-state-map "g@" 'end-of-defun)
-;; (define-key evil-normal-state-map "g@" 'mark-defun)
+;; (define-key evil-normal-state-map "gk" 'backward-sexp) C-M-b
+;; (define-key evil-normal-state-map "gk" 'kill-sexp) C-M-k
+;; (define-key evil-normal-state-map "g@" 'mark-sexp) C-M-@
+;; (define-key evil-normal-state-map "g@" 'beginning-of-defun) ; C-M-a
+;; (define-key evil-normal-state-map "g@" 'end-of-defun) C-M-e
+;; (define-key evil-normal-state-map "g@" 'mark-defun) ; C-M-h
 (define-key evil-normal-state-map "\C-a" 'seq-home)
 (define-key evil-insert-state-map "\C-a" 'seq-home)
 (define-key evil-visual-state-map "\C-a" 'seq-home)
