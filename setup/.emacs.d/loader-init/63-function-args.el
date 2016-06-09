@@ -1,1 +1,3 @@
-(use-package function-args)
+(use-package function-args
+  :config
+  (fa-config-default))

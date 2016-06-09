@@ -5,13 +5,13 @@
 (define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
 (define-key minibuffer-local-isearch-map    [escape] 'minibuffer-keyboard-quit)
-;; (define-key evil-normal-state-map "gj" 'forward-sexp) ; C-M-f
-;; (define-key evil-normal-state-map "gk" 'backward-sexp) C-M-b
-;; (define-key evil-normal-state-map "gk" 'kill-sexp) C-M-k
-;; (define-key evil-normal-state-map "g@" 'mark-sexp) C-M-@
-;; (define-key evil-normal-state-map "g@" 'beginning-of-defun) ; C-M-a
-;; (define-key evil-normal-state-map "g@" 'end-of-defun) C-M-e
-;; (define-key evil-normal-state-map "g@" 'mark-defun) ; C-M-h
+(define-key evil-normal-state-map (kbd "gj") 'forward-sexp) ; C-M-f
+(define-key evil-normal-state-map (kbd "gk") 'backward-sexp) C-M-b
+(define-key evil-normal-state-map (kbd "gk") 'kill-sexp) C-M-k
+(define-key evil-normal-state-map (kbd "g@") 'mark-sexp) C-M-@
+(define-key evil-normal-state-map (kbd "gfa") 'beginning-of-defun) ; C-M-a
+(define-key evil-normal-state-map (kbd "gfe") 'end-of-defun) C-M-e
+(define-key evil-normal-state-map (kbd "gf@") 'mark-defun) ; C-M-h
 (define-key evil-normal-state-map "\C-a" 'seq-home)
 (define-key evil-insert-state-map "\C-a" 'seq-home)
 (define-key evil-visual-state-map "\C-a" 'seq-home)
@@ -54,8 +54,8 @@
 (define-key evil-motion-state-map "gT" 'tabbar-backward-tab)    ; タブ
 (define-key evil-normal-state-map (kbd "j")  'evil-next-visual-line)     ; 物理行移動
 (define-key evil-normal-state-map (kbd "k")  'evil-previous-visual-line) ; 物理行移動
-(define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
-(define-key evil-normal-state-map (kbd "gk") 'evil-previous-line)
+;; (define-key evil-normal-state-map (kbd "gj") 'evil-next-line)
+;; (define-key evil-normal-state-map (kbd "gk") 'evil-previous-line)
 
 ;;ESCの割り当て
 (defun evil-escape-or-quit (&optional prompt)
