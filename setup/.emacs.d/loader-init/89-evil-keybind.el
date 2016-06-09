@@ -9,9 +9,10 @@
 (define-key evil-normal-state-map (kbd "gk") 'backward-sexp) ; C-M-b
 (define-key evil-normal-state-map (kbd "gd") 'kill-sexp)     ; C-M-k
 (define-key evil-normal-state-map (kbd "g@") 'mark-sexp)     ; C-M-@
-;; (define-key evil-normal-state-map (kbd "gfa") 'beginning-of-defun) ; C-M-a
-;; (define-key evil-normal-state-map (kbd "gfe") 'end-of-defun)       ; C-M-e
-;; (define-key evil-normal-state-map (kbd "gf@") 'mark-defun)         ; C-M-h
+(define-key evil-normal-state-map (kbd "gf") nil)
+(define-key evil-normal-state-map (kbd "gfa") 'beginning-of-defun) ; C-M-a
+(define-key evil-normal-state-map (kbd "gfe") 'end-of-defun)       ; C-M-e
+(define-key evil-normal-state-map (kbd "gf@") 'mark-defun)         ; C-M-h
 (define-key evil-normal-state-map "\C-a" 'seq-home)
 (define-key evil-insert-state-map "\C-a" 'seq-home)
 (define-key evil-visual-state-map "\C-a" 'seq-home)
