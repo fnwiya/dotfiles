@@ -32,33 +32,37 @@
 
 (use-package helm-ghq)
 
-(use-package helm-gtags)
-(defun helm-my-buffers ()
-  (interactive)
-  (let ((helm-ff-transformer-show-only-basename nil))
-    (helm-other-buffer '(helm-source-buffers-list
-                         helm-source-projectile-files-list
-                         helm-source-recentf
-                         helm-source-locate
-                         helm-source-ghq)
-                       "*helm-my-buffers*")))
-(define-key global-map (kbd "C-x m")   'helm-my-buffers)
+(use-package helm-gtags
+  :config
+  (add-hook 'c-mode-hook 'helm-gtags-mode)
+  (add-hook 'c++-mode-hook 'helm-gtags-mode)
+  (setq
+   helm-gtags-ignore-case t
+   helm-gtags-auto-update t
+   helm-gtags-use-input-at-cursor t
+   helm-gtags-pulse-at-cursor t
+   helm-gtags-prefix-key "\C-cg"
+   helm-gtags-suggested-key-mapping t
+   )
+  (define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
+  (define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
+  (define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
+  (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
+  (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
+  (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+  )
 
 (use-package helm-swoop
   :config
-  ;; キーバインド
   (global-set-key (kbd "M-i") 'helm-swoop)
   (global-set-key (kbd "M-I") 'helm-swoop-back-to-last-point)
   (global-set-key (kbd "C-c M-i") 'helm-multi-swoop)
   (global-set-key (kbd "C-x M-i") 'helm-multi-swoop-all)
   (define-key isearch-mode-map (kbd "M-i") 'helm-swoop-from-isearch)
   (define-key helm-swoop-map (kbd "M-i") 'helm-multi-swoop-all-from-helm-swoop)
-  ;; Save buffer when helm-multi-swoop-edit complete
   (setq helm-multi-swoop-edit-save t)
-  ;; 値がtの場合はウィンドウ内に分割、nilなら別のウィンドウを使用
-  (setq helm-swoop-split-with-multiple-windows nil)
-  ;; ウィンドウ分割方向 'split-window-vertically or 'split-window-horizontally
-  (setq helm-swoop-split-direction 'split-window-vertically)
+  (setq helm-swoop-split-with-multiple-windows nil) ; tの場合はウィンドウ内に分割、nilなら別のウィンドウを使用
+  (setq helm-swoop-split-direction 'split-window-vertically) ; ウィンドウ分割方向 'split-window-vertically or 'split-window-horizontally
   )
 
 (use-package helm-ag
