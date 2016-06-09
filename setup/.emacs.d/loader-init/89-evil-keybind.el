@@ -7,7 +7,7 @@
 (define-key minibuffer-local-isearch-map    [escape] 'minibuffer-keyboard-quit)
 (define-key evil-normal-state-map (kbd "gj") 'forward-sexp)  ; C-M-f
 (define-key evil-normal-state-map (kbd "gk") 'backward-sexp) ; C-M-b
-(define-key evil-normal-state-map (kbd "gk") 'kill-sexp)     ; C-M-k
+(define-key evil-normal-state-map (kbd "gd") 'kill-sexp)     ; C-M-k
 (define-key evil-normal-state-map (kbd "g@") 'mark-sexp)     ; C-M-@
 (define-key evil-normal-state-map (kbd "gfa") 'beginning-of-defun) ; C-M-a
 (define-key evil-normal-state-map (kbd "gfe") 'end-of-defun)       ; C-M-e
