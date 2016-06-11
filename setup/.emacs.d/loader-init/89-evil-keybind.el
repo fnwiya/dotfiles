@@ -65,8 +65,8 @@
    ((or (evil-normal-state-p) (evil-insert-state-p) (evil-visual-state-p)
         (evil-replace-state-p) (evil-visual-state-p)) [escape])
    (t (kbd "C-g"))))
-(define-key key-translation-map     (kbd "C-q") #'evil-escape-or-quit)
-(define-key evil-operator-state-map (kbd "C-q") #'evil-escape-or-quit)
+;; (define-key key-translation-map     (kbd "C-q") #'evil-escape-or-quit)
+;; (define-key evil-operator-state-map (kbd "C-q") #'evil-escape-or-quit)
 
 (add-hook 'term-mode-hook
           (lambda ()
