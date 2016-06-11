@@ -68,3 +68,9 @@
   (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
   )
 
+(use-package helm-make
+  :config
+  (eval-after-load 'makefile-mode
+    '(define-key makefile-mode-map (kbd "M-\"") 'helm-make-projectile))
+  (define-key c-mode-map (kbd "M-\"") 'helm-make-projectile)
+  (define-key c++-mode-map (kbd "M-\"") 'helm-make-projectile))

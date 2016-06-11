@@ -44,6 +44,7 @@
     clj-refactor
     clojure-mode
     company
+    company-c-headers
     codic
     corral
     cperl-mode
@@ -77,6 +78,7 @@
     helm-ag
     helm-ghq
     helm-gtags
+    helm-make
     helm-projectile
     helm-swoop
     highlight-symbol

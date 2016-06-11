@@ -27,3 +27,5 @@
   (add-hook 'c-mode-hook 'c-turn-on-eldoc-mode)
   (add-hook 'c++-mode-hook 'c-turn-on-eldoc-mode)
   (setq c-eldoc-buffer-regenerate-time 60))
+
+(use-package company-c-headers)
