@@ -1,3 +1,4 @@
+(define-key evil-motion-state-map "\C-v" 'evil-visual-block)
 (define-key evil-normal-state-map           [escape] 'keyboard-quit)
 (define-key evil-visual-state-map           [escape] 'keyboard-quit)
 (define-key minibuffer-local-map            [escape] 'minibuffer-keyboard-quit)
