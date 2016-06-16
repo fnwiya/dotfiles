@@ -3,8 +3,11 @@
 "-------------------------------------------------------------------------------
 syntax on
 set t_Co=256
-colorscheme lucius
+"colorscheme lucius
+"colorscheme base16ocean
+syntax enable
 set background=dark
+colorscheme solarized
 set nowrap                        "(no)ウィンドウの幅を超える行の折り返し設定
 set display=lastline              "一行が長くても表示
 set number                        "行番号表示
