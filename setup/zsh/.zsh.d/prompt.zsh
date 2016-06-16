@@ -25,9 +25,10 @@ update_prompt(){
     local separator_length=$[bar_without_right_length - bar_left_length]
     local separator="${(l:${separator_length}:: :)}"
     bar_right="${separator}${bar_right}"
-    PROMPT="%F{green}${bar_left}${bar_right}%f"$'\n'"${prompt_left}"
+    PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})${bar_left}${bar_right}%f"$'\n'"${prompt_left}"
 }
 precmd_functions+=($precmd_functions update_prompt)
+
 
 ## vcs_info
 # http://qiita.com/mollifier/items/8d5a627d773758dd8078
