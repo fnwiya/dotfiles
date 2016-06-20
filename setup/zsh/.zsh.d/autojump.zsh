@@ -1,4 +1,3 @@
-
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
