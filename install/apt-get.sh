@@ -13,6 +13,7 @@ sudo apt-get -y install fish
 sudo apt-get -y install gcc
 sudo apt-get -y install git
 sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get -y update
 sudo apt-get -y install guake
 sudo apt-get -y install global
 sudo apt-get -y install golang
@@ -28,6 +29,8 @@ sudo apt-get -y install pgadmin3
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install sqlite3
 sudo apt-get -y install tmux
+sudo add-apt-repository ppa:tortoisehg-ppa/releases
+sudo apt-get -y update
 sudo apt-get -y install tortoisehg
 sudo apt-get -y install tree
 sudo apt-get -y install wget
