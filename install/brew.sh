@@ -59,6 +59,7 @@ export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib
 brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
+brew install mas
 brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
 brew install sbcl
@@ -72,12 +73,12 @@ brew install zsh
 
 brew cask install alfred
 brew cask install dropbox
-# brew cask install evernote
+brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install iterm2
-# brew cask install the-unarchiver
+brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vagrant
 brew cask install filezilla
@@ -85,3 +86,7 @@ brew cask install filezilla
 brew cask cleanup
 
 brew cleanup
+
+mas install 803453959 # Slack
+mas install 497799835 # Xcode
+man install 409183694 # Keynote
