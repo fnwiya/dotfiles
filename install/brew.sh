@@ -82,4 +82,6 @@ brew cask install virtualbox
 brew cask install vagrant
 brew cask install filezilla
 
+brew cask cleanup
+
 brew cleanup
