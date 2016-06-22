@@ -28,6 +28,7 @@ sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 sudo apt-get -y install pgadmin3
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install sqlite3
+sudo apt-get -y install ssh
 sudo apt-get -y install tmux
 sudo add-apt-repository ppa:tortoisehg-ppa/releases
 sudo apt-get -y update
