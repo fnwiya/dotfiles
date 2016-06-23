@@ -12,11 +12,17 @@ alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
 alias em='emacsclient -n'
 alias ekill='emacsclient -e "(kill-emacs)"'
 alias gitupd='git add --all . && git commit -m "update" && git push'
-alias wether='curl "http://wttr.in/Nakano-Ku"'
+function wether () {
+    Area=$1
+    if [  "$1" = "" ]; then
+        Area="Shinjuku"
+    fi
+    curl "http://wttr.in/${Area}-Ku"
+}
 
 # OS 別の設定
 case ${OSTYPE} in
-    darwin*)
+	darwin*)
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
