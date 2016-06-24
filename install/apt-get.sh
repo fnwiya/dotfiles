@@ -11,9 +11,12 @@ sudo apt-get -y install elixir
 sudo apt-get -y install emacs
 sudo apt-get -y install fish
 sudo apt-get -y install gcc
-sudo apt-get -y install git
-sudo add-apt-repository ppa:git-core/ppa
+sudo add-apt-repository -y ppa:git-core/ppa
 sudo apt-get -y update
+sudo apt-get -y install git
+sudo add-apt-repository -y ppa:mattn/growl-for-linux
+sudo apt-get -y update
+sudo apt-get -y install growl-for-linux
 sudo apt-get -y install guake
 sudo apt-get -y install global
 sudo apt-get -y install golang
@@ -31,7 +34,7 @@ sudo apt-get -y install sqlite3
 sudo apt-get -y install ssh
 sudo apt-get -y install thg
 sudo apt-get -y install tmux
-sudo add-apt-repository ppa:tortoisehg-ppa/releases
+sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
 sudo apt-get -y update
 sudo apt-get -y install tortoisehg
 sudo apt-get -y install tree
