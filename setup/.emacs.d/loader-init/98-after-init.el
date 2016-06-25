@@ -17,26 +17,15 @@
                  (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y autoremove")))))))
  )
 
-(defun max-window ()
+(defun my-fullscreen ()
   (interactive)
-  (lambda()
-  (set-frame-position (selected-frame) 0 0)
-  (set-frame-parameter nil 'fullscreen 'maximized)))
-
-(defun half-window ()
-  (interactive)
-  (lambda()
-    (set-frame-position (selected-frame) 0 0)
+  (let ((fullscreen (frame-parameter (selected-frame) 'fullscreen)))
     (cond
-     ((or (eq window-system 'ns) (eq window-system 'mac))
-      (set-frame-size (selected-frame) 91 47))
-     ((eq system-type 'gnu/linux)
-      (cond
-       ((equal system-name-simple "forcia-VirtualBox")
-        (set-frame-size (selected-frame) 101 50)))))))
-
-
-
+     ((null fullscreen)
+      (set-frame-parameter (selected-frame) 'fullscreen 'maximized))
+     (t
+      (set-frame-parameter (selected-frame) 'fullscreen 'nil))))
+  (redisplay))
 
 (when (window-system)
   (add-hook 'after-init-hook
