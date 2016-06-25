@@ -17,16 +17,6 @@
                  (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y autoremove")))))))
  )
 
-(defun my-fullscreen ()
-  (interactive)
-  (let ((fullscreen (frame-parameter (selected-frame) 'fullscreen)))
-    (cond
-     ((null fullscreen)
-      (set-frame-parameter (selected-frame) 'fullscreen 'maximized))
-     (t
-      (set-frame-parameter (selected-frame) 'fullscreen 'nil))))
-  (redisplay))
-
 (when (window-system)
   (add-hook 'after-init-hook
             (lambda()
