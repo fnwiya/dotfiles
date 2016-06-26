@@ -1,21 +1,17 @@
-(cond
- ((or (eq window-system 'ns) (eq window-system 'mac))
-  (add-hook 'after-init-hook
-            (lambda()
-              (set-frame-position (selected-frame) 0 0)
+(add-hook 'after-init-hook
+          (lambda()
+            (set-frame-position (selected-frame) 0 0)
+            (cond
+             ((or (eq window-system 'ns) (eq window-system 'mac))
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
-                (async-shell-command "brew update && brew upgrade --all && brew doctor")))))
- ((eq system-type 'gnu/linux)
-   (cond
-     ((equal system-name-simple "forcia-VirtualBox")
-       (add-hook 'after-init-hook
-            (lambda()
-              (set-frame-position (selected-frame) 0 0)
-              (set-frame-size (selected-frame) 101 50)
-              (save-window-excursion
-                 (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y autoremove")))))))
- )
+                (async-shell-command "brew update && brew upgrade --all && brew doctor")))
+             ((eq system-type 'gnu/linux)
+              (cond
+               ((equal system-name-simple "forcia-VirtualBox")
+                (set-frame-size (selected-frame) 101 50)
+                (save-window-excursion
+                  (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y autoremove"))))))))
 
 (when (window-system)
   (add-hook 'after-init-hook
