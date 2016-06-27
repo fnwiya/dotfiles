@@ -22,7 +22,7 @@ function wether () {
 
 # OS 別の設定
 case ${OSTYPE} in
-	darwin*)
+    darwin*)
         #Mac用の設定
         export CLICOLOR=1
         alias ls='ls -A -G -F'
