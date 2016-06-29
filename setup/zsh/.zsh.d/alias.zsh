@@ -40,6 +40,7 @@ case ${OSTYPE} in
         alias webstop='sudo /home/forcia/bin/restartWeb.sh stop'
         alias webrestart='sudo /home/forcia/bin/restartWeb.sh stop && sudo /home/forcia/bin/restartWeb.sh start'
         alias pbcopy='xsel --clipboard --input'
+        alias open='xdg-open'
         ;;
 esac
 evalenv # call at login
