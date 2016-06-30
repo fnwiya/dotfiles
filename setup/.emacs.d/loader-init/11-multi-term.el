@@ -13,6 +13,7 @@
                (define-key term-raw-map (kbd "C-j") 'term-send-raw)
                (define-key term-raw-map (kbd "C-k") 'term-send-raw)
                (define-key term-raw-map (kbd "TAB") 'term-send-raw)
+               (define-key term-raw-map (kbd "C-o") 'term-send-raw)
                (setq next-screen-context-lines 0)
                ))
   (defadvice linum-on(around my-linum-term-on() activate)

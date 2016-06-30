@@ -28,7 +28,7 @@ if [ -x "`which peco`" ]; then
         zstyle ':completion:*' recent-dirs-insert both
     fi
     zle -N peco-select-history
-    bindkey '^r' peco-select-history
+    bindkey '^o^r' peco-select-history
     alias phist='peco-select-history'
 
     function peco-cdr () {
@@ -40,7 +40,7 @@ if [ -x "`which peco`" ]; then
         zle clear-screen
     }
     zle -N peco-cdr
-    bindkey '^xd' peco-cdr
+    bindkey '^o^d' peco-cdr
     alias pcd='peco-cdr'
 
     function peco-kill-process () {
@@ -48,10 +48,10 @@ if [ -x "`which peco`" ]; then
         zle clear-screen
     }
     zle -N peco-kill-process
-    bindkey '^xk' peco-kill-process
+    bindkey '^o^k' peco-kill-process
     alias pck='peco-kill-process'
 
-    function peco-src () {
+    function peco-ghq-src () {
         local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
         if [ -n "$selected_dir" ]; then
             BUFFER="cd ${selected_dir}"
@@ -59,7 +59,7 @@ if [ -x "`which peco`" ]; then
         fi
         zle clear-screen
     }
-    zle -N peco-src
-    bindkey '^]' peco-src
-    alias pcghq='peco-src'
+    zle -N peco-ghq-src
+    bindkey '^o^g' peco-ghq-src
+    alias pcghq='peco-ghq-src'
 fi
