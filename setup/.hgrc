@@ -1,10 +1,12 @@
 [extensions]
 fetch =
 mq =
-# お互いが編集していない場合ならFast Forwardで不要なマージを減らす
+color =
+graphlog =
 rebase =
-# subversion用
 hgsubversion = /data/mercurial-repos/hgsubversion/hgsubversion
 [ui]
 username = kohno
 ignore = ~/.hgignore_global
+
+# %include ~/Dropbox/config-file/.hgrc
