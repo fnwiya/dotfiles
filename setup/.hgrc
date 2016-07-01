@@ -1,12 +1,18 @@
-[extensions]
-fetch =
-mq =
-color =
-graphlog =
-rebase =
-hgsubversion = /data/mercurial-repos/hgsubversion/hgsubversion
 [ui]
 username = kohno
 ignore = ~/.hgignore_global
+[extensions]
+# http://labs.timedia.co.jp/2011/03/mercurial-extensions-we-should-setup-for-gituser.html
+fetch =
+rebase =
+mq =
+color =
+graphlog =
+transplant =
+record =
+# hgsubversion = /data/mercurial-repos/hgsubversion/hgsubversion
+[alias]
+l = log
+gl = glog
 
 # %include ~/Dropbox/config-file/.hgrc
