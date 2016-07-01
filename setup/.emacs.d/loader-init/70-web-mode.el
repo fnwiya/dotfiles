@@ -1,7 +1,6 @@
 (use-package web-mode
   :mode
   (("\\.html?\\'" . web-mode)
-   ("\\.css\\'" . web-mode)
    ("\\.php\\'" . web-mode)
    ("\\.hbs\\'" . web-mode)
    ("\\.jsp\\'" . web-mode)
