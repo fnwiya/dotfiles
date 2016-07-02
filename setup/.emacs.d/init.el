@@ -32,6 +32,7 @@
   '(
     ace-link
     ag
+    alchemist
     anzu
     apache-mode
     auto-async-byte-compile
@@ -52,6 +53,7 @@
     dash
     easy-kill
     el-get
+    elixir-mode
     eproject
     ess
     exec-path-from-shell
