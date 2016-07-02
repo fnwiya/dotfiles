@@ -72,6 +72,7 @@ brew install z
 brew install zsh
 
 brew cask install alfred
+brew cask install brave
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
