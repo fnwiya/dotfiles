@@ -28,6 +28,7 @@ if [ -x "`which peco`" ]; then
         zstyle ':completion:*' recent-dirs-insert both
     fi
     zle -N peco-select-history
+    bindkey '^r' peco-select-history
     bindkey '^o^r' peco-select-history
     alias phist='peco-select-history'
 
