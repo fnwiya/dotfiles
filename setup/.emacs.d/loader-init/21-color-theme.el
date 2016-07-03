@@ -2,5 +2,5 @@
   (setq custom-theme-directory "~/.emacs.d/themes/")
   (load-theme 'fnwiya t)
   (enable-theme 'fnwiya))
-;(unless (window-system)
-;  (load-theme 'misterioso t))
+(unless (window-system)
+  (load-theme 'misterioso t))
