@@ -23,6 +23,14 @@ function wether () {
     fi
     curl "http://wttr.in/${Area}-Ku"
 }
+function checkMW () {
+    ps aux | grep  apache| grep -v grep
+    ps aux | grep  tomcat | grep -v grep
+    ps aux | grep  postgres | grep -v grep
+    lsof -i:80
+    lsof -i:8080
+    lsof -i:5432
+}
 
 # OS 別の設定
 case ${OSTYPE} in
