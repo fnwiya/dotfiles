@@ -28,11 +28,11 @@ function checkmw () {
     ps aux | grep  tomcat | grep -v grep
     ps aux | grep  postgres | grep -v grep
     echo "port:80"
-    lsof -i:80
+    sudo lsof -i:80
     echo "port:8080"
-    lsof -i:8080
+    sudo lsof -i:8080
     echo "port:5432"
-    lsof -i:5432
+    sudo lsof -i:5432
 }
 
 # OS 別の設定
