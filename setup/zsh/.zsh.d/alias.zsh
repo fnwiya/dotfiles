@@ -23,12 +23,15 @@ function wether () {
     fi
     curl "http://wttr.in/${Area}-Ku"
 }
-function checkMW () {
+function checkmw () {
     ps aux | grep  apache| grep -v grep
     ps aux | grep  tomcat | grep -v grep
     ps aux | grep  postgres | grep -v grep
+    echo "port:80"
     lsof -i:80
+    echo "port:8080"
     lsof -i:8080
+    echo "port:5432"
     lsof -i:5432
 }
 
