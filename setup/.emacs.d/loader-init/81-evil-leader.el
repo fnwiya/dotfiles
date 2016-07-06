@@ -17,6 +17,7 @@
     "s" 'isearch-forward
     "t" 'other-window
     "w" 'save-buffer
+    "v" 'evil-visual-block
     "x" 'helm-M-x
     "h" 'seq-home
     "l" 'seq-end
