@@ -10,5 +10,6 @@ sudo npm install -g express-generator
 sudo npm install -g jasmine
 sudo npm install -g karma
 sudo npm install -g mocha
+sudo npm install -g nodemon
 sudo npm install -g tern
 sudo npm install -g webpack
