@@ -29,7 +29,6 @@ if [ -x "`which peco`" ]; then
     fi
     zle -N peco-select-history
     bindkey '^r' peco-select-history
-    bindkey '^o^r' peco-select-history
     alias phist='peco-select-history'
 
     function peco-cdr () {
@@ -41,7 +40,7 @@ if [ -x "`which peco`" ]; then
         zle clear-screen
     }
     zle -N peco-cdr
-    bindkey '^o^d' peco-cdr
+    bindkey '^o^r' peco-cdr
     alias pcd='peco-cdr'
 
     function peco-kill-process () {
