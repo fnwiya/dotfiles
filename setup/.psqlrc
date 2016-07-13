@@ -4,9 +4,6 @@
 \x auto
 \timing on
 \set COMP_KEYWORD_CASE upper
--- 詳しいエラー表示
 \set VERBOSITY verbose
--- データベースごとにヒストリファイルを作る
 \set HISTFILE ~/.psql_history- :DBNAME
--- 1行で複数回コマンドが実行されたら、1回だけヒストリに保存
 \set HISTCONTROL ignoredups

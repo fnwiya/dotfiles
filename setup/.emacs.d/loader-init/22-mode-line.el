@@ -30,6 +30,7 @@
    ;; 上記文字列の後に、「-unix」、「-dos」、「-mac」を付けると、
    ;; それぞれ改行コードを「UNIX 系 LF」、「Windows 系の CR+LF」、
    ;; 「Mac 系の CR」に設定することができる。
+   ;; 文字コードの変更はset-buffer-file-coding-system(C-x RET f)
    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    ;; evil-state
    (:eval
