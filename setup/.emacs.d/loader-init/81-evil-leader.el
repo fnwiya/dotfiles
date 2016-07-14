@@ -21,4 +21,5 @@
     "x" 'helm-M-x
     "h" 'seq-home
     "l" 'seq-end
+    "n" 'evil-goto-line
     ))
