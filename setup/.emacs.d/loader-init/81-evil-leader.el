@@ -22,4 +22,5 @@
     "h" 'seq-home
     "l" 'seq-end
     "n" 'goto-line
+    ";" 'comment-dwim
     ))

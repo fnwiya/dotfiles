@@ -3,4 +3,5 @@
   (load-theme 'fnwiya t)
   (enable-theme 'fnwiya))
 (unless (window-system)
-  (load-theme 'misterioso t))
+  ;; (load-theme 'misterioso t)
+  )
