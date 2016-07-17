@@ -13,7 +13,6 @@
 ;; M-w D 関数名
 ;; M-w e 行
 (bind-key "C-c C-s" 'shell-command)
-(bind-key "C-t" 'other-window)
 (bind-key "M-@" 'toggle-input-method)
 (bind-key "C-c ;" 'comment-or-uncomment-region)
 (setq comment-style 'multi-line)
