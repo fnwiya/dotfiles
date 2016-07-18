@@ -60,9 +60,6 @@
 ;; 複数ウィンドウを禁止する
 (setq ns-pop-up-frames nil)
 
-;; シフト＋矢印で範囲選択
-(setq pc-select-selection-keys-only t)
-
 ;; C-k １回で行全体を削除する
 (setq kill-whole-line t)
 
