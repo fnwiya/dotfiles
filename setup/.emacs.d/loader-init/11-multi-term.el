@@ -20,6 +20,7 @@
   (defadvice linum-on(around my-linum-term-on() activate)
   (unless (eq major-mode 'term-mode) ad-do-it))
   ;; emacs に認識させたいキー
+  (add-to-list 'term-unbind-key-list "C-x")
   (add-to-list 'term-unbind-key-list "C-w")
   (add-to-list 'term-unbind-key-list "M-x")
   (add-to-list 'term-unbind-key-list "C-f")
