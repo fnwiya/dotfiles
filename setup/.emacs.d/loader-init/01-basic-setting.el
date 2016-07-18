@@ -68,3 +68,6 @@
 
 ;; C-c c で compile コマンドを呼び出す
 (define-key mode-specific-map "c" 'compile)
+
+;; Macのoptionをメタキーにする
+(setq mac-option-modifier 'meta)
