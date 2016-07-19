@@ -35,7 +35,7 @@ function checkmw () {
     sudo lsof -i:5432
 }
 if [ $SHLVL = 1 ]; then
-    alias tmux="tmux attach || tmux new-session \; source-file ~/.tmux/session"
+    alias tmuxnew="tmux attach || tmux new-session \; source-file ~/.tmux/session"
 fi
 # OS 別の設定
 case ${OSTYPE} in
