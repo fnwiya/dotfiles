@@ -34,7 +34,9 @@ function checkmw () {
     echo "port:5432"
     sudo lsof -i:5432
 }
-
+if [ $SHLVL = 1 ]; then
+    alias tmux="tmux attach || tmux new-session \; source-file ~/.tmux/session"
+fi
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
