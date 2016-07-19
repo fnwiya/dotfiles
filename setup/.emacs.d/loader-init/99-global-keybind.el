@@ -2,6 +2,7 @@
 
 (keyboard-translate ?\C-h ?\C-?)
 
+(bind-key "C-w" nil)
 (bind-key "C-w C-w" 'other-window)
 (bind-key "C-/" 'undo)
 ;; easy-kill cheatsheet
