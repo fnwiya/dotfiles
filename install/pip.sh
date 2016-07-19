@@ -1,7 +1,7 @@
 #!/bin/bash
 if test ! $(which pip)
 then
-    curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
+    curl -kL https://bootstrap.pypa.io/get-pip.py | python
 fi
 sudo pip install -U pip
 sudo pip install ansible
@@ -10,6 +10,7 @@ sudo pip install django
 sudo pip install elpy
 sudo pip install numpy
 sudo pip install pandas
+sudo pip install pgcli
 sudo pip install pip-tools
 sudo pip install scipy
 sudo pip install tweepy
