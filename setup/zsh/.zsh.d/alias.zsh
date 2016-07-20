@@ -37,6 +37,7 @@ function checkmw () {
 if [ $SHLVL = 1 ]; then
     alias tmuxnew="tmux attach || tmux new-session \; source-file ~/.tmux/session"
 fi
+alias catalina='less /usr/local/tomcat/logs/catalina.out'
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
