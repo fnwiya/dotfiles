@@ -3,6 +3,7 @@
             (set-frame-position (selected-frame) 0 0)
             (cond
              ((or (eq window-system 'ns) (eq window-system 'mac))
+              ;; MacBook Air (11-inch, Mid 2013)
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
                 (async-shell-command "brew update && brew upgrade --all && brew doctor")))
