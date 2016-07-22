@@ -18,6 +18,7 @@
   (push '("*Google Translate*" :height 20) popwin:special-display-config)
   (push '("*Compile-Log*" :height 20 :noselect t) popwin:special-display-config)
   (push '("*auto-async-byte-compile*" :height 20) popwin:special-display-config)
+  (push '("*term<2>*" :height 20) popwin:special-display-config)
   (push '("*Async Shell Command*") popwin:special-display-config)
   (push '("*Kill Ring*") popwin:special-display-config)
   (push '("*popwin-dummy*") popwin:special-display-config)
