@@ -124,6 +124,7 @@
     ruby-end
     saveplace
     sequential-command
+    shell-pop
     simple-httpd
     slime
     smartrep
