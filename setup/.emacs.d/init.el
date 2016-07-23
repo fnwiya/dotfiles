@@ -132,6 +132,7 @@
     smooth-scroll
     sql-indent
     sqlup-mode
+    sudo-edit
     swiper
     tabbar
     tern
