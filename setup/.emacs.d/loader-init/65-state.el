@@ -2,7 +2,7 @@
   :config
 ;;; stateのプレフィクスキーをC-M-sにする
 ;;; これはstate.elが読み込まれる/state-global-modeを有効にする前に設定
-  (setq state-keymap-prefix (kbd "C-M-s"))
+  (setq state-keymap-prefix (kbd "C-c s"))
 ;;; マイナーモードを有効にする
   (state-global-mode 1)
 
