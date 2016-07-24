@@ -132,6 +132,7 @@
     smooth-scroll
     sql-indent
     sqlup-mode
+    state
     sudo-edit
     swiper
     tabbar
