@@ -12,7 +12,7 @@
    '(shell-pop-window-position "bottom"))
   (defun emacs-init-pop ()
     (interactive)
-    (cd "~/.emacs.d/init.el")
+    (cd "~/.emacs.d")
     (shell-pop)
   )
   )
