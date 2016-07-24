@@ -20,7 +20,7 @@
               (setq w (selected-window))
               (setq w2 (split-window w (- (window-height w) 8)))
               (select-window w2)
-              (multi-term)
+              ;; (multi-term)
               (select-window w)
               (recentf-open-files))))
 (unless (window-system)
