@@ -6,13 +6,8 @@
     ;; Your init file should contain only one such instance.
     ;; If there is more than one, they won't work right.
    '(shell-pop-shell-type (quote ("ansi-term" " *shell-pop-ansi-term*" (lambda nil (ansi-term shell-pop-term-shell)))))
-   '(shell-pop-term-shell "/usr/bin/zsh")
+   '(shell-pop-term-shell "/bin/zsh")
    '(shell-pop-universal-key "C-c C-p")
    '(shell-pop-window-height 30)
    '(shell-pop-window-position "bottom"))
-  (defun emacs-init-pop ()
-    (interactive)
-    (cd "~/.emacs.d")
-    (shell-pop)
-  )
   )
