@@ -33,3 +33,21 @@
   (push '(slime-repl-mode) popwin:special-display-config)
   (push '(slime-connection-list-mode) popwin:special-display-config)
   )
+(when (featurep 'popwin)
+  (push '("*eshell*" :height 0.5) popwin:special-display-config)
+
+  (defun eshell-pop (universal-argument)
+    "open eshell window using popwin-elf"
+    (interactive "P")
+    (let* ((eshell-buffer-name "*eshell*")
+       (eshell-buffer (get-buffer eshell-buffer-name))
+       (file-name (buffer-file-name (current-buffer)))
+       (current-directory (with-current-buffer (current-buffer) default-directory)))
+      (if eshell-buffer
+      (popwin:display-buffer eshell-buffer)
+    (ansi-term))
+      (when (and universal-argument file-name)
+    (eshell-kill-input)
+    (insert (concat "cd " current-directory))
+    (eshell-send-input)
+    (end-of-buffer)))))
