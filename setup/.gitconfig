@@ -11,8 +11,8 @@
     interactive = auto
     grep        = auto
 [user]
-    name  = fnwiya
-    email = fnwiya@gmail.com
+    name  = fumiya_kohno
+    email = fumiya_kohno@forcia.com 
 [push]
     default = simple
 [ghq]
