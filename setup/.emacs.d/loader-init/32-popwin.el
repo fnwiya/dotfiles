@@ -45,7 +45,7 @@
        (current-directory (with-current-buffer (current-buffer) default-directory)))
       (if eshell-buffer
       (popwin:display-buffer eshell-buffer)
-    (ansi-term))
+    (eshell))
       (when (and universal-argument file-name)
     (eshell-kill-input)
     (insert (concat "cd " current-directory))
