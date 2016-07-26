@@ -23,4 +23,5 @@
     "l" 'seq-end
     "n" 'goto-line
     ";" 'comment-dwim
+    "p" 'helm-show-kill-ring
     ))
