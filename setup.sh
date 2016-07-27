@@ -13,6 +13,7 @@ ln -sf ~/dotfiles/setup/bash/.bashrc ~
 ln -sf ~/dotfiles/setup/bash/.bash_profile ~
 mkdir -p ~/.lein
 ln -sf ~/dotfiles/setup/lein/profiles.clj ~/.lein/profiles.clj
+ln -sf ~/dotfiles/setup/linter/.eslintrc ~
 ln -sf ~/dotfiles/setup/tmux/.tmux.conf ~
 ln -sf ~/dotfiles/setup/tmux/.tmux ~
 ln -sf ~/dotfiles/setup/vim/.vimrc ~
