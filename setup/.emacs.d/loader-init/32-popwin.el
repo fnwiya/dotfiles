@@ -13,6 +13,7 @@
   (push '("*magit-diff*" :height 20) popwin:special-display-config)
   (push '("*Help*" :height 20) popwin:special-display-config)
   (push '("*Backtrace*" :height 20) popwin:special-display-config)
+  (push '("*Warnings*" :height 20) popwin:special-display-config)
   (push '("*twittering-edit*" :height 20 :regexp t) popwin:special-display-config)
   (push '("*grep*" :height 20) popwin:special-display-config)
   (push '("*Google Translate*" :height 20) popwin:special-display-config)
