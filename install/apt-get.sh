@@ -29,6 +29,9 @@ sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 sudo apt-get -y install pgadmin3
+sudo apt-add-repository -y ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-gtk-theme numix-icon-theme-circle
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install sqlite3
 sudo apt-get -y install ssh
@@ -38,6 +41,7 @@ sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
 sudo apt-get -y update
 sudo apt-get -y install tortoisehg
 sudo apt-get -y install tree
+sudo apt-get -y install unity-tweak-tool
 sudo apt-get -y install wget
 sudo apt-get -y install z
 sudo apt-get -y install zsh
