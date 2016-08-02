@@ -6,7 +6,8 @@
   (evil-leader/set-key
     ":" 'shell-command
     "=" 'indent-region
-    "a" 'mark-whole-buffer
+    "@" 'mark-whole-buffer
+    "a" 'ag-project
     "b" 'helm-buffers-list
     "e" 'helm-find-files
     "f" 'projectile-find-file
