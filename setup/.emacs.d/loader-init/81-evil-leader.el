@@ -7,7 +7,7 @@
     ":" 'shell-command
     "=" 'indent-region
     "@" 'mark-whole-buffer
-    "a" 'ag-project
+    "a" 'helm-projectile-ag
     "b" 'helm-buffers-list
     "e" 'helm-find-files
     "f" 'projectile-find-file
