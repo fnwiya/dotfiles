@@ -8,6 +8,7 @@
     "=" 'indent-region
     "@" 'mark-whole-buffer
     "a" 'helm-projectile-ag
+    "A" 'helm-ag
     "b" 'helm-buffers-list
     "e" 'helm-find-files
     "f" 'projectile-find-file
@@ -24,5 +25,5 @@
     "l" 'seq-end
     "n" 'goto-line
     ";" 'comment-dwim
-    "p" 'helm-show-kill-ring
+    "y" 'helm-show-kill-ring
     ))
