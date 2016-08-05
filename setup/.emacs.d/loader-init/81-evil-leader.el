@@ -16,7 +16,7 @@
     "k" 'kill-this-buffer
     "q" 'kill-this-buffer
     "r" 'helm-recentf
-    "s" 'isearch-forward
+    "s" 'shell-pop
     "t" 'other-window
     "w" 'save-buffer
     "v" 'evil-visual-block
