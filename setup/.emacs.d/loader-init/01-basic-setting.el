@@ -5,6 +5,7 @@
 ;; バックアップファイルを作らないようにする
 (setq make-backup-files nil)
 
+(setq abbrev-file-name "~/.emacs.d/cache/abbrev_defs")
 (setq auto-save-list-file-prefix "~/.emacs.d/cache/auto-save-list/")
 
 ;;; 終了時にオートセーブファイルを消す
