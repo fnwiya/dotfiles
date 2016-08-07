@@ -51,6 +51,7 @@
     cperl-mode
     csv-mode
     dash
+    dumb-jump
     easy-kill
     el-get
     elixir-mode
