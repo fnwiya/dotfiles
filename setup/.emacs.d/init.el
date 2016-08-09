@@ -86,6 +86,7 @@
     helm-swoop
     highlight-symbol
     hlinum
+    ht
     ido-ubiquitous
     ido-vertical-mode
     irony
@@ -101,6 +102,7 @@
     magit
     macrostep
     markdown-mode
+    marshal
     material-theme
     migemo
     mmm-mako
