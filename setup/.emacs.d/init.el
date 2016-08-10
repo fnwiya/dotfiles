@@ -107,6 +107,7 @@
     migemo
     mmm-mako
     mmm-mode
+    moz
     multi-term
     multiple-cursors
     neotree
