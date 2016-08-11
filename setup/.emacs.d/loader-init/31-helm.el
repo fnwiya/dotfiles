@@ -74,3 +74,25 @@
     '(define-key makefile-mode-map (kbd "M-\"") 'helm-make-projectile))
   (eval-after-load 'c++-mode
     '(define-key c++-mode-map (kbd "M-\"") 'helm-make-projectile)))
+
+;; http://rubikitch.com/2016/08/09/helm-swoop-helm-occur/
+;;; migemoなしでhelm-swoop
+(cl-defun helm-swoop-nomigemo (&key $query ($multiline current-prefix-arg))
+  (interactive)
+  (let (helm-migemo-mode)
+    (helm-swoop :$query $query :$multiline $multiline)))
+
+(defun isearch-forward-or-helm-swoop-or-helm-occur (use-helm-swoop)
+  (interactive "p")
+  (let (current-prefix-arg
+        (helm-swoop-pre-input-function 'ignore))
+    (call-interactively
+     (case use-helm-swoop
+       (1 'isearch-forward)
+       ;; C-u C-sを押した場合
+       ;; 1000000以上のバッファサイズならばhelm-occur、
+       ;; それ以下ならばhelm-swoop
+       (4 (if (< 1000000 (buffer-size)) 'helm-occur 'helm-swoop))
+       ;; C-u C-u C-sでmigemoなしのhelm-swoop
+       (16 'helm-swoop-nomigemo)))))
+(global-set-key (kbd "C-s") 'isearch-forward-or-helm-swoop-or-helm-occur)
