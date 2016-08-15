@@ -1,0 +1,11 @@
+- name: Check shell list
+  command: grep "/usr/local/bin/zsh" /etc/shells
+  register: zsh_defined
+  failed_when: False
+  changed_when: zsh_defined.rc==1
+- name: Add zsh to shell list
+  sudo: yes
+  shell: echo "/usr/local/bin/zsh" >> /etc/shells
+  when: zsh_defined|changed
+- name: Change default shell
+  command: chpass -s /usr/local/bin/zsh
