@@ -16,4 +16,9 @@ sudo npm install -g nodemon
 sudo npm install -g tern
 sudo npm install -g webpack
 
+# http://qiita.com/seibe/items/36cef7df85fe2cefa3ea
+sudo n stable
+sudo ln -sf /usr/local/bin/node /usr/bin/node
+sudo apt-get purge -y nodejs npm
+
 sudo npm cache clean -f

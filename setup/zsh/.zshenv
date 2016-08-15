@@ -7,11 +7,16 @@ path=(
    $path
 )
 
+if [ -e $HOME/bin/restartWeb.sh ] ; then
+  export PATH="$HOME/bin:$PATH"
+fi
+
 # for go lang
 if [ -x "`which go`" ]; then
   # export GOROOT=`which go`
   export GOPATH=$HOME/go
   export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+  export PATH="/usr/local/go/bin:$PATH"
 fi
 
 # rbenv

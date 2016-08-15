@@ -27,7 +27,6 @@ sudo apt-get -y install markdown
 sudo apt-get -y install multitail
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
-sudo update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10
 sudo apt-get -y install pgadmin3
 sudo apt-add-repository -y ppa:numix/ppa
 sudo apt-get update
