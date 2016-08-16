@@ -6,3 +6,5 @@ gsettings set org.gnome.nautilus.preferences always-use-location-entry true
 sudo update-alternatives --config editor
 # Ubuntu Web Appsを削除する
 sudo apt-get remove unity-webapps-common xul-ext-unity xul-ext-websites-integration
+# CapsをCtrlに
+setxkbmap -option ctrl:nocaps
