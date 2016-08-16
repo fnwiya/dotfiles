@@ -12,8 +12,7 @@ zplug "stedolan/jq", \
     as:command, \
     from:gh-r, \
     frozen:1
-zplug "mrowa44/emojify", \
-    as:command
+zplug "mrowa44/emojify", as:command
 zplug "peco/peco", \
     as:command, \
     from:gh-r, \
