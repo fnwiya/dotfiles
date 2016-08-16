@@ -2,7 +2,6 @@ if zplug check "mollifier/anyframe"; then
     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
     add-zsh-hook chpwd chpwd_recent_dirs
     # expressly specify to use peco
-    zstyle ":anyframe:selector:" use peco
     zstyle ":anyframe:selector:peco:" command 'peco'
     bindkey '^xb' anyframe-widget-cdr
     bindkey '^x^b' anyframe-widget-checkout-git-branch
@@ -19,6 +18,18 @@ if zplug check "mollifier/anyframe"; then
     bindkey '^xk' anyframe-widget-kill
     bindkey '^x^k' anyframe-widget-kill
 
-    bindkey '^xe' anyframe-widget-insert-git-branch
-    bindkey '^x^e' anyframe-widget-insert-git-branch
+    bindkey '^xi' anyframe-widget-insert-git-branch
+    bindkey '^x^i' anyframe-widget-insert-git-branch
+
+    bindkey '^xc' anyframe-widget-checkout-git-branch
+    bindkey '^x^c' anyframe-widget-checkout-git-branch
+
+    bindkey '^xf' anyframe-widget-insert-filename
+    bindkey '^x^f' anyframe-widget-insert-filename
+
+    bindkey '^xt' anyframe-widget-tmux-attach
+    bindkey '^x^t' anyframe-widget-tmux-attach
+
+    bindkey '^xs' anyframe-widget-select-widget
+    bindkey '^x^s' anyframe-widget-select-widget
 fi

@@ -7,9 +7,28 @@ source ~/.zplug/init.zsh
 
 # プラグイン定義
 zplug "zplug/zplug"
+
+zplug "stedolan/jq", \
+    as:command, \
+    from:gh-r, \
+    frozen:1
+zplug "mrowa44/emojify", \
+    as:command
+zplug "peco/peco", \
+    as:command, \
+    from:gh-r, \
+    frozen:1
+
+zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
-zplug 'zsh-users/zsh-syntax-highlighting'
+zplug "zsh-users/zsh-syntax-highlighting", \
+    nice:19
 zplug "mollifier/anyframe"
+zplug "b4b4r07/emoji-cli", \
+    if:'(( $+commands[jq] ))', \
+    on:"peco/peco"
+
+
 
 if ! zplug check --verbose; then
   printf 'Install? [y/N]: '
