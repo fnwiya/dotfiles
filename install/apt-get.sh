@@ -20,6 +20,7 @@ sudo apt-get -y install growl-for-linux
 sudo apt-get -y install guake
 sudo apt-get -y install global
 sudo apt-get -y install golang
+sudo apt-get -y install jq
 sudo apt-get -y install leiningen
 sudo apt-get -y install libpoppler-glib-dev # for https://github.com/politza/pdf-tools
 sudo apt-get -y install lv
