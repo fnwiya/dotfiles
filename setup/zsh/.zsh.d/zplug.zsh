@@ -1,13 +1,11 @@
 # http://blog.b4b4r07.com/entry/2015/12/13/174209
 # https://github.com/zplug/zplug
-if [ -x "`which zplug`" ] ;then
+if [ ! -d "${HOME}/.zplug" ] ;then
     curl -sL zplug.sh/installer | zsh
 fi
 source ~/.zplug/init.zsh
 
 # plugins list
-zplug "zplug/zplug"
-
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", \
