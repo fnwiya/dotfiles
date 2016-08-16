@@ -39,6 +39,7 @@ brew install caskroom/cask/brew-cask
 brew install cmigemo
 brew install curl
 brew install elixir
+brew install emojify
 brew install --cocoa emacs
 brew install gcc
 brew install gibo

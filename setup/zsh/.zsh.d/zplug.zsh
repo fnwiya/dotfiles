@@ -8,16 +8,6 @@ source ~/.zplug/init.zsh
 # plugins list
 zplug "zplug/zplug"
 
-zplug "stedolan/jq", \
-    as:command, \
-    from:gh-r, \
-    frozen:1
-zplug "mrowa44/emojify", as:command
-zplug "peco/peco", \
-    as:command, \
-    from:gh-r, \
-    frozen:1
-
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", \
