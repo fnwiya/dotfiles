@@ -76,4 +76,5 @@ echo "Configuring zsh as default shell"
 sudo which zsh >> /etc/shells
 chsh -s $(which zsh)
 
+
 echo "Done."

@@ -47,7 +47,6 @@ brew install global
 brew install go
 brew install heroku
 brew install hub
-brew install jq
 brew install leiningen
 brew install markdown
 brew install mecab
@@ -73,6 +72,7 @@ brew install z
 brew install zsh
 
 brew cask install alfred
+brew cask install appcleaner
 brew cask install brave
 brew cask install dropbox
 brew cask install evernote
