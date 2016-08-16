@@ -19,9 +19,9 @@ function psgr () {
 function wether () {
     Area=$1
     if [  "$1" = "" ]; then
-        Area="Shinjuku"
+        Area="Shinjuku-Ku"
     fi
-    curl "http://wttr.in/${Area}-Ku"
+    curl "http://wttr.in/${Area}"
 }
 function checkmw () {
     ps aux | grep  apache| grep -v grep

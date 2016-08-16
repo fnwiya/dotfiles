@@ -30,7 +30,8 @@ sudo apt-get -y install npm
 sudo apt-get -y install pgadmin3
 sudo apt-add-repository -y ppa:numix/ppa
 sudo apt-get update
-sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+sudo apt-get -y install numix-gtk-theme
+sudo apt-get -y install numix-icon-theme-circle
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install sqlite3
 sudo apt-get -y install ssh
