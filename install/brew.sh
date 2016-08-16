@@ -48,6 +48,7 @@ brew install global
 brew install go
 brew install heroku
 brew install hub
+brew install jq
 brew install leiningen
 brew install markdown
 brew install mecab
