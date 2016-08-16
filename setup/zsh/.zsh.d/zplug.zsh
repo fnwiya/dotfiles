@@ -5,7 +5,7 @@ if [ -x "`which zplug`" ] ;then
 fi
 source ~/.zplug/init.zsh
 
-# プラグイン定義
+# plugins list
 zplug "zplug/zplug"
 
 zplug "stedolan/jq", \
@@ -27,8 +27,7 @@ zplug "b4b4r07/emoji-cli", \
     if:'(( $+commands[jq] ))', \
     on:"peco/peco"
 
-
-
+# install plugins
 if ! zplug check --verbose; then
   printf 'Install? [y/N]: '
   if read -q; then
@@ -38,6 +37,7 @@ fi
 
 zplug load --verbose
 
+# plugins conf
 ZSHPLUGINS="${HOME}/.zsh.d/plugins"
 
 if [ -d $ZSHPLUGINS -a -r $ZSHPLUGINS -a -x $ZSHPLUGINS ]; then
