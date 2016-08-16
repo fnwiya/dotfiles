@@ -30,7 +30,6 @@
     - ssh
     - thg
     - tmux
-    -
     - tortoisehg
     - tree
     - unity-tweak-tool

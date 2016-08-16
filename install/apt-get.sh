@@ -38,6 +38,8 @@ sudo apt-get -y install sqlite3
 sudo apt-get -y install ssh
 sudo apt-get -y install thg
 sudo apt-get -y install tmux
+sudo apt-get -y install ttf-ancient-fonts
+sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
 sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
 sudo apt-get -y update
 sudo apt-get -y install tortoisehg
