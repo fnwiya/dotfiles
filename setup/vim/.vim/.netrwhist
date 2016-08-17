@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/forcia/Downloads/vagrant_master/vagrant'
 let g:netrw_dirhist_2='/home/forcia/vagrant_master/ansible/roles'
+let g:netrw_dirhist_3='/Users/fnwiya/dotfiles/install'

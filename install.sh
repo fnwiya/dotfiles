@@ -72,6 +72,9 @@ source install/pip.sh
 echo "sbcl settings"
 source install/sbcl.sh
 
+echo "gem settings"
+source install/gem.sh
+
 echo "Configuring zsh as default shell"
 sudo which zsh >> /etc/shells
 chsh -s $(which zsh)
