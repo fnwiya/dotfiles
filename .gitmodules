@@ -7,3 +7,6 @@
 [submodule "setup/spacemacs"]
 	path = setup/spacemacs
 	url = https://github.com/syl20bnr/spacemacs.git
+[submodule "/Users/fnwiya/dotfiles/setup/tmux/.tmux/plugins/tmp"]
+	path = /Users/fnwiya/dotfiles/setup/tmux/.tmux/plugins/tmp
+	url = https://github.com/tmux-plugins/tpm
