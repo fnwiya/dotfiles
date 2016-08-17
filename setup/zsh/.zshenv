@@ -48,5 +48,10 @@ if [ -x "`which psql`" ] ;then
   export PATH="/usr/local/pgsql/bin:$PATH"
 fi
 
+if [ -e $HOME/.tmuxinator/tmuxinator.zsh ] ; then
+  autoload -Uz compinit
+  compinit
+  source $HOME/.tmuxinator/tmuxinator.zsh
+fi
 
 export PATH="/usr/local/bin:$PATH"
