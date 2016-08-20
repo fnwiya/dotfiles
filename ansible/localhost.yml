@@ -1,5 +1,0 @@
-- hosts: localhost            # ホスト名
-  connection: local           # ssh経由ではなくlocalhostで直接実行する
-  gather_facts: no            # facts(ホスト情報?)の取得をしない
-  tasks:
-    - include: tasks/main.yml # タスクは別ファイルに記述 ここに直接書くこともできます
