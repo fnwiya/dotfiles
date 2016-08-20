@@ -62,4 +62,10 @@ if [ -x "`which peco`" ]; then
     zle -N peco-ghq-src
     bindkey '^o^g' peco-ghq-src
     alias pcghq='peco-ghq-src'
+
+    function peco-ag-vim () {
+      vim $(ag $@ | peco --query "$LBUFFER" | awk -F : '{print "-c " $2 " " $1}')
+    }
+    zle -N peco-ag-vim
+    bindkey '^o^v' peco-ag-vim
 fi
