@@ -1,6 +1,13 @@
 #!/bin/bash
 sudo apt-get -y update
 sudo apt-get -y upgrade
+# add-repository
+sudo add-apt-repository -y ppa:git-core/ppa
+sudo add-apt-repository -y ppa:mattn/growl-for-linux
+sudo apt-add-repository -y ppa:numix/ppa
+sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
+sudo apt-get -y update
+
 # develop-tool
 sudo apt-get -y install ansible
 sudo apt-get -y install autojump
@@ -11,11 +18,7 @@ sudo apt-get -y install elixir
 sudo apt-get -y install emacs
 sudo apt-get -y install fish
 sudo apt-get -y install gcc
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo apt-get -y update
 sudo apt-get -y install git
-sudo add-apt-repository -y ppa:mattn/growl-for-linux
-sudo apt-get -y update
 sudo apt-get -y install growl-for-linux
 sudo apt-get -y install guake
 sudo apt-get -y install global
@@ -29,8 +32,6 @@ sudo apt-get -y install multitail
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 sudo apt-get -y install pgadmin3
-sudo apt-add-repository -y ppa:numix/ppa
-sudo apt-get update
 sudo apt-get -y install numix-gtk-theme
 sudo apt-get -y install numix-icon-theme-circle
 sudo apt-get -y install silversearcher-ag
@@ -40,12 +41,13 @@ sudo apt-get -y install thg
 sudo apt-get -y install tmux
 sudo apt-get -y install ttf-ancient-fonts
 sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
-sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
-sudo apt-get -y update
 sudo apt-get -y install tortoisehg
 sudo apt-get -y install tree
 sudo apt-get -y install unity-tweak-tool
 sudo apt-get -y install wget
+sudo apt-get -y install xmonad
+sudo apt-get -y install xmobar
+sudo apt-get -y install dmenu
 sudo apt-get -y install z
 sudo apt-get -y install zsh
 # hub
@@ -72,6 +74,3 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y clean
 sudo apt-get -y autoremove
-
-curl -L https://raw.github.com/simonwhitaker/gibo/master/gibo \
-    -so ~/bin/gibo && chmod +x ~/bin/gibo && gibo -u

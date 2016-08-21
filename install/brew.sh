@@ -75,6 +75,7 @@ brew install z
 brew install zsh
 
 brew cask install alfred
+#brew cask install amethyst
 brew cask install appcleaner
 brew cask install brave
 brew cask install dropbox
