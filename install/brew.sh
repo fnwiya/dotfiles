@@ -74,6 +74,9 @@ brew install wget
 brew install z
 brew install zsh
 
+brew install ranger w3m lynx highlight atool mediainfo xpdf libcaca imlib2
+ranger --copy-config=all
+
 brew cask install alfred
 #brew cask install amethyst
 brew cask install appcleaner

@@ -7,7 +7,6 @@ sudo add-apt-repository -y ppa:mattn/growl-for-linux
 sudo apt-add-repository -y ppa:numix/ppa
 sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
 sudo apt-get -y update
-
 # develop-tool
 sudo apt-get -y install ansible
 sudo apt-get -y install autojump
@@ -50,6 +49,9 @@ sudo apt-get -y install xmobar
 sudo apt-get -y install dmenu
 sudo apt-get -y install z
 sudo apt-get -y install zsh
+# ranger
+sudo apt-get install ranger w3m lynx highlight atool mediainfo xpdf caca-utils
+ranger --copy-config=all
 # hub
 sudo apt-get -y install ruby
 sudo curl https://hub.github.com/standalone -Lo /usr/bin/hub
