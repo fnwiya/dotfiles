@@ -13,6 +13,7 @@ sudo apt-get -y install autojump
 sudo apt-get -y install build-essential
 sudo apt-get -y install cmigemo
 sudo apt-get -y install curl
+sudo apt-get -y install dmenu
 sudo apt-get -y install elixir
 sudo apt-get -y install emacs
 sudo apt-get -y install fish
@@ -47,7 +48,6 @@ sudo apt-get -y install unity-tweak-tool
 sudo apt-get -y install wget
 sudo apt-get -y install xmonad
 sudo apt-get -y install xmobar
-sudo apt-get -y install dmenu
 sudo apt-get -y install z
 sudo apt-get -y install zsh
 # ranger
