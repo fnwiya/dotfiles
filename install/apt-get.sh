@@ -18,6 +18,7 @@ sudo apt-get -y install emacs
 sudo apt-get -y install fish
 sudo apt-get -y install gcc
 sudo apt-get -y install git
+sudo apt-get -y install gcolor2
 sudo apt-get -y install growl-for-linux
 sudo apt-get -y install guake
 sudo apt-get -y install global
