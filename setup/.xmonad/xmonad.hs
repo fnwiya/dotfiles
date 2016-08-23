@@ -8,6 +8,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Actions.WindowGo  -- Keybind
 import XMonad.Util.Run  -- spawnPipe, hPutStrLn
 import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
 --------------------------------------------------------------------------- }}}
 -- vars                                                                     {{{
@@ -29,7 +30,7 @@ main = do
         , borderWidth        = 2
         , normalBorderColor  = "#333333"
         , focusedBorderColor = "#cd8b00"
-        , modMask  = mod4Mask
+        , modMask  = modm
         }
        -------------------------------------------------------------------- }}}
        -- Keymap:                                                           {{{
