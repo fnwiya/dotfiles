@@ -1,16 +1,16 @@
 #!/bin/bash
 ln -sf ~/dotfiles/setup/.conkyrc ~
 ln -sf ~/dotfiles/setup/.emacs.d ~
-ln -sf ~/dotfiles/setup/.gitconfig ~
-ln -sf ~/dotfiles/setup/.gitignore_global ~
-ln -sf ~/dotfiles/setup/.hgignore_global ~
-ln -sf ~/dotfiles/setup/.hgrc ~
 ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
 ln -sf ~/dotfiles/setup/.tern-config ~
 ln -sf ~/dotfiles/setup/bash/.bashrc ~
 ln -sf ~/dotfiles/setup/bash/.bash_profile ~
+ln -sf ~/dotfiles/setup/git/.gitconfig ~
+ln -sf ~/dotfiles/setup/git/.gitignore_global ~
+ln -sf ~/dotfiles/setup/hg/.hgignore_global ~
+ln -sf ~/dotfiles/setup/hg/.hgrc ~
 mkdir -p ~/.lein
 ln -sf ~/dotfiles/setup/lein/profiles.clj ~/.lein/profiles.clj
 ln -sf ~/dotfiles/setup/linter/.eslintrc ~
@@ -32,6 +32,9 @@ case ${OSTYPE} in
         fi
         ;;
     linux*)
+        ln -sf ~/dotfiles/setup/x/.xsession ~
+        ln -sf ~/dotfiles/setup/x/.Xmodmap ~
+        ln -sf ~/dotfiles/setup/.xmonad ~
         ln -sf ~/dotfiles/setup/linux/.shutter ~
         sudo -u postgres ln -sf ~/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
         ;;
