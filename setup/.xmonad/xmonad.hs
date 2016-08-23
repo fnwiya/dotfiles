@@ -5,9 +5,14 @@ import XMonad
 
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
-import XMonad.Util.Run                  -- spawnPipe, hPutStrLn
+import XMonad.Actions.WindowGo  -- Keybind
+import XMonad.Util.Run  -- spawnPipe, hPutStrLn
 import XMonad.Util.Run(spawnPipe)
 import System.IO
+--------------------------------------------------------------------------- }}}
+-- vars                                                                     {{{
+-------------------------------------------------------------------------------
+modm = mod4Mask
 --------------------------------------------------------------------------- }}}
 -- main                                                                     {{{
 -------------------------------------------------------------------------------
@@ -26,3 +31,13 @@ main = do
         , focusedBorderColor = "#cd8b00"
         , modMask  = mod4Mask
         }
+       -------------------------------------------------------------------- }}}
+       -- Keymap:                                                           {{{
+       ------------------------------------------------------------------------
+        `additionalKeys`
+        [
+        ((modm, xK_e), runOrRaise "emacs" (className =? "Emacs"))
+        , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
+        , ((modm, xK_g), runOrRaise "chrome" (className =? "Google-chrome"))
+        ]
+--------------------------------------------------------------------------- }}}
