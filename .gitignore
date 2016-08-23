@@ -1,5 +1,4 @@
 setup/.emacs.d/*
-
 !setup/.emacs.d/init.el
 !setup/.emacs.d/elisp/
 !setup/.emacs.d/snippets/
@@ -7,15 +6,17 @@ setup/.emacs.d/*
 !setup/.emacs.d/themes/
 !setup/.emacs.d/insert-tmp/
 !setup/.emacs.d/README.md
-
 setup/.emacs.d/loader-init/*.elc
 setup/.emacs.d/themes/*.elc
 setup/.emacs.d/elisp/el-get
 setup/.emacs.d/elisp/package
-
 
 setup/vim/.vim/dein/repos
 setup/vim/.vim/dein/temp
 setup/vim/.vim/dein/.dein
 setup/vim/.vim/dein/cache_vim
 setup/vim/.vim/dein/rollbacks
+
+setup/.xmonad/*
+!setup/.xmonad/.xmonad.hs
+!setup/.xmonad/.xmobarrc
