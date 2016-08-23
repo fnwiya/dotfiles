@@ -52,7 +52,14 @@ sudo apt-get -y install xmobar
 sudo apt-get -y install z
 sudo apt-get -y install zsh
 # ranger
-sudo apt-get install ranger w3m lynx highlight atool mediainfo xpdf caca-utils
+sudo apt-get -y install ranger
+sudo apt-get -y install w3m
+sudo apt-get -y install lynx
+sudo apt-get -y install highlight
+sudo apt-get -y install atool
+sudo apt-get -y install mediainfo
+sudo apt-get -y install xpdf
+sudo apt-get -y install caca-utils
 ranger --copy-config=all
 # hub
 sudo apt-get -y install ruby
@@ -72,7 +79,8 @@ sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c `echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list`
-sudo apt-get update && sudo apt-get install google-chrome-stable
+sudo apt-get -y update
+sudo apt-get -y install google-chrome-stable
 
 sudo apt-get -y update
 sudo apt-get -y upgrade

@@ -21,10 +21,10 @@ wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
 sudo pip install mecab-python-0.996.tar.gz
 rm -f ~/dotfiles/mecab-python-0.996.tar.gz
 
-git clone https://github.com/amueller/word_cloud
-cd word_cloud
-sudo python setup.py install
-rm -rf ~/dotfiles/word_cloud
+# git clone https://github.com/amueller/word_cloud
+# cd word_cloud
+# sudo python setup.py install
+# sudo rm -rf ~/dotfiles/word_cloud
 
 pip freeze
 # pip freeze > requirements.txt
