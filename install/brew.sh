@@ -86,9 +86,7 @@ brew install ranger imlib2
 ranger --copy-config=all
 
 brew cask install alfred
-#brew cask install amethyst
 brew cask install appcleaner
-brew cask install brave
 brew cask install dropbox
 brew cask install evernote
 brew cask install firefox
@@ -101,7 +99,6 @@ brew cask install vagrant
 brew cask install filezilla
 
 brew cask cleanup
-
 brew cleanup
 
 mas install 803453959 # Slack
