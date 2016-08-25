@@ -4,9 +4,9 @@
 [submodule "setup/.emacs.d/elisp/work/meigen-bot"]
 	path = setup/.emacs.d/elisp/work/meigen-bot
 	url = https://github.com/fnwiya/meigen-bot.git
-[submodule "/Users/fnwiya/dotfiles/setup/tmux/.tmux/plugins/tmp"]
-	path = /Users/fnwiya/dotfiles/setup/tmux/.tmux/plugins/tmp
+[submodule "setup/tmux/.tmux/plugins/tmp"]
+	path = setup/tmux/.tmux/plugins/tmp
 	url = https://github.com/tmux-plugins/tpm
-[submodule "/home/forcia/dotfiles/submodules/fzf"]
-	path = /home/forcia/dotfiles/submodules/fzf
+[submodule "submodules/fzf"]
+	path = submodules/fzf
 	url = https://github.com/junegunn/fzf
