@@ -10,3 +10,5 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a \
             [ \( -f $i -o -h $i \) -a -r $i ] && . $i
     done
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
