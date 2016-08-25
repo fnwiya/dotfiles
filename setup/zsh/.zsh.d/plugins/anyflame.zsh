@@ -2,9 +2,9 @@ if zplug check "mollifier/anyframe"; then
     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
     add-zsh-hook chpwd chpwd_recent_dirs
     # expressly specify to use peco
-    zstyle ":anyframe:selector:peco:" command 'peco'
+    zstyle ":anyframe:selector:fzf:" command 'fzf'
     bindkey '^xb' anyframe-widget-cdr
-    bindkey '^x^b' anyframe-widget-cdr 
+    bindkey '^x^b' anyframe-widget-cdr
 
     bindkey '^xr' anyframe-widget-execute-history
     bindkey '^x^r' anyframe-widget-execute-history
