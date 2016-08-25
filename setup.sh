@@ -21,6 +21,7 @@ ln -sf ~/dotfiles/setup/vim/.vim ~
 ln -sf ~/dotfiles/setup/zsh/.zshrc ~
 ln -sf ~/dotfiles/setup/zsh/.zshenv ~
 ln -sf ~/dotfiles/setup/zsh/.zsh.d ~
+ln -sf ~/dotfiles/submodules/fzf ~/.fzf
 if [ -e $HOME/Dropbox/config-file ]; then
     ln -sf ~/Dropbox/config-file/.netrc ~
 fi
