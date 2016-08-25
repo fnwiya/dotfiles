@@ -36,4 +36,6 @@ if [ -e /usr/local/etc/profile.d/z.sh ] ;then
   export PATH="/usr/local/etc/profile.d:$PATH"
 fi
 
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 export $PATH:PATH

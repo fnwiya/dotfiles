@@ -54,4 +54,6 @@ if [ -e $HOME/.tmuxinator/tmuxinator.zsh ] ; then
   source $HOME/.tmuxinator/tmuxinator.zsh
 fi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export PATH="/usr/local/bin:$PATH"
