@@ -74,7 +74,15 @@ brew install wget
 brew install z
 brew install zsh
 
-brew install ranger w3m lynx highlight atool mediainfo xpdf libcaca imlib2
+brew install ranger
+brew install ranger w3m
+brew install ranger lynx
+brew install ranger highlight
+brew install ranger atool
+brew install ranger mediainfo
+brew install ranger xpdf
+brew install ranger libcaca
+brew install ranger imlib2
 ranger --copy-config=all
 
 brew cask install alfred

@@ -22,6 +22,9 @@ ln -sf ~/dotfiles/setup/zsh/.zshrc ~
 ln -sf ~/dotfiles/setup/zsh/.zshenv ~
 ln -sf ~/dotfiles/setup/zsh/.zsh.d ~
 ln -sfn ~/dotfiles/submodules/fzf ~/.fzf
+ln -sf ~/dotfiles/setup/ranger/rc.conf ~/.config/ranger/rc.conf
+ln -sf ~/dotfiles/setup/ranger/rifle.conf ~/.config/ranger/rifle.conf
+ln -sf ~/dotfiles/setup/ranger/scope.sh ~/.config/ranger/scope.sh
 if [ -e $HOME/Dropbox/config-file ]; then
     ln -sf ~/Dropbox/config-file/.netrc ~
 fi
