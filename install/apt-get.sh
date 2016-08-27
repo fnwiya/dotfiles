@@ -6,8 +6,9 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:mattn/growl-for-linux
 sudo apt-add-repository -y ppa:numix/ppa
 sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo add-apt-repository -y ppa:snwh/pulp
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get -y update
 # develop-tool
 sudo apt-get -y install ansible
@@ -36,6 +37,8 @@ sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 sudo apt-get -y install numix-gtk-theme
 sudo apt-get -y install numix-icon-theme-circle
+sudo apt-get -y install paper-gtk-theme
+sudo apt-get -y install paper-icon-theme
 sudo apt-get -y install pgadmin3
 sudo apt-get -y install rxvt-unicode-256color
 sudo apt-get -y install silversearcher-ag
@@ -80,7 +83,7 @@ sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
-sudo apt-get -y install google-chrome-stable
+#sudo apt-get -y install google-chrome-stable
 
 sudo apt-get build-dep emacs24
 if[ ! -e $HOME/emacs-24.5 ] ; then 
