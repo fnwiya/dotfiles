@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
+--                  __  ____  __                       _                     --
+--                  \ \/ /  \/  | ___  _ __   __ _  __| |                    --
+--                   \  /| |\/| |/ _ \| '_ \ / _` |/ _` |                    --
+--                   /  \| |  | | (_) | | | | (_| | (_| |                    --
+--                  /_/\_\_|  |_|\___/|_| |_|\__,_|\__,_|                    --
+--                                                                           --
+-------------------------------------------------------------------------------
 -- Import modules                                                           {{{
 -------------------------------------------------------------------------------
 
@@ -35,8 +42,9 @@ import XMonad.Util.SpawnOnce
 -- vars                                                                     {{{
 -------------------------------------------------------------------------------
 
-modm = mod4Mask
+modm = mod4Mask  -- Super
 myWorkspaces = ["1", "2", "3", "4", "5"]
+myFloatWorkspace = "3"
 myTerminal   = "gnome-terminal"
 
 -- Color Setting
@@ -59,15 +67,14 @@ myfocusedBorderColor = "#585858"
 gapwidth  = 5
 gwU = 1
 gwD = 0
-gwL = 15
-gwR = 15
+gwL = 10
+gwR = 10
 
 --------------------------------------------------------------------------- }}}
 -- main                                                                     {{{
 -------------------------------------------------------------------------------
 
 main :: IO ()
-
 main = do
     wsbar <- spawnPipe myWsBar
     xmonad $ ewmh defaultConfig
@@ -81,7 +88,7 @@ main = do
        , startupHook        = myStartupHook
        , manageHook         = manageDocks
        , layoutHook         = avoidStruts $ ( toggleLayouts (noBorders Full)
-                                            $ onWorkspace "3" simplestFloat
+                                            $ onWorkspace myFloatWorkspace simplestFloat
                                             $ myLayout
                                             )
        , logHook            = myLogHook wsbar
@@ -101,7 +108,8 @@ main = do
 -- myLayout:          Handle Window behaveior                               {{{
 -------------------------------------------------------------------------------
 
-myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
+myLayout = spacing gapwidth $
+  gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
   $ (ResizableTall 1 (1/204) (119/204) [])
   ||| Simplest
 

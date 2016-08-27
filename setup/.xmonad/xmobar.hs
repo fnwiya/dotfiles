@@ -1,7 +1,9 @@
 Config {
          font = "xft:Sans-9:bold"
-       , bgColor = "black"
-       , fgColor = "gray"
+       , bgColor = "#1c1c1c"
+       , fgColor = "#585858"
+       , border = NoBorder
+       , borderColor = "#26a69a"
        , position = Top
        , lowerOnStart = False
        , commands = [
