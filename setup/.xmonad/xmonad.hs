@@ -3,29 +3,21 @@
 -------------------------------------------------------------------------------
 
 import qualified Data.Map as M
-import Control.Monad (liftM2)          -- myManageHookShift
-import Data.Monoid
 import System.IO                       -- for xmobar
 
 import XMonad
-import qualified XMonad.StackSet as W  -- myManageHookShift
 
-import XMonad.Actions.CopyWindow
 import XMonad.Actions.CycleWS
 import qualified XMonad.Actions.FlexibleResize as Flex -- flexible resize
 import XMonad.Actions.FloatKeys
-import XMonad.Actions.UpdatePointer
 import XMonad.Actions.WindowGo
 
 import XMonad.Hooks.DynamicLog         -- for xmobar
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks        -- avoid xmobar area
-import XMonad.Hooks.ManageHelpers
 
 import XMonad.Layout
-import XMonad.Layout.DragPane          -- see only two window
 import XMonad.Layout.Gaps
-import XMonad.Layout.LayoutScreens
 import XMonad.Layout.NoBorders         -- In Full mode, border is no use
 import XMonad.Layout.PerWorkspace      -- Configure layouts on a per-workspace
 import XMonad.Layout.ResizableTile     -- Resizable Horizontal border
@@ -35,14 +27,10 @@ import XMonad.Layout.Spacing           -- this makes smart space around windows
 import XMonad.Layout.ToggleLayouts     -- Full window at any time
 import XMonad.Layout.TwoPane
 
-import XMonad.Prompt
-import XMonad.Prompt.Window            -- pops up a prompt with window names
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
 import XMonad.Util.Run(spawnPipe)      -- spawnPipe, hPutStrLn
 import XMonad.Util.SpawnOnce
-
-import Graphics.X11.ExtraTypes.XF86
 
 --------------------------------------------------------------------------- }}}
 -- vars                                                                     {{{
@@ -67,10 +55,6 @@ borderwidth = 1
 -- Border color
 mynormalBorderColor  = "#333333"
 myfocusedBorderColor = "#585858"
-
--- Float window control width
-moveWD = borderwidth
-resizeWD = 2*borderwidth
 
 -- gapwidth
 gapwidth  = 5
