@@ -6,6 +6,8 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:mattn/growl-for-linux
 sudo apt-add-repository -y ppa:numix/ppa
 sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 sudo apt-get -y update
 # develop-tool
 sudo apt-get -y install ansible
@@ -77,19 +79,18 @@ sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
-
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get -y update
 sudo apt-get -y install google-chrome-stable
 
 sudo apt-get build-dep emacs24
-wget -O- http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.xz | tar xJf -
-cd emacs-24.5
-./configure
-make
-sudo make install
-cd $HOME
+if[ ! -e $HOME/emacs-24.5 ] ; then 
+  cd $HOME
+  wget -O- http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.xz | tar xJf -
+  cd emacs-24.5
+  ./configure
+  make
+  sudo make install
+  cd $HOME
+fi
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
