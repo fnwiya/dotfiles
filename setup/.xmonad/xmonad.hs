@@ -25,7 +25,6 @@ import XMonad.Layout.Simplest
 import XMonad.Layout.SimplestFloat
 import XMonad.Layout.Spacing           -- this makes smart space around windows
 import XMonad.Layout.ToggleLayouts     -- Full window at any time
-import XMonad.Layout.TwoPane
 
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
@@ -104,7 +103,6 @@ main = do
 
 myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
   $ (ResizableTall 1 (1/204) (119/204) [])
-  ||| (TwoPane (1/204) (119/204))
   ||| Simplest
 
   --------------------------------------------------------------------------- }}}
