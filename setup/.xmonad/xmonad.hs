@@ -50,6 +50,7 @@ import Graphics.X11.ExtraTypes.XF86
 
 modm = mod4Mask
 myWorkspaces = ["1", "2", "3", "4", "5"]
+myTerminal   = "gnome-terminal"
 
 -- Color Setting
 colorBlue      = "#868bae"
@@ -61,7 +62,7 @@ colorNormalbg  = "#1c1c1c"
 colorfg        = "#585858"
 
 -- Border width
-borderwidth = 0
+borderwidth = 1
 
 -- Border color
 mynormalBorderColor  = "#333333"
@@ -72,7 +73,7 @@ moveWD = borderwidth
 resizeWD = 2*borderwidth
 
 -- gapwidth
-gapwidth  = 9
+gapwidth  = 5
 gwU = 1
 gwD = 0
 gwL = 22
@@ -87,25 +88,22 @@ main :: IO ()
 main = do
     wsbar <- spawnPipe myWsBar
     xmonad $ ewmh defaultConfig
-       { borderWidth        = borderwidth
-       , terminal           = "gnome-terminal"
-       , focusFollowsMouse  = True
+       {
+         modMask            = modm
+       , terminal           = myTerminal
+       , workspaces         = myWorkspaces
+       , borderWidth        = borderwidth
        , normalBorderColor  = mynormalBorderColor
        , focusedBorderColor = myfocusedBorderColor
        , startupHook        = myStartupHook
-       , manageHook         = myManageHookShift <+>
-                              myManageHookFloat <+>
-                              manageDocks
+       , manageHook         = manageDocks
        , layoutHook         = avoidStruts $ ( toggleLayouts (noBorders Full)
                                             $ onWorkspace "3" simplestFloat
                                             $ myLayout
                                             )
-        -- xmobar setting
        , logHook            = myLogHook wsbar
                                 >> updatePointer (Relative 0.5 0.5)
        , handleEventHook    = fullscreenEventHook
-       , workspaces         = myWorkspaces
-       , modMask            = modm
        }
 
        -------------------------------------------------------------------- }}}
@@ -114,9 +112,8 @@ main = do
 
         `additionalKeys`
         [
-        ((modm, xK_e), runOrRaise "emacs" (className =? "Emacs"))
+          ((modm, xK_e), runOrRaise "emacs" (className =? "Emacs"))
         , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
-        , ((modm, xK_g), runOrRaise "chrome" (className =? "Google-chrome"))
         ]
 
 --------------------------------------------------------------------------- }}}
@@ -136,44 +133,6 @@ myStartupHook = do
         spawnOnce "gnome-settings-daemon"
         spawnOnce "xscreensaver -no-splash"
         spawnOnce "$HOME/.dropbox-dist/dropboxd"
-
---------------------------------------------------------------------------- }}}
--- myManageHookShift: some window must created there                        {{{
--------------------------------------------------------------------------------
-
-myManageHookShift = composeAll
-            -- if you want to know className, type "$ xprop|grep CLASS" on shell
-            [ className =? "Gimp"       --> mydoShift "3"
-            ]
-             where mydoShift = doF . liftM2 (.) W.greedyView W.shift
-
---------------------------------------------------------------------------- }}}
--- myManageHookFloat: new window will created in Float mode                 {{{
--------------------------------------------------------------------------------
-
-myManageHookFloat = composeAll
-    [ className =? "Gimp"             --> doFloat
-    , className =? "Tk"               --> doFloat
-    , className =? "mplayer2"         --> doCenterFloat
-    , className =? "mpv"              --> doCenterFloat
-    , className =? "feh"              --> doCenterFloat
-    , className =? "Display.im6"      --> doCenterFloat
-    , className =? "Shutter"          --> doCenterFloat
-    , className =? "Thunar"           --> doCenterFloat
-    , className =? "Nautilus"         --> doCenterFloat
-    , className =? "Plugin-container" --> doCenterFloat
-    , className =? "Screenkey"        --> (doRectFloat $ W.RationalRect 0.7 0.9 0.3 0.1)
-    , className =? "Websearch"        --> doCenterFloat
-    , className =? "XClock"           --> doSideFloat NE
-    , title     =? "Speedbar"         --> doCenterFloat
-    , title     =? "urxvt_float"      --> doSideFloat SC
-    , isFullscreen                    --> doFullFloat
-    , isDialog                        --> doCenterFloat
-    , stringProperty "WM_NAME" =? "LINE" --> (doRectFloat $ W.RationalRect 0.60 0.1 0.39 0.82)
-    , stringProperty "WM_NAME" =? "Google Keep" --> (doRectFloat $ W.RationalRect 0.3 0.1 0.4 0.82)
-    , stringProperty "WM_NAME" =? "tmptex.pdf - 1/1 (96 dpi)" --> (doRectFloat $ W.RationalRect 0.29 0.25 0.42 0.5)
-    , stringProperty "WM_NAME" =? "Figure 1" --> doCenterFloat
-    ]
 
 --------------------------------------------------------------------------- }}}
 -- myLogHook:         loghock settings                                      {{{
@@ -197,24 +156,6 @@ wsPP = xmobarPP { ppOrder           = \(ws:l:t:_)  -> [ws,t]
                 , ppOutput          = putStrLn
                 , ppWsSep           = " "
                 , ppSep             = "  "
-                }
-
---------------------------------------------------------------------------- }}}
--- myXPConfig:        XPConfig                                            {{{
--------------------------------------------------------------------------------
-
-myXPConfig = defaultXPConfig
-                {
-                  fgColor           = colorGray
-                , bgColor           = colorNormalbg
-                , borderColor       = colorNormalbg
-                , height            = 35
-                , promptBorderWidth = 0
-                , autoComplete      = Just 100000
-                , bgHLight          = colorBlue
-                , fgHLight          = colorNormalbg
-                , position          = Bottom
-                --,  font              = "xft:Migu 1M:size=20:antialias=true"
                 }
 
 --------------------------------------------------------------------------- }}}

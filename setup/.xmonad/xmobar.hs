@@ -1,19 +1,17 @@
-Config { font = "xft:Sans-9:bold"
-       , bgColor = "black"
-       , fgColor = "grey"
+Config {
+         font = "xft:Sans-9:bold"
+       , bgColor = "#1c1c1c"
+       , fgColor = "#585858"
        , position = Top
        , lowerOnStart = False
-       , commands = [ Run Weather "EGPF" ["-t","<station>: <tempC>C","-L","18","-H","25","--normal","green","--high","red","--low","lightblue"] 36000
-                    , Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
-                    , Run Network "eth1" ["-L","0","-H","32","--normal","green","--high","red"] 10
+       , commands = [
                     , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Swap [] 10
-                    , Run Com "uname" ["-s","-r"] "" 36000
                     , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% | %eth0% - %eth1% } %StdinReader% { <fc=#ee9a00>%date%</fc>| %EGPF% | %uname%"
+       , template = "%cpu% | %memory% * %swap% } %StdinReader% { <fc=#ee9a00>%date%</fc>"
        }
