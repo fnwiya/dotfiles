@@ -102,8 +102,6 @@ main = do
                                             $ myLayout
                                             )
        , logHook            = myLogHook wsbar
-                                >> updatePointer (Relative 0.5 0.5)
-       , handleEventHook    = fullscreenEventHook
        }
 
        -------------------------------------------------------------------- }}}
@@ -138,7 +136,9 @@ myStartupHook = do
 -- myLogHook:         loghock settings                                      {{{
 -------------------------------------------------------------------------------
 
-myLogHook h = dynamicLogWithPP $ wsPP { ppOutput = hPutStrLn h }
+myLogHook h = dynamicLogWithPP $ wsPP {
+  ppOutput = hPutStrLn h
+  }
 
 --------------------------------------------------------------------------- }}}
 -- myWsBar:           xmobar setting                                        {{{
