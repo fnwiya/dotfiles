@@ -91,10 +91,11 @@ main = do
        , focusedBorderColor = myfocusedBorderColor
        , startupHook        = myStartupHook
        , manageHook         = manageDocks
-       , layoutHook         = avoidStruts $ ( toggleLayouts (noBorders Full)
-                                            $ onWorkspace myFloatWorkspace simplestFloat
-                                            $ myLayout
-                                            )
+       , layoutHook         = avoidStruts $ (
+                                toggleLayouts (noBorders Full)
+                                $ onWorkspace myFloatWorkspace simplestFloat
+                                $ myLayout
+                              )
        , logHook            = myLogHook wsbar
        }
 
