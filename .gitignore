@@ -19,5 +19,5 @@ setup/vim/.vim/dein/rollbacks
 setup/vim/.vim/.netrwhist
 
 setup/.xmonad/*
-!setup/.xmonad/.xmonad.hs
-!setup/.xmonad/.xmobarrc
+!setup/.xmonad/xmonad.hs
+!setup/.xmonad/xmobar.hs
