@@ -1,16 +1,25 @@
 -------------------------------------------------------------------------------
 -- Import modules                                                           {{{
 -------------------------------------------------------------------------------
+import qualified Data.Map as M
+import Control.Monad (liftM2)          -- myManageHookShift
+import Data.Monoid
+import System.IO                       -- for xmobar
+
 import XMonad
+import qualified XMonad.StackSet as W  -- myManageHookShift
 
-import XMonad.Hooks.DynamicLog
-import XMonad.Hooks.ManageDocks
+import XMonad.Actions.CopyWindow
+import XMonad.Actions.CycleWS
+import qualified XMonad.Actions.FlexibleResize as Flex -- flexible resize
+import XMonad.Actions.FloatKeys
+import XMonad.Actions.UpdatePointer
+import XMonad.Actions.WindowGo
 
-import XMonad.Actions.WindowGo  -- Keybind
-
-import XMonad.Util.Run  -- spawnPipe, hPutStrLn
-import XMonad.Util.Run(spawnPipe)
-import XMonad.Util.EZConfig(additionalKeys)
+import XMonad.Hooks.DynamicLog         -- for xmobar
+import XMonad.Hooks.EwmhDesktops
+import XMonad.Hooks.ManageDocks        -- avoid xmobar area
+import XMonad.Hooks.ManageHelpers
 
 import XMonad.Layout
 import XMonad.Layout.DragPane          -- see only two window
@@ -25,7 +34,14 @@ import XMonad.Layout.Spacing           -- this makes smart space around windows
 import XMonad.Layout.ToggleLayouts     -- Full window at any time
 import XMonad.Layout.TwoPane
 
-import System.IO
+import XMonad.Prompt
+import XMonad.Prompt.Window            -- pops up a prompt with window names
+import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
+import XMonad.Util.Run
+import XMonad.Util.Run(spawnPipe)      -- spawnPipe, hPutStrLn
+import XMonad.Util.SpawnOnce
+
+import Graphics.X11.ExtraTypes.XF86
 --------------------------------------------------------------------------- }}}
 -- vars                                                                     {{{
 -------------------------------------------------------------------------------
@@ -61,22 +77,33 @@ gwR = 42
 --------------------------------------------------------------------------- }}}
 -- main                                                                     {{{
 -------------------------------------------------------------------------------
+main :: IO ()
+
 main = do
-    xmproc <- spawnPipe "xmobar"
-    xmonad $ defaultConfig
-        { manageHook = manageDocks <+> manageHook defaultConfig
-        , layoutHook = avoidStruts $ layoutHook defaultConfig
-        , logHook = dynamicLogWithPP $ xmobarPP
-                        { ppOutput = hPutStrLn xmproc
-                        , ppTitle = xmobarColor "green" "" . shorten 50
-                        }
-        , terminal           = "gnome-terminal"
-        , borderWidth        = 2
-        , normalBorderColor  = mynormalBorderColor
-        , focusedBorderColor = myfocusedBorderColor
-        , modMask  = modm
-        , workspaces         = myWorkspaces
-        }
+    wsbar <- spawnPipe myWsBar
+    xmonad $ ewmh defaultConfig
+       { borderWidth        = borderwidth
+       , terminal           = "gnome-terminal"
+       , focusFollowsMouse  = True
+       , normalBorderColor  = mynormalBorderColor
+       , focusedBorderColor = myfocusedBorderColor
+       , startupHook        = myStartupHook
+       , manageHook         = myManageHookShift <+>
+                              myManageHookFloat <+>
+                              manageDocks
+       , layoutHook         = avoidStruts $ ( toggleLayouts (noBorders Full)
+                                            $ onWorkspace "3" simplestFloat
+                                            $ myLayout
+                                            )
+        -- xmobar setting
+       , logHook            = myLogHook wsbar
+                                >> updatePointer (Relative 0.5 0.5)
+       , handleEventHook    = fullscreenEventHook
+       , workspaces         = myWorkspaces
+       , modMask            = modm
+       , mouseBindings      = newMouse
+       }
+
        -------------------------------------------------------------------- }}}
        -- Keymap:                                                           {{{
        ------------------------------------------------------------------------
@@ -86,4 +113,110 @@ main = do
         , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
         , ((modm, xK_g), runOrRaise "chrome" (className =? "Google-chrome"))
         ]
+--------------------------------------------------------------------------- }}}
+-- myLayout:          Handle Window behaveior                               {{{
+-------------------------------------------------------------------------------
+
+myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
+  $ (ResizableTall 1 (1/204) (119/204) [])
+  ||| (TwoPane (1/204) (119/204))
+  ||| Simplest
+
+  --------------------------------------------------------------------------- }}}
+-- myStartupHook:     Start up applications                                 {{{
+-------------------------------------------------------------------------------
+
+myStartupHook = do
+        spawnOnce "gnome-settings-daemon"
+        spawnOnce "nm-applet"
+        spawnOnce "xscreensaver -no-splash"
+        spawnOnce "$HOME/.dropbox-dist/dropboxd"
+        spawnOnce "bash $HOME/.fehbg"
+        -- spawnOnce "compton -b --config $HOME/.config/compton/compton.conf"
+--------------------------------------------------------------------------- }}}
+-- myManageHookShift: some window must created there                        {{{
+-------------------------------------------------------------------------------
+
+myManageHookShift = composeAll
+            -- if you want to know className, type "$ xprop|grep CLASS" on shell
+            [ className =? "Gimp"       --> mydoShift "3"
+            ]
+             where mydoShift = doF . liftM2 (.) W.greedyView W.shift
+
+--------------------------------------------------------------------------- }}}
+-- myManageHookFloat: new window will created in Float mode                 {{{
+-------------------------------------------------------------------------------
+
+myManageHookFloat = composeAll
+    [ className =? "Gimp"             --> doFloat
+    , className =? "Tk"               --> doFloat
+    , className =? "mplayer2"         --> doCenterFloat
+    , className =? "mpv"              --> doCenterFloat
+    , className =? "feh"              --> doCenterFloat
+    , className =? "Display.im6"      --> doCenterFloat
+    , className =? "Shutter"          --> doCenterFloat
+    , className =? "Thunar"           --> doCenterFloat
+    , className =? "Nautilus"         --> doCenterFloat
+    , className =? "Plugin-container" --> doCenterFloat
+    , className =? "Screenkey"        --> (doRectFloat $ W.RationalRect 0.7 0.9 0.3 0.1)
+    , className =? "Websearch"        --> doCenterFloat
+    , className =? "XClock"           --> doSideFloat NE
+    , title     =? "Speedbar"         --> doCenterFloat
+    , title     =? "urxvt_float"      --> doSideFloat SC
+    , isFullscreen                    --> doFullFloat
+    , isDialog                        --> doCenterFloat
+    , stringProperty "WM_NAME" =? "LINE" --> (doRectFloat $ W.RationalRect 0.60 0.1 0.39 0.82)
+    , stringProperty "WM_NAME" =? "Google Keep" --> (doRectFloat $ W.RationalRect 0.3 0.1 0.4 0.82)
+    , stringProperty "WM_NAME" =? "tmptex.pdf - 1/1 (96 dpi)" --> (doRectFloat $ W.RationalRect 0.29 0.25 0.42 0.5)
+    , stringProperty "WM_NAME" =? "Figure 1" --> doCenterFloat
+    ]
+
+--------------------------------------------------------------------------- }}}
+-- myLogHook:         loghock settings                                      {{{
+-------------------------------------------------------------------------------
+
+myLogHook h = dynamicLogWithPP $ wsPP { ppOutput = hPutStrLn h }
+
+--------------------------------------------------------------------------- }}}
+-- myWsBar:           xmobar setting                                        {{{
+-------------------------------------------------------------------------------
+
+myWsBar = "xmobar $HOME/.xmonad/.xmobarrc"
+
+wsPP = xmobarPP { ppOrder           = \(ws:l:t:_)  -> [ws,t]
+                , ppCurrent         = xmobarColor colorGreen colorNormalbg . \s -> "●"
+                , ppUrgent          = xmobarColor colorfg    colorNormalbg . \s -> "●"
+                , ppVisible         = xmobarColor colorGreen colorNormalbg . \s -> "⦿"
+                , ppHidden          = xmobarColor colorfg    colorNormalbg . \s -> "●"
+                , ppHiddenNoWindows = xmobarColor colorfg    colorNormalbg . \s -> "○"
+                , ppTitle           = xmobarColor colorGreen colorNormalbg
+                , ppOutput          = putStrLn
+                , ppWsSep           = " "
+                , ppSep             = "  "
+                }
+
+--------------------------------------------------------------------------- }}}
+-- myXPConfig:        XPConfig                                            {{{
+
+myXPConfig = defaultXPConfig
+                {
+                  font              = "xft:Migu 1M:size=20:antialias=true"
+                , fgColor           = colorGray
+                , bgColor           = colorNormalbg
+                , borderColor       = colorNormalbg
+                , height            = 35
+                , promptBorderWidth = 0
+                , autoComplete      = Just 100000
+                , bgHLight          = colorBlue
+                , fgHLight          = colorNormalbg
+                , position          = Bottom
+                }
+
+--------------------------------------------------------------------------- }}}
+-- newMouse:          Right click is used for resizing window               {{{
+-------------------------------------------------------------------------------
+
+myMouse x = [ ((modm, button3), (\w -> focus w >> Flex.mouseResizeWindow w)) ]
+newMouse x = M.union (mouseBindings defaultConfig x) (M.fromList (myMouse x))
+
 --------------------------------------------------------------------------- }}}
