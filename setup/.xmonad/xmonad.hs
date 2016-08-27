@@ -13,6 +13,7 @@ import qualified Data.Map as M
 import System.IO                       -- for xmobar
 
 import XMonad
+import qualified XMonad.StackSet as W
 
 import XMonad.Actions.CycleWS
 import qualified XMonad.Actions.FlexibleResize as Flex -- flexible resize
@@ -97,6 +98,7 @@ main = do
        -------------------------------------------------------------------- }}}
        -- Keymap:                                                           {{{
        ------------------------------------------------------------------------
+       -- xprop | grep WM_CLASS
 
         `additionalKeys`
         [
