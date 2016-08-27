@@ -20,9 +20,8 @@ Config {
                         ] 10
                     , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
                     , Run StdinReader
-                    , Run BatteryP ["BAT0"] ["-t", "<acstatus> <left>% <timeleft>", "-h", "green", "-n", "yellow", "-l", "red"] 30
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% } %StdinReader% { <fc=#ee9a00>%date%</fc> | BAT: %battery%"
+       , template = "%cpu% | %memory% * %swap% } %StdinReader% { <fc=#ee9a00>%date%</fc>"
        }
