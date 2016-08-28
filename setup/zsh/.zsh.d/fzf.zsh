@@ -22,6 +22,7 @@ if [  -x "`which fzf`" ]; then
     if [ -f /usr/local/opt/fzf/shell/key-bindings.zsh ]; then
         source "/usr/local/opt/fzf/shell/key-bindings.zsh"
         export FZF_DEFAULT_OPTS="
+            --reverse
             --extended
             --ansi
             --multi
