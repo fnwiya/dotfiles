@@ -1,7 +1,7 @@
 
 ##initialize
 ```
-curl -L raw.github.com/fnwiya/dotfiles/master/setDotfiles.sh | bash
+curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 ./install.sh
 ./mkLink.sh
 ```
