@@ -9,16 +9,16 @@
 -- Import modules                                                           {{{
 -------------------------------------------------------------------------------
 
-import qualified Data.Map as M
 import System.IO                       -- for xmobar
+import qualified Data.Map as M
 
 import XMonad
 import qualified XMonad.StackSet as W
 
 import XMonad.Actions.CycleWS
-import qualified XMonad.Actions.FlexibleResize as Flex -- flexible resize
 import XMonad.Actions.FloatKeys
 import XMonad.Actions.WindowGo
+import qualified XMonad.Actions.FlexibleResize as Flex -- flexible resize
 
 import XMonad.Hooks.DynamicLog         -- for xmobar
 import XMonad.Hooks.EwmhDesktops
