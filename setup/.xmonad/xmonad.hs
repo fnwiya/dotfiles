@@ -52,20 +52,20 @@ myFloatWorkspace = "3"
 myTerminal   = "gnome-terminal"
 
 -- Color Setting
-colorBlue      = "#868bae"
-colorGreen     = "#86ae87"
-colorRed       = "#ae8686"
-colorGray      = "#90a2a0"
-colorWhite     = "#bdbdbd"
-colorNormalbg  = "#1c1c1c"
-colorfg        = "#585858"
+colorBlue      = "#77A0D4"
+colorGreen     = "#519CA5"
+colorRed       = "#E15F67"
+colorGray      = "#6E7E93"
+colorWhite     = "#FDFDFE"
+colorNormalbg  = "#333134"
+colorfg        = "#D0CDD9"
 
 -- Border width
 borderwidth = 1
 
 -- Border color
-mynormalBorderColor  = "#333333"
-myfocusedBorderColor = "#585858"
+mynormalBorderColor  = colorGray
+myfocusedBorderColor = colorRed
 
 -- gapwidth
 gapwidth  = 5

@@ -1,9 +1,9 @@
 Config {
          font = "xft:Sans-9:bold"
-       , bgColor = "#1c1c1c"
-       , fgColor = "#585858"
+       , bgColor = "#333134"
+       , fgColor = "#D0CDD9"
        , border = NoBorder
-       , borderColor = "#26a69a"
+       , borderColor = "#D0CDD9"
        , position = Top
        , lowerOnStart = False
        , commands = [
@@ -23,5 +23,5 @@ Config {
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% } %StdinReader% { <fc=#ee9a00>%date%</fc>"
+       , template = "%cpu% | %memory% * %swap% } %StdinReader% { <fc=#D0CDD9>%date%</fc>"
        }
