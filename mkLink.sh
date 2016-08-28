@@ -38,6 +38,7 @@ case ${OSTYPE} in
     linux*)
         ln -sf ~/dotfiles/setup/x/.xsession ~
         ln -sf ~/dotfiles/setup/x/.Xmodmap ~
+        ln -sf ~/dotfiles/setup/x/.Xdefaults ~
         ln -sf ~/dotfiles/setup/.xmonad ~
         ln -sf ~/dotfiles/setup/linux/.shutter ~
         # sudo -u postgres ln -sf ~/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
