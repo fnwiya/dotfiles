@@ -68,11 +68,11 @@ mynormalBorderColor  = colorGray
 myfocusedBorderColor = colorRed
 
 -- gapwidth
-gapwidth  = 5
-gwU = 1
+gapwidth  = 3
+gwU = 0
 gwD = 0
-gwL = 5
-gwR = 5
+gwL = 0
+gwR = 0
 
 --------------------------------------------------------------------------- }}}
 -- main                                                                     {{{

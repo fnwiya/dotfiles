@@ -56,4 +56,8 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+if [ -d ~/.local/bin ] ; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 export PATH="/usr/local/bin:$PATH"
