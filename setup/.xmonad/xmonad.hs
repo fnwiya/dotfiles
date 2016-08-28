@@ -50,6 +50,7 @@ modm = mod4Mask  -- Super
 myWorkspaces = ["1", "2", "3", "4", "5"]
 myFloatWorkspace = "3"
 myTerminal   = "gnome-terminal"
+--myTerminal   = "urxvt"
 
 -- Color Setting
 colorBlue      = "#77A0D4"

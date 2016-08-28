@@ -11,6 +11,7 @@ URxvt.lineSpace: 0
 
 ! Fonts
 URxvt.allow_bold:           false
+Rxvt*font: xft:Monospace:size=12
 
 ! Cursor
 URxvt.cursorBlink:          false
