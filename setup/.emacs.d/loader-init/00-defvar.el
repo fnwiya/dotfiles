@@ -12,6 +12,7 @@
     css-mode-hook
     emacs-lisp-mode-hook
     elisp-mode-hook
+    haskell-mode-hook
     jade-mode-hook
     Javascript-IDE-mode-hook
     JDEE-mode-hook
