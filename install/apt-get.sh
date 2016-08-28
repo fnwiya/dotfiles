@@ -68,9 +68,9 @@ sudo apt-get -y install xpdf
 sudo apt-get -y install caca-utils
 ranger --copy-config=all
 # hub
-sudo apt-get -y install ruby
-sudo curl https://hub.github.com/standalone -Lo /usr/bin/hub
-sudo chmod 755 /usr/bin/hub
+#sudo apt-get -y install ruby
+#sudo curl https://hub.github.com/standalone -Lo /usr/bin/hub
+#sudo chmod 755 /usr/bin/hub
 # python
 sudo apt-get -y install python-dev libpq-dev libevent-dev
 sudo apt-get -y install python-pip
@@ -85,8 +85,8 @@ sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
 #sudo apt-get -y install google-chrome-stable
 
-sudo apt-get build-dep emacs24
 if[ ! -e $HOME/emacs-24.5 ] ; then 
+  sudo apt-get build-dep emacs24
   cd $HOME
   wget -O- http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.xz | tar xJf -
   cd emacs-24.5
