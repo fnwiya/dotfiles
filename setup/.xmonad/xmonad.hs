@@ -123,9 +123,9 @@ main = do
         `additionalKeysP`
         [
         -- CycleWS setup
-        ("M-n", moveTo Next NonEmptyWS)
-        , ("M-p", moveTo Prev NonEmptyWS)
-        , ("M-S-p", shiftTo Prev EmptyWS)
+        ("M-l", moveTo Next NonEmptyWS)
+        , ("M-h", moveTo Prev NonEmptyWS)
+        , ("M-S-h", shiftTo Prev EmptyWS)
         ]
 --------------------------------------------------------------------------- }}}
 -- myLayout:          Handle Window behaveior                               {{{
@@ -151,7 +151,7 @@ myStartupHook = do
 
 myManageHookShift = composeAll
             -- if you want to know className, type "$ xprop|grep CLASS" on shell
-            [ className =? "Firefox"       --> mydoShift "2"
+            [ className =? "Firefox"       --> mydoShift "4"
             ]
              where mydoShift = doF . liftM2 (.) W.greedyView W.shift
 
@@ -161,15 +161,9 @@ myManageHookShift = composeAll
 
 myManageHookFloat = composeAll
     [ className =? "Gimp"             --> doFloat
-    , className =? "Shutter"          --> doCenterFloat
-    , className =? "Nautilus"         --> doCenterFloat
-    , className =? "Screenkey"        --> (doRectFloat $ W.RationalRect 0.7 0.9 0.3 0.1)
-    , className =? "Websearch"        --> (doRectFloat $ W.RationalRect 0.45 0.4 0.1 0.01)
-    , title     =? "Speedbar"         --> doCenterFloat
-    , title     =? "urxvt_float"      --> doCenterFloat
+    , className =? "Shutter"          --> doFloat
+    , className =? "Nautilus"         --> doFloat
     , isFullscreen                    --> doFullFloat
-    , stringProperty "WM_NAME" =? "LINE" --> (doRectFloat $ W.RationalRect 0.60 0.1 0.39 0.82)
-    , stringProperty "WM_NAME" =? "Google Keep" --> (doRectFloat $ W.RationalRect 0.3 0.1 0.4 0.82)
     ]
 
 --------------------------------------------------------------------------- }}}
