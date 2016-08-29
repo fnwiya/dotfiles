@@ -11,6 +11,7 @@
 
 import System.IO                       -- for xmobar
 import qualified Data.Map as M
+import Control.Monad (liftM2)          -- myManageHookShift
 
 import XMonad
 import qualified XMonad.StackSet as W
@@ -23,6 +24,7 @@ import qualified XMonad.Actions.FlexibleResize as Flex -- flexible resize
 import XMonad.Hooks.DynamicLog         -- for xmobar
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks        -- avoid xmobar area
+import XMonad.Hooks.ManageHelpers
 
 import XMonad.Layout
 import XMonad.Layout.Gaps
@@ -36,11 +38,15 @@ import XMonad.Layout.ToggleLayouts     -- Full window at any time
 import XMonad.Layout.MultiToggle
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.Fullscreen (fullscreenFull)
+import XMonad.Layout.Named
 
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
 import XMonad.Util.Run(spawnPipe)      -- spawnPipe, hPutStrLn
 import XMonad.Util.SpawnOnce
+import XMonad.Util.WorkspaceCompare
+
+import XMonad.Config.Desktop (desktopLayoutModifiers)
 
 --------------------------------------------------------------------------- }}}
 -- vars                                                                     {{{
@@ -91,7 +97,9 @@ main = do
        , normalBorderColor  = mynormalBorderColor
        , focusedBorderColor = myfocusedBorderColor
        , startupHook        = myStartupHook
-       , manageHook         = manageDocks
+       , manageHook         = myManageHookShift <+>
+                              myManageHookFloat <+>
+                              manageDocks
        , layoutHook         = avoidStruts $ (
                                 toggleLayouts (noBorders Full)
                                 $ onWorkspace myFloatWorkspace simplestFloat
@@ -109,8 +117,16 @@ main = do
         [
           ((modm, xK_e), runOrRaise "emacs" (className =? "Emacs"))
         , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
+        , ((modm, xK_c), runOrRaise "chrome" (className =? "google-chrome"))
+        , ((modm, xK_t), runOrRaise "thg" (className =? "thg"))
         ]
-
+        `additionalKeysP`
+        [
+        -- CycleWS setup
+        ("M-n", moveTo Next NonEmptyWS)
+        , ("M-p", moveTo Prev NonEmptyWS)
+        , ("M-S-p", shiftTo Prev EmptyWS)
+        ]
 --------------------------------------------------------------------------- }}}
 -- myLayout:          Handle Window behaveior                               {{{
 -------------------------------------------------------------------------------
@@ -128,6 +144,33 @@ myStartupHook = do
         spawnOnce "gnome-settings-daemon"
         spawnOnce "xscreensaver -no-splash"
         spawnOnce "$HOME/.dropbox-dist/dropboxd"
+
+--------------------------------------------------------------------------- }}}
+-- myManageHookShift: some window must created there                        {{{
+-------------------------------------------------------------------------------
+
+myManageHookShift = composeAll
+            -- if you want to know className, type "$ xprop|grep CLASS" on shell
+            [ className =? "Firefox"       --> mydoShift "2"
+            ]
+             where mydoShift = doF . liftM2 (.) W.greedyView W.shift
+
+--------------------------------------------------------------------------- }}}
+-- myManageHookFloat: new window will created in Float mode                 {{{
+-------------------------------------------------------------------------------
+
+myManageHookFloat = composeAll
+    [ className =? "Gimp"             --> doFloat
+    , className =? "Shutter"          --> doCenterFloat
+    , className =? "Nautilus"         --> doCenterFloat
+    , className =? "Screenkey"        --> (doRectFloat $ W.RationalRect 0.7 0.9 0.3 0.1)
+    , className =? "Websearch"        --> (doRectFloat $ W.RationalRect 0.45 0.4 0.1 0.01)
+    , title     =? "Speedbar"         --> doCenterFloat
+    , title     =? "urxvt_float"      --> doCenterFloat
+    , isFullscreen                    --> doFullFloat
+    , stringProperty "WM_NAME" =? "LINE" --> (doRectFloat $ W.RationalRect 0.60 0.1 0.39 0.82)
+    , stringProperty "WM_NAME" =? "Google Keep" --> (doRectFloat $ W.RationalRect 0.3 0.1 0.4 0.82)
+    ]
 
 --------------------------------------------------------------------------- }}}
 -- myLogHook:         loghock settings                                      {{{

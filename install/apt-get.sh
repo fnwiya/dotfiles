@@ -26,6 +26,7 @@ sudo apt-get -y install gcolor2
 sudo apt-get -y install growl-for-linux
 sudo apt-get -y install guake
 sudo apt-get -y install global
+sudo apt-get -y install gnome-tweak-tool
 sudo apt-get -y install golang
 sudo apt-get -y install jq
 sudo apt-get -y install leiningen
