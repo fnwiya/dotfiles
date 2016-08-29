@@ -6,6 +6,7 @@ gnome-volume-control-applet &
 stalonetray -i 1 --geometry 6x1-0-0 -bg white &
 
 gnome-settings-daemon &
+unity-settings-daemon &
 xcompmgr &
 
 exec xmonad
