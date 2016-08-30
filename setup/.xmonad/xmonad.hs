@@ -142,6 +142,7 @@ myLayout = spacing gapwidth $
 
 myStartupHook = do
         spawnOnce "gnome-settings-daemon"
+        spawnOnce "unity-settings-daemon"
         spawnOnce "xscreensaver -no-splash"
         spawnOnce "$HOME/.dropbox-dist/dropboxd"
 
