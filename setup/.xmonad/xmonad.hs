@@ -119,13 +119,13 @@ main = do
         , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
         , ((modm, xK_c), runOrRaise "google-chrome" (className =? "google-chrome"))
         , ((modm, xK_t), runOrRaise "thg" (className =? "thg"))
+        , ((modm,  xK_f),  sendMessage (XMonad.Layout.MultiToggle.Toggle FULL))
         ]
         `additionalKeysP`
         [
-        -- CycleWS setup
-        ("M-l", moveTo Next NonEmptyWS)
-        , ("M-h", moveTo Prev NonEmptyWS)
-        , ("M-S-h", shiftTo Prev EmptyWS)
+        -- ("M-l", moveTo Next NonEmptyWS)
+        -- , ("M-h", moveTo Prev NonEmptyWS)
+        -- , ("M-S-h", shiftTo Prev EmptyWS)
         ]
 --------------------------------------------------------------------------- }}}
 -- myLayout:          Handle Window behaveior                               {{{
@@ -142,9 +142,11 @@ myLayout = spacing gapwidth $
 
 myStartupHook = do
         spawnOnce "gnome-settings-daemon"
+        spawnOnce "gnome-volume-control-applet"
         spawnOnce "unity-settings-daemon"
         spawnOnce "xscreensaver -no-splash"
         spawnOnce "$HOME/.dropbox-dist/dropboxd"
+        spawnOnce "stalonetray -i 1 --geometry 6x1-0-0 -bg white"
 
 --------------------------------------------------------------------------- }}}
 -- myManageHookShift: some window must created there                        {{{
