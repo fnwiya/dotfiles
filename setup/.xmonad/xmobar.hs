@@ -30,12 +30,9 @@ Config {
                           ,"-O","Charging<left>%"
                           ,"-i","<left>%"
                         ] 50
-                    , Run Weather "RJTT" [
-                    "--template", "<skyCondition> | <fc=#4682B4><tempC></fc>°C | <fc=#4682B4><rh></fc>%  <fc=#4682B4><pressure></fc>hPa"
-                        ] 36000
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% | %swap% } %StdinReader% { %battery% | %date% | %RJTT% "
+       , template = "%cpu% | %memory% | %swap% } %StdinReader% { %battery% | %date% "
        }
