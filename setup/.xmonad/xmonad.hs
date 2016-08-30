@@ -146,7 +146,7 @@ myStartupHook = do
         spawnOnce "unity-settings-daemon"
         spawnOnce "xscreensaver -no-splash"
         spawnOnce "$HOME/.dropbox-dist/dropboxd"
-        spawnOnce "stalonetray -i 1 --geometry 6x1-0-0 -bg white"
+        spawnOnce "stalonetray"
 
 --------------------------------------------------------------------------- }}}
 -- myManageHookShift: some window must created there                        {{{
