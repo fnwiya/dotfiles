@@ -4,7 +4,7 @@ Config {
        , fgColor = "#D0CDD9"
        , border = NoBorder
        , borderColor = "#D0CDD9"
-       , position = Top
+       , position = TopW L 100
        , lowerOnStart = False
        , commands = [
                       Run Cpu [
