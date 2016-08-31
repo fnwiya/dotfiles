@@ -1,5 +1,5 @@
-selectp -t 0
-splitw -h
-selectp -t 0
-splitw -v
-selectp -t 0
+select-pane -t 0
+split-window -h
+select-pane -t 0
+split-window -v
+select-pane -t 0
