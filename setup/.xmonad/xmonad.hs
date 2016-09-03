@@ -39,6 +39,8 @@ import XMonad.Layout.MultiToggle
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.Fullscreen (fullscreenFull)
 import XMonad.Layout.Named
+import XMonad.Actions.MouseResize
+import XMonad.Layout.WindowArranger
 
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
@@ -131,8 +133,8 @@ main = do
 -- myLayout:          Handle Window behaveior                               {{{
 -------------------------------------------------------------------------------
 
-myLayout = spacing gapwidth $
-  gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
+myLayout = mouseResize $ windowArrange $
+  spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
   $ (ResizableTall 1 (1/204) (119/204) [])
   ||| Simplest
 
