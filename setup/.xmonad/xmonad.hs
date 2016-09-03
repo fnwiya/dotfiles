@@ -39,8 +39,7 @@ import XMonad.Layout.MultiToggle
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.Fullscreen (fullscreenFull)
 import XMonad.Layout.Named
-import XMonad.Actions.MouseResize
-import XMonad.Layout.WindowArranger
+import XMonad.Layout.MouseResizableTile
 
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
@@ -98,6 +97,7 @@ main = do
        , borderWidth        = borderwidth
        , normalBorderColor  = mynormalBorderColor
        , focusedBorderColor = myfocusedBorderColor
+       , mouseBindings      = myMouseBindings
        , startupHook        = myStartupHook
        , manageHook         = myManageHookShift <+>
                               myManageHookFloat <+>
@@ -130,12 +130,19 @@ main = do
         -- , ("M-S-h", shiftTo Prev EmptyWS)
         ]
 --------------------------------------------------------------------------- }}}
+-- myMousebindings:          Bind mouse                                     {{{
+-------------------------------------------------------------------------------
+myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
+    [ ((modMask, button1), (\w -> focus w >> mouseMoveWindow w >> windows W.shiftMaster)) -- set the window to floating mode and move by dragging
+    , ((modMask, button2), (\w -> focus w >> windows W.shiftMaster)) -- raise the window to the top of the stack
+    , ((modMask, button3), (\w -> focus w >> Flex.mouseResizeWindow w)) -- set the window to floating mode and resize by dragging
+    ]
+--------------------------------------------------------------------------- }}}
 -- myLayout:          Handle Window behaveior                               {{{
 -------------------------------------------------------------------------------
 
-myLayout = mouseResize $ windowArrange $
-  spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
-  $ (ResizableTall 1 (1/204) (119/204) [])
+myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
+  $ mouseResizableTile { draggerType = FixedDragger { gapWidth = 0, draggerWidth = 2 }}
   ||| Simplest
 
 --------------------------------------------------------------------------- }}}
