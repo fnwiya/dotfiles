@@ -52,7 +52,7 @@ if [  -x "`which fzf`" ]; then
         zstyle ':completion:*' recent-dirs-insert both
     fi
     zle -N fzf-select-history
-    bindkey '^o^h' fzf-select-history
+    bindkey '^z^h' fzf-select-history
 
     function fzf-cdr () {
         local selected_dir=$(cdr -l | awk '{ print $2 }' | fzf)
@@ -63,14 +63,14 @@ if [  -x "`which fzf`" ]; then
         zle clear-screen
     }
     zle -N fzf-cdr
-    bindkey '^o^r' fzf-cdr
+    bindkey '^z^r' fzf-cdr
 
     function fzf-kill-process () {
         ps -ef | fzf | awk '{ print $2 }' | xargs kill
         zle clear-screen
     }
     zle -N fzf-kill-process
-    bindkey '^o^k' fzf-kill-process
+    bindkey '^z^k' fzf-kill-process
 
     function fzf-ghq-src () {
         local selected_dir=$(ghq list -p | fzf)
@@ -81,6 +81,6 @@ if [  -x "`which fzf`" ]; then
         zle clear-screen
     }
     zle -N fzf-ghq-src
-    bindkey '^o^g' fzf-ghq-src
+    bindkey '^z^g' fzf-ghq-src
 
 fi
