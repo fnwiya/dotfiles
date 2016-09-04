@@ -1,6 +1,7 @@
 #!/bin/bash
 ln -sf ~/dotfiles/setup/.conkyrc ~
 ln -sf ~/dotfiles/setup/.emacs.d ~
+ln -sf ~/dotfiles/setup/.ghci.conf ~
 ln -sf ~/dotfiles/setup/.peco ~
 ln -sf ~/dotfiles/setup/.psqlrc ~
 ln -sf ~/dotfiles/setup/.sbclrc ~
