@@ -86,7 +86,6 @@ gwR = 0
 -- main                                                                     {{{
 -------------------------------------------------------------------------------
 
-main :: IO ()
 main = do
     wsbar <- spawnPipe myWsBar
     xmonad $ ewmh defaultConfig
