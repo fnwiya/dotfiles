@@ -141,7 +141,8 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
 -------------------------------------------------------------------------------
 
 myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
-  $ mouseResizableTile { draggerType = FixedDragger { gapWidth = 0, draggerWidth = 2 }}
+  $ (ResizableTall 1 (1/55) (1/2) [])
+  -- ||| mouseResizableTile { draggerType = FixedDragger { gapWidth = 0, draggerWidth = 2 }}
   ||| Simplest
 
 --------------------------------------------------------------------------- }}}
@@ -165,7 +166,6 @@ myManageHookShift = composeAll
             -- if you want to know className, type "$ xprop|grep CLASS" on shell
             [ className =? "Firefox"       --> mydoShift "4"
             , className =? "Thg"           --> mydoShift "5"
-            , className =? "google-chrome" --> mydoShift "4"
             , className =? "Emacs"         --> mydoShift "2"
             ]
              where mydoShift = doF . liftM2 (.) W.greedyView W.shift
