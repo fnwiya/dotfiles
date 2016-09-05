@@ -44,6 +44,7 @@
     cider
     clj-refactor
     clojure-mode
+    color-theme-solarized
     company
     company-c-headers
     codic
