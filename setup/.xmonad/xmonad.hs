@@ -54,7 +54,7 @@ import XMonad.Config.Desktop (desktopLayoutModifiers)
 -------------------------------------------------------------------------------
 
 modm = mod4Mask  -- Super
-myWorkspaces = ["1", "2", "3", "4", "5"]
+myWorkspaces = ["1", "2", "3", "4", "5", "6"]
 myFloatWorkspace = "3"
 myTerminal   = "gnome-terminal"
 --myTerminal   = "urxvt"
@@ -103,7 +103,7 @@ main = do
                               manageDocks
        , layoutHook         = avoidStruts $ (
                                 toggleLayouts (noBorders Full)
-                                $ onWorkspace myFloatWorkspace simplestFloat
+                                -- $ onWorkspace myFloatWorkspace simplestFloat
                                 $ myLayout
                               )
        , logHook            = myLogHook wsbar
