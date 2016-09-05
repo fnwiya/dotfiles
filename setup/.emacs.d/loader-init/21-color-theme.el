@@ -3,4 +3,5 @@
   (load-theme 'fnwiya t)
   (enable-theme 'fnwiya))
 (unless (window-system)
-  (load-theme 'solarized t))
+  ;;(load-theme 'solarized-dark t)
+  )
