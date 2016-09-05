@@ -9,6 +9,7 @@
 - [capsをctrlに](http://masaoo.blogspot.jp/2015/01/ubuntu-1404-lts-caps-lock-ctrl.html)
 - [skypeインストール](http://www.skype.com/ja/download-skype/skype-for-linux/)
 - [slackをインストール](https://slack.com/downloads)
+- [端末の色を設定](https://github.com/Anthony25/gnome-terminal-colors-solarized)
 - ログインの音無効化
     - ```sudo vim /usr/share/gnome/autostart/libcanberra-login-sound.desktop```
     - ->change the “NoDisplay” from “true” to “false”
