@@ -2,6 +2,7 @@ typeset -U path PATH
 path=(
    /bin(N-/)
    /usr/bin(N-/)
+   /usr/local/bin(N-/)
    /usr/local/sbin(N-/)
    /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    $path
@@ -59,5 +60,3 @@ fi
 if [ -d ~/.local/bin ] ; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
-
-export PATH="/usr/local/bin:$PATH"
