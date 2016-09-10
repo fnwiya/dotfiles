@@ -27,6 +27,7 @@ if [ -e $HOME/.pyenv ] ;then
 fi
 # virtualenv
 if [ -x "`which virtualenvwrapper.sh`" ] ;then
+  export PATH=/usr/local/bin:$PATH
   mkdir -p "$HOME/.virtualenvs"
   source /usr/local/bin/virtualenvwrapper.sh
   export WORKON_HOME=$HOME/.virtualenvs
