@@ -69,8 +69,8 @@ source install/pyenv.sh
 echo "pip settings"
 source install/pip.sh
 
-echo "sbcl settings"
-source install/sbcl.sh
+# echo "sbcl settings"
+# source install/sbcl.sh
 
 echo "gem settings"
 source install/gem.sh

@@ -35,8 +35,8 @@ fi
 # virtualenv
 if [ -x "`which virtualenvwrapper.sh`" ] ;then
   mkdir -p "$HOME/.virtualenvs"
-  source /usr/local/bin/virtualenvwrapper.sh
   export WORKON_HOME=$HOME/.virtualenvs
+  source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
