@@ -48,7 +48,7 @@ sudo apt-get -y install ssh
 sudo apt-get -y install stalonetray
 sudo apt-get -y install thg
 sudo apt-get -y install tmux
-if[ ! -x /usr/local/bin/emojify ] ; then 
+if[ ! -x /usr/local/bin/emojify ]; then 
   sudo apt-get -y install ttf-ancient-fonts
   sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
 fi
@@ -88,7 +88,7 @@ sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
 #sudo apt-get -y install google-chrome-stable
 
-if[ ! -e $HOME/emacs-24.5 ] ; then 
+if[ ! -e $HOME/emacs-24.5 ]; then 
   sudo apt-get build-dep emacs24
   cd $HOME
   wget -O- http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.xz | tar xJf -
