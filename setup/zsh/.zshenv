@@ -33,11 +33,11 @@ if [ -e $HOME/.pyenv ] ;then
   export PATH="$PYENV_ROOT/bin:$PATH"
 fi
 # virtualenv
-if [ -x "`which virtualenvwrapper.sh`" ] ;then
-  mkdir -p "$HOME/.virtualenvs"
-  export WORKON_HOME=$HOME/.virtualenvs
-  source /usr/local/bin/virtualenvwrapper.sh
-fi
+# if [ -x "`which virtualenvwrapper.sh`" ] ;then
+#   mkdir -p "$HOME/.virtualenvs"
+#   export WORKON_HOME=$HOME/.virtualenvs
+#   source /usr/local/bin/virtualenvwrapper.sh
+# fi
 
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
   export PATH="/usr/local/etc/profile.d:$PATH"
