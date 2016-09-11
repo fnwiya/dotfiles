@@ -16,7 +16,7 @@ elif [ -x "`which curl`" ] || [ -x "`which wget`" ] ; then
     elif [ -x "`which wget`" ] ; then
         wget -O - "$tarball"
 
-    fi | tar xv -
+    fi | tar xvz -
 
     # 解凍したら，DOTPATH に置く
     mv -f dotfiles-master "$DOTPATH"
