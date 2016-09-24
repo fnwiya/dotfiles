@@ -47,6 +47,7 @@ brew install gibo
 brew install git
 brew install global
 brew install go
+brew install haskell-stack
 brew install heroku
 brew install hub
 brew install jq

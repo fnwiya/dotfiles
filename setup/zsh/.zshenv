@@ -1,10 +1,10 @@
 typeset -U path PATH
 path=(
-   /bin(N-/)
-   /usr/bin(N-/)
+   /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    /usr/local/bin(N-/)
    /usr/local/sbin(N-/)
-   /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
+   /usr/bin(N-/)
+   /bin(N-/)
    $path
 )
 
