@@ -45,7 +45,7 @@ case ${OSTYPE} in
         export CLICOLOR=1
         alias ls='ls -A -G -F'
         alias emc='TERM=xterm-256color /usr/local/bin/emacs -nw'
-        alias pkgupd='brew update && brew upgrade --all && brew doctor'
+        alias pkgupd='brew update && brew upgrade && brew doctor'
         ;;
     linux*)
         #Linux用の設定
