@@ -16,3 +16,7 @@ l = log
 gl = glog
 
 # %include ~/Dropbox/config-file/.hgrc
+
+
+[tortoisehg]
+vdiff = vimdiff

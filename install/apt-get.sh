@@ -41,6 +41,7 @@ sudo apt-get -y install numix-icon-theme-circle
 sudo apt-get -y install paper-gtk-theme
 sudo apt-get -y install paper-icon-theme
 sudo apt-get -y install pgadmin3
+sudo apt-get -y install ppa-purge
 sudo apt-get -y install rxvt-unicode-256color
 sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install sqlite3
