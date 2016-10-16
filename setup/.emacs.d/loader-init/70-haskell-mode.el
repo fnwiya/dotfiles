@@ -20,7 +20,7 @@
                                      "if" "then" "else" "let")))
    '(haskell-indent-offset 4)
    '(haskell-indent-spaces 4))
-  (setq haskell-program-name "/usr/bin/ghci")
+  ;; (setq haskell-program-name "/usr/bin/ghci")
   (add-hook 'haskell-mode-hook 'inf-haskell-mode)
   (defadvice inferior-haskell-load-file (after change-focus-after-load)
     "Change focus to GHCi window after C-c C-l command"
