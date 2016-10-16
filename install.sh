@@ -75,6 +75,9 @@ source install/pip.sh
 echo "gem settings"
 source install/gem.sh
 
+echo "stack settings"
+source install/stack.sh
+
 echo "Configuring zsh as default shell"
 sudo which zsh >> /etc/shells
 chsh -s $(which zsh)
