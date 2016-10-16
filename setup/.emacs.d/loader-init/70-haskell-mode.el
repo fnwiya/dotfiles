@@ -6,8 +6,8 @@
   (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
   (add-hook 'haskell-mode-hook 'font-lock-mode)
   (add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
-  (add-to-list ‘interpreter-mode-alist ‘(“runghc” . haskell-mode))
-  (add-to-list ‘interpreter-mode-alist ‘(“runhaskell” . haskell-mode))
+  (add-to-list 'interpreter-mode-alist '("runghc" . haskell-mode))
+  (add-to-list 'interpreter-mode-alist '("runhaskell" . haskell-mode))
   (custom-set-variables
    '(haskell-indent-after-keywords (quote 
                                     (("where" 4 0) 
@@ -20,6 +20,12 @@
                                      "if" "then" "else" "let")))
    '(haskell-indent-offset 4)
    '(haskell-indent-spaces 4))
+  (setq haskell-program-name "/usr/bin/ghci")
+  (add-hook 'haskell-mode-hook 'inf-haskell-mode)
+  (defadvice inferior-haskell-load-file (after change-focus-after-load)
+    "Change focus to GHCi window after C-c C-l command"
+    (other-window 1))
+  (ad-activate 'inferior-haskell-load-file)
   )
 
 (add-to-list 'auto-mode-alist '("\\.lhs$" . literate-haskell-mode))
