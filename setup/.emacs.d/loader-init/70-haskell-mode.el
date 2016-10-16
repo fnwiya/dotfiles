@@ -6,6 +6,8 @@
   (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
   (add-hook 'haskell-mode-hook 'font-lock-mode)
   (add-hook 'haskell-mode-hook 'imenu-add-menubar-index)
+  (add-to-list ‘interpreter-mode-alist ‘(“runghc” . haskell-mode))
+  (add-to-list ‘interpreter-mode-alist ‘(“runhaskell” . haskell-mode))
   (custom-set-variables
    '(haskell-indent-after-keywords (quote 
                                     (("where" 4 0) 
@@ -19,8 +21,10 @@
    '(haskell-indent-offset 4)
    '(haskell-indent-spaces 4))
   )
+
 (add-to-list 'auto-mode-alist '("\\.lhs$" . literate-haskell-mode))
 (add-to-list 'auto-mode-alist '("\\.cabal\\'" . haskell-cabal-mode))
+
 (use-package ghc
   :config
   (autoload 'ghc-init "ghc" nil t)
