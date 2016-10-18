@@ -2,4 +2,4 @@
   :config
   (add-hook 'org-pomodoro-finished-hook
             (lambda()
-              (notifications-notify "fin"))))
+              (shell-command "notify-send \"pomodoro finished\""))))
