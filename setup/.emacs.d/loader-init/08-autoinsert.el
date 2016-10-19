@@ -16,6 +16,7 @@
                ("\\.py$"   . ["template.py" my-template])
                ("readme.md"   . ["template.md" my-template])
                ("README.md"   . ["template.md" my-template])
+               ("\\.org$"   . ["todo-template.org" my-template])
                ("\\.sh$" . ["template.sh"
                             (lambda() (my-template-exec "/bin/bash"))
                             my-template])
