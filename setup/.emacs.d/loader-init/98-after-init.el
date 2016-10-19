@@ -6,7 +6,7 @@
               ;; MacBook Air (11-inch, Mid 2013)
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
-                (async-shell-command "brew update && brew upgrade --all && brew doctor")))
+                (async-shell-command "brew update && brew upgrade && brew doctor")))
              ((eq system-type 'gnu/linux)
               (cond
                ((equal system-name-simple "forcia-VirtualBox")
