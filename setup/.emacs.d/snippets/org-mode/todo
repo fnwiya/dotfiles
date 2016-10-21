@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: todo
+# key: todo
+# --
+* Memo
+** Target
+*** TODO $1
+** Log
+
+** Review
