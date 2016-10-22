@@ -20,6 +20,7 @@
     js2-mode-hook
     lisp-mode-hook
     nxml-mode-hook
+    org-mode-hook
     perl-mode-hook
     python-mode-hook
     ruby-mode-hook
