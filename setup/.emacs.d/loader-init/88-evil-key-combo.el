@@ -45,7 +45,7 @@
   (add-hook 'haskell-mode-hook
             (lambda()
               (key-combo-define evil-insert-state-map (kbd "<")  '("<" "<-"))
-              (key-combo-define evil-insert-state-map (kbd ">")  '(">" "->"))
+              (key-combo-define evil-insert-state-map (kbd ">")  '(">" "->" ">>="))
               ))
   (add-hook 'clojure-mode-hook
             (lambda()
