@@ -13,6 +13,7 @@ alias evalenv='source ~/dotfiles/setup/zsh/.zshenv'
 alias em='emacsclient -n'
 alias ekill='emacsclient -e "(kill-emacs)"'
 alias gitupd='git add --all . && git commit -m "update" && git push'
+alias multi_ssh='~/dotfiles/setup/tmux/.tmux/multi_ssh.sh'
 function psgr () {
     ps aux | grep  "$1" | grep -v grep
 }
