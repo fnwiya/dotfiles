@@ -35,6 +35,7 @@
   '(text-mode-hook
     org-mode-hook
     twittering-edit-mode-hook
+    eww-mode-hook
     pdf-view-mode-hook))
 
 (defvar *lisp-mode-hooks*
