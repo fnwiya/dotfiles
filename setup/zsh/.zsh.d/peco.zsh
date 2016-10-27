@@ -27,8 +27,8 @@ if [ -x "`which peco`" ]; then
         zstyle ':chpwd:*' recent-dirs-default yes
         zstyle ':completion:*' recent-dirs-insert both
     fi
-    zle -N peco-select-history
-    bindkey '^o^h' peco-select-history
+    zle -N peco-select-history peco-select-history
+    bindkey '^x^h' peco-select-history
 
     function peco-cdr () {
         local selected_dir=$(cdr -l | awk '{ print $2 }' | peco)
@@ -38,15 +38,15 @@ if [ -x "`which peco`" ]; then
         fi
         zle clear-screen
     }
-    zle -N peco-cdr
-    bindkey '^o^r' peco-cdr
+    zle -N peco-cdr peco-cdr
+    bindkey '^x^b' peco-cdr
 
     function peco-kill-process () {
         ps -ef | peco | awk '{ print $2 }' | xargs kill
         zle clear-screen
     }
-    zle -N peco-kill-process
-    bindkey '^o^k' peco-kill-process
+    zle -N peco-kill-process peco-kill-process
+    bindkey '^x^k' peco-kill-process
 
     function peco-ghq-src () {
         local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
@@ -56,7 +56,7 @@ if [ -x "`which peco`" ]; then
         fi
         zle clear-screen
     }
-    zle -N peco-ghq-src
-    bindkey '^o^g' peco-ghq-src
+    zle -N peco-ghq-src peco-ghq-src
+    bindkey '^x^g' peco-ghq-src
 
 fi
