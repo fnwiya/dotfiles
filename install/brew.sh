@@ -42,6 +42,7 @@ brew install elixir
 brew install emojify
 brew install --cocoa emacs
 brew install fzf
+~/.fzf/install --no-key-bindings --no-completion --no-update-rc
 brew install gcc
 brew install gibo
 brew install git
