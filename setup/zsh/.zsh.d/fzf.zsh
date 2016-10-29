@@ -51,8 +51,8 @@ if [  -x "`which fzf`" ]; then
         zstyle ':chpwd:*' recent-dirs-default yes
         zstyle ':completion:*' recent-dirs-insert both
     fi
-    zle -N fzf-select-history fzf-select-history
-    bindkey '^z^h' fzf-select-history
+    zle -N fzf-select-history
+    bindkey '^x^h' fzf-select-history
 
     function fzf-cdr () {
         local selected_dir=$(cdr -l | awk '{ print $2 }' | fzf)
@@ -69,7 +69,7 @@ if [  -x "`which fzf`" ]; then
         ps -ef | fzf | awk '{ print $2 }' | xargs kill
         zle clear-screen
     }
-    zle -N fzf-kill-process fzf-kill-process
+    zle -N fzf-kill-process
     bindkey '^x^k' fzf-kill-process
 
     function fzf-ghq-src () {
@@ -80,29 +80,7 @@ if [  -x "`which fzf`" ]; then
         fi
         zle clear-screen
     }
-    zle -N fzf-ghq-src fzf-ghq-src
+    zle -N fzf-ghq-src
     bindkey '^x^g' fzf-ghq-src
-
-    # fshow - git commit browser (enter for show, ctrl-d for diff)
-    fshow() {
-        local out shas sha q k
-        while out=$(
-                git log --graph --color=always \
-                    --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
-                    fzf --ansi --multi --no-sort --reverse --query="$q" \
-                        --print-query --expect=ctrl-d); do
-            q=$(head -1 <<< "$out")
-            k=$(head -2 <<< "$out" | tail -1)
-            shas=$(sed '1,2d;s/^[^a-z0-9]*//;/^$/d' <<< "$out" | awk '{print $1}')
-            [ -z "$shas" ] && continue
-            if [ "$k" = ctrl-d ]; then
-                git diff --color=always $shas | less -R
-            else
-                for sha in $shas; do
-                    git show --color=always $sha | less -R
-                done
-            fi
-        done
-    }
 
 fi

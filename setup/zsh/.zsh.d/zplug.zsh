@@ -28,9 +28,10 @@ zplug load --verbose
 # plugins conf
 ZSHPLUGINS="${HOME}/.zsh.d/plugins"
 
-if [ -d $ZSHPLUGINS ]; then
-    for i in $ZSHPLUGINS/*; do
-        [[ ${i##*/} = *.zsh ]] &&
-            [ \( -f $i -o -h $i \) -a -r $i ] && . $i
-    done
-fi
+# if [ -d $ZSHPLUGINS ]; then
+#     for i in $ZSHPLUGINS/*; do
+#         if [[ ${i##*/} =~ ^.+\.zsh$ ]] && [ \( -f $i -o -h $i \) -a -r $i ]; then
+#             . $i
+#         fi
+#     done
+# fi

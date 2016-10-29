@@ -10,4 +10,3 @@ if ! type vim > /dev/null 2>&1; then
     alias vim=vi
 fi
 export PGHOST=localhost
-
