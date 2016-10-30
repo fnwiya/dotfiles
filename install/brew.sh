@@ -65,6 +65,7 @@ brew install pyenv-virtualenv
 brew install mas
 brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
+brew install rust
 brew install sbcl
 brew install the_silver_searcher
 brew install tmux

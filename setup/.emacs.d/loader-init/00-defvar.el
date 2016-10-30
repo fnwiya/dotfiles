@@ -23,6 +23,7 @@
     perl-mode-hook
     python-mode-hook
     ruby-mode-hook
+    rust-mode-hook
     sh-mode-hook
     slime-mode-hook
     slime-repl-mode-hook
