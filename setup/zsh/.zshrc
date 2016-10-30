@@ -10,7 +10,6 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
             continue
         fi
         if [[ ${i##*/} =~ ^.+\.zsh$ ]] && [ \( -f $i -o -h $i \) -a -r $i ]; then
-            echo ${i##*/}
             . $i
         fi
     done
