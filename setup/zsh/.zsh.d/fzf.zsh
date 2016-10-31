@@ -37,7 +37,7 @@ if [  -x "`which fzf`" ]; then
         else
             tac="tail -r"
         fi
-        BUFFER=$(history -n 1 | eval $tac | awk '!a[$0]++' | fzf)
+        BUFFER=$(history -n 1 | eval $tac | awk '!a[$0]++' | fzf --reverse)
         CURSOR=$#BUFFER
         zle clear-screen
     }
@@ -55,7 +55,7 @@ if [  -x "`which fzf`" ]; then
     bindkey '^x^h' fzf-select-history
 
     function fzf-cdr () {
-        local selected_dir=$(cdr -l | awk '{ print $2 }' | fzf)
+        local selected_dir=$(cdr -l | awk '{ print $2 }' | fzf --reverse)
         if [ -n "$selected_dir" ]; then
             BUFFER="cd ${selected_dir}"
             zle accept-line
@@ -66,14 +66,14 @@ if [  -x "`which fzf`" ]; then
     bindkey '^x^b' fzf-cdr
 
     function fzf-kill-process () {
-        ps -ef | fzf | awk '{ print $2 }' | xargs kill
+        ps -ef | fzf --reverse | awk '{ print $2 }' | xargs kill
         zle clear-screen
     }
     zle -N fzf-kill-process
     bindkey '^x^k' fzf-kill-process
 
     function fzf-ghq-src () {
-        local selected_dir=$(ghq list -p | fzf)
+        local selected_dir=$(ghq list -p | fzf --reverse)
         if [ -n "$selected_dir" ]; then
             BUFFER="cd ${selected_dir}"
             zle accept-line

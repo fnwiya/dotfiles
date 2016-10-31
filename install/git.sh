@@ -1,3 +1,3 @@
 #!/bin/bash
 
-~/.fzf/install --no-key-bindings --no-completion --no-update-rc
+~/.fzf/install --key-bindings --completion --no-update-rc
