@@ -171,16 +171,15 @@
 
 (require 'use-package)
 
+(use-package auto-package-update
+  :config
+  (setq auto-package-update-delete-old-versions t)
+  (setq apu--last-update-day-path "~/.emacs.d/cache/.last-package-update-day")
+  (add-hook 'auto-package-update-before-hook
+            (lambda () (message "I will update packages now"))))
 (when (window-system)
-  (use-package auto-package-update
-    :config
-    (setq auto-package-update-delete-old-versions t)
-    (setq apu--last-update-day-path "~/.emacs.d/cache/.last-package-update-day")
-    (add-hook 'auto-package-update-before-hook
-              (lambda () (message "I will update packages now")))
-    (save-window-excursion
-      (auto-package-update-now))
-    ))
+  (save-window-excursion
+    (auto-package-update-now)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init
