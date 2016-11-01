@@ -74,7 +74,7 @@
 (setq interprogram-paste-function
       (lambda ()
         (shell-command-to-string "xsel -b -o")))
-(m-cut-function
+(setq interprogram-cut-function
       (lambda (text && optional rest)
         (let*  (process-connection-type nil)
              (proc (start-process "xsel" "*Messages*" "xsel" "-b" "-i")))
