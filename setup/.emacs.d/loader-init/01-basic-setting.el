@@ -48,7 +48,7 @@
 
 ;; M-wやC-kでコピーしたものを、他のアプルケーションで貼り付け可能にする
 (cond (window-system
-       (setq x-select-enable-clipboard t));; クリップボードと同期
+       (setq x-select-enable-clipboard t))
       (t
        (setq interprogram-paste-function
              (lambda ()
