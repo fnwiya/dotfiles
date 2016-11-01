@@ -22,9 +22,13 @@
 (bind-key "C-9" 'forward-list)
 
 (global-set-key [M-right] 'split-window-horizontally)
+(bind-key "C-w <right>" 'split-window-horizontally)
 (global-set-key [M-left] 'split-window-horizontally)
+(bind-key "C-w <left>" 'split-window-horizontally)
 (global-set-key [M-up] 'split-window-vertically)
+(bind-key "C-w <up>" 'split-window-vertically)
 (global-set-key [M-down] 'delete-other-windows)
+(bind-key "C-w <down>" 'delete-other-windows)
 
 (defun kill-word-at-point ()
   (interactive)
