@@ -94,4 +94,16 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-ssh
     bindkey '^x^[' fzf-ssh
 
+    fzf-vim() {
+        local files
+
+        files=(${(f)"$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1 -m)"})
+
+        if [[ -n $files ]]
+        then
+            vim -- $files
+            print -l $files[1]
+        fi
+    }
+
 fi
