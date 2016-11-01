@@ -83,4 +83,15 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-ghq-src
     bindkey '^x^g' fzf-ghq-src
 
+    function fzf-ssh () {
+        local selected_host=$(cat ~/.ssh/config | grep HostName | awk '{print $2}' | fzf --reverse)
+        if [ -n "$selected_host" ]; then
+            BUFFER="ssh ${selected_host}"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N fzf-ssh
+    bindkey '^x^[' fzf-ssh
+
 fi
