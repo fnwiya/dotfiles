@@ -76,7 +76,7 @@ echo "gem settings"
 source install/gem.sh
 
 echo "git settings"
-source install/git.sh 
+source install/git.sh
 
 echo "stack settings"
 source install/stack.sh
