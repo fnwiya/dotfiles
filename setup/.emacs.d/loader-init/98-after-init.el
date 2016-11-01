@@ -7,7 +7,7 @@
               (set-frame-size (selected-frame) 91 47)
               (save-window-excursion
                 (async-shell-command "brew update && brew upgrade && brew doctor")))
-             ((eq system-type 'gnu/linux)
+             ((and (window-system) (eq system-type 'gnu/linux))
               (cond
                ((equal system-name-simple "forcia-VirtualBox")
                 (set-frame-size (selected-frame) 101 50)
