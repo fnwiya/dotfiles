@@ -21,14 +21,17 @@ if [  -x "`which fzf`" ]; then
     # ------------
     if [ -f /usr/local/opt/fzf/shell/key-bindings.zsh ]; then
         source "/usr/local/opt/fzf/shell/key-bindings.zsh"
-        export FZF_DEFAULT_OPTS="
+    fi
+
+    export FZF_DEFAULT_OPTS="
             --reverse
             --extended
             --ansi
             --multi
             --bind=ctrl-z:toggle-all
+            --color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254
+            --color info:254,prompt:37,spinner:108,pointer:235,marker:235
         "
-    fi
 
     function fzf-select-history() {
         local tac
