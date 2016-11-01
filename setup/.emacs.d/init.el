@@ -10,8 +10,7 @@
             (lambda()
               (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
   )
-(when (window-system)
-  (git-dotfiles))
+(git-dotfiles)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; package-manager
@@ -167,9 +166,8 @@
       (package-refresh-contents)
       (dolist (pkg not-installed)
         (package-install pkg)))))
-(when (window-system)
-  (save-window-excursion
-    (install-listed-pkg)))
+(save-window-excursion
+  (install-listed-pkg))
 
 (require 'use-package)
 
@@ -179,9 +177,8 @@
   (setq apu--last-update-day-path "~/.emacs.d/cache/.last-package-update-day")
   (add-hook 'auto-package-update-before-hook
             (lambda () (message "I will update packages now"))))
-(when (window-system)
-  (save-window-excursion
-    (auto-package-update-now)))
+(save-window-excursion
+  (auto-package-update-now))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init
