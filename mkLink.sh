@@ -1,48 +1,49 @@
 #!/bin/bash
-ln -sf ~/dotfiles/setup/.conkyrc ~
-ln -sf ~/dotfiles/setup/.emacs.d ~
-ln -sf ~/dotfiles/setup/.ghci.conf ~
-ln -sf ~/dotfiles/setup/.peco ~
-ln -sf ~/dotfiles/setup/.psqlrc ~
-ln -sf ~/dotfiles/setup/.sbclrc ~
-ln -sf ~/dotfiles/setup/.tern-config ~
-ln -sf ~/dotfiles/setup/bash/.bashrc ~
-ln -sf ~/dotfiles/setup/bash/.bash_profile ~
-ln -sf ~/dotfiles/setup/git/.gitconfig ~
-ln -sf ~/dotfiles/setup/git/.gitignore_global ~
-ln -sf ~/dotfiles/setup/hg/.hgignore_global ~
-ln -sf ~/dotfiles/setup/hg/.hgrc ~
-mkdir -p ~/.lein
-ln -sf ~/dotfiles/setup/lein/profiles.clj ~/.lein/profiles.clj
-ln -sf ~/dotfiles/setup/linter/.eslintrc ~
-ln -sf ~/dotfiles/setup/tmux/.tmux.conf ~
-ln -sf ~/dotfiles/setup/tmux/.tmux ~
-ln -sf ~/dotfiles/setup/vim/.vimrc ~
-ln -sf ~/dotfiles/setup/vim/.vim ~
-ln -sf ~/dotfiles/setup/zsh/.zshrc ~
-ln -sf ~/dotfiles/setup/zsh/.zshenv ~
-ln -sf ~/dotfiles/setup/zsh/.zsh.d ~
-ln -sfn ~/dotfiles/submodules/fzf ~/.fzf
-mkdir -p ~/.config/ranger
-ln -sf ~/dotfiles/setup/ranger/rc.conf ~/.config/ranger/rc.conf
-ln -sf ~/dotfiles/setup/ranger/rifle.conf ~/.config/ranger/rifle.conf
-ln -sf ~/dotfiles/setup/ranger/scope.sh ~/.config/ranger/scope.sh
-if [ -e $HOME/Dropbox/config-file ]; then
-    ln -sf ~/Dropbox/config-file/.netrc ~
+dotfilesPath=${1:-~}
+ln -sf $dotfilesPath/dotfiles/setup/.conkyrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/.emacs.d $HOME
+ln -sf $dotfilesPath/dotfiles/setup/.ghci.conf $HOME
+ln -sf $dotfilesPath/dotfiles/setup/.peco $HOME
+ln -sf $dotfilesPath/dotfiles/setup/.psqlrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/.sbclrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/.tern-config $HOME
+ln -sf $dotfilesPath/dotfiles/setup/bash/.bashrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/bash/.bash_profile $HOME
+ln -sf $dotfilesPath/dotfiles/setup/git/.gitconfig $HOME
+ln -sf $dotfilesPath/dotfiles/setup/git/.gitignore_global $HOME
+ln -sf $dotfilesPath/dotfiles/setup/hg/.hgignore_global $HOME
+ln -sf $dotfilesPath/dotfiles/setup/hg/.hgrc $HOME
+mkdir -p $HOME/.lein
+ln -sf $dotfilesPath/dotfiles/setup/lein/profiles.clj $HOME/.lein/profiles.clj
+ln -sf $dotfilesPath/dotfiles/setup/linter/.eslintrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/tmux/.tmux.conf $HOME
+ln -sf $dotfilesPath/dotfiles/setup/tmux/.tmux $HOME
+ln -sf $dotfilesPath/dotfiles/setup/vim/.vimrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/vim/.vim $HOME
+ln -sf $dotfilesPath/dotfiles/setup/zsh/.zshrc $HOME
+ln -sf $dotfilesPath/dotfiles/setup/zsh/.zshenv $HOME
+ln -sf $dotfilesPath/dotfiles/setup/zsh/.zsh.d $HOME
+ln -sfn $dotfilesPath/dotfiles/submodules/fzf $HOME/.fzf
+mkdir -p $HOME/.config/ranger
+ln -sf $dotfilesPath/dotfiles/setup/ranger/rc.conf $HOME/.config/ranger/rc.conf
+ln -sf $dotfilesPath/dotfiles/setup/ranger/rifle.conf $HOME/.config/ranger/rifle.conf
+ln -sf $dotfilesPath/dotfiles/setup/ranger/scope.sh $HOME/.config/ranger/scope.sh
+if [ -e $dotfilesPath/Dropbox/config-file ]; then
+    ln -sf $dotfilesPath/Dropbox/config-file/.netrc $HOME
 fi
 # OS 別の設定
 case ${OSTYPE} in
     darwin*)
         if [ -e $HOME/Library/Application\ Support/Karabiner ]; then
-            ln -sf ~/dotfiles/setup/osx/key4remap/private.xml $karabinerDir/private.xml
+            ln -sf $dotfilesPath/dotfiles/setup/osx/key4remap/private.xml $karabinerDir/private.xml
         fi
         ;;
     linux*)
-        ln -sf ~/dotfiles/setup/x/.Xmodmap ~
-        ln -sf ~/dotfiles/setup/x/.Xdefaults ~
-        ln -sf ~/dotfiles/setup/.xmonad ~
-        ln -sf ~/dotfiles/setup/.stalonetrayrc ~
-        ln -sf ~/dotfiles/setup/linux/.shutter ~
-        # sudo -u postgres ln -sf ~/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
+        ln -sf $dotfilesPath/dotfiles/setup/x/.Xmodmap $HOME
+        ln -sf $dotfilesPath/dotfiles/setup/x/.Xdefaults $HOME
+        ln -sf $dotfilesPath/dotfiles/setup/.xmonad $HOME
+        ln -sf $dotfilesPath/dotfiles/setup/.stalonetrayrc $HOME
+        ln -sf $dotfilesPath/dotfiles/setup/linux/.shutter $HOME
+        # sudo -u postgres ln -sf $dotfilesPath/dotfiles/setup/.psqlrc /home/postgres/.psqlrc
         ;;
 esac

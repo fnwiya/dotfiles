@@ -4,10 +4,10 @@ fi
 
 PATH=(
    /usr/local/bin:
-   $HOME/bin
+   $HOME/bin:
    /bin:
    /usr/bin:
-   /usr/local/sbin:
+   /usr/local/sbin
 )
 # for go lang
 if [ -x "`which go`" ]; then
