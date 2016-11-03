@@ -97,6 +97,13 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-ssh
     bindkey '^x^[' fzf-ssh
 
+    function fzf-tmux-window () {
+        tmux list-windows | fzf | cut -d : -f1 | xargs tmux select-window -t
+        zle clear-screen
+    }
+    zle -N fzf-tmux-window
+    bindkey '^xt' fzf-tmux-window
+
     fzf-vim() {
         local files
 
