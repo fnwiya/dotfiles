@@ -1,0 +1,112 @@
+# Setup fzf
+# ---------
+
+if [  -x "`which fzf`" ]; then
+
+    if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
+        export PATH="$PATH:/usr/local/opt/fzf/bin"
+    fi
+
+    # Man path
+    # --------
+    if [[ ! "$MANPATH" == */usr/local/opt/fzf/man* && -d "/usr/local/opt/fzf/man" ]]; then
+        export MANPATH="$MANPATH:/usr/local/opt/fzf/man"
+    fi
+
+    # Auto-completion
+    # ---------------
+    [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
+
+    # Key bindings
+    # ------------
+    if [ -f /usr/local/opt/fzf/shell/key-bindings.zsh ]; then
+        source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+    fi
+
+    export FZF_DEFAULT_OPTS="
+            --reverse
+            --extended
+            --ansi
+            --multi
+            --bind=ctrl-z:toggle-all
+            --color dark,hl:33,hl+:37,fg+:235,bg+:136,fg+:254
+            --color info:254,prompt:37,spinner:108,pointer:235,marker:235
+        "
+
+    function fzf-select-history() {
+        local tac
+        if which tac > /dev/null; then
+            tac="tac"
+        else
+            tac="tail -r"
+        fi
+        BUFFER=$(history -n 1 | eval $tac | awk '!a[$0]++' | fzf)
+        CURSOR=$#BUFFER
+        zle clear-screen
+    }
+
+    autoload -Uz is-at-least
+    if is-at-least 4.3.11
+    then
+        autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+        add-zsh-hook chpwd chpwd_recent_dirs
+        zstyle ':chpwd:*' recent-dirs-max 5000
+        zstyle ':chpwd:*' recent-dirs-default yes
+        zstyle ':completion:*' recent-dirs-insert both
+    fi
+    zle -N fzf-select-history
+    bindkey '^x^h' fzf-select-history
+
+    function fzf-cdr () {
+        local selected_dir=$(cdr -l | awk '{ print $2 }' | fzf)
+        if [ -n "$selected_dir" ]; then
+            BUFFER="cd ${selected_dir}"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N fzf-cdr fzf-cdr
+    bindkey '^x^b' fzf-cdr
+
+    function fzf-kill-process () {
+        ps -ef | fzf | awk '{ print $2 }' | xargs kill
+        zle clear-screen
+    }
+    zle -N fzf-kill-process
+    bindkey '^x^k' fzf-kill-process
+
+    function fzf-ghq-src () {
+        local selected_dir=$(ghq list -p | fzf)
+        if [ -n "$selected_dir" ]; then
+            BUFFER="cd ${selected_dir}"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N fzf-ghq-src
+    bindkey '^x^g' fzf-ghq-src
+
+    function fzf-ssh () {
+        local selected_host=$(cat ~/.ssh/config | grep HostName | awk '{print $2}' | fzf)
+        if [ -n "$selected_host" ]; then
+            BUFFER="ssh ${selected_host}"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N fzf-ssh
+    bindkey '^x^[' fzf-ssh
+
+    [fzf-vim]() {
+        local files
+
+        files=(${(f)"$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1 -m)"})
+
+        if [[ -n $files ]]
+        then
+            vim -- $files
+            print -l $files[1]
+        fi
+    }
+    tmux list-windows ||  fzf ||  cut -d : -f1 ||  xargs tmux select-window [-t201~]
+fi
