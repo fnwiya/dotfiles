@@ -49,7 +49,7 @@
 ;; M-wやC-kでコピーしたものを、他のアプルケーションで貼り付け可能にする
 (cond (window-system
        (setq x-select-enable-clipboard t))
-      (t
+      ((and (not window-system) (eq system-type 'gnu/linux))
        (setq interprogram-paste-function
              (lambda ()
                (shell-command-to-string "xsel -b -o")))
