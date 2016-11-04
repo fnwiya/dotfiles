@@ -14,6 +14,18 @@ alias em='emacsclient -n'
 alias ekill='emacsclient -e "(kill-emacs)"'
 alias gitupd='git add --all . && git commit -m "update" && git push'
 alias multi_ssh='~/dotfiles/setup/tmux/.tmux/multi_ssh.sh'
+function ssh() {
+  if [[ -n $(printenv TMUX) ]]
+  then
+    local window_name=$(tmux display -p '#{window_name}')
+    tmux rename-window -- "$@[-1]" # zsh specified
+    # tmux rename-window -- "${!#}" # for bash
+    command ssh $@
+    tmux rename-window $window_name
+  else
+    command ssh $@
+  fi
+}
 function psgr () {
     ps aux | grep  "$1" | grep -v grep
 }
