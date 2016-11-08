@@ -58,29 +58,4 @@ if [ -x "`which peco`" ]; then
     }
     zle -N peco-ghq-src peco-ghq-src
     bindkey '^x^g' peco-ghq-src
-
-    function _get_hosts() {
-        # historyを番号なし、逆順、ssh*にマッチするものを1番目から表示
-        # 最後の項をhost名と仮定してhost部分を取り出す
-        local hosts
-        hosts="$(history -nrm 'ssh*' 1 | awk '{print $NF}')"
-        # know_hostsからもホスト名を取り出す
-        # portを指定したり、ip指定でsshしていると
-        #   [hoge.com]:2222,[\d{3}.\d{3].\d{3}.\d{3}]:2222
-        # といったものもあるのでそれにも対応している
-        hosts="$hosts\n$(cut -d' ' -f1  ~/.ssh/known_hosts | tr -d '[]' | tr ',' '\n' | cut -d: -f1)"
-        hosts=$(echo $hosts | awk '!a[$0]++')
-        echo $hosts
-    }
-
-    function peco-ssh() {
-        hosts=`_get_hosts`
-        local selected_host=$(echo $hosts | peco --prompt="ssh >" --query "$LBUFFER")
-        if [ -n "$selected_host" ]; then
-            BUFFER="ssh ${selected_host}"
-            zle accept-line
-        fi
-    }
-    zle -N peco-ssh
-    bindkey '^x^s' peco-ssh
 fi
