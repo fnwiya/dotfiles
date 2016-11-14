@@ -8,7 +8,7 @@ function is_ssh_running() { [ ! -z "$SSH_CONECTION" ]; }
 
 function tmux_automatically_attach_session()
 {
-    if is_screen_or_tmux_running || $USER == "postgres" || $USER == "root"; then
+    if is_screen_or_tmux_running || [[ $USER == "postgres" ]] || [[ $USER == "root" ]]; then
         ! is_exists 'tmux' && return 1
 
    else
