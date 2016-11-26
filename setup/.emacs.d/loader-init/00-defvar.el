@@ -13,12 +13,14 @@
     emacs-lisp-mode-hook
     elisp-mode-hook
     haskell-mode-hook
+    haskell-cabal-mode
     jade-mode-hook
     Javascript-IDE-mode-hook
     JDEE-mode-hook
     js-mode-hook
     js2-mode-hook
     lisp-mode-hook
+    literate-haskell-mode
     nxml-mode-hook
     perl-mode-hook
     python-mode-hook
