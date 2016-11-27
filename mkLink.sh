@@ -37,6 +37,7 @@ case ${OSTYPE} in
         if [ -e $HOME/Library/Application\ Support/Karabiner ]; then
             ln -sf $dotfilesPath/dotfiles/setup/osx/key4remap/private.xml $karabinerDir/private.xml
         fi
+        ln -sf $dotfilesPath/dotfiles/setup/hyper/.hyper.js $HOME
         ;;
     linux*)
         ln -sf $dotfilesPath/dotfiles/setup/x/.Xmodmap $HOME
