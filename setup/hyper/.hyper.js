@@ -86,6 +86,8 @@ module.exports = {
     //'hyperterm-material'
     //'hyperterm-spacegray'
     'hyperterm-base16-ocean-saturated'
+    , 'hyperline'
+    , 'hyperterm-paste'
   ],
 
   // in development, you can create a directory under
