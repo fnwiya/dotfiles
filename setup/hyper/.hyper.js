@@ -64,8 +64,7 @@ module.exports = {
     env: {},
 
     // set to false for no bell
-    //bell: 'SOUND',
-    bell: false,
+    bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false
