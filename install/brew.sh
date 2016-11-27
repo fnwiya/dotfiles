@@ -93,6 +93,7 @@ brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-japanese-ime
+brew cask install hyper 
 brew cask install iterm2
 brew cask install the-unarchiver
 brew cask install virtualbox
