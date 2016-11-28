@@ -1,0 +1,40 @@
+# * 外部のモジュールなどをコピーして使用する際にeslintエラーが出る場合はインラインコメントで対応する
+# * jQueyrプラグインでよく用いられる先頭のセミコロンはインラインコメント(/* eslint: no-extra-semi:0 */)で回避する
+# * no-fallthroughはif/else内のbreakを無視するので0にしておく。
+
+extends: eslint:recommended
+rules:
+  indent:
+    - 2
+    - tab
+    - SwitchCase: 1
+  quotes:
+    - 2
+    - single
+    - avoid-escape
+  linebreak-style:
+    - 2
+    - unix
+  semi:
+    - 2
+    - always
+  eqeqeq:
+    - 2
+    - smart
+  no-unused-vars:
+    - 2
+    - args: none
+  no-mixed-spaces-and-tabs:
+    - 2
+    - smart-tabs
+  no-console: 1
+  camelcase: 1
+  brace-style: 1
+  space-before-blocks:
+    - 1
+    - always
+  no-fallthrough: 0
+env:
+  node: true
+  browser: true
+  jasmine: true
