@@ -10,6 +10,7 @@ color =
 graphlog =
 transplant =
 record =
+convert =
 # hgsubversion = /data/mercurial-repos/hgsubversion/hgsubversion
 [alias]
 l = log

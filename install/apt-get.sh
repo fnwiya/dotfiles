@@ -49,6 +49,7 @@ sudo apt-get -y install sqlite3
 sudo apt-get -y install ssh
 sudo apt-get -y install stalonetray
 sudo apt-get -y install thg
+sudo apt-get -y install tig 
 sudo apt-get -y install tmux
 if [ ! -x /usr/local/bin/emojify ]; then 
   sudo apt-get -y install ttf-ancient-fonts
