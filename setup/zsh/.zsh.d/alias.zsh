@@ -47,6 +47,11 @@ function checkmw () {
     echo "port:5432"
     sudo lsof -i:5432
 }
+function rmself () {
+    p=$(pwd)
+    cd ../
+    rm -rf $p
+}
 if [ $SHLVL = 1 ]; then
     alias tmuxnew="tmux attach || tmux new-session \; source-file ~/.tmux/session"
 fi
