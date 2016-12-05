@@ -24,6 +24,9 @@
   (add-hook 'after-init-hook
             (lambda()
               (recentf-open-files))))
+(add-hook 'after-init-hook
+            (lambda()
+              (kill-buffer "*scratch*")))
 
 (defun reset-window()
   (interactive)
