@@ -176,7 +176,7 @@ myManageHookShift = composeAll
 myManageHookFloat = composeAll
     [ className =? "Gimp"             --> doFloat
     , className =? "Shutter"          --> doFloat
-    , className =? "Nautilus"         --> doFloat
+    -- , className =? "Nautilus"         --> doFloat
     , isFullscreen                    --> doFullFloat
     ]
 
