@@ -95,6 +95,7 @@
     irony
     impatient-mode
     init-loader
+    intero
     ivy
     jade-mode
     jdee
