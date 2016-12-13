@@ -4,5 +4,5 @@
 ;; (setq org-default-notes-file "~/Dropbox/backup/memo.org")
 (setq org-agenda-files (list org-default-notes-file ))
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "WAIT(w)" "|" "DONE(d)" "SOMEDAY(s)")))
+      '((sequence "TODO(t)" "WAIT(w)" "RESCHEDULE(r)" "|" "DONE(d)" "CANCEL(c)")))
 (setq org-log-done 'time)
