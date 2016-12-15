@@ -6,3 +6,8 @@
 (setq org-todo-keywords
       '((sequence "TODO(t)" "DOING(d)" "WAIT(w)" "RESCHEDULE(r)" "|" "DONE(d)" "CANCEL(c)")))
 (setq org-log-done 'time)
+(defun org-todo2slack-reaction ()
+  "Convert org-todo to slack reaction"
+  (interactive)
+  (replace-string "TODO" ":ghost:")
+  (replace-string "DONE" ":ghost-busters:"))
