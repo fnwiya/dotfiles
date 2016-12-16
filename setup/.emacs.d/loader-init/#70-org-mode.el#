@@ -9,5 +9,6 @@
 (defun org-todo2slack-reaction ()
   "Convert org-todo to slack reaction"
   (interactive)
-  (replace-string "DONE" ":ghost-busters:")
-  (replace-string "TODO" ":ghost:"))
+            (lambda()
+  (replace-string "TODO" ":ghost:")
+  (replace-string "DONE" ":ghost-busters:"))
