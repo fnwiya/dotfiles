@@ -63,6 +63,7 @@ brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
 brew install mas
+brew install mplayer
 brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
 brew install rust
@@ -72,6 +73,7 @@ brew install tmux
 brew install tree
 brew install vim
 brew install wget
+brew install youtube-dl
 brew install z
 brew install zsh
 

@@ -34,6 +34,7 @@ sudo apt-get -y install leiningen
 sudo apt-get -y install libpoppler-glib-dev # for https://github.com/politza/pdf-tools
 sudo apt-get -y install lv
 sudo apt-get -y install markdown
+sudo apt-get -y install mplayer
 sudo apt-get -y install multitail
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
@@ -49,9 +50,9 @@ sudo apt-get -y install sqlite3
 sudo apt-get -y install ssh
 sudo apt-get -y install stalonetray
 sudo apt-get -y install thg
-sudo apt-get -y install tig 
+sudo apt-get -y install tig
 sudo apt-get -y install tmux
-if [ ! -x /usr/local/bin/emojify ]; then 
+if [ ! -x /usr/local/bin/emojify ]; then
   sudo apt-get -y install ttf-ancient-fonts
   sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
 fi
@@ -61,6 +62,7 @@ sudo apt-get -y install unity-tweak-tool
 sudo apt-get -y install wget
 sudo apt-get -y install xmonad
 sudo apt-get -y install xmobar
+sudo apt-get -y install youtube-dl
 sudo apt-get -y install z
 sudo apt-get -y install zsh
 # ranger

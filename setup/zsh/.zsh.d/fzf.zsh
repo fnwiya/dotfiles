@@ -104,6 +104,18 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-tmux-window
     bindkey '^xt' fzf-tmux-window
 
+    function fzf-youtube () {
+        local title=$(cat ~/Dropbox/favoriteSongs.tsv | cut -f1 | fzf)
+        if [ -n "$title" ]; then
+            url=$(grep ${title} ~/Dropbox/favoriteSongs.tsv | cut -f2)
+            BUFFER="youtube-dl '${url}' -o - | mplayer - -novideo"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N fzf-youtube fzf-youtube
+    bindkey '^x^v' fzf-youtube
+
     fzf-vim() {
         local files
 
