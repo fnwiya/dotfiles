@@ -116,6 +116,18 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-youtube fzf-youtube
     bindkey '^x^v' fzf-youtube
 
+    function fzf-fg () {
+        local job=$(jobs | fzf)
+        if [ -n "$job" ]; then
+            jobId=$(grep -o '^\[.*\]' ${jobs} | tr -d [ | tr -d ])
+            BUFFER="fg '${jobId}'"
+            zle accept-line
+        fi
+        zle clear-screen
+    }
+    zle -N fzf-fg fzf-fg
+    bindkey '^x^f' fzf-fg
+
     fzf-vim() {
         local files
 
