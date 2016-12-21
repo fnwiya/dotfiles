@@ -27,7 +27,7 @@ function ssh() {
   fi
 }
 function psgr () {
-    ps aux | grep  "$1" | grep -v grep
+    ps aux | grep  "$*" | grep -v grep
 }
 function wether () {
     Area=$1
@@ -36,17 +36,7 @@ function wether () {
     fi
     curl "http://wttr.in/${Area}"
 }
-function checkmw () {
-    ps aux | grep  apache| grep -v grep
-    ps aux | grep  tomcat | grep -v grep
-    ps aux | grep  postgres | grep -v grep
-    echo "port:80"
-    sudo lsof -i:80
-    echo "port:8080"
-    sudo lsof -i:8080
-    echo "port:5432"
-    sudo lsof -i:5432
-}
+
 function rmself () {
     p=$(pwd)
     cd ../
