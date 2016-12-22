@@ -15,6 +15,6 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
     done
     source ${ZSHHOME}/fzf.zsh
     if [ -f "${HOME}/dotfiles/submodules/forciaConf/.zshrc" ]; then
-        source $${HOME}/dotfiles/submodules/forciaConf/.zshrc
+        source ${HOME}/dotfiles/submodules/forciaConf/.zshrc
     fi
 fi
