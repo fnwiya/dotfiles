@@ -6,10 +6,13 @@ fi
 sudo pip install -U pip
 sudo pip install ansible
 sudo pip install ansible-lint
+sudo pip install autopep8
+sudo pip install beautifulsoup4
 sudo pip install django
 sudo pip install elpy
 sudo pip install numpy
 sudo pip install pandas
+sudo pip install pep8
 sudo pip install pgcli
 sudo pip install pip-tools
 sudo pip install scipy
