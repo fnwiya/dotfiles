@@ -16,7 +16,7 @@
     "k" 'kill-this-buffer
     "q" 'kill-this-buffer
     "r" 'helm-recentf
-    "r" 'helm-swoop
+    "s" 'helm-swoop
     "t" 'other-window
     "w" 'save-buffer
     "v" 'evil-visual-block
