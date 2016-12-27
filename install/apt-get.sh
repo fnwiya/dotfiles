@@ -93,11 +93,11 @@ sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
 #sudo apt-get -y install google-chrome-stable
 
-if [ ! -e $HOME/emacs-24.5 ]; then 
+if [ ! -e $HOME/emacs-25.1 ]; then
   sudo apt-get build-dep emacs24
   cd $HOME
-  wget -O- http://ftp.gnu.org/gnu/emacs/emacs-24.5.tar.xz | tar xJf -
-  cd emacs-24.5
+  wget -O- http://ftp.gnu.org/gnu/emacs/emacs-25.1.tar.xz | tar xJf -
+  cd emacs-25.1
   ./configure
   make
   sudo make install
