@@ -128,6 +128,37 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-fg fzf-fg
     bindkey '^x^f' fzf-fg
 
+    # fshow - git commit browser (enter for show, ctrl-d for diff)
+    fshow() {
+        local out shas sha q k
+        while out=$(
+                git log --graph --color=always \
+                    --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+                    fzf --ansi --multi --no-sort --reverse --query="$q" \
+                        --print-query --expect=ctrl-d); do
+            q=$(head -1 <<< "$out")
+            k=$(head -2 <<< "$out" | tail -1)
+            shas=$(sed '1,2d;s/^[^a-z0-9]*//;/^$/d' <<< "$out" | awk '{print $1}')
+            [ -z "$shas" ] && continue
+            if [ "$k" = ctrl-d ]; then
+                git diff --color=always $shas | less -R
+            else
+                for sha in $shas; do
+                    git show --color=always $sha | less -R
+                done
+            fi
+        done
+    }
+    fadd() {
+        local addfiles
+        addfiles=($(git status --short | grep -v '##' | awk '{ print $2 }' | fzf --multi))
+        if [[ -n $addfiles ]]; then
+            git add ${@:1} $addfiles && echo "added: $addfiles"
+        else
+            echo "nothing added."
+        fi
+    }
+
     fzf-vim() {
         local files
 
