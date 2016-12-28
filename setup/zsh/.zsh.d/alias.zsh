@@ -59,7 +59,7 @@ case ${OSTYPE} in
         #Linux用の設定
         alias ls='ls -A -F --color=auto'
         alias emc='emacs -nw'
-        alias pkgupd='sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove'
+        alias pkgupd='sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove'
         alias pbcopy='xsel --clipboard --input'
         alias open='xdg-open'
         ;;

@@ -19,7 +19,7 @@
                  ((equal system-name-simple "forcia-VirtualBox")
                   (set-frame-size (selected-frame) 101 50)
                   (save-window-excursion
-                    (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y autoremove")))))))))
+                    (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove")))))))))
 (unless (window-system)
   (add-hook 'after-init-hook
             (lambda()
