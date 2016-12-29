@@ -23,6 +23,7 @@
   (push '("*Async Shell Command*") popwin:special-display-config)
   (push '("*Kill Ring*") popwin:special-display-config)
   (push '("*popwin-dummy*") popwin:special-display-config)
+  (push '("*SQL*") popwin:special-display-config)
   ;; slime
   (push '("*slime-apropos*") popwin:special-display-config)
   (push '("*slime-macroexpansion*") popwin:special-display-config)
