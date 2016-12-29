@@ -3,16 +3,9 @@
   (("\.sql$" . sql-mode)
    ("\.sqltmpl$" . sql-mode))
   :config
+  (setq sql-indent-offset 4)
   (sql-set-product "postgres")
   )
-;; (use-package sql-indent
-;;   :commands (sql-indent-mode)
-;;   :init
-;;   (add-hook 'sql-mode-hook 'sql-indent-mode)
-;;   (add-hook 'sql-interactive-mode-hook 'sql-indent-mode)
-;;   :config
-;;   (setq sql-indent-offset 2)
-;;   )
 (use-package sqlup-mode
   :commands (sqlup-mode)
   :init
