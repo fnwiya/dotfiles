@@ -75,15 +75,16 @@ source install/pip.sh
 echo "gem settings"
 source install/gem.sh
 
-echo "git settings"
-source install/git.sh
-
 echo "stack settings"
 source install/stack.sh
 
-echo "Configuring zsh as default shell"
-sudo which zsh >> /etc/shells
-chsh -s $(which zsh)
+echo "git settings"
+source install/git.sh
 
+echo "Configuring zsh as default shell"
+if cat /etc/shells | grep $(which zsh) ; then
+    sudo which zsh >> /etc/shells
+fi
+chsh -s $(which zsh)
 
 echo "Done."
