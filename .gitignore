@@ -6,6 +6,7 @@ setup/.emacs.d/*
 !setup/.emacs.d/themes/
 !setup/.emacs.d/insert-tmp/
 !setup/.emacs.d/README.md
+setup/.emacs.d/loader-init/00-custom-set-variables.el
 setup/.emacs.d/loader-init/*.elc
 setup/.emacs.d/themes/*.elc
 setup/.emacs.d/elisp/el-get
