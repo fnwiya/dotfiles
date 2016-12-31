@@ -69,6 +69,7 @@
     f
     flx-ido
     flycheck
+    flycheck-rust
     flyspell
     function-args
     ghc
@@ -125,6 +126,7 @@
     project-explorer
     python-mode
     quickrun
+    racer
     rainbow-delimiters
     rainbow-mode
     recentf-ext
