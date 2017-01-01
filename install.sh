@@ -79,7 +79,6 @@ echo "stack settings"
 source install/stack.sh
 
 echo "rust"
-# curl https://sh.rustup.rs -sSf | sh
 source install/cargo.sh
 
 echo "git settings"
