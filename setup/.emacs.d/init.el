@@ -69,6 +69,7 @@
     f
     flx-ido
     flycheck
+    flycheck-rust
     flyspell
     function-args
     ghc
