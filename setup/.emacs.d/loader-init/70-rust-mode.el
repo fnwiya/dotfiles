@@ -1,17 +1,9 @@
 (use-package rust-mode
   :config
-  (add-hook 'rust-mode-hook #'racer-mode)
+  (add-to-list 'exec-path (expand-file-name "~/.cargo/bin/"))
   (eval-after-load "rust-mode"
     '(setq-default rust-format-on-save t))
-  ;; rustのファイルを編集するときにracerとflycheckを起動する
   (add-hook 'rust-mode-hook (lambda ()
                               (racer-mode)
                               (flycheck-rust-setup)))
-  ;; racerのeldocサポートを使う
-  (add-hook 'racer-mode-hook #'eldoc-mode)
-  ;; racerの補完サポートを使う
-  (add-hook 'racer-mode-hook (lambda ()
-                               (company-mode)
-                             ;; この辺の設定はお好みで
-                               (set (make-variable-buffer-local 'company-idle-delay) 0.1)
-                               (set (make-variable-buffer-local 'company-minimum-prefix-length) 0))))
+  (add-hook 'racer-mode-hook #'eldoc-mode))

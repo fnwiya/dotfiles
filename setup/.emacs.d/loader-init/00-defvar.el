@@ -24,6 +24,7 @@
     nxml-mode-hook
     perl-mode-hook
     python-mode-hook
+    racer-mode-hook
     ruby-mode-hook
     rust-mode-hook
     sh-mode-hook
