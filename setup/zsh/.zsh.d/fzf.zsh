@@ -158,6 +158,15 @@ if [  -x "`which fzf`" ]; then
             echo "nothing added."
         fi
     }
+    fgrunt() {
+        local tasks
+        tasks=($(grunt -h --no-color | sed -n '/^Available tasks/,/^$/ {s/^  *\([^ ]\+\)  [^ ]\+.*$/\1/p}' | fzf --multi))
+        if [[ -n $tasks ]]; then
+            grunt $tasks
+        else
+            echo "no tasks"
+        fi
+    }
 
     fzf-vim() {
         local files
