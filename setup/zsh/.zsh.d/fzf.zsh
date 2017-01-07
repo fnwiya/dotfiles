@@ -69,7 +69,7 @@ if [  -x "`which fzf`" ]; then
     bindkey '^x^b' fzf-cdr
 
     function fzf-kill-process () {
-        ps -ef | fzf | awk '{ print $2 }' | xargs kill
+        ps -ef | fzf --multi | awk '{ print $2 }' | xargs kill
         zle clear-screen
     }
     zle -N fzf-kill-process
