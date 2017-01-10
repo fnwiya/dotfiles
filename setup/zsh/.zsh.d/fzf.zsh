@@ -149,6 +149,7 @@ if [  -x "`which fzf`" ]; then
             fi
         done
     }
+
     fadd() {
         local addfiles
         addfiles=($(git status --short | grep -v '##' | awk '{ print $2 }' | fzf --multi))
@@ -158,6 +159,7 @@ if [  -x "`which fzf`" ]; then
             echo "nothing added."
         fi
     }
+
     fgrunt() {
         local tasks
         tasks=($(grunt -h --no-color | sed -n '/^Available tasks/,/^$/ {s/^  *\([^ ]\+\)  [^ ]\+.*$/\1/p}' | fzf --multi))
@@ -168,7 +170,7 @@ if [  -x "`which fzf`" ]; then
         fi
     }
 
-    fzf-vim() {
+    fvim() {
         local files
 
         files=(${(f)"$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1 -m)"})
