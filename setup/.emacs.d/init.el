@@ -50,6 +50,8 @@
     company-c-headers
     codic
     corral
+    counsel
+    counsel-projectile
     cperl-mode
     csv-mode
     dash
