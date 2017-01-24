@@ -201,3 +201,4 @@
   (interactive)
   (load-file "~/.emacs.d/init.el"))
 (global-set-key (kbd "C-x L") 'my-load-init-file)
+(put 'dired-find-alternate-file 'disabled nil)
