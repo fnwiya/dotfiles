@@ -6,6 +6,7 @@
   (global-set-key (kbd "C-c C-r") 'ivy-resume)
   (global-set-key (kbd "<f6>") 'ivy-resume)
   (global-set-key (kbd "M-x") 'counsel-M-x)
+  (global-set-key (kbd "C-x C-x") 'counsel-M-x)
   (global-set-key (kbd "C-x C-f") 'counsel-find-file)
   (global-set-key (kbd "C-x C-y") 'counsel-yank-pop)
   (global-set-key (kbd "C-x C-r") 'ivy-recentf)

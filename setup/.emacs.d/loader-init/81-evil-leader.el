@@ -22,7 +22,8 @@
     "r" 'ivy-recentf
     "x" 'counsel-M-x
     "y" 'counsel-yank-pop
-    "f" 'projectile-find-file
+    "f" 'counsel-projectile-find-file
+    "d" 'counsel-projectile-find-dir
     "g" 'avy-goto-word-0
     "k" 'kill-this-buffer
     "q" 'kill-this-buffer
