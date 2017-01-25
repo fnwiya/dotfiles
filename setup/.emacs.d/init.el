@@ -39,6 +39,7 @@
     auto-async-byte-compile
     auto-package-update
     avy
+    avy-migemo
     bind-key
     browse-kill-ring
     c-eldoc
