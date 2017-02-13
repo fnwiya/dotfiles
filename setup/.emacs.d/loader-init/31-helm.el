@@ -43,16 +43,7 @@
   (setq helm-swoop-split-direction 'split-window-vertically) ; ウィンドウ分割方向 'split-window-vertically or 'split-window-horizontally
   )
 
-(use-package helm-ag
-  :config
-  (setq helm-ag-base-command "rg --vimgrep --no-heading")
-  ;;; 現在のシンボルをデフォルトのクエリにする
-  (setq helm-ag-insert-at-point 'symbol))
-
-(defun helm-projectile-ag ()
-  "Projectileと連携"
-  (interactive)
-  (helm-ag (projectile-project-root)))
+(use-package helm-ag)
 
 (use-package helm-ghq)
 
