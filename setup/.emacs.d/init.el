@@ -126,6 +126,7 @@
     pdf-tools
     popwin
     projectile
+    projectile-ripgrep
     project-explorer
     python-mode
     quickrun
@@ -133,6 +134,7 @@
     rainbow-delimiters
     rainbow-mode
     recentf-ext
+    ripgrep
     ruby-block
     ruby-end
     rust-mode
