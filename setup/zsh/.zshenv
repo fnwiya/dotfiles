@@ -55,7 +55,7 @@ if [ -e $HOME/.tmuxinator/tmuxinator.zsh ] ; then
   source $HOME/.tmuxinator/tmuxinator.zsh
 fi
 
-if [ -x "`which cargo`" ] ;then
+if [ -d ~/.cargo/bin ] ;then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
 
