@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -x "`which cargo`" ] ;then
+if [ -d ~/.cargo/bin ] ;then
     curl https://sh.rustup.rs -sSf | sh
 fi
 

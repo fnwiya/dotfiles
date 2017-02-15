@@ -7,3 +7,7 @@
                               (racer-mode)
                               (flycheck-rust-setup)))
   (add-hook 'racer-mode-hook #'eldoc-mode))
+(use-package company-racer
+  :config
+  (with-eval-after-load 'company
+    (add-to-list 'company-backends 'company-racer)))

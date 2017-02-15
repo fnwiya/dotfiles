@@ -49,6 +49,7 @@
     color-theme-solarized
     company
     company-c-headers
+    company-racer
     codic
     corral
     counsel

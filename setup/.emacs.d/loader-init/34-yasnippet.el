@@ -10,7 +10,7 @@
   :config
   (setq yas-snippet-dirs
         '("~/.emacs.d/snippets"
-          ;;"~/.emacs.d/elisp/yasnippet/snippets"
+          "~/.emacs.d/elisp/yasnippet/snippets"
           ))
   (custom-set-variables '(yas-trigger-key "C-i"))
   (define-key yas-minor-mode-map (kbd "C-x i i") 'yas-insert-snippet)     ; 既存スニペットを挿入
