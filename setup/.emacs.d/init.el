@@ -147,6 +147,7 @@
     smartrep
     smex
     smooth-scroll
+    solarized-theme
     sql-indent
     sqlup-mode
     state

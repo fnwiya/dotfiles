@@ -3,7 +3,7 @@
   (load-theme 'fnwiya t)
   (enable-theme 'fnwiya))
 (unless (window-system)
-  (use-package color-theme-solarized
+  (use-package solarized
     :config
     (set-frame-parameter nil 'background-mode 'dark)
     (set-terminal-parameter nil 'background-mode 'dark)
