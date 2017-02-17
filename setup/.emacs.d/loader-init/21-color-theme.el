@@ -3,5 +3,9 @@
   (load-theme 'fnwiya t)
   (enable-theme 'fnwiya))
 (unless (window-system)
-  ;;(load-theme 'solarized-dark t)
-  )
+  (add-hook 'after-make-frame-functions
+            (lambda (frame)
+              (let ((mode (if (display-graphic-p frame) 'dark)))
+                (set-frame-parameter frame 'background-mode mode)
+                (set-terminal-parameter frame 'background-mode mode))
+              (enable-theme 'solarized))))
