@@ -8,4 +8,5 @@
               (let ((mode (if (display-graphic-p frame) 'dark)))
                 (set-frame-parameter frame 'background-mode mode)
                 (set-terminal-parameter frame 'background-mode mode))
-              (enable-theme 'solarized))))
+              (enable-theme 'solarized)))
+  (load-theme 'solarized t))
