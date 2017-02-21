@@ -20,6 +20,7 @@ sudo apt-get -y install dmenu
 sudo apt-get -y install elixir
 sudo apt-get -y install emacs
 sudo apt-get -y install fish
+sudo apt-get -y install gauche
 sudo apt-get -y install gcc
 sudo apt-get -y install git
 sudo apt-get -y install gcolor2
