@@ -16,6 +16,3 @@
     (run-scheme scheme-program-name)
     (switch-to-buffer-other-window
      (get-buffer-create buf-name))))
-
-(define-key global-map
-  "\C-wG" 'scheme-other-window)
