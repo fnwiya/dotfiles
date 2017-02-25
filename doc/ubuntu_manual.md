@@ -1,13 +1,6 @@
 
-- [ ] 無線LAN用ドライバー
-    - [ ] ```sudo apt-get install bcmwl-kernel-source```
 - [ ] [GoogleChromeインストール](https://www.google.co.jp/chrome/browser/desktop/index.html)
-- [ ] [emacsインストール](http://nkenbou.hatenablog.com/entry/2015/06/30/051408)
-- [ ] F1 - F12キーをFnキーなしで押せるようにする
-    - [ ] ```sudo vim /etc/rc.local```
-      【 echo 2 > /sys/module/hid_apple/parameters/fnmode 】を追加
 - [ ] [capsをctrlに](http://masaoo.blogspot.jp/2015/01/ubuntu-1404-lts-caps-lock-ctrl.html)
-- [ ] [skypeインストール](http://www.skype.com/ja/download-skype/skype-for-linux/)
 - [ ] [slackをインストール](https://slack.com/downloads)
 - [ ] [端末の色を設定](https://github.com/Anthony25/gnome-terminal-colors-solarized)
 - [ ] ログインの音無効化
@@ -28,5 +21,8 @@
 - [ ] Dock整理
     - [ ] 削除（Ofice,)
     - [ ] 追加（Chrome,)
-- [ ] [http://qiita.com/takeoverjp/items/9493a9838deb905ac519]([Ubuntu] emacsユーザがまずすべき設定)
-- [ ] [https://www.gitkraken.com/](gitkrakenインストール)
+- [ ] 無線LAN用ドライバー
+    - [ ] ```sudo apt-get install bcmwl-kernel-source```
+- [ ] F1 - F12キーをFnキーなしで押せるようにする
+    - [ ] ```sudo vim /etc/rc.local```
+      【 echo 2 > /sys/module/hid_apple/parameters/fnmode 】を追加
