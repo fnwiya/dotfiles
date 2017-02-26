@@ -77,10 +77,6 @@ sudo apt-get -y install mediainfo
 sudo apt-get -y install xpdf
 sudo apt-get -y install caca-utils
 ranger --copy-config=all
-# hub
-#sudo apt-get -y install ruby
-#sudo curl https://hub.github.com/standalone -Lo /usr/bin/hub
-#sudo chmod 755 /usr/bin/hub
 # python
 sudo apt-get -y install python-dev libpq-dev libevent-dev
 sudo apt-get -y install python-pip

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ -d ~/.cargo/bin ] ;then
+if [ ! -d ~/.cargo/bin ] ;then
     curl https://sh.rustup.rs -sSf | sh
 fi
-rustup install beta
+# rustup install beta
 rustup install nighly
 # rustup default nighly
 cargo install cargo-edit
