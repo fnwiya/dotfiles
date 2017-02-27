@@ -119,7 +119,6 @@ main = do
           ((modm, xK_e), runOrRaise "emacs" (className =? "Emacs"))
         , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
         , ((modm, xK_c), runOrRaise "google-chrome" (className =? "google-chrome"))
-        , ((modm, xK_t), runOrRaise "thg" (className =? "thg"))
         , ((modm,  xK_f),  sendMessage (XMonad.Layout.MultiToggle.Toggle FULL))
         ]
         `additionalKeysP`
@@ -164,8 +163,7 @@ myStartupHook = do
 
 myManageHookShift = composeAll
             -- if you want to know className, type "$ xprop|grep CLASS" on shell
-            [ className =? "Thg"           --> mydoShift "5"
-            , className =? "Emacs"         --> mydoShift "2"
+            [  className =? "Emacs"         --> mydoShift "2"
             ]
              where mydoShift = doF . liftM2 (.) W.greedyView W.shift
 
