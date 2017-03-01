@@ -112,7 +112,7 @@ main = do
        -------------------------------------------------------------------- }}}
        -- Keymap:                                                           {{{
        ------------------------------------------------------------------------
-       -- xprop | grep WM_CLASS
+       -- detect className by $ xprop | grep WM_CLASS
 
         `additionalKeys`
         [
@@ -156,6 +156,7 @@ myStartupHook = do
         spawnOnce "$HOME/.dropbox-dist/dropboxd"
         spawnOnce "stalonetray"
         spawnOnce "xmodmap $HOME/.Xmodmap"
+        spawnOnce "xcompmgr"
 
 --------------------------------------------------------------------------- }}}
 -- myManageHookShift: some window must created there                        {{{
