@@ -24,3 +24,7 @@
 [include]
     path = ~/.gitconfig.local
     path = ~/dotfiles/submodules/forciaConf/.gitconfig.forcia
+[merge]
+	ff = false
+[pull]
+	ff = only
