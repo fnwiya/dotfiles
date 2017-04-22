@@ -20,5 +20,6 @@ sudo npm install -g webpack
 sudo n stable
 sudo ln -sf /usr/local/bin/node /usr/bin/node
 sudo apt-get purge -y nodejs npm
+sudo npm updage npm
 
 sudo npm cache clean -f

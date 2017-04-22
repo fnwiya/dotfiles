@@ -20,10 +20,6 @@ sudo pip install tweepy
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 
-wget https://mecab.googlecode.com/files/mecab-python-0.996.tar.gz
-sudo pip install mecab-python-0.996.tar.gz
-rm -f ~/dotfiles/mecab-python-0.996.tar.gz
-
 # git clone https://github.com/amueller/word_cloud
 # cd word_cloud
 # sudo python setup.py install

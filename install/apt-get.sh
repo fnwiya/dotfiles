@@ -82,7 +82,9 @@ sudo apt-get -y install python-dev libpq-dev libevent-dev
 sudo apt-get -y install python-pip
 sudo apt-get -y install python-matplotlib
 sudo apt-get -y install python-setuptools
-
+sudo apt-get -y install mecab libmecab-dev mecab-ipadic
+sudo apt-get -y install mecab-ipadic-utf8
+sudo apt-get -y install python-mecab
 # others
 sudo apt-get -y install nautilus-dropbox
 sudo apt-get -y install gimp
