@@ -7,7 +7,7 @@ if [ -x "`which git`" ] ; then
 
 # 使えない場合は curl か wget を使用する
 elif [ -x "`which curl`" ] || [ -x "`which wget`" ] ; then
-    tarball="https://github.com/fnwiya/dotfiles/archive/master.tar.gz"
+    tarball=https://github.com/fnwiya/dotfiles/archive/master.tar.gz
 
     # ダウンロードして，tar に流す
     if [ -x "`which curl`" ] ; then
