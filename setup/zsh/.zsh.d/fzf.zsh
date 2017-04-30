@@ -1,6 +1,3 @@
-# Setup fzf
-# ---------
-
 if [  -x "`which fzf`" ]; then
 
     if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
