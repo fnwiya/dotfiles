@@ -32,14 +32,12 @@ import XMonad.Layout.NoBorders         -- In Full mode, border is no use
 import XMonad.Layout.PerWorkspace      -- Configure layouts on a per-workspace
 import XMonad.Layout.ResizableTile     -- Resizable Horizontal border
 import XMonad.Layout.Simplest
-import XMonad.Layout.SimplestFloat
 import XMonad.Layout.Spacing           -- this makes smart space around windows
 import XMonad.Layout.ToggleLayouts     -- Full window at any time
 import XMonad.Layout.MultiToggle
 import XMonad.Layout.MultiToggle.Instances
 import XMonad.Layout.Fullscreen (fullscreenFull)
 import XMonad.Layout.Named
-import XMonad.Layout.MouseResizableTile
 
 import XMonad.Util.EZConfig            -- removeKeys, additionalKeys
 import XMonad.Util.Run
@@ -103,7 +101,6 @@ main = do
                               manageDocks
        , layoutHook         = avoidStruts $ (
                                 toggleLayouts (noBorders Full)
-                                -- $ onWorkspace myFloatWorkspace simplestFloat
                                 $ myLayout
                               )
        , logHook            = myLogHook wsbar
@@ -117,7 +114,8 @@ main = do
         `additionalKeys`
         [
           ((modm, xK_e), runOrRaise "emacs" (className =? "Emacs"))
-        , ((modm, xK_s), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
+        , ((modm, xK_t), runOrRaise "gnome-terminal" (className =? "Gnome-terminal"))
+        , ((modm, xK_s), runOrRaise "slack" (className =? "slack"))
         , ((modm, xK_c), runOrRaise "google-chrome" (className =? "google-chrome"))
         , ((modm,  xK_f),  sendMessage (XMonad.Layout.MultiToggle.Toggle FULL))
         ]
@@ -141,7 +139,6 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
 
 myLayout = spacing gapwidth $ gaps [(U, gwU),(D, gwD),(L, gwL),(R, gwR)]
   $ (ResizableTall 1 (1/55) (1/2) [])
-  -- ||| mouseResizableTile { draggerType = FixedDragger { gapWidth = 0, draggerWidth = 2 }}
   ||| Simplest
 
 --------------------------------------------------------------------------- }}}
@@ -165,6 +162,7 @@ myStartupHook = do
 myManageHookShift = composeAll
             -- if you want to know className, type "$ xprop|grep CLASS" on shell
             [  className =? "Emacs"         --> mydoShift "2"
+            ,  className =? "slack"         --> mydoShift "4"
             ]
              where mydoShift = doF . liftM2 (.) W.greedyView W.shift
 
@@ -175,7 +173,7 @@ myManageHookShift = composeAll
 myManageHookFloat = composeAll
     [ className =? "Gimp"             --> doFloat
     , className =? "Shutter"          --> doFloat
-    -- , className =? "Nautilus"         --> doFloat
+    , className =? "Nautilus"         --> doFloat
     , isFullscreen                    --> doFullFloat
     ]
 
