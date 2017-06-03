@@ -53,7 +53,7 @@ import XMonad.Config.Desktop (desktopLayoutModifiers)
 
 modm = mod4Mask  -- Super
 myWorkspaces = ["1", "2", "3", "4", "5", "6"]
-myFloatWorkspace = "3"
+--myFloatWorkspace = "3"
 myTerminal   = "gnome-terminal"
 --myTerminal   = "urxvt"
 
