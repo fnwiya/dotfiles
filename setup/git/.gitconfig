@@ -23,6 +23,7 @@
     autosquash = true
 [include]
     path = ~/.gitconfig.local
+[includeIf "gitdir:~/repos/gitlab.fdev/"]
     path = ~/dotfiles/submodules/forciaConf/.gitconfig.forcia
 [merge]
     ff = false
