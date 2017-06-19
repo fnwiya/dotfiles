@@ -11,6 +11,7 @@ ln -sf $dotfilesPath/dotfiles/setup/bash/.bashrc $HOME
 ln -sf $dotfilesPath/dotfiles/setup/bash/.bash_profile $HOME
 ln -sf $dotfilesPath/dotfiles/setup/git/.gitconfig $HOME
 ln -sf $dotfilesPath/dotfiles/setup/git/.gitignore_global $HOME
+ln -sf $dotfilesPath/dotfiles/setup/git/.git_template $HOME
 ln -sf $dotfilesPath/dotfiles/setup/hg/.hgignore_global $HOME
 ln -sf $dotfilesPath/dotfiles/setup/hg/.hgrc $HOME
 mkdir -p $HOME/.lein

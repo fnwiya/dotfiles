@@ -29,3 +29,5 @@
     ff = false
 [pull]
     ff = only
+[init]
+	templatedir = ~/.git_template
