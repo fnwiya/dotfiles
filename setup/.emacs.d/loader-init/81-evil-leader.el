@@ -24,7 +24,7 @@
     ;; "y" 'counsel-yank-pop
     "f" 'counsel-projectile-find-file
     "d" 'counsel-projectile-find-dir
-    "g" 'avy-goto-word-0
+    "g" 'magit-status
     "k" 'kill-this-buffer
     "q" 'kill-this-buffer
     "t" 'other-window
