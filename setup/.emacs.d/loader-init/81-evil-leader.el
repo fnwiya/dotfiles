@@ -4,7 +4,7 @@
   (global-evil-leader-mode)
   (evil-leader/set-leader "SPC")
   (evil-leader/set-key
-    ":" 'shell-command
+    ":" 'shell-pop
     "=" 'indent-region
     "@" 'mark-whole-buffer
     "a" 'helm-projectile-ag
