@@ -63,6 +63,10 @@ case ${OSTYPE} in
         alias pkgupd='sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
         alias pbcopy='xsel --clipboard --input'
         alias open='xdg-open'
+        alias volumup='amixer sset Master 1%+'
+        alias volumdown='amixer sset Master 1%-'
+        alias volumon='amixer sset Master on'
+        alias volumoff='amixer sset Master off'
         ;;
 esac
 evalenv # call at login
