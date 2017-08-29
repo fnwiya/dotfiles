@@ -67,6 +67,7 @@
     expand-region
     evil
     evil-leader
+    evil-magit
     evil-matchit
     evil-numbers
     evil-surround
