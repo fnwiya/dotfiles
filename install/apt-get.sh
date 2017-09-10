@@ -95,16 +95,9 @@ sudo apt-get -y install shutter
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
 #sudo apt-get -y install google-chrome-stable
 
-if [ ! -e $HOME/emacs-25.1 ]; then
-  sudo apt-get build-dep emacs24
-  cd $HOME
-  wget -O- http://ftp.gnu.org/gnu/emacs/emacs-25.1.tar.xz | tar xJf -
-  cd emacs-25.1
-  ./configure
-  make
-  sudo make install
-  cd $HOME
-fi
+sudo add-apt-repository ppa:kelleyk/emacs -y
+sudo apt-get -y update
+sudo apt-get -y install emacs25
 sudo apt-get -y install zlib1g-dev uuid-dev gcc make git autoconf autogen automake pkg-config
 
 sudo apt-get -y update

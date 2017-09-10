@@ -1,7 +1,7 @@
 # http://blog.b4b4r07.com/entry/2015/12/13/174209
 # https://github.com/zplug/zplug
 if [ ! -d "${HOME}/.zplug" ] ;then
-    curl -sL zplug.sh/installer | zsh
+    curl curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
 fi
 source ~/.zplug/init.zsh
 
