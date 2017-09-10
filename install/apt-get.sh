@@ -105,6 +105,7 @@ if [ ! -e $HOME/emacs-25.1 ]; then
   sudo make install
   cd $HOME
 fi
+sudo apt-get -y install zlib1g-dev uuid-dev gcc make git autoconf autogen automake pkg-config
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
