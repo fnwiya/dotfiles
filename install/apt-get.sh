@@ -5,7 +5,6 @@ sudo apt-get -y upgrade
 sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:mattn/growl-for-linux
 sudo apt-add-repository -y ppa:numix/ppa
-sudo add-apt-repository -y ppa:tortoisehg-ppa/releases
 sudo add-apt-repository -y ppa:snwh/pulp
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 #sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
