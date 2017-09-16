@@ -78,8 +78,9 @@ source install/gem.sh
 echo "stack settings"
 source install/stack.sh
 
-echo "rust"
-source install/cargo.sh
+# need interactive
+# echo "rust"
+# source install/cargo.sh
 
 echo "git settings"
 source install/git.sh

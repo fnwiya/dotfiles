@@ -17,8 +17,8 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 ├── .gitmodules
 ├──  README.md
 ├── doc
-│   ├── osx_manual.md
-│   └── ubuntu_manual.md
+│   ├── osx_manual.md
+│   └── ubuntu_manual.md
 ├── install
 │   ├── apt-get.sh
 │   ├── brew.sh
@@ -41,24 +41,24 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 │   ├── .tmux.conf
 │   ├── .peco
 │   ├── .emacs.d
-│   │   ├── init.el
-│   │   ├── cache
-│   │   ├── elisp
-│   │   │   ├── package
-│   │   │   └── work
-│   │   ├── loader-init
-│   │   ├── snippets
-│   │   └── themes
+│   │   ├── init.el
+│   │   ├── cache
+│   │   ├── elisp
+│   │   │   ├── package
+│   │   │   └── work
+│   │   ├── loader-init
+│   │   ├── snippets
+│   │   └── themes
 │   ├── bash
-│   │   ├── .bash_profile
-│   │   └── .bashrc
+│   │   ├── .bash_profile
+│   │   └── .bashrc
 │   ├── linux
-│   │   └── .shutter
+│   │   └── .shutter
 │   ├── osx
-│   │   └── key4remap
+│   │   └── key4remap
 │   ├── vim
-│   │   ├── .vim
-│   │   └── .vimrc
+│   │   ├── .vim
+│   │   └── .vimrc
 │   └── zsh
 │        ├── .zsh.d
 │        ├── .zshrc
