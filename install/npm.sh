@@ -10,6 +10,7 @@ sudo npm install -g express
 sudo npm install -g express-generator
 sudo npm install -g jasmine
 sudo npm install -g karma
+sudo npm install -g mdr
 sudo npm install -g mocha
 sudo npm install -g n
 sudo npm install -g nodemon
