@@ -43,6 +43,9 @@ case ${OSTYPE} in
                 # CentOS
                 distri_name="redhat"
             fi
+        elif [ -e /etc/arch-release ]; then
+                distri_name="arch"
+                source install/pacman.sh
         elif [ -e /etc/SuSE-release ]; then
             # SuSE Linux
             distri_name="suse"

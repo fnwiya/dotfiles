@@ -60,6 +60,7 @@ fi
 sudo apt-get -y install tortoisehg
 sudo apt-get -y install tree
 sudo apt-get -y install unity-tweak-tool
+sudo apt-get -y install vim
 sudo apt-get -y install virtualbox
 sudo apt-get -y install vagrant
 sudo apt-get -y install wget
