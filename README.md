@@ -1,15 +1,15 @@
 
-##initialize
+## initialize
 ```
 curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 ./install.sh
 ./mkLink.sh
 ```
 
-##policy
+## policy
 
 
-##structure
+## structure
 ```
 .
 ├── .git
@@ -65,3 +65,4 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 │        └── .zshenv
 └── setup.sh
 ```
+ 
