@@ -6,9 +6,6 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 ./mkLink.sh
 ```
 
-## policy
-
-
 ## structure
 ```
 .
