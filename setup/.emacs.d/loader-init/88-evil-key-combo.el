@@ -44,8 +44,8 @@
               ))
   (add-hook 'js2-mode-hook
             (lambda()
-              (key-combo-define evil-insert-state-map (kbd ">")  '(" => {\n`!!'\n}" ">"))
-              (key-combo-define evil-insert-state-map (kbd "=")  '(" === ", "="))
+              (key-combo-define evil-insert-state-map (kbd ">")  '(" => {\n`!!'\n}" " > "  " >= " ">"))
+              (key-combo-define evil-insert-state-map (kbd "=")  '(" === ", " = ", "="))
               (key-combo-define evil-insert-state-map (kbd "!")  '(" !== " "!"))
               ))
   (add-hook 'haskell-mode-hook
