@@ -17,6 +17,7 @@
     root = ~/repos
 [alias]
     graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 [commit]
     verbose = true
 [rebase]
@@ -30,4 +31,4 @@
 [pull]
     ff = only
 [init]
-	templatedir = ~/.git_template
+    templatedir = ~/.git_template
