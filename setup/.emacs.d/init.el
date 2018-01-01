@@ -103,6 +103,7 @@
     init-loader
     intero
     ivy
+    ivy-migemo
     jade-mode
     jdee
     jquery-doc
