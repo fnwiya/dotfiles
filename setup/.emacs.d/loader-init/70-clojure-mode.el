@@ -8,7 +8,7 @@
   (setq nrepl-log-messages t
         cider-repl-display-in-current-window t
         cider-repl-use-clojure-font-lock t
-        cider-prompt-save-file-on-load 'always-save
+        cider-save-file-on-load 'always-save
         cider-lein-parameters "repl :headless :host localhost"
         cider-font-lock-dynamically '(macro core function var)
         cider-overlays-use-font-lock t)
