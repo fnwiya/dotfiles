@@ -81,6 +81,9 @@ source install/gem.sh
 echo "stack settings"
 source install/stack.sh
 
+echo "lein settings"
+source install/lein.sh
+
 # need interactive
 # echo "rust"
 # source install/cargo.sh
