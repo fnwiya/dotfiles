@@ -2,13 +2,7 @@ if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
 
-PATH=(
-   /usr/local/bin:
-   $HOME/bin:
-   /bin:
-   /usr/bin:
-   /usr/local/sbin
-)
+export PATH=/usr/local/bin:$HOME/bin:/bin:/usr/bin:/usr/local/sbin
 # for go lang
 if [ -x "`which go`" ]; then
   export GOROOT=/usr/local/go
@@ -38,5 +32,3 @@ if [ -e /usr/local/etc/profile.d/z.sh ] ;then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-export $PATH:PATH
