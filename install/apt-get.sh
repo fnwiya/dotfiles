@@ -30,6 +30,7 @@ sudo apt-get -y install gnome-tweak-tool
 sudo apt-get -y install golang
 sudo apt-get -y install htop
 sudo apt-get -y install jq
+sudo apt-get -y install language-pack-ja
 sudo apt-get -y install libpoppler-glib-dev # for https://github.com/politza/pdf-tools
 sudo apt-get -y install lv
 sudo apt-get -y install markdown
