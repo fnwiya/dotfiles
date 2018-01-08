@@ -17,7 +17,6 @@ if [ -x "`which go`" ]; then
   # export GOROOT=`which go`
   export GOPATH=$HOME/go
   export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
-  export PATH="/usr/local/go/bin:$PATH"
 fi
 
 # rbenv
