@@ -3,7 +3,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 # add-repository
 sudo add-apt-repository -y ppa:git-core/ppa
-sudo add-apt-repository -y ppa:mattn/growl-for-linux
+#sudo add-apt-repository -y ppa:mattn/growl-for-linux
 sudo apt-add-repository -y ppa:numix/ppa
 sudo add-apt-repository -y ppa:snwh/pulp
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -27,11 +27,11 @@ sudo apt-get -y install growl-for-linux
 sudo apt-get -y install guake
 sudo apt-get -y install global
 sudo apt-get -y install gnome-tweak-tool
-# sudo apt-get -y install golang
+#sudo apt-get -y install golang
 sudo apt-get -y install htop
 sudo apt-get -y install jq
 sudo apt-get -y install language-pack-ja
-# sudo apt-get -y install leiningen
+#sudo apt-get -y install leiningen
 sudo apt-get -y install libpoppler-glib-dev # for https://github.com/politza/pdf-tools
 sudo apt-get -y install lv
 sudo apt-get -y install markdown
