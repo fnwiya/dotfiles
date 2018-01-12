@@ -7,18 +7,18 @@
     ":" 'shell-pop
     "=" 'indent-region
     "@" 'mark-whole-buffer
-    ;; "a" 'helm-projectile-ag
-    ;; "A" 'helm-ag
+    "a" 'helm-projectile-ag
+    "A" 'helm-ag
     ;; "b" 'helm-buffers-list
-    ;; "e" 'helm-find-files
+    "e" 'helm-find-files
     ;; "r" 'helm-recentf
     ;; "s" 'helm-swoop
     ;; "x" 'helm-M-x
     ;; "y" 'helm-show-kill-ring
-    "a" 'counsel-projectile-ag
-    "A" 'counsel-ag
+    ;; "a" 'counsel-projectile-ag
+    ;; "A" 'counsel-ag
     "b" 'ivy-switch-buffer
-    "e" 'counsel-find-file
+    ;; "e" 'counsel-find-file
     "r" 'ivy-recentf
     "x" 'counsel-M-x
     "j" 'dumb-jump-go
