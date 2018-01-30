@@ -135,9 +135,9 @@
     racer
     rainbow-delimiters
     rainbow-mode
-    recentf-ext
+;;    recentf-ext
     ripgrep
-    ruby-block
+;;    ruby-block
     ruby-end
     rust-mode
     saveplace

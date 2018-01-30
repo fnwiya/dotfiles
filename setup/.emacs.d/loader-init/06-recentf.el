@@ -10,4 +10,4 @@
         (run-with-idle-timer 60 t 'recentf-save-list))
   (recentf-mode 1))
 
-(autoload 'recentf-ext "recentf-ext" nil t)
+;;(autoload 'recentf-ext "recentf-ext" nil t)
