@@ -81,6 +81,7 @@ ranger --copy-config=all
 # python
 sudo apt-get -y install python-dev libpq-dev libevent-dev
 sudo apt-get -y install python-pip
+sudo apt-get -y install python-pip3
 sudo apt-get -y install python-matplotlib
 sudo apt-get -y install python-setuptools
 sudo apt-get -y install mecab libmecab-dev mecab-ipadic
