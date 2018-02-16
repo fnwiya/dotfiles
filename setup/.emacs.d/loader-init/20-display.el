@@ -31,5 +31,4 @@
             (blink-cursor-mode 0) ; cursor の blink を止める
             (show-paren-mode t)   ; 対応するカッコを強調表示
             (setq show-paren-style 'mixed)
-            (auto-image-file-mode t) ; 画像ファイルを表示
-            ))
+            (auto-image-file-mode t))) ; 画像ファイルを表示

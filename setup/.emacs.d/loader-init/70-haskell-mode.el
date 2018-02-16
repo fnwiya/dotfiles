@@ -25,8 +25,7 @@
   (defadvice inferior-haskell-load-file (after change-focus-after-load)
     "Change focus to GHCi window after C-c C-l command"
     (other-window 1))
-  (ad-activate 'inferior-haskell-load-file)
-  )
+  (ad-activate 'inferior-haskell-load-file))
 
 (add-to-list 'auto-mode-alist '("\\.lhs$" . literate-haskell-mode))
 (add-to-list 'auto-mode-alist '("\\.cabal\\'" . haskell-cabal-mode))

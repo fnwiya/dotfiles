@@ -4,8 +4,7 @@
    ("\.sqltmpl$" . sql-mode))
   :config
   (setq sql-indent-offset 4)
-  (sql-set-product "postgres")
-  )
+  (sql-set-product "postgres"))
 ;; (use-package sqlup-mode
 ;;   :commands (sqlup-mode)
 ;;   :init

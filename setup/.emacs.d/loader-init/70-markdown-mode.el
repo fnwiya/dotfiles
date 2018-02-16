@@ -4,5 +4,4 @@
    ("\.markdown$" . markdown-mode))
   :config
   (bind-key "C-x C-s" 'save-buffer markdown-mode-map)
-  (setq markdown-command "markdown")
- )
+  (setq markdown-command "markdown"))

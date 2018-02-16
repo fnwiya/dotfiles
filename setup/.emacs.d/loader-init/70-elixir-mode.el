@@ -1,6 +1,4 @@
-(use-package elixir-mode
-  :config
-  )
+(use-package elixir-mode)
 
 (use-package alchemist
   :config
@@ -30,6 +28,4 @@ Otherwise sends the current line."
                  ;; なんにもなし
                  ((and (not uarg) (not (use-region-p)))
                   (alchemist-iex-send-current-line))))
-
               (define-key alchemist-mode-map (kbd "C-M-x") 'my-alchemist-iex-electric-send-thing))))))
-

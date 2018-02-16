@@ -19,5 +19,4 @@
  '(nxml-delimiter-face ((t (:foreground "grey"))))
  '(nxml-element-local-name-face ((t (:inherit nxml-name-face :foreground "medium turquoise"))))
  '(nxml-name-face ((t (:foreground "rosy brown"))))
- '(nxml-tag-slash-face ((t (:inherit nxml-name-face :foreground "grey")))))
-)
+ '(nxml-tag-slash-face ((t (:inherit nxml-name-face :foreground "grey"))))))

@@ -15,5 +15,4 @@
   (custom-set-variables '(yas-trigger-key "C-i"))
   (define-key yas-minor-mode-map (kbd "C-x i i") 'yas-insert-snippet)     ; 既存スニペットを挿入
   (define-key yas-minor-mode-map (kbd "C-x i n") 'yas-new-snippet)        ; 新規スニペットを作成
-  (define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file) ; 既存スニペットを閲覧・編集
-  )
+  (define-key yas-minor-mode-map (kbd "C-x i v") 'yas-visit-snippet-file)) ; 既存スニペットを閲覧・編集

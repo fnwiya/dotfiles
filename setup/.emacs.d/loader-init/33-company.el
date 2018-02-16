@@ -57,5 +57,4 @@
         (company--insert-candidate2 company-common))))
 
   (define-key company-active-map [tab] 'company-complete-common2)
-  (define-key company-active-map [backtab] 'company-select-previous)
-  )
+  (define-key company-active-map [backtab] 'company-select-previous))

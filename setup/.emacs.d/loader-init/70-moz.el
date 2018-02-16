@@ -21,5 +21,4 @@
     (comint-send-string (inferior-moz-process)
                         (concat "content.location.reload();\n"
                                 moz-repl-name ".popenv('inputMode', 'printPrompt'); undefined;\n"))
-    )
-  )
+    ))

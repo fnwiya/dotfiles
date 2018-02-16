@@ -33,8 +33,7 @@
   (push '("*slime-repl sbcl") popwin:special-display-config)
   (push '(sldb-mode :stick t) popwin:special-display-config)
   (push '(slime-repl-mode) popwin:special-display-config)
-  (push '(slime-connection-list-mode) popwin:special-display-config)
-  )
+  (push '(slime-connection-list-mode) popwin:special-display-config))
 (when (featurep 'popwin)
   (push '("*eshell*" :height 0.5) popwin:special-display-config)
 

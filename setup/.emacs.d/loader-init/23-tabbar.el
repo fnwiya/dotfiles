@@ -61,5 +61,4 @@
                       :foreground (face-attribute 'mode-line-inactive :background)
                       :height 1.0)
   (global-set-key [(C-tab)]   'tabbar-forward-tab)
-  (global-set-key [(C-S-tab)] 'tabbar-backward-tab)
-  )
+  (global-set-key [(C-S-tab)] 'tabbar-backward-tab))

@@ -38,5 +38,4 @@
   (defun save-whiteapace-clean()
     (interactive)
     (whitespace-cleanup)
-    (save-buffer))
-)
+    (save-buffer)))

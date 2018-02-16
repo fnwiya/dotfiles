@@ -2,5 +2,4 @@
   :commands
   (codic)
   :config
-  (push '("*Codic Result*") popwin:special-display-config)
-  )
+  (push '("*Codic Result*") popwin:special-display-config))

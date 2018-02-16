@@ -3,14 +3,11 @@
     scss-mode-hook
     html-mode-hook
     emacs-lisp-mode-hook
-    js2-mode-hook
-   ))
+    js2-mode-hook))
 
 (use-package rainbow-mode
   :diminish rainbow-mode
   :commands (rainbow-mode)
   :init
   (loop for hook in *rainbow-mode-hooks*
-        do (add-hook hook 'rainbow-mode))
-  :config
-  )
+        do (add-hook hook 'rainbow-mode)))

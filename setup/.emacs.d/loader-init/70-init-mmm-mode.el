@@ -140,5 +140,4 @@
   ;; https://bitbucket.org/pjenvey/mmm-mako
   (use-package mmm-mako)
   (add-to-list 'auto-mode-alist '("\\.sqltmpl\\'" . sql-mode))
-  (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)
-  ))
+  (mmm-add-mode-ext-class 'sql-mode "\\.sqltmpl\\'" 'mako)))

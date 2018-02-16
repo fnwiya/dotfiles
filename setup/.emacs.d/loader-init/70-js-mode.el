@@ -8,10 +8,8 @@
   (setq js2-mode-show-parse-errors nil)
   (setq js2-mode-show-strict-warnings nil)
   (setq js2-highlight-external-variables nil)
-  (setq js2-include-jslint-globals nil)
-  )
+  (setq js2-include-jslint-globals nil))
 (use-package jquery-doc
   :commands (jquery-doc-setup)
   :init
-  (add-hook 'js2-mode-hook 'jquery-doc-setup)
-  )
+  (add-hook 'js2-mode-hook 'jquery-doc-setup))

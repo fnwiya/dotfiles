@@ -1,5 +1,3 @@
 (use-package jdee
   :mode
-  (("\.java$" . jdee-mode))
-  :config
-  )
+  (("\.java$" . jdee-mode)))

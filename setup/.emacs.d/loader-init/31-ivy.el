@@ -29,12 +29,10 @@
   ;; (global-set-key (kbd "C-x l") 'counsel-locate)
   ;; (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
   (global-set-key "\C-s" 'swiper)
-  (defvar swiper-include-line-number-in-search t)
-  )
+  (defvar swiper-include-line-number-in-search t))
 
 (use-package avy-migemo
   :config
-  (avy-migemo-mode 1)
-)
+  (avy-migemo-mode 1))
 
 (use-package counsel-projectile)

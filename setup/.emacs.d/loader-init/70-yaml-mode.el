@@ -1,4 +1,3 @@
 (use-package yaml-mode
   :mode
-  (("\.yml$" . yaml-mode))
-  )
+  (("\.yml$" . yaml-mode)))

@@ -10,5 +10,4 @@
   (setq projectile-completion-system 'helm)
   (setq projectile-indexing-method 'native)
   (setq projectile-cache-file "~/.emacs.d/cache/projectile/projectile.cache")
-  (setq projectile-known-projects-file "~/.emacs.d/cache/projectile/projectile-bookmarks.eld")
-  )
+  (setq projectile-known-projects-file "~/.emacs.d/cache/projectile/projectile-bookmarks.eld"))

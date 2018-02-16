@@ -12,8 +12,7 @@
         cider-lein-parameters "repl :headless :host localhost"
         cider-font-lock-dynamically '(macro core function var)
         cider-overlays-use-font-lock t)
-  (cider-repl-toggle-pretty-printing)
-  )
+  (cider-repl-toggle-pretty-printing))
 
 (use-package clj-refactor
   :diminish clj-refactor-mode

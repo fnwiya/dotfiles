@@ -8,8 +8,7 @@
     (shell-command "git -C $HOME/dotfiles pull && git -C $HOME/dotfiles submodule update"))
   (add-hook 'kill-emacs-hook
             (lambda()
-              (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push")))
-  )
+              (shell-command "git add --all ~/dotfiles/. && git commit -m 'update' && git push"))))
 (git-dotfiles)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

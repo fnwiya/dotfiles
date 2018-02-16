@@ -1,5 +1,3 @@
 (use-package typescript-mode
   :mode
-  (("\\.ts\\'" . typescript-mode))
-   :config
-   )
+  (("\\.ts\\'" . typescript-mode)))

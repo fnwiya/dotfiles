@@ -7,10 +7,8 @@
   :commands
   (slime)
   :config
-  (slime-setup '(slime-repl slime-fancy slime-banner))
-  )
+  (slime-setup '(slime-repl slime-fancy slime-banner)))
 
 (add-hook 'slime-repl-mode-hook
    '(lambda ()
-      (define-key slime-repl-mode-map "\C-c\M-r" 'slime-restart-inferior-lisp)
-      ))
+      (define-key slime-repl-mode-map "\C-c\M-r" 'slime-restart-inferior-lisp)))

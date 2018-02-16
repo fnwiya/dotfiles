@@ -9,5 +9,4 @@
    '(shell-pop-term-shell "/bin/zsh")
    '(shell-pop-universal-key "C-c C-p")
    '(shell-pop-window-height 30)
-   '(shell-pop-window-position "bottom"))
-  )
+   '(shell-pop-window-position "bottom")))

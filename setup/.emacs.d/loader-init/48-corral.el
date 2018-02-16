@@ -10,5 +10,4 @@
   :config
   (setq corral-preserve-point t)
   (setq corral-syntax-entries '((?# "_")
-                              (?* "_")))
-)
+                              (?* "_"))))

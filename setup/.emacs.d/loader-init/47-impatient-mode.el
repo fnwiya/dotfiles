@@ -20,8 +20,7 @@
   (add-hook #'markdown-mode-hook #'my-html-mode-hook)
   (defun open-imp-preview()
     (interactive)
-    (browse-url "http://localhost:8080/imp/")
-    )
+    (browse-url "http://localhost:8080/imp/"))
   (global-set-key (kbd "C-x C-v") 'open-imp-preview)
   ;; Markdown
   ;; M-x imp-set-user-filter->markdown-html
@@ -36,5 +35,4 @@
          (set-buffer buffer)
          (set-buffer (markdown tmpname)) ; the function markdown is in `markdown-mode.el'
          (buffer-string)))
-     (current-buffer)))
-)
+     (current-buffer))))
