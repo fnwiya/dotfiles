@@ -32,3 +32,7 @@ if [ -e /usr/local/etc/profile.d/z.sh ] ;then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+if [ -e $HOME/.cargo/bin ] ;then
+    export PATH="$HOME/.cargo/bin:$PATH"
+fi
