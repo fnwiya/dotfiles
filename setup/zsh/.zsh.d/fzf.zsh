@@ -179,4 +179,10 @@ if [  -x "`which fzf`" ]; then
         fi
     }
 
+    frg() {
+        local line
+        line=`rg "$1" | fzf` \
+               && vim $(cut -d':' -f1 <<< "$line") +$(cut -d':' -f2 <<< "$line")
+    }
+
 fi
