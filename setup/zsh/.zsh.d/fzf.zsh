@@ -185,4 +185,14 @@ if [  -x "`which fzf`" ]; then
                && vim $(cut -d':' -f1 <<< "$line") +$(cut -d':' -f2 <<< "$line")
     }
 
+    fzf-npm-scripts() {
+        local script
+        script=($(cat package.json | jq '.scripts' | grep ':' | cut -f1 -d ':' | sed 's/[ |\"]//g' | fzf))
+        if [[ -n $script ]]; then
+            npm run  $script
+        else
+            echo "no script"
+        fi
+    }
+
 fi
