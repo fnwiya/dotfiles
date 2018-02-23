@@ -195,4 +195,20 @@ if [  -x "`which fzf`" ]; then
         fi
     }
 
+
+    function tree-fzf() {
+        local SELECTED_FILE=$(tree --charset=o -f | fzf --query "$LBUFFER" | tr -d '\||`|-' | xargs echo)
+        if [ "$SELECTED_FILE" != "" ]; then
+            vim $SELECTED_FILE
+        fi
+    }
+
+     function git-branch-fzf() {
+        local SELECTED_BRANCH=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | perl -pne 's{^refs/heads/}{}' | fzf --query "$LBUFFER")
+
+        if [ -n "$SELECTED_BRANCH" ]; then
+            git checkout $SELECTED_BRANCH
+        fi
+    }
+
 fi
