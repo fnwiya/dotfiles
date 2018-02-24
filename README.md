@@ -1,5 +1,5 @@
-
-## initialize
+[
+##] initialize
 ```
 curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 ./install.sh
@@ -27,7 +27,7 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 │   ├── sbcl.sh
 │   └── ubuntu.sh
 ├── install.sh
-├── setDotfiles.sh
+├──cloneDotfiles.sh
 ├── setup
 │   ├── .gitconfig
 │   ├── .gitignore_global
