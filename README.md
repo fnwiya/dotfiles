@@ -27,7 +27,7 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 │   ├── sbcl.sh
 │   └── ubuntu.sh
 ├── install.sh
-├──cloneDotfiles.sh
+├── cloneDotfiles.sh
 ├── setup
 │   ├── .gitconfig
 │   ├── .gitignore_global
@@ -60,6 +60,6 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 │        ├── .zsh.d
 │        ├── .zshrc
 │        └── .zshenv
-└── setup.sh
+└── mkLink.sh
 ```
  
