@@ -125,8 +125,7 @@ if [  -x "`which fzf`" ]; then
     zle -N fzf-fg fzf-fg
     bindkey '^x^f' fzf-fg
 
-    # fshow - git commit browser (enter for show, ctrl-d for diff)
-    fshow() {
+    function fzf-git-log() {
         local out shas sha q k
         while out=$(
                 git log --graph --color=always \
@@ -147,7 +146,7 @@ if [  -x "`which fzf`" ]; then
         done
     }
 
-    fadd() {
+    function fzf-git-add-files() {
         local addfiles
         addfiles=($(git status --short | grep -v '##' | awk '{ print $2 }' | fzf --multi))
         if [[ -n $addfiles ]]; then
@@ -157,7 +156,7 @@ if [  -x "`which fzf`" ]; then
         fi
     }
 
-    fgrunt() {
+    function fzf-grunt() {
         local tasks
         tasks=($(grunt -h --no-color | sed -n '/^Available tasks/,/^$/ {s/^  *\([^ ]\+\)  [^ ]\+.*$/\1/p}' | fzf --multi))
         if [[ -n $tasks ]]; then
@@ -167,25 +166,13 @@ if [  -x "`which fzf`" ]; then
         fi
     }
 
-    fvim() {
-        local files
-
-        files=(${(f)"$(locate -Ai -0 $@ | grep -z -vE '~$' | fzf --read0 -0 -1 -m)"})
-
-        if [[ -n $files ]]
-        then
-            vim -- $files
-            print -l $files[1]
-        fi
-    }
-
-    frg() {
+    function fzf-rg() {
         local line
         line=`rg "$1" | fzf` \
                && vim $(cut -d':' -f1 <<< "$line") +$(cut -d':' -f2 <<< "$line")
     }
 
-    fzf-npm-scripts() {
+    function fzf-npm-scripts() {
         local script
         script=($(cat package.json | jq '.scripts' | grep ':' | cut -f1 -d ':' | sed 's/[ |\"]//g' | fzf))
         if [[ -n $script ]]; then
@@ -196,14 +183,14 @@ if [  -x "`which fzf`" ]; then
     }
 
 
-    function tree-fzf() {
+    function fzf-tree() {
         local SELECTED_FILE=$(tree --charset=o -f | fzf --query "$LBUFFER" | tr -d '\||`|-' | xargs echo)
         if [ "$SELECTED_FILE" != "" ]; then
             vim $SELECTED_FILE
         fi
     }
 
-     function git-branch-fzf() {
+     function fzf-git-branch() {
         local SELECTED_BRANCH=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | perl -pne 's{^refs/heads/}{}' | fzf --query "$LBUFFER")
 
         if [ -n "$SELECTED_BRANCH" ]; then
