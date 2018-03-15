@@ -23,10 +23,7 @@ sudo apt-get -y install gauche
 sudo apt-get -y install gcc
 sudo apt-get -y install git
 sudo apt-get -y install gcolor2
-sudo apt-get -y install growl-for-linux
-sudo apt-get -y install guake
 sudo apt-get -y install global
-sudo apt-get -y install gnome-tweak-tool
 #sudo apt-get -y install golang
 sudo apt-get -y install htop
 sudo apt-get -y install jq
@@ -58,13 +55,10 @@ if [ ! -x /usr/local/bin/emojify ]; then
   sudo sh -c "curl https://raw.githubusercontent.com/mrowa44/emojify/master/emojify -o /usr/local/bin/emojify && chmod +x /usr/local/bin/emojify"
 fi
 sudo apt-get -y install tree
-sudo apt-get -y install unity-tweak-tool
 sudo apt-get -y install vim
 sudo apt-get -y install virtualbox
 sudo apt-get -y install vagrant
 sudo apt-get -y install wget
-sudo apt-get -y install xmonad
-sudo apt-get -y install xmobar
 sudo apt-get -y install youtube-dl
 sudo apt-get -y install z
 sudo apt-get -y install zsh
@@ -87,13 +81,20 @@ sudo apt-get -y install python-setuptools
 sudo apt-get -y install mecab libmecab-dev mecab-ipadic
 sudo apt-get -y install mecab-ipadic-utf8
 sudo apt-get -y install python-mecab
-# others
+# GUI 
 sudo apt-get -y install nautilus-dropbox
 sudo apt-get -y install gimp
 sudo apt-get -y install inkscape
 sudo apt-get -y install shutter
-sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
+sudo apt-get -y install growl-for-linux
+sudo apt-get -y install guake
+sudo apt-get -y install gnome-tweak-tool
+sudo apt-get -y install unity-tweak-tool
+sudo apt-get -y install xmonad
+sudo apt-get -y install xmobar
 #sudo apt-get -y install google-chrome-stable
+# others
+sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
 
 sudo add-apt-repository ppa:kelleyk/emacs -y
 sudo apt-get -y update
