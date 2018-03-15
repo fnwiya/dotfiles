@@ -5,6 +5,7 @@ if [ ! -d /usr/local/go ] ;then
     sudo tar -xvf go1.9.2.linux-amd64.tar.gz
     sudo mv -f go /usr/local
 fi
+export PATH=/usr/local/go/bin:$PATH
 go get -u github.com/motemen/ghq
 go get -u github.com/peco/peco/cmd/peco
 go get -u github.com/variadico/noti/cmd/noti

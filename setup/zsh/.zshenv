@@ -13,10 +13,11 @@ if [ -e $HOME/bin/restartWeb.sh ] ; then
 fi
 
 # for go lang
-if [ -x "`which go`" ]; then
-  # export GOROOT=`which go`
+if [ -d /usr/local/go ]; then
+  export PATH="/usr/local/go/bin:$PATH"
   export GOPATH=$HOME/go
-  export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+  # export GOROOT=`which go`
+  export PATH="$GOPATH/bin:$PATH"
 fi
 
 # rbenv
@@ -31,6 +32,7 @@ fi
 if [ -e $HOME/.pyenv ] ;then
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
 fi
 # virtualenv
 # if [ -x "`which virtualenvwrapper.sh`" ] ;then
