@@ -42,6 +42,7 @@ case ${OSTYPE} in
                 # Red Hat Enterprise Linux
                 # CentOS
                 distri_name="redhat"
+                source install/yum.sh
             fi
         elif [ -e /etc/arch-release ]; then
                 distri_name="arch"
@@ -81,8 +82,8 @@ source install/gem.sh
 echo "stack settings"
 source install/stack.sh
 
-echo "lein settings"
-source install/lein.sh
+# echo "lein settings"
+# source install/lein.sh
 
 # need interactive
 # echo "rust"
