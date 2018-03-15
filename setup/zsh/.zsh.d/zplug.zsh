@@ -10,10 +10,6 @@ zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", \
     nice:19
-zplug "mollifier/anyframe"
-zplug "b4b4r07/emoji-cli", \
-    if:'(( $+commands[jq] ))', \
-    on:"peco/peco"
 
 # install plugins
 if ! zplug check --verbose; then
