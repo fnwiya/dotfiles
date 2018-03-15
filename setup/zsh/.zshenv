@@ -1,6 +1,5 @@
 typeset -U path PATH
 path=(
-   /Library/Frameworks/Python.framework/Versions/3.4/bin(N-/)
    /usr/local/bin(N-/)
    /usr/local/sbin(N-/)
    /usr/bin(N-/)
@@ -16,7 +15,6 @@ fi
 if [ -d /usr/local/go ]; then
   export PATH="/usr/local/go/bin:$PATH"
   export GOPATH=$HOME/go
-  # export GOROOT=`which go`
   export PATH="$GOPATH/bin:$PATH"
 fi
 
@@ -34,12 +32,6 @@ if [ -e $HOME/.pyenv ] ;then
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
 fi
-# virtualenv
-# if [ -x "`which virtualenvwrapper.sh`" ] ;then
-#   mkdir -p "$HOME/.virtualenvs"
-#   export WORKON_HOME=$HOME/.virtualenvs
-#   source /usr/local/bin/virtualenvwrapper.sh
-# fi
 
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
   export PATH="/usr/local/etc/profile.d:$PATH"
