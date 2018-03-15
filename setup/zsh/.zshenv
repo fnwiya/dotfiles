@@ -46,7 +46,7 @@ if [ -e /usr/local/etc/profile.d/z.sh ] ;then
 fi
 
 # psql
-if [ -x "`which psql`" ] ;then
+if [ -d /usr/local/pgsql ] ;then
   export PATH="/usr/local/pgsql/bin:$PATH"
 fi
 
