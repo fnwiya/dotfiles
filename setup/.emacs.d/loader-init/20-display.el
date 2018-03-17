@@ -3,7 +3,8 @@
 (set-frame-parameter (selected-frame) 'alpha '(90 90)) ; 透過
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+(when (window-system)
+  (scroll-bar-mode -1))
 
 ;; タイトルバー
 (when (window-system)
