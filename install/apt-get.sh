@@ -17,7 +17,6 @@ sudo apt-get -y install cmigemo
 sudo apt-get -y install curl
 sudo apt-get -y install dmenu
 sudo apt-get -y install elixir
-sudo apt-get -y install emacs
 sudo apt-get -y install fish
 sudo apt-get -y install gauche
 sudo apt-get -y install gcc
@@ -95,11 +94,6 @@ sudo apt-get -y install xmobar
 #sudo apt-get -y install google-chrome-stable
 # others
 sudo apt-get -y install mozc-utils-gui ibus-gtk3 ibus-mozc
-
-sudo add-apt-repository ppa:kelleyk/emacs -y
-sudo apt-get -y update
-sudo apt-get -y install emacs25
-sudo apt-get -y install zlib1g-dev uuid-dev gcc make git autoconf autogen automake pkg-config
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
