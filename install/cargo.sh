@@ -6,6 +6,7 @@ fi
 # rustup install beta
 rustup install nighly
 # rustup default nighly
+export PATH="$HOME/.cargo/bin:$PATH"
 cargo install cargo-edit
 cargo install cargo-script
 cargo install cargo-update
