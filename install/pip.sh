@@ -10,6 +10,7 @@ sudo pip install autopep8
 sudo pip install beautifulsoup4
 sudo pip install django
 sudo pip install elpy
+sudo pip install Mako
 sudo pip install numpy
 sudo pip install pandas
 sudo pip install pep8
@@ -25,6 +26,5 @@ sudo pip install virtualenvwrapper
 # sudo python setup.py install
 # sudo rm -rf ~/dotfiles/word_cloud
 
-pip freeze
 # pip freeze > requirements.txt
 # pip install -r requirements.txt
