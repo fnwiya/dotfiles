@@ -5,6 +5,8 @@ sudo yum install -y tree
 sudo yum install -y nodejs
 sudo yum install -y npm
 sudo yum install -y which
+sudo yum install -y wget
+sudo yum install -y curl
 sudo yum install -y gcc
 sudo yum install -y openssl-devel
 sudo yum install -y openssl

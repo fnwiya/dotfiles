@@ -43,6 +43,7 @@ case ${OSTYPE} in
                 # CentOS
                 distri_name="redhat"
                 source install/yum.sh
+                source install/centos.sh
             fi
         elif [ -e /etc/arch-release ]; then
                 distri_name="arch"

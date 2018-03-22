@@ -2,8 +2,8 @@
 ##] initialize
 ```
 curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
-./install.sh
 ./mkLink.sh
+./install.sh
 ```
 
 ## structure
