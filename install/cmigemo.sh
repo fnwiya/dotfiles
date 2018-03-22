@@ -1,5 +1,5 @@
-git clone https://github.com/koron/cmigemo
-cd cmigemo
+git clone https://github.com/koron/cmigemo ~/cmigemo
+cd ~/cmigemo
 ./configure
 make gcc
 make gcc-dict

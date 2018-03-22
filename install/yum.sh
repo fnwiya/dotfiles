@@ -8,5 +8,6 @@ sudo yum install -y which
 sudo yum install -y wget
 sudo yum install -y curl
 sudo yum install -y gcc
+sudo yum install -y ncurses-devel 
 sudo yum install -y openssl-devel
 sudo yum install -y openssl
