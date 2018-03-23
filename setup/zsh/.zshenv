@@ -52,6 +52,10 @@ if [ -d ~/.cargo/bin ] ;then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
 
+if [ -d /usr/local/java ] ;then
+  export PATH="/usr/local/java/bin:$PATH"
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ -d ~/.local/bin ] ; then
