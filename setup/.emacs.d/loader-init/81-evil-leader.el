@@ -7,15 +7,15 @@
     ":" 'shell-pop
     "=" 'indent-region
     "@" 'mark-whole-buffer
-    "a" 'helm-projectile-ag
-    "A" 'helm-ag
+    ;; "a" 'helm-projectile-ag
+    ;; "A" 'helm-ag                        ;
     ;; "b" 'helm-buffers-list
     "e" 'helm-find-files
     ;; "r" 'helm-recentf
     ;; "s" 'helm-swoop
     ;; "x" 'helm-M-x
     ;; "y" 'helm-show-kill-ring
-    ;; "a" 'counsel-projectile-ag
+    "a" 'counsel-git-grep
     ;; "A" 'counsel-ag
     "b" 'ivy-switch-buffer
     ;; "e" 'counsel-find-file
