@@ -2,7 +2,7 @@
   :mode
   (("\\.py\\'" . python-mode))
   :config
-  (cond ((equal system-name-simple "forcia-VirtualBox")
+  (cond ((equal user-login-name "forcia")
          (setq indent-level 8)
          (setq tab-width 8)
          (setq python-indent 8)

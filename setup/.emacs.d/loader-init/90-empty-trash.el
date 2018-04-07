@@ -1,4 +1,4 @@
-(when (equal system-name-simple "forcia-VirtualBox")
+(when (equal user-login-name "forcia")
    (add-hook 'kill-emacs-hook
              (lambda()
                (shell-command "rm -rf ~/.local/share/Trash/*"))))

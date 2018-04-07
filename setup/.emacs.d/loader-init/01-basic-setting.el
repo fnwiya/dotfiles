@@ -65,7 +65,7 @@
 (cua-mode t)
 
 ;; タブの無効化
-(if (equal system-name-simple "forcia-VirtualBox")
+(if (equal user-login-name "forcia")
     (setq-default indent-tabs-mode t)
     (setq-default indent-tabs-mode nil))
 

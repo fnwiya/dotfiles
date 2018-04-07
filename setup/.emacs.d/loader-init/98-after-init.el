@@ -16,7 +16,7 @@
                   (async-shell-command "brew update && brew upgrade && brew doctor")))
                ((and (window-system) (eq system-type 'gnu/linux))
                 (cond
-                 ((equal system-name-simple "forcia-VirtualBox")
+                 ((equal user-login-name "forcia")
                   (set-frame-size (selected-frame) 101 50)
                   (save-window-excursion
                     (async-shell-command "sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove")))))))))

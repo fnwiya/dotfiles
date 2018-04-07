@@ -3,9 +3,8 @@
 if [ ! -d ~/.cargo/bin ] ;then
     curl https://sh.rustup.rs -sSf | sh
 fi
-# rustup install beta
-rustup install nighly
-# rustup default nighly
+rustup install nightly
+rustup default nightly
 export PATH="$HOME/.cargo/bin:$PATH"
 cargo install cargo-edit
 cargo install cargo-script
