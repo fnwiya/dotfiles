@@ -95,7 +95,7 @@
     highlight-symbol
     hlinum
     ht
-    ido-ubiquitous
+;;    ido-ubiquitous
     ido-vertical-mode
     irony
     impatient-mode
