@@ -31,6 +31,7 @@
     slime-mode-hook
     slime-repl-mode-hook
     sql-mode-hook
+    typescript-mode-hook
     vimrc-mode-hook
     web-mode-hook
     yaml-mode-hook))
