@@ -13,5 +13,8 @@
 ### cmderのインストール
 - http://cmder.net/
 
+### Node.jsのインストール
+- https://nodejs.org/en/
+
 ### Chromeのインストール
 - https://www.google.com/intl/ja/chrome/
