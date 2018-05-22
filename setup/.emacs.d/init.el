@@ -156,6 +156,7 @@
     tabbar
     tern
     tern-auto-complete
+    tss
     twittering-mode
     typescript-mode
     undo-tree
