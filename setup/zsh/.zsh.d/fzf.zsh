@@ -174,7 +174,7 @@ if [  -x "`which fzf`" ]; then
 
     function fzf-npm-scripts() {
         local script
-        script=($(cat package.json | jq '.scripts' | grep ':' | cut -f1 -d ':' | sed 's/[ |\"]//g' | fzf))
+        script=($(cat package.json | jq -r '.scripts | keys[]' | fzf))
         if [[ -n $script ]]; then
             npm run  $script
         else
