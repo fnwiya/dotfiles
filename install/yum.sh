@@ -1,3 +1,4 @@
+sudo yum install -y jq
 sudo yum install -y tmux
 sudo yum install -y vim
 sudo yum install -y zsh 
