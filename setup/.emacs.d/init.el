@@ -167,7 +167,7 @@
     wgrep
     yaml-mode
     yasnippet
-    ))
+    )
 (defun install-listed-pkg()
   (interactive)
   (let ((not-installed (loop for x in installing-package-list
