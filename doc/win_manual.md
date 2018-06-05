@@ -1,5 +1,6 @@
 ### Chocolateyのインストール
 - https://chocolatey.org/install
+  - choco install ag
 
 ### Dropboxのインストール
 - https://www.dropbox.com/install
