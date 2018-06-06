@@ -5,6 +5,7 @@ sudo yum install -y zsh
 sudo yum install -y tree 
 sudo yum install -y nodejs
 sudo yum install -y npm
+sudo yum install -y ruby
 sudo yum install -y which
 sudo yum install -y wget
 sudo yum install -y curl
