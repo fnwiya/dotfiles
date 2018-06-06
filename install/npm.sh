@@ -8,6 +8,7 @@ sudo npm install -g karma
 sudo npm install -g mocha
 sudo npm install -g n
 sudo npm install -g webpack
+sudo npm install -g webpack-cli
 sudo npm install -g webpack-dev-server
 
 # http://qiita.com/seibe/items/36cef7df85fe2cefa3ea
