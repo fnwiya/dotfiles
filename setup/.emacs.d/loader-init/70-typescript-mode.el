@@ -14,4 +14,3 @@
   (tss-setup-current-buffer))
 
 (add-hook 'typescript-mode-hook 'typescript-setup)
-(add-hook 'kill-buffer-hook 'tss - delete-process t)
