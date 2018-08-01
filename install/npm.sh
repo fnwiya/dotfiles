@@ -7,6 +7,7 @@ sudo npm install -g jasmine
 sudo npm install -g karma
 sudo npm install -g mocha
 sudo npm install -g n
+sudo npm install -g yarn
 sudo npm install -g webpack
 sudo npm install -g webpack-cli
 sudo npm install -g webpack-dev-server
