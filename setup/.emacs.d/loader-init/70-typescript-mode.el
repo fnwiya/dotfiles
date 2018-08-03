@@ -1,6 +1,7 @@
 (use-package typescript-mode
   :mode
-  (("\\.ts\\'" . typescript-mode)))
+  (("\\.ts\\'" . typescript-mode)
+   ("\\.tsx\\'" . typescript-mode)))
 (use-package tss
   :config
   (setq tss-popup-help-key "C-:")

@@ -56,6 +56,14 @@ if [ -d /usr/local/java ] ;then
   export PATH="/usr/local/java/bin:$PATH"
 fi
 
+if [ -d $HOME/Library/Android/sdk ] ;then
+  export ANDROID_HOME="$HOME/Library/Android/sdk"
+fi
+
+if [ -e /usr/libexec/java_home ] ; then
+  export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 if [ -d ~/.local/bin ] ; then
