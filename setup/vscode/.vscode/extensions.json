@@ -1,0 +1,33 @@
+{
+	// https://qiita.com/Glavis/items/c3dac07e4bcf5c50db0a
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+		"eamodio.gitlens",
+		"ms-vsts.team",
+		"eg2.tslint",
+		"vscodevim.vim",
+		"rafaelmaiolla.remote-vscode",
+		"PeterJausovec.vscode-docker",
+		"alefragnani.project-manager",
+		"shd101wyy.markdown-preview-enhanced",
+		"DavidAnson.vscode-markdownlint",
+		"dbaeumer.vscode-eslint",
+		"CoenraadS.bracket-pair-colorizer",
+		"PKief.material-icon-theme",
+		"Equinusocio.vsc-material-theme",
+		"shardulm94.trailing-spaces",
+		"esbenp.prettier-vscode",
+		"formulahendry.auto-rename-tag",
+		"steoates.autoimport",
+		"sleistner.vscode-fileutils",
+		"formulahendry.auto-close-tag",
+		"christian-kohler.path-intellisense",
+		"MS-CEINTL.vscode-language-pack-ja",
+		"eriklynd.json-tools",
+		"zjhmale.vscode-ag",
+		"slevesque.vscode-multiclip",
+		"taichi.vscode-textlint"
+	]
+}

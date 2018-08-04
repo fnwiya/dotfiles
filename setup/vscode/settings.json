@@ -1,0 +1,90 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    "extensions.ignoreRecommendations": true,
+    "remote.port": 52698,
+    "remote.onstartup": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "files.eol": "\n",
+    "files.autoGuessEncoding": true,
+    "team.showWelcomeMessage": false,
+    "editor.renderWhitespace": "all",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme",
+    "materialTheme.fixIconsRunning": false,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "sdfghjkl",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.visualstar": true,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.file.save"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "p"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.termnial.toggleTerminal"
+                }
+            ]
+        },
+    ],
+    "editor.formatOnSave": false,
+    "window.zoomLevel": 0,
+}
