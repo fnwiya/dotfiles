@@ -11,3 +11,9 @@ cargo install cargo-script
 cargo install cargo-update
 cargo install racer
 cargo install ripgrep
+## rls
+rustup update nightly
+rustup component add --toolchain=nightly rust-analysis
+rustup component add --toolchain=nightly rls-preview
+rustup component add --toolchain=nightly rust-src
+#rustup run nightly rls
