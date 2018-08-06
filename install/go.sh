@@ -1,8 +1,16 @@
 #!/bin/sh
 
 if [ ! -d /usr/local/go ] ;then
-    wget https: / storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
-    sudo tar -xvf go1.9.2.linux-amd64.tar.gz
+    case ${OSTYPE} in
+        darwin*)
+            wget https: / storage.googleapis.com/golang/go1.10.3.darwin-amd64.tar.gz
+            sudo tar -xvf go1.10.3.darwin-amd64.tar.gz
+            ;;
+        linux*)
+            wget https: / storage.googleapis.com/golang/go1.10.3.linux-amd64.tar.gz
+            sudo tar -xvf go1.10.3.linux-amd64.tar.gz
+            ;;
+    esac
     sudo mv -f go /usr/local
 fi
 export PATH=/usr/local/go/bin:$PATH
