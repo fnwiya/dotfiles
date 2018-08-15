@@ -50,7 +50,7 @@ brew install haskell-stack
 brew install heroku
 brew install hub
 brew install jq
-brew install leiningen
+brew install llighteiningen
 brew install markdown
 brew install mecab
 brew install mecab-ipadic
@@ -66,7 +66,7 @@ brew install mas
 brew install mplayer
 brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
-brew install rust
+#brew install rust
 brew install sbcl
 brew install the_silver_searcher
 brew install tmux

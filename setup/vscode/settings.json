@@ -85,6 +85,10 @@
             ]
         },
     ],
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "window.zoomLevel": 0,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "glassit.alpha": 200,
+    "window.restoreWindows": "all",
+    "extensions.autoUpdate": true,
 }
