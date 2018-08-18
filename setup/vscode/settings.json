@@ -91,4 +91,5 @@
     "glassit.alpha": 200,
     "window.restoreWindows": "all",
     "extensions.autoUpdate": true,
+    "rust.show_warnings": true,
 }

@@ -36,6 +36,7 @@ brew install aspell
 brew install autojump
 brew install automake
 brew install caskroom/cask/brew-cask
+brew install cmake
 brew install cmigemo
 brew install curl
 brew install elixir
@@ -88,19 +89,19 @@ brew install ranger libcaca
 brew install ranger imlib2
 ranger --copy-config=all
 
-brew cask install alfred
+#brew cask install alfred
 brew cask install appcleaner
 brew cask install dropbox
-brew cask install evernote
+#brew cask install evernote
 brew cask install firefox
 brew cask install google-chrome
 brew cask install google-japanese-ime
-brew cask install hyper 
+#brew cask install hyper
 brew cask install iterm2
 brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install filezilla
+#brew cask install filezilla
 
 brew cask cleanup
 brew cleanup
