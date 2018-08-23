@@ -1,0 +1,9 @@
+memodir = "~/memo/"
+editor = "code"
+column = 20
+selectcmd = "fzf"
+grepcmd = "grep -nH ${PATTERN} ${FILES}"
+assetsdir = "."
+pluginsdir = "~/.config/memo/plugins"
+templatedirfile = ""
+templatebodyfile = ""

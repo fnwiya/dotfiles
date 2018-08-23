@@ -197,5 +197,5 @@ if [  -x "`which fzf`" ]; then
             git checkout $SELECTED_BRANCH
         fi
     }
-
+    alias fzf-memo='memo grep list | fzf | cut -d : -f 1,2 | xargs code -g'
 fi

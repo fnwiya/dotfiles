@@ -29,6 +29,7 @@ mkdir -p $HOME/.config/ranger
 ln -sf $dotfilesPath/dotfiles/setup/ranger/rc.conf $HOME/.config/ranger/rc.conf
 ln -sf $dotfilesPath/dotfiles/setup/ranger/rifle.conf $HOME/.config/ranger/rifle.conf
 ln -sf $dotfilesPath/dotfiles/setup/ranger/scope.sh $HOME/.config/ranger/scope.sh
+ln -sf $dotfilesPath/dotfiles/setup/memo $HOME/.config/memo
 if [ -e $dotfilesPath/Dropbox/config-file ]; then
     ln -sf $dotfilesPath/Dropbox/config-file/.netrc $HOME
 fi
