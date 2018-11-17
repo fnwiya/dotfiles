@@ -79,14 +79,14 @@ brew install z
 brew install zsh
 
 brew install ranger
-brew install ranger w3m
-brew install ranger lynx
-brew install ranger highlight
-brew install ranger atool
-brew install ranger mediainfo
-brew install ranger xpdf
-brew install ranger libcaca
-brew install ranger imlib2
+brew install w3m
+brew install lynx
+brew install highlight
+brew install atool
+brew install mediainfo
+brew install xpdf
+brew install libcaca
+brew install imlib2
 ranger --copy-config=all
 
 #brew cask install alfred
@@ -98,7 +98,7 @@ brew cask install google-chrome
 brew cask install google-japanese-ime
 #brew cask install hyper
 brew cask install iterm2
-brew cask install the-unarchiver
+#brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vagrant
 #brew cask install filezilla
