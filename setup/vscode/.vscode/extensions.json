@@ -1,33 +1,45 @@
 {
-	// https://qiita.com/Glavis/items/c3dac07e4bcf5c50db0a
-	// See http://go.microsoft.com/fwlink/?LinkId=827846
-	// for the documentation about the extensions.json format
-	"recommendations": [
-		// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
-		"eamodio.gitlens",
-		"ms-vsts.team",
-		"eg2.tslint",
-		"vscodevim.vim",
-		"rafaelmaiolla.remote-vscode",
-		"PeterJausovec.vscode-docker",
-		"alefragnani.project-manager",
-		"shd101wyy.markdown-preview-enhanced",
-		"DavidAnson.vscode-markdownlint",
-		"dbaeumer.vscode-eslint",
-		"CoenraadS.bracket-pair-colorizer",
-		"PKief.material-icon-theme",
-		"Equinusocio.vsc-material-theme",
-		"shardulm94.trailing-spaces",
-		"esbenp.prettier-vscode",
-		"formulahendry.auto-rename-tag",
-		"steoates.autoimport",
-		"sleistner.vscode-fileutils",
-		"formulahendry.auto-close-tag",
-		"christian-kohler.path-intellisense",
-		"MS-CEINTL.vscode-language-pack-ja",
-		"eriklynd.json-tools",
-		"zjhmale.vscode-ag",
-		"slevesque.vscode-multiclip",
-		"taichi.vscode-textlint"
-	]
+  // https://qiita.com/Glavis/items/c3dac07e4bcf5c50db0a
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+    "formulahendry.auto-close-tag",
+    "steoates.autoimport",
+    "formulahendry.auto-rename-tag",
+    "CoenraadS.bracket-pair-colorizer",
+    "naumovs.color-highlight",
+    "PeterJausovec.vscode-docker",
+    "dbaeumer.vscode-eslint",
+    "sleistner.vscode-fileutils",
+    "eamodio.gitlens",
+    "MS-CEINTL.vscode-language-pack-ja",
+    "eriklynd.json-tools",
+    "shd101wyy.markdown-preview-enhanced",
+    "DavidAnson.vscode-markdownlint",
+    "PKief.material-icon-theme",
+    "Equinusocio.vsc-material-theme",
+    "slevesque.vscode-multiclip",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "alefragnani.project-manager",
+    "bung87.rails",
+    "vsmobile.vscode-react-native",
+    "rafaelmaiolla.remote-vscode",
+    "rebornix.ruby",
+    "misogi.ruby-rubocop",
+    "mbessey.vscode-rufo",
+    "rust-lang.rust",
+    "aviorisdead.rustycode",
+    "robinbentley.sass-indented",
+    "sianglim.slim",
+    "shardulm94.trailing-spaces",
+    "eg2.tslint",
+    "vscodevim.vim",
+    "zjhmale.vscode-ag",
+    "eg2.tslint",
+    "zjhmale.vscode-ag",
+    "bung87.vscode-gemfile",
+    "taichi.vscode-textlint"
+  ]
 }

@@ -12,8 +12,11 @@ cargo install cargo-update
 cargo install racer
 cargo install ripgrep
 cargo install rustsym
-## rls
+## wasm-bindgen
 rustup update nightly
+rustup target add wasm32-unknown-unknown --toolchain nightly
+cargo +nightly install wasm-bindgen-cli
+## rls
 rustup component add --toolchain=nightly rust-analysis
 rustup component add --toolchain=nightly rls-preview
 rustup component add --toolchain=nightly rust-src
