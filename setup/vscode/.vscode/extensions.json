@@ -9,6 +9,7 @@
     "formulahendry.auto-rename-tag",
     "CoenraadS.bracket-pair-colorizer",
     "naumovs.color-highlight",
+    "msjsdiag.debugger-for-chrome",
     "PeterJausovec.vscode-docker",
     "dbaeumer.vscode-eslint",
     "sleistner.vscode-fileutils",
