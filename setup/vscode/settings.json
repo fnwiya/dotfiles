@@ -77,7 +77,6 @@
       ]
     }
   ],
-  "prettier.eslintIntegration": true,
   "editor.formatOnSave": true,
   "window.zoomLevel": 0,
   "typescript.updateImportsOnFileMove.enabled": "always",

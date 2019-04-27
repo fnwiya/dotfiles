@@ -32,7 +32,7 @@ brew upgrade
 
 # Install homebrew packages
 # brewfile使うなら http://tech.basicinc.jp/Mac/2014/04/20/mac_app_engineer/
-brew install aspell
+# brew install aspell
 brew install autojump
 brew install automake
 brew install caskroom/cask/brew-cask
@@ -41,20 +41,20 @@ brew install cmigemo
 brew install curl
 brew install elixir
 brew install emojify
-brew install --cocoa emacs
+# brew install --cocoa emacs
 brew install gcc
-brew install gibo
+# brew install gibo
 brew install git
 brew install global
 brew install go
-brew install haskell-stack
+# brew install haskell-stack
 brew install heroku
-brew install hub
+# brew install hub
 brew install jq
-brew install llighteiningen
+# brew install llighteiningen
 brew install markdown
-brew install mecab
-brew install mecab-ipadic
+# brew install mecab
+# brew install mecab-ipadic
 brew install multitail
 brew install node
 brew install nvm
@@ -68,39 +68,39 @@ brew install mplayer
 brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
 #brew install rust
-brew install sbcl
+# brew install sbcl
 brew install the_silver_searcher
 brew install tmux
 brew install tree
 brew install vim
 brew install wget
-brew install youtube-dl
+# brew install youtube-dl
 brew install z
 brew install zsh
 
-brew install ranger
-brew install w3m
-brew install lynx
-brew install highlight
-brew install atool
-brew install mediainfo
-brew install xpdf
-brew install libcaca
-brew install imlib2
-ranger --copy-config=all
+# brew install ranger
+# brew install w3m
+# brew install lynx
+# brew install highlight
+# brew install atool
+# brew install mediainfo
+# brew install xpdf
+# brew install libcaca
+# brew install imlib2
+# ranger --copy-config=all
 
 #brew cask install alfred
 brew cask install appcleaner
 brew cask install dropbox
 #brew cask install evernote
-brew cask install firefox
+# brew cask install firefox
 brew cask install google-chrome
 brew cask install google-japanese-ime
 #brew cask install hyper
 brew cask install iterm2
 #brew cask install the-unarchiver
-brew cask install virtualbox
-brew cask install vagrant
+# brew cask install virtualbox
+# brew cask install vagrant
 #brew cask install filezilla
 
 brew cask cleanup
@@ -108,4 +108,4 @@ brew cleanup
 
 mas install 803453959 # Slack
 mas install 497799835 # Xcode
-man install 409183694 # Keynote
+# man install 409183694 # Keynote

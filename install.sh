@@ -80,8 +80,8 @@ source install/pip.sh
 echo "gem settings"
 source install/gem.sh
 
-echo "stack settings"
-source install/stack.sh
+# echo "stack settings"
+# source install/stack.sh
 
 # echo "lein settings"
 # source install/lein.sh

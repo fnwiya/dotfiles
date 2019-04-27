@@ -14,10 +14,10 @@ sudo pip install Mako
 sudo pip install numpy
 sudo pip install pandas
 sudo pip install pep8
-sudo pip install pgcli
+# sudo pip install pgcli
 sudo pip install pip-tools
-sudo pip install scipy
-sudo pip install tweepy
+# sudo pip install scipy
+# sudo pip install tweepy
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
 
