@@ -33,6 +33,11 @@ if [ -e $HOME/.pyenv ] ;then
   eval "$(pyenv init -)"
 fi
 
+if [ -e $HOME/.nvm ] ;then
+  export NVM_ROOT="$HOME/.nvm"
+  source $HOME/.nvm/.sh
+fi
+
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
   export PATH="/usr/local/etc/profile.d:$PATH"
 fi

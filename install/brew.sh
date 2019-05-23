@@ -34,38 +34,38 @@ brew upgrade
 # brewfile使うなら http://tech.basicinc.jp/Mac/2014/04/20/mac_app_engineer/
 # brew install aspell
 brew install autojump
-brew install automake
+# brew install automake
 brew install caskroom/cask/brew-cask
 brew install cmake
-brew install cmigemo
+# brew install cmigemo
 brew install curl
-brew install elixir
-brew install emojify
+# brew install elixir
+# brew install emojify
 # brew install --cocoa emacs
 brew install gcc
 # brew install gibo
 brew install git
-brew install global
+# brew install global
 brew install go
 # brew install haskell-stack
-brew install heroku
+# brew install heroku
 # brew install hub
-brew install jq
+# brew install jq
 # brew install llighteiningen
-brew install markdown
+# brew install markdown
 # brew install mecab
 # brew install mecab-ipadic
-brew install multitail
+# brew install multitail
 brew install node
 brew install nvm
-brew install poppler # for https://github.com/politza/pdf-tools
-export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
+# brew install poppler # for https://github.com/politza/pdf-tools
+# export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 brew install postgresql
 brew install pyenv
 brew install pyenv-virtualenv
-brew install mas
-brew install mplayer
-brew install rbenv
+# brew install mas
+# brew install mplayer
+# brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
 #brew install rust
 # brew install sbcl
