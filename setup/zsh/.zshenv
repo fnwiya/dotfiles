@@ -35,7 +35,7 @@ fi
 
 if [ -e $HOME/.nvm ] ;then
   export NVM_ROOT="$HOME/.nvm"
-  source $HOME/.nvm/.sh
+  source $HOME/.nvm/nvm.sh
 fi
 
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
