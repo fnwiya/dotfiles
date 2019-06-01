@@ -33,10 +33,10 @@ brew upgrade
 # Install homebrew packages
 # brewfile使うなら http://tech.basicinc.jp/Mac/2014/04/20/mac_app_engineer/
 # brew install aspell
-brew install autojump
+#brew install autojump
 # brew install automake
 brew install caskroom/cask/brew-cask
-brew install cmake
+#brew install cmake
 # brew install cmigemo
 brew install curl
 # brew install elixir
@@ -62,8 +62,7 @@ brew install nvm
 # export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 brew install postgresql
 brew install pyenv
-brew install pyenv-virtualenv
-# brew install mas
+#brew install pyenv-virtualenv
 # brew install mplayer
 # brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
@@ -91,7 +90,7 @@ brew install zsh
 
 #brew cask install alfred
 brew cask install appcleaner
-brew cask install dropbox
+#brew cask install dropbox
 #brew cask install evernote
 # brew cask install firefox
 brew cask install google-chrome
@@ -102,10 +101,12 @@ brew cask install iterm2
 # brew cask install virtualbox
 # brew cask install vagrant
 #brew cask install filezilla
+brew cask install visual-studio-code
 
 brew cask cleanup
 brew cleanup
 
+brew install mas
 mas install 803453959 # Slack
 mas install 497799835 # Xcode
 # man install 409183694 # Keynote
