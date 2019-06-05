@@ -3,7 +3,7 @@
 sudo npm install -g babel-cli
 sudo npm install -g eslint
 sudo npm install -g eslint-cli
-sudo npm install -g jasmine
+# sudo npm install -g jasmine
 # sudo npm install -g karma
 # sudo npm install -g mocha
 sudo npm install -g n

@@ -46,7 +46,7 @@ brew install gcc
 # brew install gibo
 brew install git
 # brew install global
-brew install go
+# brew install go
 # brew install haskell-stack
 # brew install heroku
 # brew install hub
@@ -106,7 +106,7 @@ brew cask install visual-studio-code
 brew cask cleanup
 brew cleanup
 
-brew install mas
-mas install 803453959 # Slack
-mas install 497799835 # Xcode
+# brew install mas
+# mas install 803453959 # Slack
+# mas install 497799835 # Xcode
 # man install 409183694 # Keynote

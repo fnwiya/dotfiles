@@ -14,9 +14,9 @@ case ${OSTYPE} in
         echo "Updating OSX settings"
         source install/osx.sh
 
-        echo "rm m4 from emacs term"
-        mkdir -p ~/.terminfo/65/
-        cp /usr/share/terminfo/65/eterm ~/.terminfo/65/eterm-color
+        # echo "rm m4 from emacs term"
+        # mkdir -p ~/.terminfo/65/
+        # cp /usr/share/terminfo/65/eterm ~/.terminfo/65/eterm-color
         ;;
     linux*)
         if   [ -e /etc/debian_version ] ||
@@ -71,8 +71,8 @@ source install/npm.sh
 echo "pyenv settings"
 source install/pyenv.sh
 
-echo "pip settings"
-source install/pip.sh
+# echo "pip settings"
+# source install/pip.sh
 
 # echo "sbcl settings"
 # source install/sbcl.sh
@@ -96,7 +96,7 @@ source install/git.sh
 echo "Configuring zsh as default shell"
 if cat /etc/shells | grep $(which zsh) ; then
     sudo which zsh >> /etc/shells
+    chsh -s $(which zsh)
 fi
-chsh -s $(which zsh)
 
 echo "Done."
