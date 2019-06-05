@@ -65,9 +65,9 @@ if [ -d $HOME/Library/Android/sdk ] ;then
   export ANDROID_HOME="$HOME/Library/Android/sdk"
 fi
 
-if [ -e /usr/libexec/java_home ] ; then
-  export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-fi
+# if [ -e /usr/libexec/java_home ] ; then
+  # export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
+# fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
