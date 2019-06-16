@@ -38,6 +38,11 @@ if [ -e $HOME/.nvm ] ;then
   source $HOME/.nvm/nvm.sh
 fi
 
+if which npm > /dev/null ;then
+  export NODE_PATH=`npm root -g`
+  export PATH=`npm bin -g`:$PATH
+fi
+
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
   export PATH="/usr/local/etc/profile.d:$PATH"
 fi

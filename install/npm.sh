@@ -1,21 +1,21 @@
 #!/bin/bash
 # http://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version
-sudo npm install -g babel-cli
-sudo npm install -g eslint
-sudo npm install -g eslint-cli
+npm install -g babel-cli
+npm install -g eslint
+npm install -g eslint-cli
 # sudo npm install -g jasmine
 # sudo npm install -g karma
 # sudo npm install -g mocha
-sudo npm install -g n
-sudo npm install -g yarn
-sudo npm install -g webpack
-sudo npm install -g webpack-cli
-sudo npm install -g webpack-dev-server
+npm install -g n
+npm install -g yarn
+npm install -g webpack
+npm install -g webpack-cli
+npm install -g webpack-dev-server
 
 # http://qiita.com/seibe/items/36cef7df85fe2cefa3ea
-sudo n stable
-sudo ln -sf /usr/local/bin/node /usr/bin/node
-sudo apt-get purge -y nodejs npm
-sudo npm updage npm
+# n stable
+# ln -sf /usr/local/bin/node /usr/bin/node
+# apt-get purge -y nodejs npm
+npm updage npm
 
-sudo npm cache clean -f
+npm cache clean -f
