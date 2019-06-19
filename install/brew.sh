@@ -68,13 +68,13 @@ brew install pyenv
 brew install reattach-to-user-namespace # for tmux on osx
 #brew install rust
 # brew install sbcl
-brew install the_silver_searcher
+# brew install the_silver_searcher
 brew install tmux
 brew install tree
 brew install vim
 brew install wget
 # brew install youtube-dl
-brew install z
+# brew install z
 brew install zsh
 
 # brew install ranger
@@ -103,7 +103,6 @@ brew cask install iterm2
 #brew cask install filezilla
 brew cask install visual-studio-code
 
-brew cask cleanup
 brew cleanup
 
 # brew install mas
