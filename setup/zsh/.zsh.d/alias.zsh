@@ -14,6 +14,7 @@ alias em='emacsclient -n'
 alias ekill='emacsclient -e "(kill-emacs)"'
 alias gitupd='git add --all . && git commit -m "update" && git push'
 alias gitroot='cd $(git rev-parse --show-toplevel)'
+alias gitpullrebase='git stash && git pull --rebase && git stash pop stash@{0}'
 alias multi_ssh='~/dotfiles/setup/tmux/.tmux/multi_ssh.sh'
 alias rust='cargo-script'
 function ssh() {

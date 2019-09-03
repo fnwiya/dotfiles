@@ -84,5 +84,8 @@
   "extensions.autoUpdate": true,
   "rust.show_warnings": true,
   "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true
+  "gitlens.views.lineHistory.enabled": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  }
 }
