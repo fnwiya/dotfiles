@@ -66,6 +66,11 @@ if [ -d /usr/local/java ] ;then
   export PATH="/usr/local/java/bin:$PATH"
 fi
 
+if [ -d ~/flutter/bin ] ;then
+  export PATH="$HOME/flutter/bin:$PATH"
+fi
+
+
 if [ -d $HOME/Library/Android/sdk ] ;then
   export ANDROID_HOME="$HOME/Library/Android/sdk"
 fi
