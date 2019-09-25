@@ -42,6 +42,7 @@ case ${OSTYPE} in
         ln -sf $dotfilesPath/dotfiles/setup/hyper/.hyper.js $HOME
         if [ -e $HOME/Library/Application\ Support/Code ]; then
             ln -sf $dotfilesPath/dotfiles/setup/vscode/setting.json $HOME/Library/Application\ Support/Code/User/setting.json
+            ln -sf $dotfilesPath/dotfiles/setup/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
             ln -sf $dotfilesPath/dotfiles/setup/vscode/.vscode $HOME/Library/Application\ Support/Code/User/.vscode
         fi
         ;;
