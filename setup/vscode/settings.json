@@ -87,5 +87,11 @@
   "gitlens.views.lineHistory.enabled": true,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
