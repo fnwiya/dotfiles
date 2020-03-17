@@ -57,11 +57,11 @@ brew install git
 # brew install mecab-ipadic
 # brew install multitail
 brew install node
-brew install nvm
+# brew install nvm
 # brew install poppler # for https://github.com/politza/pdf-tools
 # export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
-brew install postgresql
-brew install pyenv
+# brew install postgresql
+# brew install pyenv
 #brew install pyenv-virtualenv
 # brew install mplayer
 # brew install rbenv
@@ -70,7 +70,7 @@ brew install reattach-to-user-namespace # for tmux on osx
 # brew install sbcl
 # brew install the_silver_searcher
 brew install tmux
-brew install tree
+# brew install tree
 brew install vim
 brew install wget
 # brew install youtube-dl

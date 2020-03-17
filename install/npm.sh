@@ -1,6 +1,6 @@
 #!/bin/bash
 # http://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version
-npm install -g babel-cli
+# npm install -g babel-cli
 npm install -g eslint
 npm install -g eslint-cli
 # sudo npm install -g jasmine

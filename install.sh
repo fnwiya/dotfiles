@@ -62,14 +62,14 @@ case ${OSTYPE} in
         ;;
 esac
 
-echo "go settings"
-source install/go.sh
+# echo "go settings"
+# source install/go.sh
 
 echo "npm settings"
 source install/npm.sh
 
-echo "pyenv settings"
-source install/pyenv.sh
+# echo "pyenv settings"
+# source install/pyenv.sh
 
 # echo "pip settings"
 # source install/pip.sh
