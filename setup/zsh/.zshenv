@@ -85,6 +85,6 @@ if [ -d ~/.local/bin ] ; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ "`docker-machine status default`" = "Running" ]; then
-  eval $(docker-machine env default) >>/dev/null
-fi
+# if [ "`docker-machine status default`" = "Running" ]; then
+#   eval $(docker-machine env default) >>/dev/null
+# fi
