@@ -3,12 +3,12 @@
 if [ ! -d /usr/local/go ] ;then
     case ${OSTYPE} in
         darwin*)
-            wget https: / storage.googleapis.com/golang/go1.12.5.darwin-amd64.tar.gz
-            sudo tar -xvf go1.12.5.darwin-amd64.tar.gz
+            wget https: / storage.googleapis.com/golang/go1.14.1.darwin-amd64.tar.gz
+            sudo tar -xvf go1.14.1.darwin-amd64.tar.gz
             ;;
         linux*)
-            wget https: / storage.googleapis.com/golang/go1.12.5.linux-amd64.tar.gz
-            sudo tar -xvf go1.12.5.linux-amd64.tar.gz
+            wget https: / storage.googleapis.com/golang/go1.14.1.linux-amd64.tar.gz
+            sudo tar -xvf go1.14.1.linux-amd64.tar.gz
             ;;
     esac
     sudo mv -f go /usr/local
