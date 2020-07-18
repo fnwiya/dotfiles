@@ -7,9 +7,3 @@
 [submodule "setup/tmux/.tmux/plugins/tmp"]
 	path = setup/tmux/.tmux/plugins/tmp
 	url = https://github.com/tmux-plugins/tpm
-[submodule "submodules/fzf"]
-	path = submodules/fzf
-	url = https://github.com/junegunn/fzf
-# [submodule "submodules/forciaConf"]
-# 	path = submodules/forciaConf
-# 	url = http://gitlab.fdev/kohno/forciaConf

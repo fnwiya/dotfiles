@@ -24,7 +24,6 @@ ln -sf $dotfilesPath/dotfiles/setup/vim/.vim $HOME
 ln -sf $dotfilesPath/dotfiles/setup/zsh/.zshrc $HOME
 ln -sf $dotfilesPath/dotfiles/setup/zsh/.zshenv $HOME
 ln -sf $dotfilesPath/dotfiles/setup/zsh/.zsh.d $HOME
-ln -sfn $dotfilesPath/dotfiles/submodules/fzf $HOME/.fzf
 mkdir -p $HOME/.config/ranger
 ln -sf $dotfilesPath/dotfiles/setup/ranger/rc.conf $HOME/.config/ranger/rc.conf
 ln -sf $dotfilesPath/dotfiles/setup/ranger/rifle.conf $HOME/.config/ranger/rifle.conf

@@ -42,7 +42,9 @@ brew install curl
 # brew install elixir
 # brew install emojify
 # brew install --cocoa emacs
+brew install fzf
 brew install gcc
+brew install ghq
 # brew install gibo
 brew install git
 # brew install global

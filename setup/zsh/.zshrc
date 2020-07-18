@@ -14,13 +14,10 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a -x $ZSHHOME ]; then
         fi
     done
     source ${ZSHHOME}/fzf.zsh
-    if [ -f "${HOME}/forciaConf/.zshrc" ]; then
-        source ${HOME}/forciaConf/.zshrc
-    fi
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/fumiya.kohno/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/fumiya.kohno/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/fumiya.kohno/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/fumiya.kohno/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/fumiya.kohno/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/fumiya.kohno/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/fumiya.kohno/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/fumiya.kohno/google-cloud-sdk/completion.zsh.inc'; fi
