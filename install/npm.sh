@@ -6,7 +6,7 @@ npm install -g eslint-cli
 # sudo npm install -g jasmine
 # sudo npm install -g karma
 # sudo npm install -g mocha
-npm install -g n
+# npm install -g n
 npm install -g yarn
 npm install -g webpack
 npm install -g webpack-cli
