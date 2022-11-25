@@ -1,12 +1,16 @@
+# README
+
 ## initialize
-```
+
+```sh
 curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 ./mkLink.sh
 ./install.sh
 ```
 
 ## structure
-```
+
+```sh
 .
 ├── .git
 ├── .gitignore
@@ -61,4 +65,3 @@ curl -L raw.github.com/fnwiya/dotfiles/master/cloneDotfiles.sh | bash
 │        └── .zshenv
 └── mkLink.sh
 ```
- 
