@@ -16,6 +16,6 @@
 # n stable
 # ln -sf /usr/local/bin/node /usr/bin/node
 # apt-get purge -y nodejs npm
-npm updage npm
+npm update npm
 
 npm cache clean -f
