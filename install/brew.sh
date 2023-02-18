@@ -9,14 +9,7 @@ then
   echo "  Installing Homebrew for you."
 
   # Install the correct homebrew for each OS type
-  if test "$(uname)" = "Darwin"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  elif test "$(expr substr $(uname -s) 1 5)" = "Linux"
-  then
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
-  fi
-
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Ask for the administrator password upfront.
@@ -39,7 +32,7 @@ brew install caskroom/cask/brew-cask
 #brew install cmake
 # brew install cmigemo
 brew install curl
-brew install deno
+# brew install deno
 # brew install elixir
 # brew install emojify
 # brew install --cocoa emacs
