@@ -28,7 +28,7 @@ brew upgrade
 # brew install aspell
 #brew install autojump
 # brew install automake
-brew install caskroom/cask/brew-cask
+brew install cask
 #brew install cmake
 # brew install cmigemo
 brew install curl
@@ -84,20 +84,23 @@ brew install zsh
 # brew install imlib2
 # ranger --copy-config=all
 
-#brew cask install alfred
-brew cask install appcleaner
-#brew cask install dropbox
-#brew cask install evernote
-# brew cask install firefox
-brew cask install google-chrome
-# brew cask install google-japanese-ime
-#brew cask install hyper
-brew cask install iterm2
-#brew cask install the-unarchiver
-# brew cask install virtualbox
-# brew cask install vagrant
-#brew cask install filezilla
-brew cask install visual-studio-code
+# brew install --cask alfred
+brew install --cask appcleaner
+# brew install --cask dropbox
+# brew install --cask evernote
+# brew install --cask firefox
+brew install --cask google-chrome
+# brew install --cask google-japanese-ime
+# brew install --cask hyper
+# brew install --cask iterm2
+brew install --cask warp
+brew install --cask slack
+# brew install --cask microsoft-teams
+# brew install --cask the-unarchiver
+# brew install --cask virtualbox
+# brew install --cask vagrant
+# brew install --cask filezilla
+brew install --cask visual-studio-code
 
 brew cleanup
 

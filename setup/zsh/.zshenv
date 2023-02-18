@@ -90,3 +90,4 @@ fi
 # if [ "`docker-machine status default`" = "Running" ]; then
 #   eval $(docker-machine env default) >>/dev/null
 # fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
