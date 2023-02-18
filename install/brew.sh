@@ -88,6 +88,7 @@ brew install zsh
 brew install --cask appcleaner
 # brew install --cask dropbox
 # brew install --cask evernote
+brew install --cask epoccam
 # brew install --cask firefox
 brew install --cask google-chrome
 # brew install --cask google-japanese-ime
@@ -96,11 +97,13 @@ brew install --cask iterm2
 # brew install --cask warp
 brew install --cask slack
 # brew install --cask microsoft-teams
+brew install --cask shiftit
 # brew install --cask the-unarchiver
 # brew install --cask virtualbox
 # brew install --cask vagrant
 # brew install --cask filezilla
 brew install --cask visual-studio-code
+brew install --cask zoom
 
 brew cleanup
 
