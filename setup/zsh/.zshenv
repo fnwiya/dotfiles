@@ -90,4 +90,13 @@ fi
 # if [ "`docker-machine status default`" = "Running" ]; then
 #   eval $(docker-machine env default) >>/dev/null
 # fi
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+if [ -e /opt/homebrew/bin/brew ] ; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+if [ -e /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc ] ; then
+  source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+  source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+fi
+
