@@ -7,7 +7,6 @@
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
-
   # Install the correct homebrew for each OS type
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
@@ -58,7 +57,7 @@ brew install nvm
 # export PKG_CONFIG_PATH=/usr/local/Cellar/zlib/1.2.8/lib/pkgconfig:/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig
 # brew install postgresql
 # brew install pyenv
-#brew install pyenv-virtualenv
+# brew install pyenv-virtualenv
 # brew install mplayer
 # brew install rbenv
 brew install reattach-to-user-namespace # for tmux on osx
@@ -88,6 +87,7 @@ brew install zsh
 # brew install --cask alfred
 brew install --cask appcleaner
 brew install --cask docker
+brew install --cask duet
 # brew install --cask dropbox
 # brew install --cask evernote
 brew install --cask epoccam
