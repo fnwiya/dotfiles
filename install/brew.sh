@@ -87,6 +87,7 @@ brew install zsh
 
 # brew install --cask alfred
 brew install --cask appcleaner
+brew install --cask docker
 # brew install --cask dropbox
 # brew install --cask evernote
 brew install --cask epoccam
