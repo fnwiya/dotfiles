@@ -92,6 +92,7 @@ brew install --cask appcleaner
 brew install --cask epoccam
 # brew install --cask firefox
 brew install --cask google-chrome
+brew install --cask google-cloud-sdk
 # brew install --cask google-japanese-ime
 # brew install --cask hyper
 brew install --cask iterm2
