@@ -99,6 +99,7 @@ brew install --cask google-cloud-sdk
 brew install --cask iterm2
 # brew install --cask warp
 brew install --cask slack
+brew install --cask mysqlworkbench
 # brew install --cask microsoft-teams
 brew install --cask shiftit
 # brew install --cask the-unarchiver
