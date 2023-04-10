@@ -7,10 +7,6 @@ path=(
    $path
 )
 
-if [ -e $HOME/bin/restartWeb.sh ] ; then
-  export PATH="$HOME/bin:$PATH"
-fi
-
 # for go lang
 if [ -d /usr/local/go ]; then
   export PATH="/usr/local/go/bin:$PATH"
@@ -34,14 +30,9 @@ if [ -e $HOME/.pyenv ] ;then
 fi
 
 if [ -e $HOME/.nvm ] ;then
-  export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-fi
-
-if which npm > /dev/null ;then
-  export NODE_PATH=`npm root -g`
-  export PATH=`npm bin -g`:$PATH
+  # export NVM_DIR="$HOME/.nvm"
+  # [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  # [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 fi
 
 if [ -e /usr/local/etc/profile.d/z.sh ] ;then
@@ -63,22 +54,10 @@ if [ -d ~/.cargo/bin ] ;then
   export PATH="$HOME/.cargo/bin:$PATH"
 fi
 
-if [ -d /usr/local/java ] ;then
-  export PATH="/usr/local/java/bin:$PATH"
+if [ -d /opt/homebrew/opt/openjdk ] ;then
+  export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 fi
 
-if [ -d ~/flutter/bin ] ;then
-  export PATH="$HOME/flutter/bin:$PATH"
-fi
-
-
-if [ -d $HOME/Library/Android/sdk ] ;then
-  export ANDROID_HOME="$HOME/Library/Android/sdk"
-fi
-
-# if [ -e /usr/libexec/java_home ] ; then
-  # export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-# fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -86,9 +65,6 @@ if [ -d ~/.local/bin ] ; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# if [ "`docker-machine status default`" = "Running" ]; then
-#   eval $(docker-machine env default) >>/dev/null
-# fi
 
 if [ -e /opt/homebrew/bin/brew ] ; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
