@@ -2,6 +2,7 @@
     excludesfile = ~/.gitignore_global
     editor = vim
     pager = less
+    ignorecase = false
 [user]
     name  = fnwiya
     email = fnwiya@gmail.com
