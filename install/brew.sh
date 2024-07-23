@@ -91,22 +91,23 @@ brew install --cask duet
 # brew install --cask dropbox
 # brew install --cask evernote
 brew install --cask epoccam
+# brew install --cask filezilla
 # brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask google-cloud-sdk
 # brew install --cask google-japanese-ime
 # brew install --cask hyper
 brew install --cask iterm2
-# brew install --cask warp
-brew install --cask slack
 brew install --cask mysqlworkbench
 # brew install --cask microsoft-teams
+brew install --cask rectangle
 brew install --cask shiftit
+brew install --cask slack
 # brew install --cask the-unarchiver
-# brew install --cask virtualbox
 # brew install --cask vagrant
-# brew install --cask filezilla
+# brew install --cask virtualbox
 brew install --cask visual-studio-code
+# brew install --cask warp
 brew install --cask zoom
 
 brew cleanup
