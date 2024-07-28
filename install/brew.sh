@@ -101,7 +101,6 @@ brew install --cask iterm2
 brew install --cask mysqlworkbench
 # brew install --cask microsoft-teams
 brew install --cask rectangle
-brew install --cask shiftit
 brew install --cask slack
 # brew install --cask the-unarchiver
 # brew install --cask vagrant
