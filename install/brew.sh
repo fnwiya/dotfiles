@@ -98,7 +98,7 @@ brew install --cask google-cloud-sdk
 # brew install --cask google-japanese-ime
 # brew install --cask hyper
 brew install --cask iterm2
-brew install --cask mysqlworkbench
+# brew install --cask mysqlworkbench
 # brew install --cask microsoft-teams
 brew install --cask rectangle
 brew install --cask slack
