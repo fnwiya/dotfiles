@@ -55,6 +55,8 @@ if [ -d ~/.cargo/bin ] ;then
 fi
 
 if [ -d /opt/homebrew/opt/openjdk ] ;then
+  export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+  export PATH=$JAVA_HOME/bin:$PATH
   export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 fi
 
